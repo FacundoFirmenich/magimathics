@@ -25,6 +25,26 @@ Este corte integra:
 
 [`docs/00_SUPERDOCUMENTO_MAGIMATICS.md`](docs/00_SUPERDOCUMENTO_MAGIMATICS.md)
 
+## Primer gate real de UMI
+
+La rama experimental [`umi-real01-repressilator`](../../tree/umi-real01-repressilator) contiene el primer tribunal real de una unidad relacional candidata:
+
+- sustitución;
+- recableado;
+- ablación;
+- transporte entre sustratos;
+- minimalidad jurisdiccional;
+- verificador independiente.
+
+Entrada: [`research/umi-real01/README.md`](research/umi-real01/README.md)
+
+Veredicto vigente:
+
+```text
+PASS_REAL_RELATIONAL_UMI_CORE
+HOLD_MULTIFRACTAL_QUALIFIER
+```
+
 ## Documentos modulares
 
 1. [`docs/01_TABLA_ROSETTA.md`](docs/01_TABLA_ROSETTA.md)
