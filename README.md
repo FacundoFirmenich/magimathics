@@ -43,6 +43,7 @@ Este corte integra:
 - [`data/MANIFEST.json`](data/MANIFEST.json)
 - [`data/VERIFY_OUTPUT.txt`](data/VERIFY_OUTPUT.txt)
 - [`src/verify_corpus.py`](src/verify_corpus.py)
+- [`archive/SOURCE_INDEX.md`](archive/SOURCE_INDEX.md)
 
 El bundle íntegro del corte contiene además:
 
@@ -52,6 +53,11 @@ El bundle íntegro del corte contiene además:
 - fuentes históricas binarias FROZEN;
 - índices y hashes SHA‑256;
 - archivo de fuentes canónicas.
+
+```text
+Bundle SHA-256:
+ebe931ad28fa24a865735d0b1d34d0165136810419c24813621c806387fda8a5
+```
 
 ## Autoridad
 
