@@ -1,0 +1,5 @@
+PASS_MGM_UMI_REAL02
+implementation substitutions passing: 4/4
+parameter-grid passing: 108/108
+only full sensor-integrator-actuator carrier passes subset audit
+all frozen ablations/rewires lose robust perfect adaptation

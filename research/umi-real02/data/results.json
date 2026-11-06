@@ -1,0 +1,20 @@
+{
+  "gate": "MGM-UMI-REAL-02",
+  "date": "2026-11-06",
+  "candidate": "constant-signal internal-model closure",
+  "verdict": "PASS_CROSS_DOMAIN_UMI_PASS_UNIQUE_RELATIONAL_CLASS_NO_UNIQUE_MATERIAL_CARRIER",
+  "tests": {
+    "substitution": "PASS_T3",
+    "implementation_cases_passed": 4,
+    "parameter_grid_passed": 108,
+    "parameter_grid_total": 108,
+    "rewiring": "PASS_SENSITIVITY",
+    "ablation": "PASS",
+    "transport": "PASS_T3",
+    "minimality": "PASS_WITHIN_FEEDBACK_RPA_JURISDICTION",
+    "multifractality": "HOLD"
+  },
+  "cross_domain_method": "PASS_R1_OSCILLATION_PLUS_R2_ADAPTATION",
+  "publication_status": "RELEASE_CANDIDATE_DRAFT",
+  "next_gate": "MGM-UMI-REAL-03 blind third-domain adjudication"
+}

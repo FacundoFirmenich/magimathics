@@ -1,0 +1,20 @@
+case,domain,kind,pre_output,pre_range,pre_stable,bounded,peak_deviation,terminal_output,adaptation_error,adaptation_ratio,detected_step,rpa_pass,notes
+P1_linear_integral,engineering-control,baseline,1.0000000000000013,3.552713678800501e-15,True,True,0.9606900003858214,1.0,1.3322676295501878e-15,1.3867820306395795e-15,True,True,"first-order plant, classical integrator"
+P2_second_order_integral,engineering-control,substitution,0.9999999999999997,9.992007221626409e-16,True,True,0.7184524490728411,1.0,3.3306690738754696e-16,4.63589354893797e-16,True,True,second-order plant substituted without changing integral closure
+P3_nonlinear_chemotaxis,natural-biology,substitution,0.35,0.0,True,True,0.2713661614894123,0.34979148737174126,0.00020851262825871686,0.000768381094806665,True,True,nonlinear activity/methylation model
+P4_antithetic_integral,synthetic-biology,substitution,1.0,0.0,True,True,0.2930764780289159,0.9999999999999999,1.1102230246251565e-16,3.7881683036863104e-16,True,True,sequestration-based antithetic integrator
+ABL_sensor,engineering-control,ablation,37.45452479338843,8.231363636363682,False,True,212.6115909090909,237.65702479338842,200.2025,0.9416349275407246,True,False,{'sensor': False}
+ABL_integrator,engineering-control,ablation,1.0000000000000002,5.551115123125783e-15,True,True,1.6363636363718974,2.6363636363636362,1.636363636363636,0.9999999999949514,True,False,{'integrator': False}
+ABL_actuator,engineering-control,ablation,0.18181818181818182,0.0,True,True,1.636363636368994,1.8181818181818181,1.6363636363636362,0.9999999999967258,True,False,{'actuator': False}
+ABL_sensor_integrator,engineering-control,ablation,1.0000000000000002,5.551115123125783e-15,True,True,1.6363636363718974,2.6363636363636362,1.636363636363636,0.9999999999949514,True,False,"{'sensor': False, 'integrator': False}"
+ABL_all,engineering-control,ablation,0.18181818181818182,0.0,True,True,1.6363636363691076,1.818181818181818,1.636363636363636,0.9999999999966562,True,False,"{'sensor': False, 'integrator': False, 'actuator': False}"
+REWIRE_sign_flip,engineering-control,rewiring,87294014445.35626,1348738929730.7422,False,False,9.605278902235996e+71,2.467070591836793e+68,2.467070591836793e+68,0.0002568452844469189,True,False,{'sign': -1.0}
+REWIRE_sense_disturbance,engineering-control,rewiring,30.16361983471072,6.585090909090997,False,True,200.50246281227416,-157.92975206847254,188.09337190318325,0.9381100324901782,True,False,{'sensor_mode': 'disturbance'}
+REWIRE_constant_sensor,engineering-control,rewiring,37.45452479338843,8.231363636363682,False,True,212.6115909090909,237.65702479338842,200.2025,0.9416349275407246,True,False,{'sensor_mode': 'constant'}
+NEG_proportional_only,engineering-control,negative-control,0.881578947368421,0.0,True,True,0.23684210526662186,1.118421052631579,0.23684210526315796,0.9999999999853747,True,False,same plant with proportional feedback only
+CHEM_ABL_memory_frozen,natural-biology,ablation,0.35,0.0,True,True,0.2713661614910851,0.07863383850891488,0.2713661614910851,1.0,True,False,methylation memory frozen
+CHEM_REWIRE_sign_flip,natural-biology,rewiring,0.35,0.0,True,True,0.34999977799580917,4.879413593844363e-07,0.3499995120586406,0.9999992401790364,True,False,feedback sign reversed
+CHEM_REWIRE_sensor,natural-biology,rewiring,0.7556270875487251,0.07135635427047016,False,True,0.7556270875263167,9.459999569175167e-11,0.7556270874541251,0.9999999999044613,True,False,memory integrates ligand proxy instead of activity error
+ANTI_ABL_sensor,synthetic-biology,ablation,44.874999999913456,9.95000000014808,False,True,255.52500000008868,285.4000000000073,240.52500000009385,0.9412973290285114,True,False,{'ablate_sensor': True}
+ANTI_ABL_actuator,synthetic-biology,ablation,1.3148987722288294e-16,4.1007543298249806e-14,True,True,0.5000000000000262,0.5,0.4999999999999999,0.9999999999999474,True,False,{'ablate_actuator': True}
+ANTI_ABL_sequestration,synthetic-biology,ablation,44.97499999999947,9.949999999994695,False,True,255.52500000000055,285.49999999999994,240.5250000000005,0.9412973290284707,True,False,{'ablate_sequestration': True}
