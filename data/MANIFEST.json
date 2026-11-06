@@ -1,0 +1,17 @@
+{
+  "package": "MAGIMATICS_HYPERCORPUS_2026-11-06",
+  "version": "0.2.0",
+  "date": "2026-11-06",
+  "author": "Facundo Firmenich",
+  "repository": "FacundoFirmenich/magimathics",
+  "default_branch": "Ulalito's-Island",
+  "primary_document": "docs/00_SUPERDOCUMENTO_MAGIMATICS.md",
+  "verification": "PASS_MAGIMATICS_CORPUS",
+  "authority": "CANONICAL_RECONSTRUCTION / RESEARCH_PROGRAM",
+  "historical_integration": "Magimatics; TOC; CFL>TOS\\>DIN; Quaternary Logic; relational monism; reciprocity; q_obs; UMI",
+  "rosetta_entries_full_bundle": 78,
+  "correction_entries": 46,
+  "claim_entries": 39,
+  "bundle_sha256": "4811afe1335359371897eeaf146055b07f364c1b553e1776155904e4d7103830",
+  "limitations": "The GitHub corpus is modular and textual. The downloadable bundle additionally preserves historical binary sources, full machine-readable tables, hashes and the concatenated superdocument."
+}
