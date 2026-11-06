@@ -1,0 +1,6 @@
+PASS_MGM_UMI_REAL04
+strict: TP=5 FP=0 TN=5 FN=0
+moderate: one deceptive false positive
+weak: all five deceptive systems pass
+missing evidence: no false positives under conservative abstention
+ground-truth commitment verified

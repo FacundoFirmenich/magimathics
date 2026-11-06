@@ -1,0 +1,7 @@
+claim_id,claim,class,status,evidence,boundary
+R4-C01,Strict blinded benchmark separates five positives and five decoys,INTERNAL_BENCHMARK,PASS,5/0/5/0,Small internally constructed set
+R4-C02,The tribunal remains selective under weak semantic signatures,NEGATIVE_RESULT,FAIL,FDR=0.5,Semantic specification is indispensable
+R4-C03,Conservative missing-evidence policy avoids false positives,ROBUSTNESS,PASS,exact mask enumeration,Coverage falls
+R4-C04,The benchmark is an independent external blind validation,VALIDATION,FAIL,,Mechanical/internal blinding only
+R4-C05,The method is universally valid,GLOBAL,HOLD,,Naturalistic external benchmark required
+R4-C06,The method is ready for external-review methods preprint,EDITORIAL,PASS_CONDITIONAL,,Priority audit and positioning required

@@ -1,0 +1,12 @@
+{
+  "gate": "MGM-UMI-REAL-04",
+  "date": "2026-11-06",
+  "verdict": "PASS_INTERNAL_BLINDED_SELECTIVITY_EXTERNAL_VALIDATION_HOLD",
+  "commitment": "818553b951d819db9679318f83f816fbc2730173d8143b143fc64507d1b769bb",
+  "strict": {"tp": 5, "fp": 0, "tn": 5, "fn": 0, "precision": 1.0, "recall": 1.0, "specificity": 1.0, "accuracy": 1.0, "fdr": 0.0},
+  "moderate": {"tp": 5, "fp": 1, "tn": 4, "fn": 0, "precision": 0.8333333333333334, "recall": 1.0, "specificity": 0.8, "accuracy": 0.9, "fdr": 0.16666666666666666},
+  "weak": {"tp": 5, "fp": 5, "tn": 0, "fn": 0, "precision": 0.5, "recall": 1.0, "specificity": 0.0, "accuracy": 0.5, "fdr": 0.5},
+  "machine_blinding": "PASS",
+  "external_reviewer_blinding": "HOLD",
+  "next_gate": "MGM-UMI-REAL-05"
+}
