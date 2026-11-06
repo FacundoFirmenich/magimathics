@@ -1,0 +1,12 @@
+claim_id,claim,class,status,evidence,boundary
+R2-C01,Stable integral feedback returns output to setpoint independent of constant disturbance,THEOREM,PASS,symbolic,within equilibrium/stability jurisdiction
+R2-C02,Proportional feedback alone robustly perfect-adapts,NEGATIVE_CONTROL,FAIL,symbolic,nonzero steady-state error
+R2-C03,Four implementation substitutions preserve RPA,COMPUTATIONAL,PASS,simulation,model-level
+R2-C04,All 108 parameter substitutions preserve RPA,COMPUTATIONAL,PASS,grid,stable positive parameter range
+R2-C05,Every proper subset of S-I-A relations preserves RPA,MINIMALITY,FAIL,subset audit,only full carrier passes
+R2-C06,Frozen rewires preserve RPA,REWIRING,FAIL,intervention audit,sign/sensor rewires fail
+R2-C07,Integral feedback relation transports across biological and engineered substrates,PHYSICAL_SYNTHESIS,PASS,literature,qualitative/functional transport
+R2-C08,The material components define the unit,SYSTEMS_CLAIM,FAIL,substitution/transport,relational class defines unit
+R2-C09,The candidate is the only possible RPA topology,GLOBAL_CLAIM,FAIL,RPA topology literature,another balancer/feedforward class exists
+R2-C10,UMI tribunal generalizes beyond oscillation,METHOD,PASS,R1+R2,two-domain result
+R2-C11,Multifractal qualifier established,MULTIFRACTAL,HOLD,,not measured
