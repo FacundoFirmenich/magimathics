@@ -1,0 +1,4 @@
+PASS_MGM_UMI_REAL05
+naturalistic labeled cases: TP=5 FP=0 TN=5 FN=0
+ambiguous hybrids: ABSTAIN=2/2
+ground-truth commitment verified
