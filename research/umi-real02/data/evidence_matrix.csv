@@ -1,0 +1,6 @@
+system,implementation,preserved_signature,evidence_class,source,role
+Natural E. coli chemotaxis,CheR/CheB receptor methylation feedback,robust perfect adaptation to persistent ligand,P1/P2,Yi et al. 2000; Alon et al. 1999,natural implementation
+E. coli synthetic antithetic controller,sigma/anti-sigma or sequestration controller,robust perfect adaptation and growth-rate regulation,P1,Aoki et al. 2019 Nature,synthetic bacterial implementation
+Cell-free TXTL controller,molecular sequestration integral controller,reference tracking under disturbances,P1,Agrawal et al. 2019 Nature Communications,in vitro implementation
+Mammalian synthetic PI circuit,sense/antisense RNA with optional proportional feedback,adaptation to degradation and network perturbations,P1,Frei et al. 2022 PNAS,mammalian implementation
+Engineering integral regulator,electrical/mechanical/software controller,zero steady-state error to admissible constant disturbances,T1/P3,Francis & Wonham 1976; control engineering,cross-substrate transport
