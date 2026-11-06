@@ -1,0 +1,40 @@
+claim_id,claim,class,status,boundary
+MGM-C001,Pregeometría es fundamento generativo no temporal,CANON,AUTHOR_CANON,No es una teoría física positiva
+MGM-C002,Protogeometría es cartografía relacional multifractal teleonómicamente codificada,CANON,AUTHOR_CANON,Formalización explicativa
+MGM-C003,Geometría es régimen proyectado/reflectivo/estabilizado,CANON,AUTHOR_CANON,Hipótesis general
+MGM-C004,HGMF explica y no contiene los tres regímenes,CANON,AUTHOR_CANON,Marco metateórico
+MGM-C005,UMI dual MFI/MI,CANON,PASS_CONDITIONAL,Equivalencia requiere gates
+MGM-C006,UMI no es fundamental ni ontología predefinida,CANON,PASS,Cuantos abiertos
+MGM-C007,UMI unitary value arises from relations,CANON,PROGRAM_SPECIFIC,Needs real-system test
+MGM-C008,Finite jurisdiction has inclusion-minimal sufficient carrier,THEOREM,PASS,Not necessarily unique
+MGM-C009,Minimality is not minimum cardinality,THEOREM,PASS,Counterexample
+MGM-C010,Scale invariance alone selects pi/6,NUMERICAL,FAIL,All positive scalars same unrestricted orbit
+MGM-C011,Sixfold first antipodal closure selects pi/6,THEOREM,PASS_CONDITIONAL,Closure physical origin HOLD
+MGM-C012,Octahedral proper orientation cell has area pi/6,THEOREM,PASS,Standard geometry
+MGM-C013,UMI physical/semantic identity with pi/6,GLOBAL,HOLD,Representation established; identification open
+MGM-C014,q_obs limit equals pi/18,THEOREM,PASS,Depends on degrees/base10
+MGM-C015,q_obs is fundamental quantum,ONTOLOGICAL,REJECTED,Observational coefficient
+MGM-C016,Sector-triangle residual positive for nonzero observation,THEOREM,PASS,Interpretation analogical
+MGM-C017,pi is mathematically false,POLEMICAL,REJECTED,Anti-pi is anti-reification
+MGM-C018,pi is observer-mediated geometric invariant,FOUNDATIONAL,HYPOTHESIS/CANON,Needs precise observer model
+MGM-C019,Helical recurrence allows projected return without full return,FORMAL,PASS,Standard lift structure
+MGM-C020,All physical orbits are helicoidal,PHYSICAL,HOLD,Not established
+MGM-C021,P_RV equivalent_tr rho_sp,FOUNDATIONAL,HYPOTHESIS,Domains/map/invariants open
+MGM-C022,Robust quasi-certainty iff result fiber singleton,THEOREM,PASS,Given history contract
+MGM-C023,Hyperaccess is exact observability transition,DEFINITION,PASS,Jurisdiction-relative
+MGM-C024,Terminal flux is additive on disjoint gates,THEOREM,PASS,Physical current origin open
+MGM-C025,Phase+continuity+multiplicativity imply |z|^alpha,THEOREM,PASS,Scalar complex representation premise
+MGM-C026,Balanced compact mixing selects alpha=2,THEOREM,PASS_CONDITIONAL,Physical mixer open/partially modeled
+MGM-C027,Pure qubit projective law derived under isotropic crossing flux,THEOREM,PASS_CONDITIONAL,Known KS model
+MGM-C028,General Born derived,GLOBAL,HOLD,POVM/d>=3/composites open
+MGM-C029,Singlet relational kernel gives -a dot b and 2sqrt2,THEOREM,PASS_CONDITIONAL,Microcausal realization open
+MGM-C030,Local factorized deterministic composite reproduces Bell,NO_GO,FAIL,CHSH <=2
+MGM-C031,Vacuum correlator hierarchy is protogeometric trace,PHYSICAL,HYPOTHESIS,No direct evidence
+MGM-C032,Bare zero-point energy is protogeometry,ONTOLOGICAL,REJECTED,Renormalization/identification invalid
+MGM-C033,HDH P1 modewise bound,THEOREM,PASS,Specific model jurisdiction
+MGM-C034,Recent external papers originated the programme,PROVENANCE,FAIL,Convergent/antecedent unless imported
+M-H01,TOC/CFL/TOS-DIN precede the November 2026 closure,HISTORICAL,PASS,Documented genealogy; no physical validation
+M-H02,"Q_F={0,-0,1,+1} is the canonical typed Quaternary Logic of the July corpus",CANON,PASS,Complete algebraic semantics remain open
+M-H03,Equal scalar output does not imply equal conformational state,FORMAL_PRINCIPLE,PASS,Implementation requires provenance and types
+M-H04,CFL faithfully implements Quaternary Logic,IMPLEMENTATION,HOLD,Four logits are insufficient
+M-H05,UMI is continuous with the prior relational-monist corpus,GENEALOGY,PASS,Does not identify UMI with every historical unit
