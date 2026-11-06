@@ -1,0 +1,9 @@
+claim_id,claim,class,status,evidence,boundary
+R3-C01,Hamming syndrome relation is a minimal invariant carrier of single-error correction,THEOREM/COMPUTATIONAL,PASS,exhaustive,"Hamming(7,4) jurisdiction"
+R3-C02,Bistable memory unit resides in regenerative-saturation-write closure,THEOREM/COMPUTATIONAL,PASS,exact+ODE,writable bounded bistability
+R3-C03,Negative-feedback homeostasis is an independent new UMI class relative to RPA,CLASSIFICATION,FAIL,nesting theorem,homeostasis is parent/refinement lattice with RPA
+R3-C04,Quorum intersection plus persistent vote is minimal for consensus agreement safety,THEOREM/EXHAUSTIVE,PASS,finite enumeration,safety only; not liveness
+R3-C05,The frozen tribunal generalizes beyond two domains,METHOD,PASS,portfolio,five independent functions plus one nested class
+R3-C06,All UMI candidates are multifractal,MULTIFRACTAL,HOLD,,not measured
+R3-C07,The portfolio proves a universal systems ontology,GLOBAL,FAIL,,operational relational classes only
+R3-C08,Preprint is ready for author/external review,EDITORIAL,PASS_CONDITIONAL,,priority and external review remain
