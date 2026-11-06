@@ -1,0 +1,9 @@
+source_id,citation,venue,identifier,url,role
+S1,Elowitz & Leibler 2000,Nature,10.1038/35002125,https://www.nature.com/articles/35002125,primary experiment
+S2,Potvin-Trottier et al. 2016,Nature,10.1038/nature19841,https://www.nature.com/articles/nature19841,primary intervention series
+S3,Cannarsa et al. 2024,eLife,10.7554/eLife.97754,https://elifesciences.org/articles/97754,primary experiment/model
+S4,Hellen et al. 2013,PLOS ONE,10.1371/journal.pone.0062997,https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0062997,primary electronic experiment
+S5,BioModels BIOMD0000000012,EMBL-EBI,BIOMD0000000012,https://www.ebi.ac.uk/biomodels/BIOMD0000000012,curated model
+S6,Milo et al. 2002,Science,10.1126/science.298.5594.824,https://pubmed.ncbi.nlm.nih.gov/12399590/,network motif antecedent
+S7,Alon 2007,Nature Reviews Genetics,10.1038/nrg2102,https://www.nature.com/articles/nrg2102,network motif review
+S8,Dynamical modules review 2021,Royal Society Open Science,PMC8086940,https://pmc.ncbi.nlm.nih.gov/articles/PMC8086940/,dynamical module comparator
