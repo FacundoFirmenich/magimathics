@@ -1,0 +1,4 @@
+missing_count,case_mask_evaluations,coverage,accuracy_on_adjudicated,false_positive_rate_on_adjudicated
+0,10,1.0,1.0,0.0
+1,60,0.5,1.0,0.0
+2,150,0.5,1.0,0.0
