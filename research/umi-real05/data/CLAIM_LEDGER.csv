@@ -1,0 +1,10 @@
+claim_id,claim,class,status,boundary
+R5-C01,Kinetic proofreading is identified as a relational UMI class,NATURALISTIC,PASS,strict beyond-equilibrium signature
+R5-C02,Turing finite-k instability is identified as a relational UMI class,NATURALISTIC,PASS,not every spatial stripe
+R5-C03,Mutual synchronization is identified as a relational UMI class,NATURALISTIC,PASS,not common-drive phase alignment
+R5-C04,Topological edge transport is identified as a relational UMI class,NATURALISTIC,PASS,declared symmetry and disorder class
+R5-C05,Minimal RAF closure is identified as a relational UMI class,NATURALISTIC,PASS,minimal RAF jurisdiction
+R5-C06,Five matched decoys are rejected,SELECTIVITY,PASS,strict signatures
+R5-C07,Two mixed-mechanism hybrids are abstained,ABSTENTION,PASS,carrier nonuniqueness or incomplete evidence
+R5-C08,A UMI is always a graph motif,GLOBAL,FAIL,mechanism may be dynamical topological or informational
+R5-C09,Multifractality is empirically established,MULTIFRACTAL,HOLD,not measured
