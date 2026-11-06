@@ -1,6 +1,6 @@
 # Magimatics
 
-Repositorio canónico del programa de investigación de Facundo Firmenich.
+Repositorio canónico del programa de investigación de **Facundo Firmenich**.
 
 ## Primer gran cierre conformacional
 
@@ -8,18 +8,18 @@ Este corte integra:
 
 - glosario y tabla Rosetta;
 - formulario matemático;
-- estado del arte;
-- genealogía completa de correcciones;
-- línea HDH;
-- programa protoforma/Born SC34–SC40;
+- estado del arte y control de novedad;
+- genealogía completa de correcciones autor–asistente;
+- herencia documental previa de Magimatics, TOC, CFL, TOS\, DIN y Lógica Cuaternaria;
+- línea HDH‑029→034;
+- programa protoforma/Born SC34→SC40;
 - HGMF / MRRM;
-- UMI;
-- \(\pi/6\);
-- cuanto observacional \(\pi/18\);
-- observador ampliado y anti-\(\pi\);
+- Unidad Multifractal de Interrelación / Unidad Mínima Invariante;
+- `π/6`, cuanto observacional `π/18` y cuarteto `6–8–12–24`;
+- observador ampliado y tesis anti‑π;
 - helicoidalidad;
-- hipótesis de traza protogeométrica del vacío;
-- gates científicos posteriores.
+- hipótesis de impronta protogeométrica del vacío;
+- programa de gates posteriores.
 
 ## Entrada principal
 
@@ -35,18 +35,52 @@ Este corte integra:
 6. [`docs/06_PROGRAMA_ESTRATEGICO.md`](docs/06_PROGRAMA_ESTRATEGICO.md)
 7. [`docs/07_BIBLIOGRAFIA.md`](docs/07_BIBLIOGRAFIA.md)
 8. [`docs/08_PROCEDENCIA_Y_LIMITES.md`](docs/08_PROCEDENCIA_Y_LIMITES.md)
+9. [`docs/09_HERENCIA_MAGIMATICS_PREVIA.md`](docs/09_HERENCIA_MAGIMATICS_PREVIA.md)
 
-## Datos auditables
+## Artefactos auditables
 
-- `data/terminology_rosetta.csv`
-- `data/master_claim_ledger.csv`
-- `data/correction_genealogy.csv`
-- `data/bibliography.bib`
-- `data/MANIFEST.json`
-- `data/SHA256SUMS.txt`
+- [`data/master_claim_ledger.csv`](data/master_claim_ledger.csv)
+- [`data/MANIFEST.json`](data/MANIFEST.json)
+- [`data/VERIFY_OUTPUT.txt`](data/VERIFY_OUTPUT.txt)
+- [`src/verify_corpus.py`](src/verify_corpus.py)
+
+El bundle íntegro del corte contiene además:
+
+- superdocumento concatenado de ~16.000 palabras;
+- Rosetta machine-readable de 78 entradas;
+- genealogy ledger de 46 correcciones;
+- fuentes históricas binarias FROZEN;
+- índices y hashes SHA‑256;
+- archivo de fuentes canónicas.
 
 ## Autoridad
 
-El repositorio distingue canon del autor, formalizaciones internas, resultados matemáticos, hipótesis, holds, fails, antecedentes, convergencias externas y elementos importados.
+El repositorio distingue:
 
-No reclama una teoría física completa ni prioridad pública no auditada.
+```text
+AUTHOR_CANON
+HISTORICAL_AUTHOR
+FORMALIZATION
+THEOREM
+CONDITIONAL_PASS
+HYPOTHESIS
+HOLD
+FAIL
+ANTECEDENT
+CONVERGENT_EXTERNAL
+IMPORTED
+PROGRAM_SPECIFIC
+RETRACTED
+```
+
+No reclama una teoría física universal completa ni prioridad pública no auditada.
+
+## Resultado rector
+
+\[
+\text{exactitud representacional}
+\neq
+\text{invariancia transrégimen}
+\neq
+\text{fundamentalidad ontológica}.
+\]
