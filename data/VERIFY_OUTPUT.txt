@@ -1,0 +1,5 @@
+PASS_MAGIMATICS_CORPUS
+q_obs = pi/18
+UMI ladder = 6, 8, 12, 24
+epistemic residual leading term = theta^3/3
+quadratic selector alpha = 2
