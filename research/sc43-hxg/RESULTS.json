@@ -1,0 +1,17 @@
+{
+  "gate": "SC43-HXG",
+  "jurisdiction": "HX-Q4-SIGN",
+  "verdict": "SC43_FORMAL_HXG_PASS_MATERIAL_Q4_EXECUTION_HOLD",
+  "P_nu": "(577+48 nu)/772",
+  "gain": "12/193*(mu-mu^3)",
+  "strict_capability_interval": "1/24 < mu <= 24^(-1/3)",
+  "mu_example": "1/10",
+  "P_marginal": "72131/96500",
+  "P_signed": "2909/3860",
+  "exact_gap": "297/48250",
+  "HX_O": "PASS",
+  "HX_A": "PASS",
+  "HX_G_MODEL": "PASS",
+  "UMI_INTERNAL": "PASS",
+  "material": "HOLD"
+}
