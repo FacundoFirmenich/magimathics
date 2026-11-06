@@ -1,0 +1,15 @@
+claim_id,claim,status,evidence_class,manuscript_location,boundary
+P2-C01,A UMI is a jurisdiction-relative inclusion-minimal relational mechanism class,FORMALIZED,DEFINITION,Section 2,Not an ontological primitive
+P2-C02,The frozen tribunal can be applied without changing its logical structure across heterogeneous domains,PASS,CROSS_DOMAIN_PORTFOLIO,Sections 3-4,Domain-specific signatures and evidence remain distinct
+P2-C03,Ten independent mechanism classes satisfy the current tribunal,PASS,EXACT_COMPUTATIONAL_LITERATURE_SYNTHESIS,Section 4,Carrier classes differ in evidence strength and equivalence level
+P2-C04,Negative-feedback homeostasis is a parent class of robust perfect adaptation,PASS,EXACT_CONTROL_THEORY,Section 4.11,Within declared constant-disturbance jurisdictions
+P2-C05,Strict semantic signatures separated five designed positives from five close decoys,PASS,INTERNAL_BLINDED_BENCHMARK,Section 5.1,Mechanically blinded internally constructed benchmark
+P2-C06,Weakening semantic signatures increases false positives,PASS,EXACT_BENCHMARK_COMPARISON,Section 5.1,Specific to frozen benchmark profiles
+P2-C07,Naturalistic matched pairs were separated and mixed mechanisms triggered abstention,PASS,EVIDENCE_BLIND_LITERATURE_BENCHMARK,Section 5.2,Not an independent human-reviewer blind study
+P2-C08,UMI is equivalent to a network motif,REJECTED,LITERATURE_COMPARISON,Section 6.1,Topology alone does not determine function
+P2-C09,UMI is equivalent to bisimulation,REJECTED,LITERATURE_COMPARISON,Section 6.3,UMI equivalence is task and intervention relative
+P2-C10,UMI is equivalent to organisational closure,REJECTED,LITERATURE_COMPARISON,Section 6.5,Organisational closure is a biological specialization
+P2-C11,The tribunal identifies relational units rather than merely interesting mechanisms,SUPPORTED,INTERVENTION_ASYMMETRY,Section 7,Requires strict signature and negative tests
+P2-C12,Every system possesses one unique UMI,NOT_CLAIMED,NONE,Section 8,Multiple carriers and abstention are allowed
+P2-C13,The identified carriers are empirically multifractal,HOLD,NONE,Section 8,Separate theoretical programme
+P2-C14,The mechanisms used as case studies are novel discoveries,REJECTED,GENEALOGY,Section 8,Contribution is methodological synthesis and adjudication
