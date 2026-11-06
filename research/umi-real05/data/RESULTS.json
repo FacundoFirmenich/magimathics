@@ -1,0 +1,39 @@
+{
+  "gate": "MGM-UMI-REAL-05",
+  "date": "2026-11-06",
+  "verdict": "PASS_NATURALISTIC_OUT_OF_SAMPLE_PASS_AMBIGUITY_ABSTENTION",
+  "commitment": "317cb120be90ef64291a942110861e80d829125ace339f8eb73d2947ea2c1a13",
+  "metrics": {
+    "tp": 5,
+    "fp": 0,
+    "tn": 5,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "accuracy": 1.0,
+    "fdr": 0.0,
+    "ambiguous_abstain": 2,
+    "ambiguous_total": 2,
+    "coverage": 0.8333333333333334
+  },
+  "positive_classes": [
+    "kinetic proofreading",
+    "Turing finite-wavenumber instability",
+    "mutual synchronization",
+    "topological edge transport",
+    "minimal RAF autocatalytic set"
+  ],
+  "negative_decoys": [
+    "equilibrium binding",
+    "morphogen-imposed stripe",
+    "common forcing",
+    "trivial defect localization",
+    "linear catalytic chain"
+  ],
+  "ambiguous": [
+    "quorum-sensing competence switch",
+    "coupling plus common noise hybrid"
+  ],
+  "next_gate": "MGM-UMI-REAL-06"
+}
