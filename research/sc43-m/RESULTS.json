@@ -1,0 +1,18 @@
+{
+  "gate": "SC43-M",
+  "jurisdiction": "HX-Q4-SIGN",
+  "material_mu": 0.31,
+  "pair_program_acceptance": 0.14201183431952663,
+  "filter_acceptance": 0.9278846153846154,
+  "combined_acceptance": 0.13177059626763768,
+  "sign_mean": 0.0961,
+  "marginal_phase_success": 0.7492616165803109,
+  "enriched_phase_success": 0.7666839378238341,
+  "qasm_qubits": 12,
+  "qasm_depth_range": [52, 58],
+  "qasm_gate_count_range": [78, 99],
+  "primary_device": "openquantum:ionq:qpu:forte-1",
+  "secondary_device": "openquantum:aqt:qpu:ibex-q1",
+  "first_cohort_raw_shots": 60000,
+  "status": "MATERIAL_PROTOCOL_FROZEN_QPU_SUBMISSION_AWAITING_EXPLICIT_CONFIRMATION"
+}
