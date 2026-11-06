@@ -1,0 +1,11 @@
+claim_id,claim,class,status,evidence,boundary
+UMIR1-C01,The closed three-node cyclic repression unit is physically realized,empirical,PASS,Elowitz 2000,biological realization
+UMIR1-C02,The oscillatory signature is invariant to cyclic component relabeling,model_exact,PASS,relative error 1.508e-18,curated symmetric model
+UMIR1-C03,Each repression relation is necessary in the curated jurisdiction,counterfactual_plus_empirical,PASS,three model ablations + IPTG physical deletion,not universal across all kinetics
+UMIR1-C04,Changing relation while retaining component/edge count can destroy the signature,counterfactual,PASS,rewire and sign flip,curated parameter regime
+UMIR1-C05,The relational carrier transports across biological and electronic substrates,empirical_transport,PASS_T2,Hellen 2013,"qualitative dynamics, not full quantitative conjugacy"
+UMIR1-C06,The candidate is inclusion-minimal in the declared jurisdiction,model,PASS,edge ablation + 1/2-node reductions,jurisdiction-relative
+UMIR1-C07,The unit is a known network motif/dynamical module,antecedent,PASS,Milo/Alon/dynamical modules,not novelty
+UMIR1-C08,The worked case establishes a general UMI theory,global,HOLD,requires second domain,no generality claim
+UMIR1-C09,The worked case establishes multifractality,multifractal,HOLD,no spectrum measured,multiscale is not multifractal
+UMIR1-C10,UMI protocol may be a novel systems-method contribution,priority,OPEN,novelty audit incomplete,no priority claim yet

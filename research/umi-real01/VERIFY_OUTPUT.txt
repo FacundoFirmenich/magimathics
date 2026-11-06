@@ -1,0 +1,6 @@
+PASS_MGM_UMI_REAL01
+baseline oscillates
+all frozen ablations/rewires/reductions lose the signature
+cyclic substitution preserves trajectory
+phase sectors are approximately one third of the period
+only all-repression sign topology oscillates in the curated regime
