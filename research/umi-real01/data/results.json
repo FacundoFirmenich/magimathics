@@ -1,0 +1,42 @@
+{
+  "gate": "MGM-UMI-REAL-01",
+  "date": "2026-11-06",
+  "candidate": "closed three-node cyclic repression relation under admissible kinetic jurisdiction",
+  "verdict": "PASS_REAL_RELATIONAL_UMI_CORE_HOLD_MULTIFRACTAL_QUALIFIER",
+  "tests": {
+    "substitution": "PASS_T2",
+    "cyclic_relabeling_relative_error": 1.5080888627808484e-18,
+    "rewiring": "PASS_SENSITIVITY",
+    "ablation": "PASS",
+    "transport": "PASS_T2",
+    "minimality": "PASS_WITHIN_JURISDICTION",
+    "multifractality": "HOLD"
+  },
+  "baseline": {
+    "amplitude_p95_p05": 2249.2371794896185,
+    "relative_amplitude": 1.0,
+    "std": 765.4494045716941,
+    "terminal_range": 2318.5862864357514,
+    "n_detected_peaks": 11,
+    "mean_period_min": 125.35999999999999,
+    "period_cv": 0.0004119318598393709,
+    "oscillatory": true
+  },
+  "phase_fraction_of_period": {
+    "PZ_cI_to_PY_TetR": 0.3334783870031915,
+    "PY_TetR_to_PX_LacI": 0.3332608064984042,
+    "PX_LacI_to_next_PZ_cI": 0.33326080649840384
+  },
+  "graph_invariants": {
+    "nodes": 3,
+    "edges": 3,
+    "strongly_connected": true,
+    "directed_simple_cycles": 1,
+    "cycle_rank_undirected": 1,
+    "directed_automorphism_count": 3,
+    "signed_edges": 3,
+    "negative_edges": 3
+  },
+  "publication_status": "STRONG_DRAFT_NOT_FINAL",
+  "next_gate": "MGM-UMI-REAL-02 cross-domain non-oscillator tribunal"
+}
