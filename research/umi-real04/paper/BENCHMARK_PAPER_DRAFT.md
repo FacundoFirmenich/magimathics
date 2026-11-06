@@ -1,0 +1,5 @@
+# Minimal Invariant Relational Units: An Internally Blinded Adversarial Benchmark
+
+## Abstract
+
+We evaluated a preregistered relational-unit tribunal—substitution, rewiring, ablation, transport and minimality—on a mechanically blinded ten-family benchmark. Five positive carriers represented sustained oscillation, robust perfect adaptation, single-error correction, writable bistable memory and agreement safety. Five near-neighbour decoys represented transient oscillation, approximate proportional regulation, detection without correction, finite-horizon retention and volatile single-round majority. Strict semantic signatures gave TP=5, FP=0, TN=5 and FN=0. Weak signatures admitted all five decoys. Conservative abstention preserved zero false positives under incomplete evidence at the cost of coverage. The result is an internal selectivity calibration, not external validation.
