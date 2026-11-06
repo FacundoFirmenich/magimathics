@@ -1,0 +1,9 @@
+claim_id,claim,class,status,boundary
+SC43M-C01,Pair-only SWAP-parity program reproduces conditional sign law (1±mu^2)/2,THEOREM,PASS,postselected one-level3-one-active subspace
+SC43M-C02,Pair-only program acceptance is 24/169 for principal envelope,THEOREM,PASS,a=4/13 b=1/13
+SC43M-C03,Combined program/filter acceptance is 579/4394,THEOREM,PASS,ideal circuit
+SC43M-C04,mu=0.31 is frozen as near-optimal material point under declared two-test raw-shot criterion,DESIGN,PASS,pre-data optimization
+SC43M-C05,12-qubit QASM circuit reproduces marginal and enriched laws on independent qBraid statevector simulator,COMPUTATIONAL,PASS,all four labels
+SC43M-C06,SC43 material witness has run on QPU,EMPIRICAL,PENDING,submission not yet authorized
+SC43M-C07,OpenQuantum IonQ Forte 1 is primary QPU target,DEVICE_FREEZE,PASS,live inventory 2026-11-06
+SC43M-C08,General Born is physically derived,GLOBAL,HOLD,not implied by SC43-M
