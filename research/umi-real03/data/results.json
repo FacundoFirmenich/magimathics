@@ -1,0 +1,24 @@
+{
+  "gate": "MGM-UMI-REAL-03-PORTFOLIO",
+  "date": "2026-11-06",
+  "verdict": "PASS_ALL_FOUR_ADJUDICATED",
+  "candidate_results": {
+    "error_correcting_code": "PASS_INDEPENDENT_UMI",
+    "bistable_memory": "PASS_INDEPENDENT_UMI",
+    "homeostatic_feedback": "PASS_NESTED_UMI_NOT_INDEPENDENT_OF_RPA",
+    "consensus_safety": "PASS_INDEPENDENT_SAFETY_UMI"
+  },
+  "portfolio_effect": {
+    "independent_function_classes_now_supported": [
+      "sustained oscillation",
+      "robust perfect adaptation",
+      "single-error correction",
+      "bistable memory",
+      "distributed consensus safety"
+    ],
+    "nested_relational_class": "negative-feedback homeostasis contains RPA as stricter internal-model refinement",
+    "method_generality": "STRONG_PASS",
+    "preprint_status": "ARXIV_UPLOAD_READY_AFTER_EXTERNAL_REVIEW_AND_PRIORITY_AUDIT",
+    "multifractal_qualifier": "HOLD"
+  }
+}

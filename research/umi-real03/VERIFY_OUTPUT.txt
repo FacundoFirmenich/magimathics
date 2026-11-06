@@ -1,0 +1,6 @@
+PASS_MGM_UMI_REAL03_PORTFOLIO
+C1 ECC: exact minimal syndrome carrier PASS
+C2 bistable memory: full relational carrier only PASS
+C3 homeostasis: PASS but nested above RPA
+C4 consensus safety: intersection + persistent vote PASS
+METHOD_GENERALITY = STRONG_PASS
