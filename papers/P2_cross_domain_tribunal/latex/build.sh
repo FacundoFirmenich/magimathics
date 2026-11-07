@@ -6,7 +6,7 @@ PAPER_ROOT="$(cd "$HERE/.." && pwd)"
 cd "$HERE"
 
 pandoc "$PAPER_ROOT/MANUSCRIPT_V0_1.md" \
-  --from='markdown+tex_math_dollars+raw_tex' \
+  --from='markdown+tex_math_dollars+tex_math_single_backslash+tex_math_double_backslash+raw_tex' \
   --to=latex \
   --wrap=preserve \
   --natbib \
