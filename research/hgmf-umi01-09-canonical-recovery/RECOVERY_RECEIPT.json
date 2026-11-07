@@ -1,0 +1,33 @@
+{
+  "repository": "FacundoFirmenich/magimathics",
+  "branch": "hgmf-umi01-09-canonical-recovery",
+  "base_commit": "863cb9d41f29a47be02b818d5e2f4704418040c1",
+  "created_at": "2026-11-07",
+  "archive": {
+    "path": "HGMF_UMI01_09_CANONICAL_TEXT_RECOVERY.tar.gz",
+    "bytes": 100273,
+    "sha256": "600a66178b71ddfea12d03f8743e114822c6d483a3b126870a54a9022573e0b7",
+    "git_blob_sha": "5642477de26bf649e40f2b109cd10d55d92283c4"
+  },
+  "canonical_text_corpus": {
+    "entries": 112,
+    "sha256": "8078f942d08e0c9cbb64bec55829acec0c46830c61163cd0577a31c94c055aa3"
+  },
+  "binary_or_derivative_entries_listed": 19,
+  "bundle_hashes": {
+    "HGMF_UMI01_RECOVERED": "6ccbf6170c2a8e82b01d44fb2a845a81190838cd1475cbf065f6ce49c63f6bd5",
+    "HGMF_UMI02_RECOVERED": "c524005df5870ecaf81a2363f36adb954432a727d84cee8c27b5ac7b0c20e481",
+    "HGMF_UMI03": "24cb7c76baa2be5b72fbd47c70e9d18863e4fa4a203ad4b299b462c225b791d2",
+    "HGMF_UMI04": "f653bdea7f3b8739eabb9fb70ae2bdd7b32a048c0f5c0a4ed59819f60aaafada",
+    "HGMF_UMI05": "581a2864dd0d86ae4b69db605bbf672fda8cb502adad76810c42bd508c6c3f67",
+    "HGMF_UMI06": "ab03bc2376d27c492ef2ecc44f2cfe754337391d67fb0849c01689f21e2570f1",
+    "HGMF_UMI07": "71fd5f373ced61518ac9af5c2d98c9505b844294309f7d37fbe2176ba91a53a4",
+    "HGMF_UMI08": "01d5349d1bb53d896c495983f59df5d359ee1f6890f4afffeb4c479802f69780",
+    "HGMF_UMI09": "56a249139fddf30f5bd5dd9c4b6f00e581092fa3e00d487f29d827b4b9117298"
+  },
+  "recovery_boundaries": {
+    "UMI01_UMI02": "reconstructed from persistent Library; original historical ZIP bytes unavailable; no missing visuals fabricated",
+    "UMI03_UMI09": "represented from complete runtime bundles",
+    "mutation_policy": "additive_only_no_prior_branch_or_artifact_deleted"
+  }
+}
