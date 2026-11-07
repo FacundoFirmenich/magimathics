@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="720" viewBox="0 0 1300 720">
+<rect width="1300" height="720" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.title{font-size:28px;font-weight:bold}.h{font-size:20px;font-weight:bold}.b{font-size:16px}.small{font-size:13px}.panel{fill:#fafafa;stroke:#222;stroke-width:1.5;rx:16}.node{fill:white;stroke:#222;stroke-width:2}.edge{stroke:#222;stroke-width:3;fill:none;marker-end:url(#arr)}.broken{stroke:#999;stroke-width:3;stroke-dasharray:8 6;fill:none;marker-end:url(#arr2)}.good{stroke:#111;stroke-width:3;fill:none;marker-end:url(#arr)}</style>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#222"/></marker><marker id="arr2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#999"/></marker></defs>
+<text x="650" y="42" class="title" text-anchor="middle">Relational identity is revealed by an intervention asymmetry</text>
+
+<rect x="55" y="85" width="565" height="530" class="panel"/>
+<text x="337" y="122" class="h" text-anchor="middle">Same components · altered critical relation</text>
+<text x="337" y="150" class="b" text-anchor="middle">The declared signature disappears</text>
+
+<circle cx="190" cy="255" r="38" class="node"/><circle cx="337" cy="205" r="38" class="node"/><circle cx="485" cy="255" r="38" class="node"/>
+<text x="190" y="262" class="h" text-anchor="middle">A</text><text x="337" y="212" class="h" text-anchor="middle">B</text><text x="485" y="262" class="h" text-anchor="middle">C</text>
+<path d="M226 241 Q278 205 299 207" class="edge"/><path d="M375 211 Q435 215 452 238" class="edge"/><path d="M467 289 Q335 390 207 289" class="edge"/>
+<text x="337" y="345" class="b" text-anchor="middle">Closed carrier → function present</text>
+
+<line x1="125" y1="390" x2="550" y2="390" stroke="#bbb"/>
+<circle cx="190" cy="485" r="38" class="node"/><circle cx="337" cy="435" r="38" class="node"/><circle cx="485" cy="485" r="38" class="node"/>
+<text x="190" y="492" class="h" text-anchor="middle">A</text><text x="337" y="442" class="h" text-anchor="middle">B</text><text x="485" y="492" class="h" text-anchor="middle">C</text>
+<path d="M226 471 Q278 435 299 437" class="edge"/><path d="M375 441 Q435 445 452 468" class="edge"/><path d="M467 519 Q335 610 207 519" class="broken"/>
+<text x="337" y="580" class="b" text-anchor="middle">Ablation / rewire → function lost</text>
+
+<rect x="680" y="85" width="565" height="530" class="panel"/>
+<text x="962" y="122" class="h" text-anchor="middle">Different components or substrate · same relation class</text>
+<text x="962" y="150" class="b" text-anchor="middle">The declared functional class survives</text>
+
+<rect x="755" y="205" width="100" height="70" rx="12" fill="white" stroke="#222" stroke-width="2"/><rect x="912" y="178" width="100" height="70" rx="35" fill="white" stroke="#222" stroke-width="2"/><polygon points="1119,205 1169,240 1119,275 1069,240" fill="white" stroke="#222" stroke-width="2"/>
+<text x="805" y="248" class="h" text-anchor="middle">X</text><text x="962" y="221" class="h" text-anchor="middle">Y</text><text x="1119" y="247" class="h" text-anchor="middle">Z</text>
+<path d="M855 230 Q900 190 912 202" class="good"/><path d="M1012 215 Q1058 215 1075 229" class="good"/><path d="M1095 276 Q960 370 825 276" class="good"/>
+<text x="962" y="345" class="b" text-anchor="middle">Implementation 1 → signature present</text>
+
+<line x1="750" y1="390" x2="1175" y2="390" stroke="#bbb"/>
+<polygon points="805,425 850,470 805,515 760,470" fill="white" stroke="#222" stroke-width="2"/><rect x="912" y="425" width="100" height="90" rx="8" fill="white" stroke="#222" stroke-width="2"/><circle cx="1119" cy="470" r="45" fill="white" stroke="#222" stroke-width="2"/>
+<text x="805" y="477" class="h" text-anchor="middle">α</text><text x="962" y="477" class="h" text-anchor="middle">β</text><text x="1119" y="477" class="h" text-anchor="middle">γ</text>
+<path d="M850 457 Q900 420 912 442" class="good"/><path d="M1012 455 Q1060 440 1080 453" class="good"/><path d="M1090 507 Q960 602 830 507" class="good"/>
+<text x="962" y="580" class="b" text-anchor="middle">Implementation 2 → same functional class</text>
+
+<text x="650" y="670" class="h" text-anchor="middle">Unity is assigned to the minimal typed relation class under its declared physical jurisdiction—not to names, materials or component count alone.</text>
+</svg>
