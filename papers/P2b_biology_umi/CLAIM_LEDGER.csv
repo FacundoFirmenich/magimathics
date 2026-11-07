@@ -1,0 +1,14 @@
+claim_id,claim,status,evidence_class,manuscript_location,boundary
+P2B-C01,A biological UMI includes typed relations plus kinetic physical and environmental jurisdiction,FORMALIZED,DEFINITION,Section 2,Not a bare graph motif
+P2B-C02,Closed cyclic repression is a UMI for the declared repressilator signature,PASS,T1_M1_P2_P3,Section 3,Not a universal theorem for all oscillators
+P2B-C03,Constant-signal internal-model closure is a UMI for robust perfect adaptation,PASS,T1_M1_P1_P3,Section 4,Established internal-model and RPA theory retained
+P2B-C04,Regeneration saturation and write coupling form a UMI for writable bistable memory,PASS,T1_M1_P1_P3,Section 5,Restricted to strict bounded set/reset persistence
+P2B-C05,Driven multistage reject/reset closure is a UMI for kinetic proofreading,PASS,T1_P1_P3,Section 6,Beyond-equilibrium signature required
+P2B-C06,Finite-wavenumber reaction-transport instability is a UMI for Turing patterning,PASS,T1_M1_P1_P3,Section 7,Not every stripe or spatial pattern
+P2B-C07,Minimal RAF closure is a UMI for collective autocatalysis,PASS,T1_P1_P3,Section 8,RAF theory is established antecedent
+P2B-C08,Quorum-sensing competence currently has one unique minimal carrier,HOLD,A,Section 9,ABSTAIN under current evidence
+P2B-C09,Network motif occurrence alone establishes biological unity,REJECTED,LITERATURE_AND_COUNTEREXAMPLES,Section 10,Topology does not determine function
+P2B-C10,The biological mechanisms used as cases are novel discoveries,REJECTED,GENEALOGY,Section 12,Contribution is tribunal and comparative adjudication
+P2B-C11,The tribunal separates mechanism identity from phenotype resemblance,SUPPORTED,MATCHED_DECOYS,Sections 6-8,Within frozen strict signatures
+P2B-C12,All biological systems possess a unique UMI,NOT_CLAIMED,NONE,Section 12,Multiple carriers and abstention allowed
+P2B-C13,Empirical multifractality is demonstrated,HOLD,NONE,Section 12,Separate programme

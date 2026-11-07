@@ -1,0 +1,27 @@
+{
+  "title": "Minimal Invariant Relational Units in Synthetic and Systems Biology — Analysis Software",
+  "upload_type": "software",
+  "description": "Versioned exact checks, mechanistic analyses and figure-generation scripts supporting the biological UMI intervention tribunal.",
+  "creators": [
+    {"name": "Firmenich, Facundo"}
+  ],
+  "version": "0.1.0",
+  "publication_date": "2026-11-07",
+  "keywords": [
+    "systems biology",
+    "synthetic biology",
+    "gene circuits",
+    "causal intervention",
+    "robust perfect adaptation",
+    "kinetic proofreading",
+    "Turing patterns",
+    "autocatalytic sets"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/FacundoFirmenich/magimathics",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

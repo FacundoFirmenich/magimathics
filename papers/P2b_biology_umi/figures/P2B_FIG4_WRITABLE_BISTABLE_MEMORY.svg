@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="720" viewBox="0 0 1300 720">
+<rect width="1300" height="720" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.title{font-size:27px;font-weight:bold}.h{font-size:19px;font-weight:bold}.b{font-size:15px}.small{font-size:13px}.panel{fill:#fafafa;stroke:#222;stroke-width:1.5;rx:15}.node{fill:white;stroke:#222;stroke-width:2}.edge{stroke:#222;stroke-width:2.5;fill:none;marker-end:url(#a)}.pulse{stroke:#777;stroke-width:3;fill:none}.fail{fill:white;stroke:#777;stroke-width:1.4;rx:10}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#222"/></marker></defs>
+<text x="650" y="42" class="title" text-anchor="middle">Writable bistable memory requires regeneration, saturation and a write path</text>
+
+<rect x="45" y="85" width="380" height="535" class="panel"/>
+<text x="235" y="120" class="h" text-anchor="middle">Relational carrier</text>
+<circle cx="160" cy="260" r="48" class="node"/><circle cx="310" cy="260" r="48" class="node"/>
+<text x="160" y="267" class="h" text-anchor="middle">State A</text><text x="310" y="267" class="h" text-anchor="middle">State B</text>
+<path d="M206 243 Q235 215 264 243" class="edge"/><path d="M264 277 Q235 305 206 277" class="edge"/>
+<text x="235" y="350" class="b" text-anchor="middle">regenerative opposition</text>
+<path d="M90 430 L145 430 L160 385 L175 475 L190 430 L250 430" class="pulse"/>
+<text x="170" y="510" class="b" text-anchor="middle">SET pulse</text>
+<path d="M270 430 L325 430 L340 385 L355 475 L370 430" class="pulse"/>
+<text x="340" y="510" class="b" text-anchor="middle">RESET pulse</text>
+<text x="235" y="570" class="small" text-anchor="middle">write coupling crosses the separatrix;</text><text x="235" y="591" class="small" text-anchor="middle">feedback maintains the selected state</text>
+
+<rect x="455" y="85" width="390" height="535" class="panel"/>
+<text x="650" y="120" class="h" text-anchor="middle">Bounded double-well realization</text>
+<line x1="500" y1="500" x2="800" y2="500" stroke="#222"/><line x1="650" y1="180" x2="650" y2="545" stroke="#222"/>
+<path d="M510 250 C560 500 600 490 650 340 C700 490 740 500 790 250" fill="none" stroke="#222" stroke-width="3"/>
+<circle cx="565" cy="455" r="9" fill="#222"/><circle cx="735" cy="455" r="9" fill="#222"/><circle cx="650" cy="340" r="8" fill="white" stroke="#222" stroke-width="2"/>
+<text x="565" y="485" class="small" text-anchor="middle">stable low</text><text x="735" y="485" class="small" text-anchor="middle">stable high</text><text x="650" y="325" class="small" text-anchor="middle">unstable boundary</text>
+<text x="650" y="570" class="b" text-anchor="middle">regeneration creates alternatives;</text><text x="650" y="591" class="b" text-anchor="middle">nonlinearity bounds them</text>
+
+<rect x="875" y="85" width="380" height="535" class="panel"/>
+<text x="1065" y="120" class="h" text-anchor="middle">Critical-relation audit</text>
+<rect x="915" y="165" width="300" height="70" class="fail"/><text x="1065" y="195" class="h" text-anchor="middle">− regeneration</text><text x="1065" y="220" class="b" text-anchor="middle">single attracting state</text>
+<rect x="915" y="265" width="300" height="70" class="fail"/><text x="1065" y="295" class="h" text-anchor="middle">− saturation</text><text x="1065" y="320" class="b" text-anchor="middle">unbounded amplification</text>
+<rect x="915" y="365" width="300" height="70" class="fail"/><text x="1065" y="395" class="h" text-anchor="middle">− write coupling</text><text x="1065" y="420" class="b" text-anchor="middle">not controllably set/reset</text>
+<rect x="915" y="475" width="300" height="95" fill="#ededed" stroke="#111" stroke-width="2" rx="12"/><text x="1065" y="510" class="h" text-anchor="middle">Full carrier</text><text x="1065" y="540" class="b" text-anchor="middle">bounded · persistent · writable</text>
+
+<text x="650" y="675" class="h" text-anchor="middle">The biological unit is the closed relation class, not either repressor or either state alone.</text>
+</svg>
