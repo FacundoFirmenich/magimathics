@@ -1,0 +1,50 @@
+name: HGMF UMI14 materialize original wPF controls
+
+on:
+  pull_request:
+    branches:
+      - "Ulalito's-Island"
+  push:
+    branches:
+      - hgmf-umi14-materialize-20261107
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  materialize-original:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and verify original minor loops
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, urllib.request, urllib.parse
+          base = "https://raw.githubusercontent.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure/main/data/Minor%20loops/Minor%20loop%20wPF/"
+          names = [
+            "Minor_loops_PF2500mT_20250325_2005__10K.h5",
+            "Minor_loops_PF2500mT_20250325_2230__10K.h5",
+            "Minor_loops_PF2500mT_20250326_0034__10K.h5",
+            "Minor_loops_PF2500mT_20250326_0219__10K.h5",
+          ]
+          out=Path("materialized_original"); out.mkdir(exist_ok=True)
+          receipts=[]
+          for name in names:
+            url=base+urllib.parse.quote(name)
+            data=urllib.request.urlopen(url,timeout=120).read()
+            (out/name).write_bytes(data)
+            receipts.append({"file":name,"bytes":len(data),"git_blob_sha":hashlib.sha1(f"blob {len(data)}\0".encode()+data).hexdigest(),"sha256":hashlib.sha256(data).hexdigest()})
+          (out/"DOWNLOAD_RECEIPTS.json").write_text(json.dumps(receipts,indent=2)+"\n")
+          print(json.dumps(receipts,indent=2))
+          PY
+      - name: Upload original controls
+        uses: actions/upload-artifact@v4
+        with:
+          name: hgmf-umi14-original-wpf
+          path: materialized_original/
+          if-no-files-found: error
+          retention-days: 7

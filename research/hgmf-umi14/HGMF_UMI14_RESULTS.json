@@ -1,0 +1,34 @@
+{
+  "gate": "HGMF-UMI-14",
+  "verdict": "PASS_EXTERNAL_REPLICATION_PASS_HIDDEN_STATE_REQUIREMENT_FAIL_CONTROL_ONLY_SCALE_FAIL_EXTERNAL_HORIZON_CALIBRATION",
+  "magnetic": {
+    "training_effect_files": 8,
+    "original_control_files": 4,
+    "acquisition_metadata_match": true,
+    "matched_control_max_span_fold_difference": 1199.9531337005149,
+    "same_200mT_span_relative_difference": 0.00989178722073804,
+    "same_200mT_HEB_difference_mT": 46.94487135039295,
+    "control_only_scale_law": "FAIL",
+    "history_state_requirement": "PASS_UNMEASURED_STATE",
+    "causal_training_effect": "HOLD_FIELD_TIME_CONFOUNDED"
+  },
+  "external_nist": {
+    "training_runs": [5, 8, 9, 10],
+    "external_runs": [1, 2, 3, 4, 6, 7],
+    "tasks": 72,
+    "tasks_coverage_ge_0_90": 65,
+    "complete_suffix_tasks_coverage_ge_0_90": 15,
+    "complete_suffix_tasks": 18,
+    "minimum_task_coverage": 0.5,
+    "external_compression_coverage": "PASS_LIMITED",
+    "external_compression_sharpness": "FAIL"
+  },
+  "horizon_local": {
+    "coverage_improved_tasks": 0,
+    "coverage_worsened_tasks": 2,
+    "coverage_unchanged_tasks": 70,
+    "status": "FAIL_NO_SYSTEMATIC_ADVANTAGE"
+  },
+  "history_umi": "PASS_STABLE",
+  "next_gate": "HGMF-UMI-15 Orthogonal History-State Constitutive Law"
+}
