@@ -16,32 +16,43 @@
 MANUSCRIPT_V0_1              = COMPLETE
 EDITORIAL_SEPARATION         = FROZEN
 BIOLOGICAL_EVIDENCE_MATRIX   = COMPLETE_V0_1
+PRIMARY_EVIDENCE_LEDGER      = COMPLETE_25_RECORDS
 CLAIM_LEDGER                 = FROZEN_V0_1
-FIGURE_PLAN                  = COMPLETE
-LITERATURE_POSITIONING       = COMPLETE_V0_1
-PRIMARY_SOURCE_EXTRACTION    = OPEN
-FIGURES                      = OPEN
-ZENODO_RELEASE               = OPEN
+SOURCE_DEPENDENCY_MAP        = COMPLETE
+CITATION_CLAIM_MAP           = COMPLETE_V0_1
+BIBTEX_LIBRARY               = COMPLETE_V0_1
+PRODUCTION_GATE_01           = PASS
+LATEX_SOURCE_TREE            = INITIALIZED
+FIGURES                      = 3_OF_7_GENERATED
+ZENODO_METADATA              = COMPLETE_V0_1
+ISOLATED_COMPILE             = NEXT
 ```
 
 ## Central result
 
 A strict intervention tribunal distinguishes biological mechanism identity from topology and phenotype resemblance across six established mechanism classes, while abstaining when one minimal carrier cannot be isolated.
 
-## Files
+## Principal files
 
 - `MANUSCRIPT_V0_1.md` — complete first biological manuscript draft;
+- `PRODUCTION_GATE_01_PRIMARY_EVIDENCE_FREEZE.md` — closed production gate;
 - `COORDINATION_CONTRACT.md` — non-overlap with P2;
 - `BIOLOGICAL_EVIDENCE_MATRIX.csv` — case-by-case evidence architecture;
+- `PRIMARY_EVIDENCE_LEDGER.csv` — source-level intervention, outcome and limitation ledger;
 - `CLAIM_LEDGER.csv` — authorized and withheld claims;
+- `CITATION_CLAIM_MAP.csv` — claim-to-source mapping;
+- `references.bib` — verified bibliography v0.1;
 - `FIGURE_AND_TABLE_PLAN.md` — biological figure architecture;
-- `LITERATURE_POSITIONING.md` — novelty and state-of-the-art boundary.
+- `figures/` — generated vector figures;
+- `latex/` — reproducible LaTeX/bioRxiv build;
+- `CITATION.cff` and `zenodo_*_metadata.json` — release metadata.
 
-## Immediate next build
+## Next production gate
 
-1. extract primary experimental interventions into a line-level source ledger;
-2. generate repressilator, RPA and memory figures from frozen data;
-3. formalize the proofreading, Turing and RAF matched-decoy analyses;
-4. create one verified BibTeX library;
-5. produce bioRxiv LaTeX/source package;
-6. freeze software and biological evidence records for Zenodo.
+`P2B-PROD02 — Figure, Table and LaTeX Integration`
+
+1. generate Figures 1 and 4–7 plus Tables 1–4;
+2. insert evidence-ledger citations into manuscript v0.2;
+3. compile and inspect isolated bioRxiv source package;
+4. produce evidence supplement and citation-key audit;
+5. freeze Zenodo software and biological-evidence releases.
