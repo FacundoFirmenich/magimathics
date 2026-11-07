@@ -6,6 +6,10 @@ on:
       - paper-p2-cross-domain-umi-tribunal
   workflow_dispatch:
 
+concurrency:
+  group: p2-paper-build-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
