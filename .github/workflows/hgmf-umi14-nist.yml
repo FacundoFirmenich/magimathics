@@ -1,0 +1,48 @@
+name: HGMF UMI14 materialize NIST external run
+
+on:
+  pull_request:
+    branches:
+      - "Ulalito's-Island"
+  push:
+    branches:
+      - hgmf-umi14-materialize-20261107
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  materialize-nist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download NIST scanning isotherm source
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p materialized_nist
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request, hashlib, json
+          url = "https://raw.githubusercontent.com/NIST-ISODB/AJBrownThesisIsotherms/main/Scanning_Isotherms/xe_scanning_isotherms.csv"
+          dest = Path("materialized_nist/xe_scanning_isotherms.csv")
+          with urllib.request.urlopen(url, timeout=120) as r:
+              data = r.read()
+          dest.write_bytes(data)
+          receipt = {
+              "file": dest.name,
+              "bytes": len(data),
+              "sha256": hashlib.sha256(data).hexdigest(),
+              "source": url,
+          }
+          Path("materialized_nist/DOWNLOAD_RECEIPT.json").write_text(json.dumps(receipt, indent=2)+"\n")
+          print(json.dumps(receipt, indent=2))
+          PY
+      - name: Upload NIST source
+        uses: actions/upload-artifact@v4
+        with:
+          name: hgmf-umi14-nist
+          path: materialized_nist/
+          if-no-files-found: error
+          retention-days: 7
