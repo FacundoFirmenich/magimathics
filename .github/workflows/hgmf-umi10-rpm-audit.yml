@@ -1,0 +1,78 @@
+name: HGMF UMI10 RPM audit
+
+on:
+  push:
+    branches:
+      - hgmf-umi10-rpm-completion
+    paths:
+      - 'research/hgmf-umi10-rpm-completion/**'
+      - '.github/workflows/hgmf-umi10-rpm-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rpm-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout magimathics
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install audit dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn h5py matplotlib
+
+      - name: Fetch public source data
+        run: |
+          git clone --depth 1 https://github.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure.git external/EB-in-FGT_CrSBr
+          ls -lh "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF"
+
+      - name: Execute frozen magnetic audit
+        run: |
+          mkdir -p research/hgmf-umi10-rpm-completion/generated
+          python research/hgmf-umi10-rpm-completion/analyze_rpm.py \
+            --source-dir "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF" \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_STDOUT.json
+
+      - name: Build receipt and archive
+        run: |
+          cd research/hgmf-umi10-rpm-completion
+          find generated -type f -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
+          python - <<'PY'
+          from pathlib import Path
+          import json, hashlib, subprocess
+          root=Path('generated')
+          receipt={
+              'gate':'HGMF-UMI-10',
+              'branch':'hgmf-umi10-rpm-completion',
+              'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+              'files':[],
+          }
+          for p in sorted(root.iterdir()):
+              if p.is_file():
+                  receipt['files'].append({
+                      'name':p.name,
+                      'bytes':p.stat().st_size,
+                      'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
+                  })
+          (root/'HGMF_UMI10_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          PY
+          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py
+
+      - name: Upload complete audit bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_UMI10_RPM_AUDIT
+          path: research/hgmf-umi10-rpm-completion/HGMF_UMI10_RPM_AUDIT.zip
+          if-no-files-found: error
+          retention-days: 30
