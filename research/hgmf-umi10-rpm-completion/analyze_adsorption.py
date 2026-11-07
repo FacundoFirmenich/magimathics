@@ -74,11 +74,11 @@ def main():
     gaps.to_csv(args.out_dir/"HGMF_UMI10_ADSORPTION_BRANCH_GAPS.csv",index=False)
 
     best=summary.sort_values("mean").iloc[0].to_dict()
-    by={r.model:float(r.mean) for _,r in summary.iterrows()}
+    by={row["model"]:float(row["mean"]) for _,row in summary.iterrows()}
     result={
         "status":"PASS_HGMF_UMI10_ADSORPTION_TRIBUNAL_EXECUTED",
         "loops":len(loops),"points":sum(len(z.field_mT) for z in loops),
-        "reversal_counts":manifest["reversal_count"].value_counts().sort_index().to_dict(),
+        "reversal_counts":{str(k):int(v) for k,v in manifest["reversal_count"].value_counts().sort_index().items()},
         "return_pairs":int(len(returns)),
         "mean_return_error_norm":float(returns.return_error_norm.mean()) if len(returns) else None,
         "median_return_error_norm":float(returns.return_error_norm.median()) if len(returns) else None,
