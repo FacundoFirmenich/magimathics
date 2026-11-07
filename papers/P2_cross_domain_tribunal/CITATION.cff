@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the P2 preprint and the associated Zenodo software/data records."
+title: "Minimal Invariant Relational Units Across System Functions: A Cross-Domain Intervention Tribunal"
+type: software
+authors:
+  - family-names: "Firmenich"
+    given-names: "Facundo"
+version: 0.1.0
+date-released: 2026-11-07
+repository-code: "https://github.com/FacundoFirmenich/magimathics"
+url: "https://github.com/FacundoFirmenich/magimathics/tree/paper-p2-cross-domain-umi-tribunal/papers/P2_cross_domain_tribunal"
+keywords:
+  - general systems theory
+  - relational mechanism
+  - intervention
+  - minimality
+  - invariance
+  - dynamical systems

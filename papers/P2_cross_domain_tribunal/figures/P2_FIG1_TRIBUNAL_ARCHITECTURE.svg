@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720">
+<rect width="1400" height="720" fill="white"/>
+<style>
+text{font-family:Arial,sans-serif;fill:#111}.title{font-size:28px;font-weight:bold}.h{font-size:18px;font-weight:bold}.b{font-size:15px}.small{font-size:13px}.box{fill:#f7f7f7;stroke:#222;stroke-width:1.5;rx:14}.gate{fill:#ededed;stroke:#222;stroke-width:1.5;rx:12}.out{fill:#fff;stroke:#111;stroke-width:2;rx:14}.arrow{stroke:#222;stroke-width:2;fill:none;marker-end:url(#a)}.fail{stroke:#666;stroke-width:1.7;fill:none;stroke-dasharray:6 5;marker-end:url(#a)}
+</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#222"/></marker></defs>
+<text x="700" y="42" class="title" text-anchor="middle">Frozen intervention tribunal for minimal invariant relational units</text>
+
+<rect x="40" y="90" width="210" height="120" class="box"/>
+<text x="145" y="120" class="h" text-anchor="middle">1 · Freeze jurisdiction</text>
+<text x="145" y="150" class="b" text-anchor="middle">semantic signature</text><text x="145" y="173" class="b" text-anchor="middle">horizon · tolerance · costs</text><text x="145" y="196" class="b" text-anchor="middle">admissible transformations</text>
+
+<rect x="290" y="90" width="190" height="120" class="gate"/>
+<text x="385" y="120" class="h" text-anchor="middle">2 · Baseline</text>
+<text x="385" y="153" class="b" text-anchor="middle">full strict signature</text><text x="385" y="178" class="b" text-anchor="middle">is realized</text>
+
+<rect x="520" y="90" width="190" height="120" class="gate"/>
+<text x="615" y="120" class="h" text-anchor="middle">3 · Substitution</text>
+<text x="615" y="153" class="b" text-anchor="middle">components / labels</text><text x="615" y="178" class="b" text-anchor="middle">parameters / substrate</text>
+
+<rect x="750" y="90" width="190" height="120" class="gate"/>
+<text x="845" y="120" class="h" text-anchor="middle">4 · Destruction</text>
+<text x="845" y="150" class="b" text-anchor="middle">critical ablation</text><text x="845" y="175" class="b" text-anchor="middle">cardinality-preserving rewire</text><text x="845" y="198" class="small" text-anchor="middle">signature must fail</text>
+
+<rect x="980" y="90" width="190" height="120" class="gate"/>
+<text x="1075" y="120" class="h" text-anchor="middle">5 · Transport</text>
+<text x="1075" y="153" class="b" text-anchor="middle">new context or substrate</text><text x="1075" y="178" class="b" text-anchor="middle">declared equivalence level</text>
+
+<rect x="1210" y="90" width="150" height="120" class="gate"/>
+<text x="1285" y="120" class="h" text-anchor="middle">6 · Minimality</text>
+<text x="1285" y="153" class="b" text-anchor="middle">no proper carrier</text><text x="1285" y="178" class="b" text-anchor="middle">retains signature</text>
+
+<path d="M250 150 H290" class="arrow"/><path d="M480 150 H520" class="arrow"/><path d="M710 150 H750" class="arrow"/><path d="M940 150 H980" class="arrow"/><path d="M1170 150 H1210" class="arrow"/>
+
+<rect x="120" y="315" width="230" height="100" class="out"/>
+<text x="235" y="350" class="h" text-anchor="middle">NEGATIVE</text><text x="235" y="380" class="b" text-anchor="middle">observed hard failure</text>
+<rect x="440" y="315" width="230" height="100" class="out"/>
+<text x="555" y="350" class="h" text-anchor="middle">ABSTAIN</text><text x="555" y="378" class="b" text-anchor="middle">missing or causally</text><text x="555" y="399" class="b" text-anchor="middle">non-identifying evidence</text>
+<rect x="760" y="315" width="250" height="100" class="out"/>
+<text x="885" y="350" class="h" text-anchor="middle">CLASS-VALUED</text><text x="885" y="378" class="b" text-anchor="middle">multiple non-equivalent</text><text x="885" y="399" class="b" text-anchor="middle">minimal carriers</text>
+<rect x="1100" y="315" width="230" height="100" class="out"/>
+<text x="1215" y="350" class="h" text-anchor="middle">UMI POSITIVE</text><text x="1215" y="378" class="b" text-anchor="middle">closed · sufficient</text><text x="1215" y="399" class="b" text-anchor="middle">minimal · invariant</text>
+
+<path d="M385 210 C385 255 235 260 235 315" class="fail"/><path d="M615 210 C615 270 555 270 555 315" class="fail"/><path d="M845 210 C845 270 235 260 235 315" class="fail"/><path d="M1075 210 C1075 270 555 270 555 315" class="fail"/><path d="M1285 210 C1285 270 885 270 885 315" class="fail"/><path d="M1285 210 V270 C1285 290 1215 290 1215 315" class="arrow"/>
+
+<rect x="170" y="500" width="1060" height="145" class="box"/>
+<text x="700" y="533" class="h" text-anchor="middle">Conjunctive rule — no compensatory averaging</text>
+<text x="700" y="566" class="b" text-anchor="middle">More transport cannot compensate for failed baseline sufficiency; good baseline performance cannot compensate for a noncritical ablation;</text>
+<text x="700" y="590" class="b" text-anchor="middle">component similarity cannot compensate for rewiring sensitivity; incomplete evidence cannot be promoted by plausibility.</text>
+<text x="700" y="621" class="h" text-anchor="middle">Operational unity is earned by the full pattern of preservation and destruction tests.</text>
+</svg>

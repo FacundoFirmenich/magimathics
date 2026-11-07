@@ -1,0 +1,8 @@
+figure_id,file,source_path,transform,status
+P2-F1,figures/P2_FIG1_TRIBUNAL_ARCHITECTURE.svg,"papers/P2_cross_domain_tribunal/COORDINATION_CONTRACT.md; papers/P2_cross_domain_tribunal/MANUSCRIPT_V0_1.md","Conceptual diagram of the frozen conjunctive decision rule; no synthetic measurements",PASS_CONCEPTUAL
+P2-F2,figures/P2_FIG2_CROSS_DOMAIN_ATLAS.svg,papers/P2_cross_domain_tribunal/CASE_MATRIX.csv,"Direct categorical rendering of frozen functions signatures carriers evidence and classes",PASS
+P2-F3,figures/P2_FIG3_RELATION_FIRST_ASYMMETRY.svg,"research/umi-real01/; research/umi-real02/; research/umi-real03/","Conceptual synthesis of observed preservation/destruction asymmetry; no quantitative data invented",PASS_CONCEPTUAL
+P2-F4A,figures/P2_FIG4A_SIGNATURE_SENSITIVITY.svg,research/umi-real04/data/METRICS_BY_SIGNATURE.csv,"Direct plot of precision specificity and false-discovery rate for strict moderate and weak profiles",PASS
+P2-F4B,figures/P2_FIG4B_MISSING_EVIDENCE.svg,research/umi-real04/data/MISSING_EVIDENCE_ROBUSTNESS.csv,"Direct plot of coverage accuracy among adjudicated and false-positive rate under exact evidence masks",PASS
+P2-F5,figures/P2_FIG5_MECHANISM_DECOY_PAIRS.svg,"research/umi-real05/data/BLINDED_EVIDENCE.csv; research/umi-real05/LITERATURE.md","Categorical mechanism-decoy diagram preserving frozen semantic distinctions",PASS_CONCEPTUAL
+P2-F6,figures/P2_FIG6_REFINEMENT_ORDER.svg,"research/umi-real02/README.md; research/umi-real03/README.md","Conceptual partial-order diagram for homeostasis and RPA plus authorized outcome classes",PASS_CONCEPTUAL

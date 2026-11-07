@@ -1,0 +1,25 @@
+{
+  "title": "Minimal Invariant Relational Units Across System Functions — Tribunal Software and Verifiers",
+  "upload_type": "software",
+  "description": "Versioned software, exact verifiers and reproducible analysis scripts supporting the P2 cross-domain intervention tribunal for minimal invariant relational units.",
+  "creators": [
+    {"name": "Firmenich, Facundo"}
+  ],
+  "version": "0.1.0",
+  "publication_date": "2026-11-07",
+  "keywords": [
+    "general systems theory",
+    "relational mechanism",
+    "intervention tribunal",
+    "minimality",
+    "invariance",
+    "dynamical systems"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/FacundoFirmenich/magimathics",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Cross-Domain UMI Tribunal — Frozen Case, Benchmark and Claim Data",
+  "upload_type": "dataset",
+  "description": "Frozen case matrices, intervention results, blinded benchmark packets, predictions, reveals, claim ledgers and provenance records supporting the P2 manuscript.",
+  "creators": [
+    {"name": "Firmenich, Facundo"}
+  ],
+  "version": "0.1.0",
+  "publication_date": "2026-11-07",
+  "keywords": [
+    "systems science",
+    "relational units",
+    "causal intervention",
+    "blind benchmark",
+    "abstention",
+    "cross-domain mechanisms"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/FacundoFirmenich/magimathics",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}
