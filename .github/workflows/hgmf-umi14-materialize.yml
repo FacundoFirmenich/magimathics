@@ -1,0 +1,95 @@
+name: HGMF UMI14 materialize replication assets
+
+on:
+  push:
+    branches:
+      - hgmf-umi14-materialize-20261107
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download and verify public HDF5 assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, urllib.request
+
+          owner_repo = "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure"
+          base = "https://raw.githubusercontent.com/" + owner_repo + "/main/data/Minor%20loops/Minor%20loop%20w%20training%20effect/"
+          files = [
+              ("Zero_EB_minor_loops_0_20250330_0000__10K.h5", 1770760, "e06e3a9a129af05200e7d7809dca5c1ccc37cbd9"),
+              ("Zero_EB_minor_loops_20250328_1400__10K.h5", 1762568, "d93573a1ea50bda000ab3e60b798a1d48013e984"),
+              ("Zero_EB_minor_loops_20250328_1632__10K.h5", 1547128, "57bfd940ef363017e005afb2bef2fb3162098f6d"),
+              ("Zero_EB_minor_loops_20250328_1845__10K.h5", 1331688, "83e511f9641ae089518ddcc3c485503317be083a"),
+              ("Zero_EB_minor_loops_20250328_2039__10K.h5", 1167848, "004ba0446d8d5daeb79681b90d3e76672bc8a57c"),
+              ("Zero_EB_minor_loops_20250328_2214__10K.h5", 952408, "8ca19eae1089004924f866086bc72faafc9aaed5"),
+              ("Zero_EB_minor_loops_20250328_2330__10K.h5", 736968, "77c8efa651f912a51312f8f9eaab279c57c6aca1"),
+              ("Zero_EB_minor_loops_20250329_0028__10K.h5", 521528, "4c172694d4fab22f7e28a02c7daf897f7d81fe53"),
+          ]
+          out = Path("materialized")
+          out.mkdir(exist_ok=True)
+          receipts=[]
+          for name, expected_size, expected_blob in files:
+              url = base + urllib.parse.quote(name)
+              dest = out / name
+              with urllib.request.urlopen(url, timeout=120) as r, dest.open("wb") as f:
+                  f.write(r.read())
+              data = dest.read_bytes()
+              blob = hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
+              sha256 = hashlib.sha256(data).hexdigest()
+              if len(data) != expected_size:
+                  raise SystemExit(f"size mismatch {name}: {len(data)} != {expected_size}")
+              if blob != expected_blob:
+                  raise SystemExit(f"git blob mismatch {name}: {blob} != {expected_blob}")
+              receipts.append({"file":name,"bytes":len(data),"git_blob_sha":blob,"sha256":sha256})
+          (out / "DOWNLOAD_RECEIPTS.json").write_text(json.dumps(receipts, indent=2)+"\n")
+          print(json.dumps(receipts, indent=2))
+          PY
+
+      - name: Inventory HDF5 structure
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet h5py pandas numpy
+          python - <<'PY'
+          from pathlib import Path
+          import json, csv, h5py
+          rows=[]
+          for path in sorted(Path("materialized").glob("*.h5")):
+              with h5py.File(path,"r") as h:
+                  def visit(name,obj):
+                      if isinstance(obj,h5py.Dataset):
+                          rows.append({
+                              "file":path.name,
+                              "dataset":name,
+                              "shape":list(obj.shape),
+                              "dtype":str(obj.dtype),
+                              "size":int(obj.size),
+                          })
+                  h.visititems(visit)
+          Path("materialized/HDF5_INVENTORY.json").write_text(json.dumps(rows,indent=2)+"\n")
+          with open("materialized/HDF5_INVENTORY.csv","w",newline="") as f:
+              w=csv.DictWriter(f,fieldnames=["file","dataset","shape","dtype","size"])
+              w.writeheader()
+              for r in rows:
+                  rr=dict(r); rr["shape"]=json.dumps(rr["shape"])
+                  w.writerow(rr)
+          print(f"datasets={len(rows)}")
+          PY
+
+      - name: Upload materialized replication assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: hgmf-umi14-hdf5
+          path: materialized/
+          if-no-files-found: error
+          retention-days: 7
