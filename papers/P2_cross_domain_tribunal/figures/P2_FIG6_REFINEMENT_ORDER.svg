@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="650" viewBox="0 0 1050 650">
+<rect width="1050" height="650" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.title{font-size:27px;font-weight:bold}.h{font-size:18px;font-weight:bold}.b{font-size:14px}.node{fill:#fafafa;stroke:#222;stroke-width:1.7;rx:16}.strong{fill:#e9e9e9;stroke:#111;stroke-width:2;rx:16}.arrow{stroke:#222;stroke-width:2.2;fill:none;marker-end:url(#a)}.dash{stroke:#777;stroke-width:1.6;stroke-dasharray:7 6;fill:none;marker-end:url(#a2)}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#222"/></marker><marker id="a2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#777"/></marker></defs>
+<text x="525" y="42" class="title" text-anchor="middle">UMI classes can form refinement orders rather than a flat catalogue</text>
+
+<rect x="350" y="95" width="350" height="105" class="node"/>
+<text x="525" y="130" class="h" text-anchor="middle">Negative-feedback homeostasis</text>
+<text x="525" y="160" class="b" text-anchor="middle">stable attenuation of persistent disturbances</text>
+<text x="525" y="183" class="b" text-anchor="middle">sensor + negative comparison + corrective actuation</text>
+
+<rect x="350" y="285" width="350" height="120" class="strong"/>
+<text x="525" y="322" class="h" text-anchor="middle">Robust perfect adaptation</text>
+<text x="525" y="352" class="b" text-anchor="middle">zero steady-state error for the declared signal class</text>
+<text x="525" y="377" class="b" text-anchor="middle">homeostatic loop + internal model / persistent integration</text>
+
+<path d="M525 200 V285" class="arrow"/>
+<text x="545" y="248" class="b">stronger signature + stronger carrier constraint</text>
+
+<rect x="70" y="475" width="270" height="100" class="node"/>
+<text x="205" y="510" class="h" text-anchor="middle">Equivalent realizations</text>
+<text x="205" y="540" class="b" text-anchor="middle">different substrate, same class</text>
+<rect x="390" y="475" width="270" height="100" class="node"/>
+<text x="525" y="510" class="h" text-anchor="middle">Incomparable classes</text>
+<text x="525" y="540" class="b" text-anchor="middle">distinct signatures / no order</text>
+<rect x="710" y="475" width="270" height="100" class="node"/>
+<text x="845" y="510" class="h" text-anchor="middle">Class-valued result</text>
+<text x="845" y="540" class="b" text-anchor="middle">several minimal carriers remain</text>
+
+<path d="M410 405 Q315 430 205 475" class="dash"/><path d="M525 405 V475" class="dash"/><path d="M640 405 Q735 430 845 475" class="dash"/>
+
+<text x="525" y="625" class="b" text-anchor="middle">The order is defined by semantic strengthening and carrier inclusion under a fixed jurisdiction—not by component count alone.</text>
+</svg>
