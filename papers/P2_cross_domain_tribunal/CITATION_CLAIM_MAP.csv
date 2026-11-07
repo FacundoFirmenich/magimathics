@@ -1,0 +1,19 @@
+map_id,section,claim_id,claim_summary,bibtex_keys,repository_evidence,status
+P2M-001,Introduction,P2-C01,Relational building blocks and motif antecedent,"Milo2002,Prill2005,Ingram2006,Aduddell2024",docs/03_ESTADO_DEL_ARTE_Y_FRONTERA.md,VERIFIED_V0_1
+P2M-002,Framework,P2-C01,UMI is task and intervention relative,"VanDerSchaft2004,Haghverdi2005,Silverman1971",docs/02_FORMULARIO_CANONICO.md,VERIFIED_V0_1
+P2M-003,Oscillation,P2-C03,Cyclic repression carrier passes tribunal,ElowitzLeibler2000,research/umi-real01/,VERIFIED_V0_1
+P2M-004,RPA,P2-C03,Internal-model closure passes tribunal,"Yi2000,AraujoLiotta2018,Bhattacharya2022",research/umi-real02/,VERIFIED_V0_1
+P2M-005,Error correction,P2-C03,Unique syndrome partition passes tribunal,Hamming1950,research/umi-real03/,VERIFIED_V0_1
+P2M-006,Memory,P2-C03,Regenerative bounded writeable closure passes tribunal,Gardner2000,research/umi-real03/,VERIFIED_V0_1
+P2M-007,Consensus,P2-C03,Quorum intersection plus persistent vote protects safety,Lamport2001,research/umi-real03/,VERIFIED_V0_1
+P2M-008,Proofreading,P2-C03,Driven reject-reset carrier exceeds equilibrium discrimination,Hopfield1974,research/umi-real05/,VERIFIED_V0_1
+P2M-009,Turing,P2-C03,Finite-wavenumber instability is distinct from instructed stripe,Karig2018,research/umi-real05/,VERIFIED_V0_1
+P2M-010,Topological transport,P2-C03,Bulk-gap-boundary relation transports edge mode,Rechtsman2013,research/umi-real05/,VERIFIED_V0_1
+P2M-011,Autocatalysis,P2-C03,Minimal autocatalytic closure passes tribunal,Lee1997,research/umi-real05/,VERIFIED_V0_1
+P2M-012,Nested classes,P2-C04,Homeostasis is a parent class of strict RPA,"Yi2000,AraujoLiotta2018",research/umi-real02/;research/umi-real03/,VERIFIED_V0_1
+P2M-013,Designed benchmark,P2-C05,Strict signatures separate five carriers and five decoys,,research/umi-real04/data/,INTERNAL_EXACT
+P2M-014,Semantic sensitivity,P2-C06,Weak signatures increase false positives,,research/umi-real04/data/METRICS_BY_SIGNATURE.csv,INTERNAL_EXACT
+P2M-015,Naturalistic benchmark,P2-C07,Five mechanism-decoy pairs separated and two hybrids abstained,,research/umi-real05/data/,INTERNAL_EVIDENCE_BLIND
+P2M-016,Comparator discussion,P2-C08,Network motif is not synonymous with UMI,"Milo2002,Ingram2006,Prill2005",papers/P2_cross_domain_tribunal/LITERATURE_POSITIONING.md,VERIFIED_V0_1
+P2M-017,Comparator discussion,P2-C09,Bisimulation is stronger and differently scoped,"VanDerSchaft2004,Haghverdi2005",papers/P2_cross_domain_tribunal/LITERATURE_POSITIONING.md,VERIFIED_V0_1
+P2M-018,Comparator discussion,P2-C10,Organisational closure is a biological specialization,MontevilMossio2015,papers/P2_cross_domain_tribunal/LITERATURE_POSITIONING.md,VERIFIED_V0_1
