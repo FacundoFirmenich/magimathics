@@ -1,4 +1,9 @@
 figure_id,file,source_path,transform,status
+P2B-F1,figures/P2B_FIG1_FROM_MOTIF_TO_UMI.svg,"papers/P2b_biology_umi/MANUSCRIPT_V0_1.md; papers/P2b_biology_umi/BIOLOGICAL_EVIDENCE_MATRIX.csv","Conceptual qualification-layer diagram; no synthetic measurements",PASS_CONCEPTUAL
 P2B-F2A,figures/P2B_FIG2A_REPRESSILATOR_INTERVENTIONS.svg,research/umi-real01/data/intervention_results.csv,"Relative-amplitude bar plot on logarithmic scale with baseline normalized to one",PASS
 P2B-F2B,figures/P2B_FIG2B_REPRESSILATOR_PHASE.svg,research/umi-real01/data/substitution_and_phase.csv,"Direct plot of three measured phase-lag fractions against the one-third reference",PASS
 P2B-F3,figures/P2B_FIG3_RPA_MINIMALITY.svg,research/umi-real02/data/minimality_audit.csv,"Direct plot of adaptation-error ratio for all eight sensor-integrator-actuator relation subsets",PASS
+P2B-F4,figures/P2B_FIG4_WRITABLE_BISTABLE_MEMORY.svg,"papers/P2b_biology_umi/PRIMARY_EVIDENCE_LEDGER.csv; research/umi-real03/data/candidate_matrix.csv","Conceptual carrier and exact double-well stability diagram; no fabricated empirical values",PASS_CONCEPTUAL
+P2B-F5,figures/P2B_FIG5_MECHANISM_VS_PHENOTYPE.svg,"papers/P2b_biology_umi/PRIMARY_EVIDENCE_LEDGER.csv; research/umi-real05/data/BLINDED_EVIDENCE.csv","Mechanism-decoy diagram for proofreading/equilibrium and Turing/instructed stripe",PASS_CONCEPTUAL
+P2B-F6,figures/P2B_FIG6_CLOSURE_AND_ABSTENTION.svg,"papers/P2b_biology_umi/PRIMARY_EVIDENCE_LEDGER.csv; research/umi-real05/data/RESULTS.json","Conceptual RAF closure and quorum-competence abstention diagram",PASS_CONCEPTUAL
+P2B-F7,figures/P2B_FIG7_BIOLOGICAL_CARRIER_ATLAS.svg,papers/P2b_biology_umi/BIOLOGICAL_EVIDENCE_MATRIX.csv,"Direct categorical rendering of frozen biological cases and evidence boundary",PASS
