@@ -41,10 +41,11 @@ jobs:
           git clone --depth 1 https://github.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure.git external/EB-in-FGT_CrSBr
           ls -lh "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF"
 
-      - name: Execute frozen magnetic audit
+      - name: Execute corrected magnetic audit
         run: |
+          rm -rf research/hgmf-umi10-rpm-completion/generated
           mkdir -p research/hgmf-umi10-rpm-completion/generated
-          python research/hgmf-umi10-rpm-completion/analyze_rpm.py \
+          python research/hgmf-umi10-rpm-completion/analyze_rpm_v2.py \
             --source-dir "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF" \
             --out-dir research/hgmf-umi10-rpm-completion/generated \
             | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_STDOUT.json
@@ -52,7 +53,7 @@ jobs:
       - name: Build receipt and archive
         run: |
           cd research/hgmf-umi10-rpm-completion
-          find generated -type f -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
+          find generated -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
           python - <<'PY'
           from pathlib import Path
           import json, hashlib, subprocess
@@ -72,7 +73,7 @@ jobs:
                   })
           (root/'HGMF_UMI10_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
           PY
-          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py
+          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py analyze_rpm_v2.py
 
       - name: Upload complete audit bundle
         uses: actions/upload-artifact@v4
