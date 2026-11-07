@@ -1,0 +1,110 @@
+name: HGMF UMI10 RPM audit
+
+on:
+  push:
+    branches:
+      - hgmf-umi10-rpm-completion
+    paths:
+      - 'research/hgmf-umi10-rpm-completion/**'
+      - '.github/workflows/hgmf-umi10-rpm-audit.yml'
+  pull_request:
+    branches:
+      - hgmf-umi01-09-canonical-recovery
+    paths:
+      - 'research/hgmf-umi10-rpm-completion/**'
+      - '.github/workflows/hgmf-umi10-rpm-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  rpm-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout magimathics
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install audit dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn h5py matplotlib
+
+      - name: Fetch public source data
+        run: |
+          git clone --depth 1 https://github.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure.git external/EB-in-FGT_CrSBr
+          git clone --depth 1 https://github.com/NIST-ISODB/AJBrownThesisIsotherms.git external/AJBrownThesisIsotherms
+          ls -lh "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF"
+          ls -lh "external/AJBrownThesisIsotherms/Scanning_Isotherms/xe_scanning_isotherms.csv"
+
+      - name: Execute corrected magnetic audit
+        run: |
+          rm -rf research/hgmf-umi10-rpm-completion/generated
+          mkdir -p research/hgmf-umi10-rpm-completion/generated
+          python research/hgmf-umi10-rpm-completion/analyze_rpm_v2.py \
+            --source-dir "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF" \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_MAGNETIC_STDOUT.json
+
+      - name: Execute magnetic uncertainty audit
+        run: |
+          python research/hgmf-umi10-rpm-completion/audit_magnetic_uncertainty.py \
+            --source-dir "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF" \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_MAGNETIC_UNCERTAINTY_STDOUT.json
+
+      - name: Execute identical adsorption tribunal
+        run: |
+          python research/hgmf-umi10-rpm-completion/analyze_adsorption.py \
+            --csv "external/AJBrownThesisIsotherms/Scanning_Isotherms/xe_scanning_isotherms.csv" \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_ADSORPTION_STDOUT.json
+
+      - name: Synthesize cross-domain adjudication
+        run: |
+          python research/hgmf-umi10-rpm-completion/synthesize_cross_domain.py \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_CROSS_DOMAIN_STDOUT.json
+
+      - name: Build receipt and archive
+        run: |
+          cd research/hgmf-umi10-rpm-completion
+          find generated -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
+          python - <<'PY'
+          from pathlib import Path
+          import json, hashlib, subprocess
+          root=Path('generated')
+          receipt={
+              'gate':'HGMF-UMI-10',
+              'branch':'hgmf-umi10-rpm-completion',
+              'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+              'files':[],
+          }
+          for p in sorted(root.iterdir()):
+              if p.is_file():
+                  receipt['files'].append({
+                      'name':p.name,
+                      'bytes':p.stat().st_size,
+                      'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
+                  })
+          (root/'HGMF_UMI10_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          PY
+          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py analyze_rpm_v2.py analyze_adsorption.py synthesize_cross_domain.py audit_magnetic_uncertainty.py
+
+      - name: Upload complete audit bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_UMI10_RPM_AUDIT
+          path: research/hgmf-umi10-rpm-completion/HGMF_UMI10_RPM_AUDIT.zip
+          if-no-files-found: error
+          retention-days: 30
