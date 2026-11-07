@@ -13,34 +13,45 @@
 ## Current status
 
 ```text
-MANUSCRIPT_V0_1          = COMPLETE
-EDITORIAL_SEPARATION     = FROZEN
-CLAIM_LEDGER             = FROZEN_V0_1
-CASE_MATRIX              = COMPLETE
-FIGURE_PLAN              = COMPLETE
-LITERATURE_POSITIONING   = COMPLETE_V0_1
-FINAL_PRIORITY_AUDIT     = OPEN
-FIGURES                  = OPEN
-ZENODO_RELEASE           = OPEN
+MANUSCRIPT_V0_1            = COMPLETE
+EDITORIAL_SEPARATION       = FROZEN
+CLAIM_LEDGER               = FROZEN_V0_1
+CASE_MATRIX                = COMPLETE
+SOURCE_DEPENDENCY_MAP      = COMPLETE
+CITATION_CLAIM_MAP         = COMPLETE_V0_1
+BIBTEX_LIBRARY             = COMPLETE_V0_1
+PRODUCTION_GATE_01         = PASS
+LATEX_SOURCE_TREE          = INITIALIZED
+FIGURES                    = 2_OF_6_GENERATED
+ZENODO_METADATA            = COMPLETE_V0_1
+ISOLATED_COMPILE           = NEXT
+FINAL_PRIORITY_AUDIT       = OPEN
 ```
 
 ## Central result
 
 A single frozen tribunal—semantic-signature specification, substitution, relational rewiring, critical ablation, cross-substrate transport and jurisdictional minimality—identifies relational carriers across heterogeneous system functions and detects decoys, nested classes and causally unresolved cases.
 
-## Files
+## Principal files
 
 - `MANUSCRIPT_V0_1.md` — complete first manuscript draft;
+- `PRODUCTION_GATE_01_EVIDENCE_AND_CITATION_FREEZE.md` — closed production gate;
 - `COORDINATION_CONTRACT.md` — non-overlap with P2b;
 - `CASE_MATRIX.csv` — case ownership and evidence map;
 - `CLAIM_LEDGER.csv` — authorized and withheld claims;
+- `CITATION_CLAIM_MAP.csv` — claim-to-source mapping;
+- `references.bib` — verified bibliography v0.1;
 - `FIGURE_AND_TABLE_PLAN.md` — publication graphics architecture;
-- `LITERATURE_POSITIONING.md` — novelty and comparator audit.
+- `figures/` — generated vector figures;
+- `latex/` — reproducible LaTeX/arXiv build;
+- `CITATION.cff` and `zenodo_*_metadata.json` — release metadata.
 
-## Immediate next build
+## Next production gate
 
-1. generate Figures 1–6 from the frozen case data;
-2. convert references to one verified BibTeX library;
-3. integrate exact methods and source manifests from REAL‑01 through REAL‑05;
-4. produce LaTeX and arXiv source tree;
-5. freeze software/data releases for Zenodo.
+`P2-PROD02 — Figure, Table and LaTeX Integration`
+
+1. generate Figures 1–3 and 5–6 plus Tables 1–4;
+2. insert verified citations into manuscript v0.2;
+3. run isolated LaTeX build and citation-key audit;
+4. build and inspect arXiv source archive;
+5. freeze Zenodo software and dataset releases.
