@@ -1,0 +1,23 @@
+{
+  "gate": "HGMF-UMI-15",
+  "verdict": "PASS_PARTIAL_VECTOR_HISTORY_LAW_HOLD_FULL_CONSTITUTIVE_LAW",
+  "observable_contrast_rank": 4,
+  "contrast_singular_values": [44.251888561617754, 5.575915798942989, 1.8961703515020296, 0.18704929956959906],
+  "fresh_outside_trained_components": 4,
+  "fresh_outside_trained_total": 5,
+  "cycle5_components_covered": 3,
+  "cycle5_components_total": 5,
+  "preset_sign_cases_passed": 5,
+  "preset_sign_cases_total": 5,
+  "gate_adjudication": {
+    "A_crossed_protocol": "PARTIAL_PASS",
+    "B_vector_state": "PASS_OBSERVABLE_RANK_4_PLUS_GATES",
+    "C_causal_update": "PASS_FRESH_TO_TRAINED_DISCRETE_HOLD_CONTINUOUS",
+    "D_future_prediction": "PASS_FAST_COMPONENT_SET_FAIL_FULL_VECTOR",
+    "E_reset": "PASS_SIGN_RESET_HOLD_REPEATABILITY",
+    "F_anti_aggregation": "PASS",
+    "G_external_sharpness": "PASS_SIGN_FAIL_MAGNITUDE",
+    "H_history_UMI": "PASS"
+  },
+  "next_gate": "HGMF-UMI-16 Counterbalanced Reset x Field x Cycle"
+}

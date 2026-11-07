@@ -1,0 +1,101 @@
+name: HGMF UMI15 materialize crossed magnetic protocols
+
+on:
+  push:
+    branches:
+      - hgmf-umi15-orthogonal-20261107
+  pull_request:
+    branches:
+      - "Ulalito's-Island"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download and verify public crossed-protocol HDF5 assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, urllib.request, urllib.parse
+
+          repo = "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure"
+          files = [
+            ("data/Training effect/01_FC2500mT_20250319_2120__10K.h5",1770760,"c8b648c0bd19325e41a872be66f157bd0706d82c"),
+            ("data/Training effect/02_FC2500mT_20250319_2358__10K.h5",1762568,"81cc8250266ed2e8fbcffedf99a7781eff9040dd"),
+            ("data/Training effect/03_FC2500mT_20250320_0231__10K.h5",1762568,"088d2bd3afbe1ca51cca1da0c306aba35972c3e0"),
+            ("data/Training effect/04_FC2500mT_20250320_0504__10K.h5",1762568,"89b7487ba2920dc27407f0b78f351e503dfc71bf"),
+            ("data/Training effect/05_FC2500mT_20250320_0738__10K.h5",1762568,"112715ded725e13457457fedc8f56527b885b10e"),
+            ("data/10 K EB plot/PF2500mT__20250307_2037__8K.h5",1770760,"13bd3ee2694c569348f41dfd509d2c71827d2ba2"),
+            ("data/10 K EB plot/PFM2500mT__20250311_1504__8K.h5",952408,"deb8e1ca2793f642c644c4da34f8aac124b541a6"),
+            ("data/Sample06042025/ZFC/Extra data/ZFC_PF_2500mT_20250407_1313__10K.h5",1770760,"ad3656a83ddf08437fb8c919459cd41df61c9c60"),
+            ("data/Sample06042025/ZFC/ZFC_PF_2500mT_20250407_1858__10K.h5",1770760,"5410d1729967774c68c56b468de77387fcc936fd"),
+            ("data/Sample06042025/ZFC/ZFC_PF_M2500mT_20250407_1549__10K.h5",1770760,"0ee5a7b30ca4d11a3b1307363c212b4794e90746"),
+            ("data/Sample06042025/ZFC/ZFC__20250407_0330__10K.h5",1233384,"6c3ed2423cfc86a38be8f3a4cc87c9a303967a80"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0010__10K.h5",1026136,"10c8ee6d1b203a4c3a326d1425cb808d3038a569"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0148__10K.h5",948312,"0e578f00a4ed081e26b143a985acda807767e1c5"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0314__10K.h5",814792,"ce87c28a4d31ed78edd942b793d780e1cf922f73"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0430__10K.h5",732872,"1cbf3a581054590d8c948434c9db50427ab9aaff"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0535__10K.h5",650952,"cef59c0f2728bf8111ee4550cbf833da0a31e8f4"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0630__10K.h5",517432,"b4594452a2999f6dda96ffaeadc5ca9d72fcf7b2"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0713__10K.h5",435512,"1f40f84d05f1ddc95bfa5e6e64be3acb9ad2197f"),
+            ("data/Sample06042025/Zero EB minor loops/Minor_loop_20250408_0746__10K.h5",301992,"9cc0f96779aee4d2daae28cfb91cfe8d54597690"),
+          ]
+          out = Path("materialized")
+          out.mkdir(exist_ok=True)
+          receipts=[]
+          for path, expected_size, expected_blob in files:
+              url = "https://raw.githubusercontent.com/" + repo + "/main/" + urllib.parse.quote(path, safe="/")
+              dest = out / path.replace("/","__")
+              with urllib.request.urlopen(url, timeout=180) as r:
+                  data = r.read()
+              dest.write_bytes(data)
+              blob = hashlib.sha1(f"blob {len(data)}\0".encode()+data).hexdigest()
+              sha256 = hashlib.sha256(data).hexdigest()
+              if len(data) != expected_size:
+                  raise SystemExit(f"size mismatch {path}: {len(data)} != {expected_size}")
+              if blob != expected_blob:
+                  raise SystemExit(f"blob mismatch {path}: {blob} != {expected_blob}")
+              receipts.append({"source_path":path,"local_file":dest.name,"bytes":len(data),"git_blob_sha":blob,"sha256":sha256})
+          (out/"DOWNLOAD_RECEIPTS.json").write_text(json.dumps(receipts,indent=2)+"\n")
+          print(json.dumps(receipts,indent=2))
+          PY
+
+      - name: Inventory HDF5 datasets and metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --quiet h5py pandas numpy
+          python - <<'PY'
+          from pathlib import Path
+          import json, csv, h5py
+          rows=[]
+          for path in sorted(Path("materialized").glob("*.h5")):
+              with h5py.File(path,"r") as h:
+                  def visit(name,obj):
+                      if isinstance(obj,h5py.Dataset):
+                          rows.append({"file":path.name,"dataset":name,"shape":list(obj.shape),"dtype":str(obj.dtype),"size":int(obj.size)})
+                  h.visititems(visit)
+          (Path("materialized")/"HDF5_INVENTORY.json").write_text(json.dumps(rows,indent=2)+"\n")
+          with (Path("materialized")/"HDF5_INVENTORY.csv").open("w",newline="") as f:
+              w=csv.DictWriter(f,fieldnames=["file","dataset","shape","dtype","size"])
+              w.writeheader()
+              for r in rows:
+                  q=dict(r); q["shape"]=json.dumps(q["shape"]); w.writerow(q)
+          print(f"datasets={len(rows)} files={len(list(Path('materialized').glob('*.h5')))}")
+          PY
+
+      - name: Upload crossed-protocol assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: hgmf-umi15-crossed-magnetic
+          path: materialized/
+          if-no-files-found: error
+          retention-days: 7
