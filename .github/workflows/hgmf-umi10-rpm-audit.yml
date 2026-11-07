@@ -39,7 +39,9 @@ jobs:
       - name: Fetch public source data
         run: |
           git clone --depth 1 https://github.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure.git external/EB-in-FGT_CrSBr
+          git clone --depth 1 https://github.com/NIST-ISODB/AJBrownThesisIsotherms.git external/AJBrownThesisIsotherms
           ls -lh "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF"
+          ls -lh "external/AJBrownThesisIsotherms/Scanning_Isotherms/xe_scanning_isotherms.csv"
 
       - name: Execute corrected magnetic audit
         run: |
@@ -48,7 +50,20 @@ jobs:
           python research/hgmf-umi10-rpm-completion/analyze_rpm_v2.py \
             --source-dir "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF" \
             --out-dir research/hgmf-umi10-rpm-completion/generated \
-            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_STDOUT.json
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_MAGNETIC_STDOUT.json
+
+      - name: Execute identical adsorption tribunal
+        run: |
+          python research/hgmf-umi10-rpm-completion/analyze_adsorption.py \
+            --csv "external/AJBrownThesisIsotherms/Scanning_Isotherms/xe_scanning_isotherms.csv" \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_ADSORPTION_STDOUT.json
+
+      - name: Synthesize cross-domain adjudication
+        run: |
+          python research/hgmf-umi10-rpm-completion/synthesize_cross_domain.py \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_CROSS_DOMAIN_STDOUT.json
 
       - name: Build receipt and archive
         run: |
@@ -73,7 +88,7 @@ jobs:
                   })
           (root/'HGMF_UMI10_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
           PY
-          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py analyze_rpm_v2.py
+          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py analyze_rpm_v2.py analyze_adsorption.py synthesize_cross_domain.py
 
       - name: Upload complete audit bundle
         uses: actions/upload-artifact@v4
