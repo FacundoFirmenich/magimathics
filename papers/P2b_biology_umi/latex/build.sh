@@ -10,6 +10,7 @@ pandoc "$PAPER_ROOT/MANUSCRIPT_V0_1.md" \
   --to=latex \
   --wrap=preserve \
   --natbib \
+  --no-highlight \
   --top-level-division=section \
   --output=body.tex
 
