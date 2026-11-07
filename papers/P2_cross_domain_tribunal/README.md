@@ -21,10 +21,15 @@ SOURCE_DEPENDENCY_MAP      = COMPLETE
 CITATION_CLAIM_MAP         = COMPLETE_V0_1
 BIBTEX_LIBRARY             = COMPLETE_V0_1
 PRODUCTION_GATE_01         = PASS
-LATEX_SOURCE_TREE          = INITIALIZED
-FIGURES                    = 2_OF_6_GENERATED
+PRODUCTION_GATE_02         = PASS
+LATEX_SOURCE_TREE          = PASS
+FIGURES                    = COMPLETE_6_OF_6
+TABLES                     = COMPLETE_4_OF_4
+FIGURE_PROVENANCE          = PASS
+CLEAN_BUILD                = PASS
+ARXIV_SOURCE_PACKAGE       = PASS
 ZENODO_METADATA            = COMPLETE_V0_1
-ISOLATED_COMPILE           = NEXT
+MANUSCRIPT_V0_2_CITATIONS  = NEXT
 FINAL_PRIORITY_AUDIT       = OPEN
 ```
 
@@ -35,23 +40,25 @@ A single frozen tribunal—semantic-signature specification, substitution, relat
 ## Principal files
 
 - `MANUSCRIPT_V0_1.md` — complete first manuscript draft;
-- `PRODUCTION_GATE_01_EVIDENCE_AND_CITATION_FREEZE.md` — closed production gate;
+- `PRODUCTION_GATE_01_EVIDENCE_AND_CITATION_FREEZE.md` — evidence/citation freeze;
+- `PRODUCTION_GATE_02_FIGURES_TABLES_BUILD.md` — clean build and package receipt;
 - `COORDINATION_CONTRACT.md` — non-overlap with P2b;
 - `CASE_MATRIX.csv` — case ownership and evidence map;
 - `CLAIM_LEDGER.csv` — authorized and withheld claims;
 - `CITATION_CLAIM_MAP.csv` — claim-to-source mapping;
 - `references.bib` — verified bibliography v0.1;
-- `FIGURE_AND_TABLE_PLAN.md` — publication graphics architecture;
-- `figures/` — generated vector figures;
-- `latex/` — reproducible LaTeX/arXiv build;
-- `CITATION.cff` and `zenodo_*_metadata.json` — release metadata.
+- `FIGURE_PROVENANCE.csv` — figure source ledger;
+- `figures/` — complete vector figure set;
+- `latex/` — reproducible LaTeX/arXiv build and tables;
+- `CITATION.cff`, `ZENODO_RELEASE_PLAN.md` and `zenodo_*_metadata.json` — release metadata.
 
 ## Next production gate
 
-`P2-PROD02 — Figure, Table and LaTeX Integration`
+`P2-PROD03 — Citation Integration, Priority Audit and Release Freeze`
 
-1. generate Figures 1–3 and 5–6 plus Tables 1–4;
-2. insert verified citations into manuscript v0.2;
-3. run isolated LaTeX build and citation-key audit;
-4. build and inspect arXiv source archive;
-5. freeze Zenodo software and dataset releases.
+1. insert verified citations into manuscript v0.2;
+2. run complete citation-key and claim-to-source audit;
+3. complete the line-by-line public-priority comparison;
+4. reserve Zenodo software and dataset DOIs;
+5. rebuild with immutable DOI metadata;
+6. freeze arXiv title, abstract, categories and submission package.
