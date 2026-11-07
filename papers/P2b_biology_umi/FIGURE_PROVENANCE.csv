@@ -1,0 +1,4 @@
+figure_id,file,source_path,transform,status
+P2B-F2A,figures/P2B_FIG2A_REPRESSILATOR_INTERVENTIONS.svg,research/umi-real01/data/intervention_results.csv,"Relative-amplitude bar plot on logarithmic scale with baseline normalized to one",PASS
+P2B-F2B,figures/P2B_FIG2B_REPRESSILATOR_PHASE.svg,research/umi-real01/data/substitution_and_phase.csv,"Direct plot of three measured phase-lag fractions against the one-third reference",PASS
+P2B-F3,figures/P2B_FIG3_RPA_MINIMALITY.svg,research/umi-real02/data/minimality_audit.csv,"Direct plot of adaptation-error ratio for all eight sensor-integrator-actuator relation subsets",PASS
