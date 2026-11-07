@@ -18,6 +18,10 @@ on:
 permissions:
   contents: read
 
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
 jobs:
   rpm-audit:
     runs-on: ubuntu-latest
