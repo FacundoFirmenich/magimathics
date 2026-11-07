@@ -1,0 +1,3 @@
+figure_id,file,source_path,transform,status
+P2-F4A,figures/P2_FIG4A_SIGNATURE_SENSITIVITY.svg,research/umi-real04/data/METRICS_BY_SIGNATURE.csv,"Direct plot of precision specificity and false-discovery rate for strict moderate and weak profiles",PASS
+P2-F4B,figures/P2_FIG4B_MISSING_EVIDENCE.svg,research/umi-real04/data/MISSING_EVIDENCE_ROBUSTNESS.csv,"Direct plot of coverage accuracy among adjudicated and false-positive rate under exact evidence masks",PASS
