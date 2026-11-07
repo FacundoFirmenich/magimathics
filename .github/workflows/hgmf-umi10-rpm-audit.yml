@@ -56,6 +56,13 @@ jobs:
             --out-dir research/hgmf-umi10-rpm-completion/generated \
             | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_MAGNETIC_STDOUT.json
 
+      - name: Execute magnetic uncertainty audit
+        run: |
+          python research/hgmf-umi10-rpm-completion/audit_magnetic_uncertainty.py \
+            --source-dir "external/EB-in-FGT_CrSBr/data/Minor loops/Minor loop wPF" \
+            --out-dir research/hgmf-umi10-rpm-completion/generated \
+            | tee research/hgmf-umi10-rpm-completion/generated/HGMF_UMI10_MAGNETIC_UNCERTAINTY_STDOUT.json
+
       - name: Execute identical adsorption tribunal
         run: |
           python research/hgmf-umi10-rpm-completion/analyze_adsorption.py \
@@ -92,7 +99,7 @@ jobs:
                   })
           (root/'HGMF_UMI10_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
           PY
-          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py analyze_rpm_v2.py analyze_adsorption.py synthesize_cross_domain.py
+          zip -r HGMF_UMI10_RPM_AUDIT.zip generated analyze_rpm.py analyze_rpm_v2.py analyze_adsorption.py synthesize_cross_domain.py audit_magnetic_uncertainty.py
 
       - name: Upload complete audit bundle
         uses: actions/upload-artifact@v4
