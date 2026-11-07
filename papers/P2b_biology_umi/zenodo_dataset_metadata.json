@@ -1,0 +1,25 @@
+{
+  "title": "Biological UMI Tribunal — Primary Evidence, Intervention and Claim Data",
+  "upload_type": "dataset",
+  "description": "Primary-evidence ledger, biological carrier matrix, intervention and minimality results, citation map, claim ledger and provenance records supporting the P2b manuscript.",
+  "creators": [
+    {"name": "Firmenich, Facundo"}
+  ],
+  "version": "0.1.0",
+  "publication_date": "2026-11-07",
+  "keywords": [
+    "systems biology",
+    "synthetic biology",
+    "network motifs",
+    "gene circuits",
+    "biological intervention",
+    "mechanism identification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/FacundoFirmenich/magimathics",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

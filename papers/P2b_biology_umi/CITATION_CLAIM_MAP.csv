@@ -1,0 +1,13 @@
+map_id,section,claim_id,evidence_ids,claim_summary,bibtex_keys,status
+P2BM-001,Introduction,P2B-C09,,Topology alone does not determine biological function,"Milo2002,Ingram2006",VERIFIED_V0_1
+P2BM-002,Repressilator,P2B-C02,"E001;E002;E003;E004",Closed cyclic repression realizes and transports sustained oscillation,"ElowitzLeibler2000Repressilator,PotvinTrottier2016,Niederholtmeyer2015,Hellen2013",VERIFIED_PRIMARY_LEDGER
+P2BM-003,RPA,P2B-C03,"E005;E006;E007;E008;E009",Internal-model closure realizes robust perfect adaptation across biological substrates,"Yi2000,Briat2016,Aoki2019,Agrawal2019,Frei2022,AraujoLiotta2018",VERIFIED_PRIMARY_LEDGER
+P2BM-004,Memory,P2B-C04,"E010;E011;E012",Regeneration saturation and write coupling realize bounded writable memory,"Gardner2000,Kramer2004,KimWhiteWinfree2006",VERIFIED_PRIMARY_LEDGER
+P2BM-005,Proofreading,P2B-C05,"E013;E014;E015;E016",Driven multistage rejection realizes beyond-equilibrium discrimination,"Hopfield1974,HopfieldYamane1976,Yousefi2019,TischerWeiner2019,Mukherjee2024",VERIFIED_PRIMARY_LEDGER
+P2BM-006,Turing,P2B-C06,"E017;E018;E019;E020",Finite-k instability is distinct from externally instructed stripe formation,"Tompkins2014,Karig2018,Tica2024,Schaerli2014",VERIFIED_PRIMARY_LEDGER
+P2BM-007,Autocatalysis,P2B-C07,"E021;E022;E023",Collective autocatalytic closure transports across distinct chemistries,"Lee1997,Miras2020,Semenov2016",VERIFIED_PRIMARY_LEDGER
+P2BM-008,Quorum competence,P2B-C08,"E024;E025",Current evidence does not isolate one unique minimal carrier,"PrudhommeGenereux2017,Maamar2007",ABSTAIN_PRESERVED
+P2BM-009,Comparator discussion,P2B-C09,,Network motifs nominate candidates but do not adjudicate UMI status,"Milo2002,Ingram2006",VERIFIED_V0_1
+P2BM-010,Comparator discussion,P2B-C03,,RPA theory is established antecedent and stronger within its domain,"Yi2000,Briat2016,AraujoLiotta2018",VERIFIED_V0_1
+P2BM-011,Comparator discussion,P2B-C07,,RAF theory is established antecedent for autocatalytic closure,"Lee1997,Miras2020",VERIFIED_V0_1
+P2BM-012,Comparator discussion,P2B-C12,,Local UMI closure is not organismal autonomy,MontevilMossio2015,VERIFIED_V0_1

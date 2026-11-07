@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the P2b preprint and the associated Zenodo software/data records."
+title: "Minimal Invariant Relational Units in Synthetic and Systems Biology"
+type: software
+authors:
+  - family-names: "Firmenich"
+    given-names: "Facundo"
+version: 0.1.0
+date-released: 2026-11-07
+repository-code: "https://github.com/FacundoFirmenich/magimathics"
+url: "https://github.com/FacundoFirmenich/magimathics/tree/paper-p2b-biology-umi-tribunal/papers/P2b_biology_umi"
+keywords:
+  - systems biology
+  - synthetic biology
+  - network motifs
+  - causal intervention
+  - robust perfect adaptation
+  - kinetic proofreading
+  - Turing patterns
+  - autocatalytic sets

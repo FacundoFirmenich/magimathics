@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<rect width="1400" height="760" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.title{font-size:27px;font-weight:bold}.h{font-size:19px;font-weight:bold}.b{font-size:15px}.small{font-size:13px}.panel{fill:#fafafa;stroke:#222;stroke-width:1.5;rx:16}.pos{fill:#ededed;stroke:#111;stroke-width:1.8;rx:12}.neg{fill:white;stroke:#777;stroke-width:1.5;rx:12}.arrow{stroke:#222;stroke-width:2.3;fill:none;marker-end:url(#a)}.grad{stroke:#777;stroke-width:3}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#222"/></marker></defs>
+<text x="700" y="42" class="title" text-anchor="middle">Biological outputs must be adjudicated by mechanism, not phenotype resemblance</text>
+
+<rect x="55" y="85" width="620" height="575" class="panel"/>
+<text x="365" y="122" class="h" text-anchor="middle">Specificity: kinetic proofreading versus equilibrium recognition</text>
+<rect x="90" y="160" width="550" height="190" class="pos"/>
+<text x="365" y="190" class="h" text-anchor="middle">Positive carrier: driven progression + reject/reset</text>
+<circle cx="160" cy="260" r="25" fill="white" stroke="#222"/><circle cx="270" cy="260" r="25" fill="white" stroke="#222"/><circle cx="380" cy="260" r="25" fill="white" stroke="#222"/><circle cx="490" cy="260" r="25" fill="white" stroke="#222"/>
+<path d="M185 260 H245" class="arrow"/><path d="M295 260 H355" class="arrow"/><path d="M405 260 H465" class="arrow"/>
+<path d="M270 287 C270 320 160 320 160 287" class="arrow"/><path d="M380 287 C380 335 160 335 160 287" class="arrow"/>
+<text x="365" y="325" class="small" text-anchor="middle">energy consumption and repeated rejection amplify small affinity differences</text>
+<rect x="90" y="395" width="550" height="190" class="neg"/>
+<text x="365" y="425" class="h" text-anchor="middle">Decoy: one equilibrium recognition step</text>
+<circle cx="245" cy="500" r="28" fill="white" stroke="#777"/><circle cx="485" cy="500" r="28" fill="white" stroke="#777"/>
+<path d="M273 500 H457" class="arrow"/><text x="365" y="555" class="small" text-anchor="middle">may discriminate strongly, but cannot realize the strict beyond-equilibrium signature</text>
+
+<rect x="725" y="85" width="620" height="575" class="panel"/>
+<text x="1035" y="122" class="h" text-anchor="middle">Spatial stripe: Turing instability versus positional instruction</text>
+<rect x="760" y="160" width="550" height="190" class="pos"/>
+<text x="1035" y="190" class="h" text-anchor="middle">Positive carrier: local stability + transport contrast + finite-k instability</text>
+<line x1="810" y1="300" x2="1260" y2="300" stroke="#222"/>
+<path d="M820 275 Q850 220 880 275 T940 275 T1000 275 T1060 275 T1120 275 T1180 275 T1240 275" fill="none" stroke="#222" stroke-width="3"/>
+<text x="1035" y="325" class="small" text-anchor="middle">homogeneous state loses stability only after reaction–transport coupling</text>
+<rect x="760" y="395" width="550" height="190" class="neg"/>
+<text x="1035" y="425" class="h" text-anchor="middle">Decoy: gradient-read stripe circuit</text>
+<line x1="815" y1="530" x2="1255" y2="455" class="grad"/><rect x="990" y="472" width="90" height="70" fill="#ccc" stroke="#777"/>
+<text x="1035" y="565" class="small" text-anchor="middle">a similar stripe is positioned by an external morphogen template</text>
+
+<text x="700" y="710" class="h" text-anchor="middle">The same-looking output can belong to a different biological unit because the generative relation class differs.</text>
+</svg>

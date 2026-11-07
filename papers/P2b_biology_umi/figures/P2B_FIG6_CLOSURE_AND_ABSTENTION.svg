@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="730" viewBox="0 0 1350 730">
+<rect width="1350" height="730" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.title{font-size:27px;font-weight:bold}.h{font-size:19px;font-weight:bold}.b{font-size:15px}.small{font-size:13px}.panel{fill:#fafafa;stroke:#222;stroke-width:1.5;rx:16}.node{fill:white;stroke:#222;stroke-width:2}.edge{stroke:#222;stroke-width:2.5;fill:none;marker-end:url(#a)}.ext{stroke:#888;stroke-width:2.5;fill:none;stroke-dasharray:7 5;marker-end:url(#a2)}.box{fill:#ededed;stroke:#111;stroke-width:1.7;rx:12}.abstain{fill:white;stroke:#777;stroke-width:2;rx:12}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#222"/></marker><marker id="a2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 z" fill="#888"/></marker></defs>
+<text x="675" y="42" class="title" text-anchor="middle">Closure can be positively identified—or withheld when several carriers remain plausible</text>
+
+<rect x="45" y="85" width="590" height="550" class="panel"/>
+<text x="340" y="120" class="h" text-anchor="middle">Minimal RAF closure versus open catalytic chain</text>
+<rect x="80" y="155" width="520" height="195" class="box"/>
+<text x="340" y="184" class="h" text-anchor="middle">Positive: collectively autocatalytic and food-generated</text>
+<circle cx="205" cy="260" r="34" class="node"/><circle cx="475" cy="260" r="34" class="node"/>
+<text x="205" y="267" class="h" text-anchor="middle">r₁</text><text x="475" y="267" class="h" text-anchor="middle">r₂</text>
+<path d="M239 245 Q340 195 441 245" class="edge"/><path d="M441 275 Q340 325 239 275" class="edge"/>
+<text x="340" y="330" class="small" text-anchor="middle">each reaction depends on and contributes to the catalytic closure</text>
+<rect x="80" y="395" width="520" height="175" class="abstain"/>
+<text x="340" y="425" class="h" text-anchor="middle">Negative for closure: open catalytic chain</text>
+<circle cx="160" cy="495" r="25" class="node"/><circle cx="285" cy="495" r="25" class="node"/><circle cx="410" cy="495" r="25" class="node"/><circle cx="545" cy="450" r="22" fill="#ddd" stroke="#777"/>
+<path d="M185 495 H260" class="edge"/><path d="M310 495 H385" class="edge"/><path d="M525 463 Q480 470 435 485" class="ext"/>
+<text x="340" y="548" class="small" text-anchor="middle">amplification occurs, but a necessary catalyst remains externally supplied</text>
+
+<rect x="675" y="85" width="630" height="550" class="panel"/>
+<text x="990" y="120" class="h" text-anchor="middle">Quorum-sensing competence: principled abstention</text>
+<circle cx="800" cy="245" r="42" class="node"/><text x="800" y="252" class="h" text-anchor="middle">signal</text>
+<circle cx="990" cy="185" r="42" class="node"/><text x="990" y="192" class="h" text-anchor="middle">receptor</text>
+<circle cx="1175" cy="245" r="42" class="node"/><text x="1175" y="252" class="h" text-anchor="middle">feedback</text>
+<circle cx="865" cy="385" r="42" class="node"/><text x="865" y="392" class="h" text-anchor="middle">history</text>
+<circle cx="1110" cy="385" r="42" class="node"/><text x="1110" y="392" class="h" text-anchor="middle">environment</text>
+<path d="M840 232 L948 198" class="edge"/><path d="M1032 198 L1133 232" class="edge"/><path d="M1158 284 Q1075 330 1015 230" class="edge"/><path d="M887 348 Q920 270 955 220" class="edge"/><path d="M1090 348 Q1055 275 1025 220" class="edge"/><path d="M908 385 H1068" class="edge"/>
+<rect x="785" y="480" width="410" height="105" class="abstain"/>
+<text x="990" y="515" class="h" text-anchor="middle">ABSTAIN</text>
+<text x="990" y="545" class="b" text-anchor="middle">several coupled carriers remain plausible;</text><text x="990" y="568" class="b" text-anchor="middle">current perturbations do not isolate one inclusion-minimal class</text>
+
+<text x="675" y="685" class="h" text-anchor="middle">The tribunal promotes closure only when both necessity and invariance are identified; otherwise it preserves causal uncertainty.</text>
+</svg>
