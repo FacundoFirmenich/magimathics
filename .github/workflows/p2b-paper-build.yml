@@ -6,6 +6,10 @@ on:
       - paper-p2b-biology-umi-tribunal
   workflow_dispatch:
 
+concurrency:
+  group: p2b-paper-build-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
