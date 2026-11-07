@@ -1,6 +1,9 @@
 name: HGMF UMI14 materialize replication assets
 
 on:
+  pull_request:
+    branches:
+      - "Ulalito's-Island"
   push:
     branches:
       - hgmf-umi14-materialize-20261107
@@ -21,7 +24,7 @@ jobs:
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import hashlib, json, urllib.request
+          import hashlib, json, urllib.request, urllib.parse
 
           owner_repo = "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure"
           base = "https://raw.githubusercontent.com/" + owner_repo + "/main/data/Minor%20loops/Minor%20loop%20w%20training%20effect/"
