@@ -7,6 +7,12 @@ on:
     paths:
       - 'research/hgmf-umi10-rpm-completion/**'
       - '.github/workflows/hgmf-umi10-rpm-audit.yml'
+  pull_request:
+    branches:
+      - hgmf-umi01-09-canonical-recovery
+    paths:
+      - 'research/hgmf-umi10-rpm-completion/**'
+      - '.github/workflows/hgmf-umi10-rpm-audit.yml'
   workflow_dispatch:
 
 permissions:
