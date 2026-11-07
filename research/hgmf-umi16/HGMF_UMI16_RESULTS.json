@@ -1,0 +1,47 @@
+{
+  "gate": "HGMF-UMI-16",
+  "title": "Counterbalanced Identifiability and Discrete State Law",
+  "date": "2026-11-08",
+  "verdict": "PASS_DISCRETE_ONLY_FAIL_FIELD_HISTORY_SEPARATION_HOLD_REPLICATION",
+  "fixed_field_fresh_trained": {
+    "fresh_replicates": 3,
+    "trained_replicates": 5,
+    "HEB_intervals_overlap": false,
+    "HC_intervals_overlap": false,
+    "span_intervals_overlap": true
+  },
+  "reset": {
+    "device_A_positive_relative_range_max": 0.04519733177541095,
+    "orientation_subspace": "PASS",
+    "full_state": "FAIL_UNIVERSAL",
+    "zero_preset": "HOLD_FIELD_CONFOUNDED"
+  },
+  "history_dependent_manifestation_threshold": {
+    "fresh_interval_mT": [125.3622410647204, 150.26296018031556],
+    "trained_interval_mT": [49.801438231190296, 74.70215734678544],
+    "threshold_reduction_bounds_mT": [50.66008371793495, 100.46152194912526],
+    "robust_over_snr_gates": [50, 100, 500, 1000]
+  },
+  "design": {
+    "full_cells": 45,
+    "full_pairwise_rank": 29,
+    "current_same_device_unique_cells": 7,
+    "current_rank": 7,
+    "minimum_new_unique_cells_pairwise": 22,
+    "pairwise_three_replicate_total": 87,
+    "nominal_additional_runs_pairwise_if_legacy_accepted": 77,
+    "full_factorial_three_replicate_total": 135,
+    "nominal_additional_runs_full_if_legacy_accepted": 125
+  },
+  "gates": {
+    "A_factorial": "HOLD_REPLICATION",
+    "B_vector_state": "PASS",
+    "C_causal_contrasts": "PASS_PARTIAL",
+    "D_frozen_forecast": "PASS_DISCRETE_ONLY",
+    "E_grain_tails": "PASS",
+    "field_history_separation": "FAIL",
+    "reset_restoration": "PASS_SUBSPACE_FAIL_FULL_STATE",
+    "history_UMI": "PASS"
+  },
+  "next_gate": "HGMF-UMI-17 Minimal Counterbalanced Bridge Experiment"
+}
