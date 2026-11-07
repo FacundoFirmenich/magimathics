@@ -7,7 +7,7 @@ cd "$HERE"
 
 rm -rf arxiv-src
 mkdir -p arxiv-src/figures
-cp main.tex body.tex references.bib arxiv-src/
+cp main.tex body.tex figures_appendix.tex references.bib arxiv-src/
 cp figures/*.pdf arxiv-src/figures/ 2>/dev/null || true
 cp ../CLAIM_LEDGER.csv ../CASE_MATRIX.csv ../CITATION_CLAIM_MAP.csv arxiv-src/
 
