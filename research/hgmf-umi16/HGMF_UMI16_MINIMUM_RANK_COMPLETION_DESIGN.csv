@@ -1,0 +1,23 @@
+preset,field_mT,cycle,purpose
++,100,4,one minimal saturated augmentation for main effects + all two-way interactions
++,150,3,one minimal saturated augmentation for main effects + all two-way interactions
+-,100,1,one minimal saturated augmentation for main effects + all two-way interactions
+-,100,4,one minimal saturated augmentation for main effects + all two-way interactions
+-,100,5,one minimal saturated augmentation for main effects + all two-way interactions
+-,150,3,one minimal saturated augmentation for main effects + all two-way interactions
+-,150,4,one minimal saturated augmentation for main effects + all two-way interactions
+-,200,2,one minimal saturated augmentation for main effects + all two-way interactions
+-,200,3,one minimal saturated augmentation for main effects + all two-way interactions
+-,200,5,one minimal saturated augmentation for main effects + all two-way interactions
+0,100,1,one minimal saturated augmentation for main effects + all two-way interactions
+0,100,2,one minimal saturated augmentation for main effects + all two-way interactions
+0,100,3,one minimal saturated augmentation for main effects + all two-way interactions
+0,100,5,one minimal saturated augmentation for main effects + all two-way interactions
+0,150,1,one minimal saturated augmentation for main effects + all two-way interactions
+0,150,2,one minimal saturated augmentation for main effects + all two-way interactions
+0,150,3,one minimal saturated augmentation for main effects + all two-way interactions
+0,150,4,one minimal saturated augmentation for main effects + all two-way interactions
+0,150,5,one minimal saturated augmentation for main effects + all two-way interactions
+0,200,2,one minimal saturated augmentation for main effects + all two-way interactions
+0,200,4,one minimal saturated augmentation for main effects + all two-way interactions
+0,200,5,one minimal saturated augmentation for main effects + all two-way interactions
