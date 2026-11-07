@@ -7,7 +7,7 @@ cd "$HERE"
 
 rm -rf biorxiv-src
 mkdir -p biorxiv-src/figures
-cp main.tex body.tex references.bib biorxiv-src/
+cp main.tex body.tex figures_appendix.tex references.bib biorxiv-src/
 cp figures/*.pdf biorxiv-src/figures/ 2>/dev/null || true
 cp ../CLAIM_LEDGER.csv ../BIOLOGICAL_EVIDENCE_MATRIX.csv ../PRIMARY_EVIDENCE_LEDGER.csv ../CITATION_CLAIM_MAP.csv biorxiv-src/
 
