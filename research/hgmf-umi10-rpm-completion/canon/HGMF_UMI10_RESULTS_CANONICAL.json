@@ -1,0 +1,47 @@
+{
+  "gate": "HGMF-UMI-10",
+  "title": "Semantic Core and Operator-Shell Bifurcation",
+  "authority": "EMPIRICAL / BLOCKED WHOLE-RUN TRIBUNAL",
+  "global_verdict": "PASS_SHARED_HISTORY_SEMANTIC_CORE_FAIL_UNCONDITIONAL_SINGLE_OPERATOR_HOLD_RPM",
+  "primary_results": {
+    "binary_hdf5_recovery": "PASS",
+    "shared_history_semantic_core": "PASS",
+    "single_unconditional_operator_class": "FAIL",
+    "full_cross_domain_return_point_memory": "HOLD_NOT_ESTABLISHED",
+    "conditional_high_snr_rpm_transfer": "PASS_PRELIMINARY",
+    "future_only_absolute_prediction": "HOLD"
+  },
+  "magnetic": {
+    "files": 4,
+    "processed_points": 444,
+    "reversals_per_file": [1, 1, 1, 1],
+    "mean_return_error_norm": 0.7408719143917358,
+    "aggregate_best_model": "fading",
+    "aggregate_best_rmse": 0.5875399470017018,
+    "aggregate_improvement_vs_memoryless": 0.21975392451649346,
+    "high_snr_loops": ["Loop_1", "Loop_2"],
+    "high_snr_best_model": "rpm_relays",
+    "high_snr_rpm_improvement_vs_memoryless": 0.3627254676038384,
+    "low_snr_loops": ["Loop_3", "Loop_4"],
+    "low_snr_best_model": "fading",
+    "low_snr_rpm_improvement_vs_memoryless": -0.03533239459395365
+  },
+  "adsorption": {
+    "runs": 4,
+    "points": 572,
+    "run_ids": [5, 8, 9, 10],
+    "reversal_counts": {"20": 1, "22": 1, "27": 1, "36": 1},
+    "mean_return_error_norm": 0.30773992316358595,
+    "aggregate_best_model": "rpm_relays",
+    "aggregate_best_rmse": 0.3469944939404803,
+    "aggregate_rpm_improvement_vs_memoryless": 0.030763827984500947,
+    "rpm_wins_complete_runs": 2,
+    "robust_rpm_selection": "FAIL_2_OF_4_RUNS_AND_SMALL_MEAN_GAIN"
+  },
+  "equivalence_hierarchy": [
+    "microphysical identity",
+    "operator identity",
+    "semantic UMI equivalence"
+  ],
+  "next_gate": "HGMF-UMI-11 Memory Universality Classes and Resolution Gates"
+}
