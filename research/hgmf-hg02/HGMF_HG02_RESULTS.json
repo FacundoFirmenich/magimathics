@@ -1,0 +1,51 @@
+{
+  "gate": "HGMF-HG02",
+  "title": "Multi-Context Protogeometric Tomography and Observational Saturation",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_PROTO_TOMOGRAPHY_THEOREM_PASS_OBSERVATIONAL_SATURATION_PASS_MINIMAL_SEPARATING_CONTEXT_FAMILY_FAIL_FULL_IDENTIFIABILITY_HOLD_PHYSICAL_CONTEXT_SET",
+  "finite_witness_model": {
+    "proto_states": 16,
+    "admissible_contexts": ["G", "O", "N", "P"],
+    "extended_contexts": ["G", "O", "N", "P", "Z"],
+    "total_state_pairs": 120,
+    "admissible_saturation_classes": 8,
+    "admissible_residual_fiber_size": 2,
+    "admissible_residual_bits_per_state": 1.0,
+    "pairs_separated_at_saturation": 112,
+    "pairs_unseparated_at_saturation": 8
+  },
+  "tomography": {
+    "injectivity_iff_intersection_diagonal": "PASS_EXACT",
+    "minimal_saturation_family_size": 3,
+    "minimal_saturation_families": ["GON", "GOP", "GNP", "ONP"],
+    "full_identification_admissible": "FAIL",
+    "minimal_extended_full_family_size": 4,
+    "minimal_extended_full_families": ["GONZ", "GOPZ", "GNPZ", "ONPZ"]
+  },
+  "hyperaccess": {
+    "pair_separation_monotone_submodular": true,
+    "submodularity_violations": 0,
+    "saturation_after_three_admissible_contexts": true,
+    "fourth_admissible_context_marginal_gain": 0,
+    "meta_context_Z_additional_pairs": 8
+  },
+  "proto_certainty": {
+    "transition_parity_certain_under_P_only": true,
+    "full_proto_identification_under_P_only": false,
+    "observable_tuple_certain_under_any_three_admissible": true,
+    "latent_source_certain_under_admissible": false,
+    "foundation_ontology_inferred": "NO"
+  },
+  "claim_boundary": {
+    "born_rule": "EXCLUDED",
+    "spin": "EXCLUDED",
+    "special_constants": "EXCLUDED",
+    "physical_context_set": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "PROTO_TOMOGRAPHY_FORMAL_PASS_PHYSICAL_CONTEXT_SET_HOLD"
+  },
+  "next_gate": "HGMF-HG03 Residual Fibres, Decodependence and Observer-Induced Probability"
+}
