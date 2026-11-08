@@ -1,0 +1,43 @@
+{
+  "gate": "HGMF-UMI-22",
+  "title": "Native Intervention Hierarchies and Independent Scale Extension",
+  "date": "2026-11-08",
+  "global_verdict": "ABSTAIN_INSUFFICIENT_INDEPENDENT_SCALES_PASS_SCALE_IDENTIFIABILITY_NOGO",
+  "adsorption": {
+    "max_raw_intervention_depth": 34,
+    "max_depth_with_at_least_3_runs": 17,
+    "max_depth_with_at_least_8_runs": 9,
+    "max_branching_siblings": 7,
+    "frozen_semantic_protocol_ranks": 5,
+    "eight_level_raw_depth": "PASS",
+    "eight_level_homologous_nested_tree": "FAIL_NOT_IDENTIFIED"
+  },
+  "magnetism": {
+    "constant_field_cycle_depth": 5,
+    "cycle_specific_depth_with_3_replicates": 1,
+    "decreasing_field_raw_depth": 8,
+    "field_order_spearman": -0.9940297973880048,
+    "field_order_spearman_p": 5.296153515645125e-07,
+    "field_order_pearson": -0.9917000244433976,
+    "field_order_pearson_p": 1.4205713115648304e-06,
+    "explicit_branching": false,
+    "eight_level_independence": "FAIL"
+  },
+  "theorems": {
+    "linear_chain_multifractal_no_go": "PASS_EXACT",
+    "confounded_depth_identifiability_no_go": "PASS",
+    "segment_count_not_hierarchy_depth": "PASS",
+    "cross_carrier_minimum_scale_bottleneck": "PASS"
+  },
+  "experimental_extension": {
+    "additional_magnetic_loops": 39,
+    "total_combined_with_UMI17": 138,
+    "eight_cycles_three_presets_three_waves": 72
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_PASS_EMPIRICAL_MULTIFRACTAL_ABSTAIN_INSUFFICIENT_INTERVENTION_SCALES",
+    "paper_C": "NEXT_ACTIVE_FORMAL_FRONTIER"
+  },
+  "next_gate": "HGMF-HG01 Non-Temporal Generative Hierarchy and Projection Semantics"
+}
