@@ -1,0 +1,60 @@
+{
+  "gate": "HGMF-UMI-20",
+  "title": "Empirical Cross-Carrier Semantic Spectrum",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_MULTISCALE_ONLY_FAIL_TRANSPORT_INVARIANCE_FAIL_SURROGATE_TRIBUNAL",
+  "corpus": {
+    "magnetic_runs": 4,
+    "adsorption_runs": 4,
+    "retained_scales": [2, 4, 8, 16, 32],
+    "q_values": [0.5, 1.0, 2.0, 3.0, 4.0]
+  },
+  "witness_measure": {
+    "horizontal": "positive held-out loss reduction branch over memoryless",
+    "diagonal": "positive held-out loss reduction domain history shell over branch",
+    "vertical": "positive held-out loss reduction grain-context selector over domain history shell",
+    "history_shells": {"magnetic": "fading", "adsorption": "rpm_relays"},
+    "total": "H+D+V"
+  },
+  "domain_adjudication": [
+    {
+      "domain": "adsorption",
+      "runs": 4,
+      "multiscale_candidates": 4,
+      "surrogate_passes": 0,
+      "multifractal_passes": 0,
+      "width_min": 0.13263672869664345,
+      "width_max": 0.3795289151315093
+    },
+    {
+      "domain": "magnetic",
+      "runs": 4,
+      "multiscale_candidates": 0,
+      "surrogate_passes": 0,
+      "multifractal_passes": 0,
+      "width_min": -0.016311912626284064,
+      "width_max": 0.018095014922821173
+    }
+  ],
+  "transport": {
+    "energy_distance": 0.5053128695271583,
+    "exact_permutation_p": 0.014285714285714285,
+    "permutations": 70,
+    "status": "FAIL_TRANSPORT_INVARIANCE"
+  },
+  "triaxial_coupling": {
+    "magnetic_pass_runs": 4,
+    "magnetic_total_runs": 4,
+    "adsorption_pass_runs": 1,
+    "adsorption_total_runs": 4,
+    "status": "PASS_OPERATIONAL_MAGNETIC_FAIL_CROSS_CARRIER_TRANSPORT"
+  },
+  "finite_size": "NO_EMPIRICAL_MULTIFRACTAL_PROMOTION",
+  "negative_q": "NOT_USED",
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_PASS_EMPIRICAL_MULTIFRACTAL_UNIVERSALITY_FAIL_CURRENT_CORPUS",
+    "paper_C": "NO_EMPIRICAL_BRIDGE_FROM_UMI20"
+  },
+  "next_gate": "HGMF-UMI-21 Carrier-Native Semantic Measure and Scale-Range Extension"
+}
