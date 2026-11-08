@@ -1,0 +1,51 @@
+{
+  "gate": "HGMF-UMI-21",
+  "title": "Carrier-Native Semantic Measure and Scale-Range Extension",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_NATIVE_MULTISCALE_ONLY_FAIL_SURROGATE_TRIBUNAL_FAIL_TRANSPORT_INVARIANCE",
+  "records": {
+    "magnetic": 4,
+    "adsorption": 9,
+    "total": 13
+  },
+  "scales": [2, 4, 8, 16, 32, 64],
+  "q_values": [0.5, 1, 2, 3, 4],
+  "measure": {
+    "H": "within-layer response variation",
+    "D": "opposite-history/branch separation",
+    "V": "previous-layer change",
+    "J": "(H*D*V)^(1/3)",
+    "T": "H+D+V",
+    "model_residual_based": false
+  },
+  "total_measure": {
+    "fss_pass_records": 13,
+    "surrogate_pass_records": 0,
+    "multifractal_pass_records": 0
+  },
+  "joint_measure": {
+    "fss_pass_records": 10,
+    "surrogate_pass_records": 0,
+    "multifractal_pass_records": 0
+  },
+  "transport": [
+    {"axis":"H","energy_distance":0.1825802059843892,"exact_p":0.012587412587412588,"status":"FAIL_DIFFERENCE_DETECTED"},
+    {"axis":"D","energy_distance":0.5056389975866389,"exact_p":0.0013986013986013986,"status":"FAIL_DIFFERENCE_DETECTED"},
+    {"axis":"V","energy_distance":0.07608296272523346,"exact_p":0.45034965034965035,"status":"HOLD_NO_EQUIVALENCE_MARGIN"},
+    {"axis":"J","energy_distance":0.2072137802600137,"exact_p":0.07552447552447553,"status":"HOLD_NO_EQUIVALENCE_MARGIN"},
+    {"axis":"T","energy_distance":0.08371629471345177,"exact_p":0.1062937062937063,"status":"HOLD_NO_EQUIVALENCE_MARGIN"}
+  ],
+  "triaxial": {
+    "coupling_pass_records": 13,
+    "records": 13,
+    "coupling_transport_exact_p": 0.0013986013986013986,
+    "magnetic_mean_tc": 0.9317276491428998,
+    "adsorption_mean_tc": 0.4766600320407471
+  },
+  "portfolio": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_PASS_NATIVE_MULTISCALE_EMPIRICAL_MULTIFRACTAL_FAIL_CURRENT_CORPUS",
+    "paper_C": "NO_BRIDGE_FROM_UMI21"
+  },
+  "next_gate": "HGMF-UMI-22 Native Intervention Hierarchies and Independent Scale Extension"
+}
