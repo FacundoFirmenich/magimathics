@@ -1,0 +1,47 @@
+{
+  "gate": "HGMF-UMI-17",
+  "title": "Sequentially Admissible Robust Bridge",
+  "date": "2026-11-08",
+  "verdict": "PASS_SEQUENTIAL_DESIGN_CLOSURE_RECOMMEND_ROBUST_99_LOOP_BRIDGE_HOLD_EXPERIMENTAL_EXECUTION",
+  "parameter_count": 29,
+  "theorem": {
+    "all_preset_field_cycle1_cells_required": 9,
+    "minimum_blocks_per_nonbaseline_cycle": 5,
+    "nonbaseline_cycles": 4,
+    "exact_minimum_cells": 29,
+    "full_rank_five_block_subsets": 81
+  },
+  "correction": {
+    "umi16_design_cells_as_written": 29,
+    "umi16_prefix_closed_cells": 41,
+    "umi16_three_replicate_executable_loops": 123,
+    "reason": "cycle k is not independently executable; cycles 1..k are ancestors"
+  },
+  "saturated_bridge": {
+    "cells": 29,
+    "loop_blocks_three_waves": 87,
+    "new_loop_blocks_with_legacy": 80,
+    "lack_of_fit_df": 0,
+    "continuation_loss_robust": false
+  },
+  "recommended_robust_bridge": {
+    "cells": 33,
+    "loop_blocks_three_waves": 99,
+    "new_loop_blocks_with_legacy": 93,
+    "lack_of_fit_df": 4,
+    "continuation_loss_robust": true,
+    "symmetry_equivalent_robust_designs": 6
+  },
+  "full_factorial": {
+    "cells": 45,
+    "loop_blocks_three_waves": 135,
+    "new_loop_blocks_with_legacy": 130,
+    "lack_of_fit_df": 16
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_NOT_EMPIRICALLY_CLOSED",
+    "paper_B": "READY_FOR_FORMAL_CHARACTERIZATION_GATE",
+    "paper_C": "UNCHANGED_HOLD_FORMAL_DERIVATION"
+  },
+  "next_gate": "HGMF-UMI-18 Representation-Independent UMI Characterization"
+}
