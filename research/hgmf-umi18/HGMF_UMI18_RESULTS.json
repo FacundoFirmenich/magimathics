@@ -1,0 +1,42 @@
+{
+  "gate": "HGMF-UMI-18",
+  "title": "Representation-Independent UMI Characterization",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_UMI_CHARACTERIZATION_THEOREM_PASS_GRADED_APPROXIMATION_FAIL_MINIMALITY_UNIQUENESS",
+  "exact_identity": {
+    "definition": "equality of transport-quotiented complete semantic signatures within one jurisdiction",
+    "reflexive": true,
+    "symmetric": true,
+    "transitive": true,
+    "representation_independent": "PASS_CONDITIONAL_ON_TRANSPORT_GROUPOID"
+  },
+  "refinement": {
+    "exact_directed_refinement": "PREORDER",
+    "mutual_refinement": "EQUIVALENCE",
+    "fixed_epsilon_similarity": "NOT_TRANSITIVE_IN_GENERAL",
+    "correct_approximate_object": "GRAINWISE_VECTOR_PSEUDOMETRIC_OR_GRADED_BUDGET"
+  },
+  "minimality": {
+    "finite_core_existence": true,
+    "unique_minimal_realization": false,
+    "correct_object": "ANTICHAIN_OF_MINIMAL_REALIZATIONS",
+    "types": ["inclusion", "causal", "representational", "scale_relative_atomicity"]
+  },
+  "composition": {
+    "congruence": "PASS_IF_SIGNATURE_IS_COMPOSITIONAL_AND_CONTEXTS_RESPECT_INTERFACE",
+    "unconditional": false
+  },
+  "antiaggregation": {
+    "sufficiency_condition": "kernel(summary) subset of UMI equivalence",
+    "completeness_condition": "UMI equivalence subset of kernel(summary)",
+    "canonical_condition": "kernel(summary) equals UMI equivalence",
+    "mean_sufficient": false
+  },
+  "counterexamples_verified": 8,
+  "dual_name_status": {
+    "Unidad_Minima_Invariante": "FORMALLY_CHARACTERIZED",
+    "Unidad_Multifractal_de_Interrelacion": "HOLD_MULTISCALE_MEASURE_AND_SPECTRUM"
+  },
+  "paper_B_status": "FORMAL_CORE_PASS_MULTIFRACTAL_HALF_PENDING",
+  "next_gate": "HGMF-UMI-19 Scale-Indexed Semantic Measure and Multifractal Interrelation"
+}
