@@ -1,0 +1,43 @@
+{
+  "gate": "HGMF-HG05",
+  "title": "Amplitude Geometry and Quadratic Weight Tribunal",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_P_NORM_FAMILY_PASS_QUADRATIC_WEIGHT_SELECTION_CONDITIONAL_FAIL_AMPLITUDE_DERIVATION_FAIL_NONCIRCULAR_BORN_SELECTION",
+  "scalar_weight": {
+    "assumptions": ["continuity", "phase invariance", "tensor multiplicativity", "normalization", "nontriviality"],
+    "result": "w(z)=|z|^p for a unique p>0",
+    "p_selected": false
+  },
+  "balanced_mixer": {
+    "matrix": "a[[1,1],[1,-1]]",
+    "reversibility_condition": "B^2=I or phase*I",
+    "amplitude_magnitude": "1/sqrt(2)",
+    "weight_conservation_equation": "2^(1-p/2)=1",
+    "solution_p": ["2"],
+    "quadratic_weight_selected": true
+  },
+  "hilbert_geometry": {
+    "parallelogram_solution_p": ["2"],
+    "inner_product_recovered": true,
+    "complex_field_selected": false
+  },
+  "born_boundary": {
+    "quadratic_amplitude_weight": "PASS_CONDITIONAL",
+    "probability_interpretation": "FAIL_NOT_DERIVED",
+    "orthogonal_additivity": "NOT_DERIVED",
+    "noncontextual_event_measure": "NOT_DERIVED",
+    "born_rule": "HOLD"
+  },
+  "special_constants": {
+    "pi_over_6": "EXCLUDED",
+    "pi_over_18": "EXCLUDED",
+    "four_pi_over_9": "EXCLUDED",
+    "RMNC": "EXCLUDED"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "QUADRATIC_AMPLITUDE_GEOMETRY_CONDITIONAL_PASS_BORN_HOLD"
+  },
+  "next_gate": "HGMF-HG06 Operational Superposition and Scalar-Field Selection"
+}
