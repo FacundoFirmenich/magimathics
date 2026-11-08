@@ -1,0 +1,43 @@
+{
+  "gate": "HGMF-HG07",
+  "title": "Event Geometry, Coarse-Graining and Chance Semantics",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_EVENT_GEOMETRY_PASS_ORTHOGONAL_WEIGHT_ADDITIVITY_PASS_NONCONTEXTUAL_TRACE_WEIGHT_CONDITIONAL_PASS_FREQUENCY_WEIGHT_CONCENTRATION_FAIL_CHANCE_SEMANTICS_HOLD_FULL_BORN_DERIVATION",
+  "conditional_dependencies": [
+    "HG05 quadratic amplitude geometry",
+    "HG06 complex amplitude module",
+    "sharp self-adjoint filters"
+  ],
+  "event_geometry": {
+    "sharp_event": "self-adjoint idempotent projection",
+    "exclusive_join": "sum of pairwise orthogonal projections",
+    "complement": "I-P",
+    "certainty_one_iff": "P psi = psi",
+    "certainty_zero_iff": "P psi = 0"
+  },
+  "weight": {
+    "definition": "q_psi(P)=||P psi||^2/||psi||^2",
+    "orthogonal_additivity": true,
+    "noncontextual_on_same_projection": true,
+    "trace_form": "Tr(rho P)",
+    "mathematical_probability_measure": "PASS_CONDITIONAL",
+    "physical_chance": "NOT_DERIVED"
+  },
+  "frequency": {
+    "binary_N_copy_weight": "binomial with parameter q",
+    "concentration": "PASS",
+    "single_case_semantics": "NOT_DERIVED"
+  },
+  "born_boundary": {
+    "functional_form": "PASS_CONDITIONAL",
+    "chance_rule": "HOLD",
+    "additivity_origin": "orthogonal Hilbert geometry, not postulated as probability",
+    "circularity_audit": "probability semantics still absent"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "BORN_WEIGHT_FORM_CONDITIONAL_PASS_CHANCE_SEMANTICS_HOLD"
+  },
+  "next_gate": "HGMF-HG08 Quadratic Weight, Frequency Typicality and Single-Case Chance"
+}
