@@ -1,0 +1,44 @@
+{
+  "gate": "HGMF-HG08",
+  "title": "Quadratic Weight, Frequency Typicality and Single-Case Chance",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_FINITE_FREQUENCY_TYPICALITY_PASS_EXCHANGEABILITY_BOUNDARY_PASS_SEMANTIC_UNDERDETERMINATION_FAIL_SINGLE_CASE_BRIDGE_HOLD_FULL_BORN",
+  "finite_frequency": {
+    "product_binomial": true,
+    "hoeffding_violations": 0,
+    "unique_concentration_center": "PASS",
+    "N_max_audited": 1000
+  },
+  "exchangeability": {
+    "iid_implied": false,
+    "de_finetti_mixture_required": true,
+    "counterexample": "0.5*Bernoulli(0.25)+0.5*Bernoulli(0.75)",
+    "one_copy_marginal": 0.5,
+    "long_run_centers": [0.25, 0.75]
+  },
+  "deterministic_frequency": {
+    "q": 0.41421356237309515,
+    "max_N_times_error": 0.9998513232200577,
+    "single_case_chance": "ABSENT"
+  },
+  "semantic_bridges": {
+    "typicality_to_actuality": "FAIL_WITHOUT_COURNOT",
+    "frequency_to_single_case": "FAIL",
+    "decision_weight": "PASS_CONDITIONAL",
+    "bayesian_credence": "PASS_CONDITIONAL",
+    "propensity": "PASS_DEFINITIONAL_CONDITIONAL",
+    "principal_principle": "CHANCE_PRESUPPOSED"
+  },
+  "born_boundary": {
+    "functional_form": "PASS_CONDITIONAL",
+    "frequency_typicality": "PASS",
+    "chance_semantics": "HOLD_FAIL",
+    "full_born_derivation": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "FREQUENCY_TYPICALITY_PASS_SINGLE_CASE_CHANCE_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG09 Functional Chance Role, Calibration and Intervention"
+}
