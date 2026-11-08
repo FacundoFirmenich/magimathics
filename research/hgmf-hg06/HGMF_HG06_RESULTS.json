@@ -1,0 +1,43 @@
+{
+  "gate": "HGMF-HG06",
+  "title": "Operational Superposition and Scalar-Field Selection",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_OPERATIONAL_AMPLITUDE_SPACE_CONDITIONAL_PASS_COMPLEX_FIELD_SELECTION_CONDITIONAL_FAIL_UNCONDITIONAL_AMPLITUDE_DERIVATION_HOLD_BORN",
+  "operational_amplitude_space": {
+    "commutative_alternative_monoid_plus_distributivity": "PASS_SEMIMODULE",
+    "physical_additive_inverses": "ADDITIONAL_AXIOM",
+    "module_representation": "PASS_IF_CANCELLATION_IS_PHYSICAL",
+    "formal_group_completion_operationally_faithful": "FAIL_GENERAL"
+  },
+  "scalar_selection": {
+    "categorical_scalars_commutative": "PASS_ECKMANN_HILTON",
+    "finite_dimensional_associative_real_division_candidates": ["R", "C", "H"],
+    "categorical_commutativity_survivors": ["R", "C"],
+    "connected_nontrivial_scalar_phase_survivor": "C",
+    "complex_field_selected": "PASS_CONDITIONAL",
+    "generic_phase_alone_selects_complex": false
+  },
+  "orthogonality": {
+    "complementary_idempotent_filters": "PASS",
+    "self_adjoint_filter_ranges_orthogonal": "PASS",
+    "dagger_self_adjointness_derived": "NO_ADDITIONAL_AXIOM"
+  },
+  "local_tomography": {
+    "used_in_core_derivation": false,
+    "complex_passes_standard_dimension_audit": true,
+    "real_and_quaternionic_fail_general_audit": true
+  },
+  "born_boundary": {
+    "quadratic_amplitude_weight": "PASS_CONDITIONAL_FROM_HG05",
+    "event_geometry": "PARTIAL_FILTER_FORMALISM",
+    "probability_interpretation": "NOT_DERIVED",
+    "orthogonal_additivity": "NOT_DERIVED_AS_CHANCE",
+    "born_rule": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "OPERATIONAL_AMPLITUDE_MODULE_CONDITIONAL_PASS_COMPLEX_SCALAR_SELECTION_CONDITIONAL_PASS_BORN_HOLD"
+  },
+  "next_gate": "HGMF-HG07 Event Geometry, Coarse-Graining and Chance Semantics"
+}
