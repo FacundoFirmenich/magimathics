@@ -1,0 +1,40 @@
+{
+  "gate": "HGMF-UMI-19",
+  "title": "Scale-Indexed Semantic Measure and Multifractal Interrelation",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_MULTIFRACTAL_UMI_CHARACTERIZATION_FAIL_UNCONDITIONAL_DUAL_EQUIVALENCE_HOLD_EMPIRICAL_MULTIFRACTALITY",
+  "measure": {
+    "semantic_witness_measure": "PASS",
+    "nonnegative": true,
+    "carrier_independent": "CONDITIONAL_ON_SIGNATURE_DERIVATION",
+    "triaxial_components": ["vertical", "horizontal", "diagonal", "joint"]
+  },
+  "transport": {
+    "spectral_invariance": "PASS_IF_MEASURE_AND_COVERS_TRANSPORT",
+    "leaf_mass_multiset_only": "FAIL",
+    "gauge_scaling": "PASS_AFTER_NORMALIZATION"
+  },
+  "spectra": {
+    "uniform_minimal_example": "MONOFRACTAL",
+    "binomial_p07_example": "SCALE_RICH_MULTIFRACTAL",
+    "triaxial_uniform_marginals": "MONOFRACTAL",
+    "triaxial_joint": "MULTIFRACTAL",
+    "joint_coupling_q2": 1.0565835283663672
+  },
+  "no_go": {
+    "finite_mixture": "FINITE_SPECTRUM_PIECEWISE_AFFINE",
+    "broad_marginal_without_hierarchy": "FAIL",
+    "finite_size_scaling_required": true,
+    "negative_q_empirical_default": "NOT_AUTHORIZED_WITHOUT_FSS"
+  },
+  "dual_acronym": {
+    "unconditional_equivalence": false,
+    "correct_relation": "INTERSECTION_OF_MINIMAL_INVARIANT_AND_SCALE_RICH_MULTIFRACTAL_CLASSES",
+    "Unidad_Minima_Invariante": "PASS_FORMAL",
+    "Unidad_Multifractal_de_Interrelacion": "PASS_CONDITIONAL_CLASS",
+    "empirical_instances": "HOLD"
+  },
+  "paper_B_status": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_EMPIRICAL_SCALE_RICH_VALIDATION_PENDING",
+  "pi_over_6": "NOT_SELECTED_BY_THIS_GATE",
+  "next_gate": "HGMF-UMI-20 Empirical Cross-Carrier Semantic Spectrum"
+}
