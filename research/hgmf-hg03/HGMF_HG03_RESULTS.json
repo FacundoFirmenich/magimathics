@@ -1,0 +1,52 @@
+{
+  "gate": "HGMF-HG03",
+  "title": "Residual Fibres, Decodependence and Observer-Induced Probability",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_OBSERVER_INDUCED_POSSIBILITY_PASS_PROBABILITY_WITH_DECLARED_MEASURE_PASS_TRANSITIONAL_IDENTITY_THEOREM_PASS_LUMPABILITY_BOUNDARY_PASS_DECODEPENDENCE_LATTICE_FAIL_MEASURE_INDEPENDENCE_HOLD_QUANTUM_IDENTIFICATION",
+  "finite_witness": {
+    "hidden_states": 16,
+    "saturated_macro_states": 8,
+    "residual_fiber_size": 2,
+    "identity_dynamics_exact_transition": true,
+    "branching_dynamics_exact_transition": false,
+    "branching_saturated_predictive_entropy_bits": 1.0,
+    "branching_full_context_predictive_entropy_bits": 0.0,
+    "branching_saturated_discordant_pairs": 8,
+    "memory_CMI_bits": 1.0,
+    "observed_markov_order": 2
+  },
+  "theorems": {
+    "possibility_precedes_probability": "PASS",
+    "transition_identity_factorization": "PASS",
+    "measure_independence_iff_singleton_successor_for_all_measures": "PASS",
+    "deterministic_identity_equals_strong_lumpability": "PASS",
+    "state_refinement_reduces_fixed-target_ambiguity": "PASS",
+    "outcome_refinement_increases_visible_distinction": "PASS",
+    "history_posterior_can_restore_determinism": "PASS"
+  },
+  "measure": {
+    "uniform_invariant_kernel_same_toggle": [0.5, 0.5],
+    "alternative_invariant_measures_exist": true,
+    "measure_independence": "FAIL",
+    "measure_free_object": "set-valued possibility relation"
+  },
+  "decodependence": {
+    "state_refinement_monotonicity_violations": 0,
+    "outcome_refinement_monotonicity_violations": 0,
+    "saturated_entropy_bits": 1.0,
+    "extended_entropy_bits": 0.0,
+    "decodependence_gain_bits": 1.0
+  },
+  "claim_boundary": {
+    "born_rule": "EXCLUDED",
+    "quantum_identification": "HOLD",
+    "special_constants": "EXCLUDED",
+    "universal_origin_of_probability": "NOT_CLAIMED"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "OBSERVER_INDUCED_PROBABILITY_FORMAL_PASS_MEASURE_SELECTION_PENDING"
+  },
+  "next_gate": "HGMF-HG04 Non-Circular Measure Selection on Residual Fibres"
+}
