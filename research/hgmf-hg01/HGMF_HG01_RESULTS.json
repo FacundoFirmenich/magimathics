@@ -1,0 +1,48 @@
+{
+  "gate": "HGMF-HG01",
+  "title": "Non-Temporal Generative Hierarchy and Projection Semantics",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_GENERATIVE_HIERARCHY_FORMALISM_PASS_PROJECTION_NONINVERTIBILITY_PASS_HYPERGEOMETRIC_GRAMMAR_HOLD_POSITIVE_PREGEOMETRY",
+  "founding_order": {
+    "strict_partial_order": true,
+    "temporal_order_entailed": false,
+    "model_extensions_checked": ["chronological_like", "simultaneous", "reverse_labels"]
+  },
+  "pregeometry": {
+    "status": "NEGATIVE_FOUNDING_SPECIFICATION_ONLY",
+    "positive_internal_model": "HOLD",
+    "direct_observation_map": "NOT_POSTULATED"
+  },
+  "protogeometry": {
+    "graded_relational_code": "PASS_FORMAL",
+    "closure_operator": {"extensive": true, "monotone": true, "idempotent": true},
+    "realizability_semantics": "PASS",
+    "multifractal_type": "DEFINED_CONDITIONALLY_NOT_PHYSICALLY_INSTANTIATED"
+  },
+  "geometry": {
+    "definition": "context-indexed stabilized projection",
+    "stabilization_idempotent": true,
+    "unoriented_projection_injective": false,
+    "oriented_projection_injective": false,
+    "extended_projection_injective": true
+  },
+  "theorems": {
+    "projection_noninvertibility": "PASS",
+    "fiber_quotient": "PASS",
+    "invariant_factorization": "PASS",
+    "contextual_realization": "PASS",
+    "hypergeometric_grammar_consistency": "PASS_FINITE_WITNESS_MODEL"
+  },
+  "constants_boundary": {
+    "pi_over_6": "EXCLUDED",
+    "pi_over_18": "EXCLUDED",
+    "four_pi_over_9": "EXCLUDED",
+    "RMNC": "EXCLUDED"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "FOUNDATIONAL_GRAMMAR_PASS_POSITIVE_DYNAMICS_PENDING"
+  },
+  "next_gate": "HGMF-HG02 Multi-Context Protogeometric Tomography and Observational Saturation"
+}
