@@ -1,0 +1,41 @@
+{
+  "gate": "HGMF-HG10",
+  "title": "Complete-State Multiplicity, Contextuality and Modal Chance",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_RELATIVE_MODAL_CHANCE_CRITERION_PASS_NO_GO_BOUNDARY_PASS_FUNCTIONAL_CHANCE_ONLY_FAIL_COMPLETE_STATE_IDENTIFIABILITY_FAIL_UNCONDITIONAL_MODAL_CHANCE_HOLD_FULL_BORN",
+  "exact_audits": {
+    "local_deterministic_CHSH_strategies": 16,
+    "max_local_abs_CHSH": 2.0,
+    "PR_box_CHSH": 4.0,
+    "quantum_singlet_CHSH_abs": 2.8284271247461903,
+    "Peres_Mermin_assignments_tested": 512,
+    "Peres_Mermin_global_satisfiers": 0,
+    "PBR_forbidden_outcomes_at_common_overlap_pair": 4
+  },
+  "completeness": {
+    "tomographic_implies_ontological": false,
+    "predictive_implies_ontological": false,
+    "causal_implies_ontological": false,
+    "operational_complete_state_identifiable": false,
+    "modal_chance_requires_admissibility_class": true
+  },
+  "no_go": {
+    "Bell": "excludes local measurement-independent factorisable completions, not determinism simpliciter",
+    "Kochen_Specker": "excludes noncontextual deterministic value assignments, not contextual determinism",
+    "PBR": "excludes psi-epistemic overlap under preparation independence, not psi-ontic determinism",
+    "Colbeck_Renner": "excludes predictively improving extensions under free-choice assumptions, not ontological extensions simpliciter"
+  },
+  "program_stance": {
+    "functional_chance": "PASS_CONDITIONAL",
+    "relative_modal_chance": "PASS_AS_DEFINITION_AND_RESTRICTED_RESULTS",
+    "unconditional_modal_chance": "FAIL_NOT_IDENTIFIED",
+    "Born_functional_form": "PASS_CONDITIONAL_FROM_HG07",
+    "full_Born": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "FUNCTIONAL_CHANCE_PASS_RELATIVE_MODAL_CRITERION_PASS_UNCONDITIONAL_MODAL_CHANCE_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG11 Transitional Singlet and the Weight-One Boundary"
+}
