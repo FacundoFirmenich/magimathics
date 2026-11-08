@@ -1,0 +1,54 @@
+{
+  "gate": "HGMF-HG12",
+  "title": "Transitional Identity Dynamics and Helicoidal Lift",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_TRANSITIONAL_PATH_FORMALISM_PASS_HELICAL_LIFT_CONDITIONAL_PASS_MONODROMY_INVARIANT_FAIL_HELICAL_UNIQUENESS_HOLD_PHYSICAL_SPIN_IDENTIFICATION",
+  "path_family": {
+    "same_q_paths_tested": 4,
+    "relative_windings": [0, 1, 3, 10],
+    "max_q_mismatch": 0.0,
+    "path_length_min": 0.7853981633974483,
+    "path_length_max": 20.034842724910153,
+    "path_length_ratio_m10_m0": 25.50915402990519,
+    "q_determines_azimuth": false,
+    "q_determines_global_lift_phase": false
+  },
+  "helical_lift": {
+    "definition": "nonzero base speed plus nonzero covariant vertical rate relative to a declared connection; constant pitch when their ratio is constant",
+    "gauge_invariant_given_connection": true,
+    "connection_independent": false,
+    "same_base_loop_pitch_examples": [1.0, 0.0, -1.0, 2.0],
+    "uniqueness": false
+  },
+  "holonomy": {
+    "equatorial_berry_phase": -3.141592653589793,
+    "equatorial_holonomy_real": -1.0,
+    "equatorial_holonomy_imag": 0.0,
+    "horizontal_lift_closed": false,
+    "monodromy_invariant": "PASS_FOR_CLOSED_LOOP_AND_FIXED_CONNECTION"
+  },
+  "averaging": {
+    "winding_plus": 1.0,
+    "winding_minus": -1.0,
+    "mean_winding_defined": false,
+    "average_holonomy_modulus": 0.5000000000000001,
+    "mixed_state_purity_after_phase_average": 0.5
+  },
+  "spin_boundary": {
+    "geometric_phase_implies_spin": false,
+    "physical_spin_requires": "representation of spatial rotations (SU(2)/SO(3)), generators, Casimir and dynamics",
+    "status": "HOLD_PHYSICAL_SPIN_IDENTIFICATION"
+  },
+  "claim_boundary": {
+    "DNA_orbits_precession_as_evidence": false,
+    "special_constants": "EXCLUDED",
+    "Born": "HOLD",
+    "positive_pregeometric_dynamics": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "TRANSITIONAL_PATH_AND_HOLONOMY_PASS_HELICAL_UNIQUENESS_FAIL_SPIN_HOLD"
+  },
+  "next_gate": "HGMF-HG13 Connection Selection, Physical Generator and Helicoidal Dynamics"
+}
