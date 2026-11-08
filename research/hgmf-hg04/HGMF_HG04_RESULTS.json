@@ -1,0 +1,43 @@
+{
+  "gate": "HGMF-HG04",
+  "title": "Non-Circular Measure Selection on Residual Fibres",
+  "date": "2026-11-08",
+  "global_verdict": "PASS_UNIFORM_SYMMETRIC_MEASURE_ONLY_PASS_MEASURE_FAMILY_FAIL_GENERAL_NONCIRCULAR_SELECTION_HOLD_BORN_DERIVATION",
+  "finite_symmetry": {
+    "transitive_unique_uniform": true,
+    "multiple_orbits_family_dimension": "orbit_count_minus_one",
+    "HG03_two_state_uniform": "CONDITIONAL_ON_PHYSICAL_SWAP_SYMMETRY"
+  },
+  "refinement": {
+    "counting_measure": "PASS_IF_CANONICAL_REFINEMENT_AND_ADDITIVITY",
+    "partition_independence": "FAIL_GENERAL",
+    "multiple_partition_ambiguity": true
+  },
+  "composition": {
+    "product_uniform": "PASS_IF_INDEPENDENCE_OR_FULL_PRODUCT_TRANSITIVITY",
+    "uniform_marginals_unique_joint": false,
+    "two_by_two_coupling_dimension": 1
+  },
+  "continuity": {
+    "compact_homogeneous_unique_invariant": "PASS_STANDARD_HAAR_QUOTIENT",
+    "nontransitive_or_noncompact": "NO_GENERAL_UNIQUE_NORMALIZED_MEASURE"
+  },
+  "noncontextuality": {
+    "classical_event_space": "ARBITRARY_MEASURE_REMAINS",
+    "hilbert_projection_effect_space": "TRACE_RULE_WITH_ADDITIVITY_AND_QUANTUM_STRUCTURE",
+    "additivity_indispensable": "SUPPORTED_BY_2026_ANALYSIS"
+  },
+  "born_boundary": {
+    "amplitude_structure": false,
+    "quadratic_law": false,
+    "unique_measure": false,
+    "composition_and_normalization": "PARTIAL_CLASSICAL_ONLY",
+    "born_rule": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "MEASURE_SELECTION_BOUNDARY_PASS_BORN_HOLD"
+  },
+  "next_gate": "HGMF-HG05 Amplitude Geometry and Quadratic Weight Tribunal"
+}
