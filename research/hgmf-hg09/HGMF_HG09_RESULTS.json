@@ -1,0 +1,38 @@
+{
+  "gate": "HGMF-HG09",
+  "title": "Functional Chance Role, Calibration and Intervention",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_OPERATIONAL_CHANCE_ROLE_CONDITIONAL_PASS_CALIBRATION_INTERVENTION_SCREENING_OFF_FAIL_SINGLE_CASE_CHANCE_UNIQUENESS_HOLD_FULL_BORN",
+  "operational_role": {
+    "calibration": "PASS_CONDITIONAL_ON_PRODUCT_OR_DECLARED_KERNEL",
+    "strictly_proper_forecast": "PASS_UNIQUE_WITHIN_KERNEL",
+    "counterfactual_stability": "PASS_IF_PREPARATION_EQUIVALENCE_HOLDS",
+    "intervention_sensitivity": "PASS",
+    "screening_off": "PASS_UNDER_COMPLETE_OPERATIONAL_STATE_AND_PRODUCT_REFRESH",
+    "principal_principle": "NORMATIVE_DEFERENCE_NOT_CHANCE_DEFINITION"
+  },
+  "no_go": {
+    "deterministic_kernel_dilation": "PASS_GENERAL_STANDARD_BOREL",
+    "deterministic_calibrated_schedule": "PASS_FINITE_BLOCK",
+    "operational_role_identifies_intrinsic_stochasticity": false,
+    "single_case_irreducibility_operationally_identifiable": false
+  },
+  "three_roles": {
+    "predictive_chance_role": "PASS",
+    "causal_intervention_role": "PASS_CONDITIONAL",
+    "modal_irreducible_chance_role": "FAIL_NOT_IDENTIFIED"
+  },
+  "born_boundary": {
+    "functional_form": "PASS_CONDITIONAL_FROM_HG07",
+    "frequency_typicality": "PASS_FROM_HG08",
+    "operational_forecast_role": "PASS_CONDITIONAL",
+    "objective_single_case_chance": "HOLD_FAIL",
+    "full_born_derivation": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "OPERATIONAL_CHANCE_ROLE_PASS_CONDITIONAL_SINGLE_CASE_IRREDUCIBILITY_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG10 Complete-State Multiplicity, Contextuality and Modal Chance"
+}
