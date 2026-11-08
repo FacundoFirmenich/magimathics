@@ -1,0 +1,41 @@
+{
+  "gate": "HGMF-HG11",
+  "title": "Transitional Singlet and the Weight-One Boundary",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_WEIGHT_ONE_IDENTITY_PASS_TRANSITIONAL_SINGLET_CONDITIONAL_PASS_SEMANTIC_BOUNDARY_FAIL_ACTUALITY_FROM_PROBABILITY_ONE_HOLD_PROTOFORM_PHYSICAL_IDENTIFICATION",
+  "weight_one": {
+    "identity": "q_psi(P)=1 iff P psi=psi",
+    "distance_identity": "dist(psi_hat,Ran P)=sqrt(1-q)",
+    "limit_equals_endpoint": false
+  },
+  "atomicity": {
+    "rank_one_weight_one": "STRICT_SINGLET",
+    "rank_greater_than_one_weight_one": "COARSE_CERTAINTY_NOT_SINGLET"
+  },
+  "probability_one": {
+    "almost_sure_equals_sure": false,
+    "measure_one_implies_actuality": false,
+    "measure_one_implies_logical_necessity": false,
+    "delta_has_zero_branching_entropy": true
+  },
+  "typed_identity": {
+    "literal_PRV_equals_PSP": false,
+    "canonical": "Delta(Pi_lambda(PRV*)) = PSP* = delta_y*",
+    "status": "PASS_CONDITIONAL_ON_ATOMIC_ENDPOINT"
+  },
+  "semantic_boundary": {
+    "numerical_continuity": true,
+    "support_stratum_change": true,
+    "microsingularity": "SEMANTIC_STRATIFICATION_ONLY"
+  },
+  "born_boundary": {
+    "endpoint_selects_interior_rule": false,
+    "full_born": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "TRANSITIONAL_SINGLET_FORMAL_PASS_ACTUALITY_AND_PROTOFORM_PHYSICS_HOLD"
+  },
+  "next_gate": "HGMF-HG12 Transitional Identity Dynamics and Helicoidal Lift"
+}
