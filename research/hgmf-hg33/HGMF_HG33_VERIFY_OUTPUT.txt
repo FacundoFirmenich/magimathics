@@ -1,0 +1,8 @@
+PASS_HGMF_HG33_EXACT
+finite_path_unique_patterns=13
+random_threshold_pattern_coverage=PASS
+monotone_rank=12/12
+single_reversal_rank=13/13
+single_path_preisach_power_nogo=PASS
+outer_likelihood_dominance=PASS
+empirical_adjudication=false
