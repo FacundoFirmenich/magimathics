@@ -1,0 +1,58 @@
+{
+  "gate": "HGMF-HG25",
+  "title": "Causal Modal Spectroscopy and Dual-Carrier Execution Readiness",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_EXECUTION_AUDIT_PASS_CAUSAL_RECTANGLE_COMPLETENESS_PASS_MODAL_RANK_CONTRACT_PASS_ANALYSIS_FREEZE_FAIL_CURRENT_CORPUS_IDENTIFIABILITY_ABSTAIN_INSUFFICIENT_EXECUTION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "data_availability": {
+    "certified_magnetic_target_grid_loops": 0,
+    "certified_adsorption_homologous_runs": 0,
+    "public_magnetic_whole_loops": 4,
+    "public_adsorption_runs": 4,
+    "public_data_target_grid_compatible": false,
+    "UMI17_robust_bridge_status": "DESIGN_COMPLETE_EXECUTION_PENDING",
+    "conditional_increment_after_UMI17_UMI22": 18,
+    "magnetic_grid_from_scratch": 72,
+    "adsorption_grid_from_scratch": 72
+  },
+  "magnetic_design": {
+    "fields_mT": [100, 150, 200],
+    "cycles": [1, 2, 3, 4, 5, 6, 7, 8],
+    "waves": [1, 2, 3],
+    "full_grid_loops": 72,
+    "full_adjacent_rectangles": 42,
+    "conditional_staged_loops_after_UMI17_UMI22": 54,
+    "conditional_staged_rectangles": 24,
+    "conditional_missing_loops": 18,
+    "conditional_missing_rectangles": 18
+  },
+  "modal_identifiability": {
+    "bare_min_non_degenerate_blocks": 4,
+    "recommended_blocks": 5,
+    "recommended_split": "3 training + 2 holdout",
+    "source_support_required": true,
+    "training_jacobian_full_rank_required": true,
+    "nested_family_intersections_remain": true
+  },
+  "precision": {
+    "rectangle_variance_equal_cells": "4 sigma^2 per wave",
+    "SE_two_training_waves_in_sigma_units": 1.414213562373095,
+    "SE_three_waves_in_sigma_units": 1.1547005383792517,
+    "MDE_alpha_0p05_power_0p8_two_waves_in_sigma_units": 3.9620398115993454,
+    "MDE_alpha_0p05_power_0p8_three_waves_in_sigma_units": 3.2349919596703978,
+    "interpretation": "symbolic; sigma is component-estimation uncertainty"
+  },
+  "execution": {
+    "magnetic_executed": false,
+    "second_carrier_executed": false,
+    "causal_rectangles_estimated": false,
+    "modal_kernel_fit_empirical": false,
+    "wave3_holdout_scored": false,
+    "verdict": "ABSTAIN_INSUFFICIENT_EXECUTION"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_EXECUTION_BOUNDARY_ADDED",
+    "paper_C": "EMPIRICAL_HG23_HG24_ARCHITECTURE_READY_NO_EMPIRICAL_CLOSURE"
+  },
+  "next_gate": "HGMF-HG26 Acquisition Receipts and First Dual-Carrier Empirical Adjudication"
+}

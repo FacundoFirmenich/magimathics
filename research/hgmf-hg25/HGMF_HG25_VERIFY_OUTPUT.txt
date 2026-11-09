@@ -1,0 +1,10 @@
+PASS_HGMF_HG25_EXACT
+magnetic_full_grid_loops=72
+full_adjacent_rectangles=42
+conditional_staged_loops=54
+conditional_missing_loops=18
+conditional_staged_rectangles=24
+conditional_missing_rectangles=18
+certified_executed_target_grid_loops=0
+adsorption_homologous_runs_executed=0
+empirical_verdict=ABSTAIN_INSUFFICIENT_EXECUTION

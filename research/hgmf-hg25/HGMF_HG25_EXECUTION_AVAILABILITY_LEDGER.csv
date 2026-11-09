@@ -1,0 +1,8 @@
+source,units,type,target_grid_compatible,reason
+public magnetic corpus UMI10,4,whole minor loops,False,one reversal per file; no preset-field-cycle-wave grid
+public adsorption corpus UMI10,4,runs,False,no 3 controls x 8 reversal depths x 3 waves contract
+UMI17 robust bridge,99,planned loop blocks,partial,design complete; execution held
+UMI22 extension,39,planned loop blocks,partial,protocol only; execution held
+HG23/HG24 incremental extension,18,planned loops,True,conditional increment after UMI17+UMI22
+HG25 magnetic grid from scratch,72,required loops,True,3 fields x 8 cycles x 3 waves
+HG25 adsorption homologous carrier,72,required runs,True,3 controls x 8 depths x 3 waves
