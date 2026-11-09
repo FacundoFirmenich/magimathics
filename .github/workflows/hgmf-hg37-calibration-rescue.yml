@@ -1,0 +1,99 @@
+name: HGMF HG37 calibration rescue audit
+
+on:
+  push:
+    branches:
+      - hgmf-hg37-calibration-rescue-or-pivot-20261109
+    paths:
+      - 'research/hgmf-hg37/audit_public_calibration.py'
+      - 'research/hgmf-hg37/hgmf_hg37_exact_verify.py'
+      - '.github/workflows/hgmf-hg37-calibration-rescue.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  calibration-rescue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout magimathics
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy h5py
+
+      - name: Fetch pinned public sources
+        run: |
+          mkdir -p external
+          git init external/FGT_CrSBr
+          git -C external/FGT_CrSBr remote add origin https://github.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure.git
+          git -C external/FGT_CrSBr fetch --depth 1 origin 66662e8aa3690cebaaef52dfc4ddd3bea458a576
+          git -C external/FGT_CrSBr checkout FETCH_HEAD
+          test "$(git -C external/FGT_CrSBr rev-parse HEAD)" = "66662e8aa3690cebaaef52dfc4ddd3bea458a576"
+
+          git init external/AJBrown
+          git -C external/AJBrown remote add origin https://github.com/NIST-ISODB/AJBrownThesisIsotherms.git
+          git -C external/AJBrown fetch --depth 1 origin 17a48e5d3c00e97387d0dfb1e280d8d6bf103d40
+          git -C external/AJBrown checkout FETCH_HEAD
+          test "$(git -C external/AJBrown rev-parse HEAD)" = "17a48e5d3c00e97387d0dfb1e280d8d6bf103d40"
+
+      - name: Execute public calibration audit
+        run: |
+          rm -rf research/hgmf-hg37/generated
+          mkdir -p research/hgmf-hg37/generated
+          python research/hgmf-hg37/audit_public_calibration.py \
+            --mag-root external/FGT_CrSBr \
+            --brown-root external/AJBrown \
+            --hg36-results research/hgmf-hg36/HGMF_HG36_RESULTS.json \
+            --out-dir research/hgmf-hg37/generated \
+            | tee research/hgmf-hg37/generated/HGMF_HG37_AUDIT_STDOUT.json
+
+      - name: Execute exact gate verifier
+        run: |
+          PYTHONPATH=research/hgmf-hg37 python research/hgmf-hg37/hgmf_hg37_exact_verify.py \
+            | tee research/hgmf-hg37/generated/HGMF_HG37_VERIFY_OUTPUT.txt
+
+      - name: Build receipt and canonical artifact
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, subprocess
+          root=Path('research/hgmf-hg37/generated')
+          receipt={
+            'gate':'HGMF-HG37',
+            'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+            'sources':{
+              'magnetism':'sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576',
+              'adsorption':'NIST-ISODB/AJBrownThesisIsotherms@17a48e5d3c00e97387d0dfb1e280d8d6bf103d40'
+            },
+            'files':[]
+          }
+          for p in sorted(root.iterdir()):
+            if p.is_file():
+              receipt['files'].append({'name':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+          (root/'HGMF_HG37_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          PY
+          cd research/hgmf-hg37
+          find generated -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
+          zip -r HGMF_HG37_CALIBRATION_RESCUE.zip . -x HGMF_HG37_CALIBRATION_RESCUE.zip
+
+      - name: Upload audit bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_HG37_CALIBRATION_RESCUE
+          path: research/hgmf-hg37/HGMF_HG37_CALIBRATION_RESCUE.zip
+          if-no-files-found: error
+          retention-days: 30
