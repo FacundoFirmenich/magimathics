@@ -1,0 +1,74 @@
+{
+  "gate": "HGMF-HG20",
+  "title": "Dimensionless Coupling Selection and Cross-Carrier Residual Tribunal",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_ZERO_COUPLING_THEOREM_FOR_UNIVERSAL_LOCAL_AREA_LAW_PASS_TOPOLOGICAL_NORMALIZATION_PASS_MEAN_ZERO_RESIDUAL_CLASS_FAIL_NONZERO_COUPLING_UNIQUENESS_FAIL_STANDARD_GEOMETRY_EXCLUSION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "candidate_law": "deltaF = c_HG / hbar^2 * dA_action = c_HG * dA_Q",
+  "same_bundle": {
+    "curvature_difference_exact": true,
+    "closed_surface_integral_zero": true,
+    "constant_sign_area_law_forces_c": 0.0
+  },
+  "composition": {
+    "area_A": 2.0,
+    "area_B": 2.0,
+    "area_composite": 5.0,
+    "area_additivity_defect": 1.0,
+    "universal_local_area_law_additive_only_if_c_zero": true
+  },
+  "topology": {
+    "Bloch_quantum_volume": 3.141592653589793,
+    "hidden_ancilla_quantum_volume": 7.024814731040727,
+    "Bloch_constraint": "c/2 in Z",
+    "hidden_constraint": "c*sqrt(5)/2 in Z",
+    "common_nonzero_solution": false,
+    "common_solution": 0.0
+  },
+  "future_only_holdout": {
+    "fit_on_Bloch_c": 2.0,
+    "heldout_hidden_predicted_delta_C": 2.23606797749979,
+    "fit_on_hidden_c": 0.8944271909999159,
+    "heldout_Bloch_predicted_delta_C": 0.4472135954999579,
+    "both_pass": false
+  },
+  "mixed_state": {
+    "metric_choice_changes_coefficient": true,
+    "SLD_to_WY_ratio": 0.8999999999999999,
+    "SLD_to_BKM_ratio": 0.8656176662947717,
+    "Bures_predeclaration_required": true
+  },
+  "historical_constants": {
+    "pi/6": {
+      "value": 0.5235987755982988,
+      "Bloch_delta_C": 0.2617993877991494,
+      "passes_as_this_specific_universal_c": false
+    },
+    "pi/18": {
+      "value": 0.17453292519943295,
+      "Bloch_delta_C": 0.08726646259971647,
+      "passes_as_this_specific_universal_c": false
+    },
+    "4pi/9": {
+      "value": 1.3962634015954636,
+      "Bloch_delta_C": 0.6981317007977318,
+      "passes_as_this_specific_universal_c": false
+    },
+    "4sqrt(pi)/3": {
+      "value": 2.3632718012073544,
+      "Bloch_delta_C": 1.1816359006036772,
+      "passes_as_this_specific_universal_c": false
+    }
+  },
+  "surviving_residual_class": {
+    "same_bundle_requirement": "integral deltaF = 0",
+    "local_density_requirement": "weighted mean zero",
+    "constant_mode": "EXCLUDED",
+    "sign_changing_or_nonlocal_modes": "OPEN"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "UNIVERSAL_LOCAL_AREA_COUPLING_NONZERO_RULED_OUT_ZERO_MEAN_RESIDUAL_FRONTIER_OPEN"
+  },
+  "next_gate": "HGMF-HG21 Zero-Flux Residual Fields, Hodge Modes and Nonlocal Coupling"
+}
