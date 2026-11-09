@@ -1,0 +1,52 @@
+{
+  "gate": "HGMF-HG17",
+  "title": "Cross-Context Cocycle Curvature and Scale Selection",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_CONTEXT_CURVATURE_FUNCTIONAL_PASS_QRF_COCYCLE_SIGNATURE_PASS_NONTRIVIAL_PROJECTIVE_CLASS_FAIL_DIMENSIONFUL_SCALE_SELECTION_FAIL_STANDARD_PROCESS_EXCLUSION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "flatness": {
+    "triangle_cycle_max_frobenius_defect": 1.4070002655022428e-15,
+    "coboundary_reconstruction_max_error": 7.365121899186852e-16,
+    "theorem": "all cycle holonomies identity iff pair-groupoid transports are endpoint coboundaries"
+  },
+  "projective_cocycle": {
+    "group": "Z2 x Z2",
+    "cocycle_condition_violations": 0,
+    "representation_max_error": 0.0,
+    "commutator_loop": "-I",
+    "central_phase": 3.141592653589793,
+    "noncentral_defect": 0.0,
+    "density_channel_max_error": 0.0,
+    "cohomology_status": "NONCOBOUNDARY_WITNESS",
+    "operational_status": "AMPLITUDE_NONTRIVIAL_CHANNEL_TRIVIAL"
+  },
+  "noncentral_standard_holonomy": {
+    "noncentral_defect": 0.38268343236508984,
+    "channel_defect": 0.37561277541511384,
+    "average_gate_infidelity": 0.0940566380366965,
+    "eigenphases": [-0.38505787590347784, 0.38505787590347773],
+    "max_gauge_metric_error": 1.9984014443252818e-15,
+    "physical_status": "STANDARD_QM_WITNESS"
+  },
+  "multigap": {
+    "scalar_time_equal_gap_defect": 0.0,
+    "nonlinear_standard_unitary_defect": 0.30378733460445595,
+    "interpretation": "multigap defect falsifies scalar-time form, not standard QM"
+  },
+  "bianchi": {
+    "edge_derived_residual": 0.0,
+    "independent_face_anomaly": 0.23,
+    "anomalous_residual": 0.23
+  },
+  "scale": {
+    "holonomy_is_dimensionless": true,
+    "same_holonomy_curvature_range": [0.0037, 1.48],
+    "dimensionful_scale_selected": false,
+    "reason": "requires physical context area/metric, logarithm branch and coupling"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "CONTEXT_GROUPOID_AND_COCYCLE_PASS_DIMENSIONFUL_SCALE_AND_STANDARD_PROCESS_EXCLUSION_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG18 Context-Area Form, Dimensional Transgression and Cross-Carrier Holonomy"
+}

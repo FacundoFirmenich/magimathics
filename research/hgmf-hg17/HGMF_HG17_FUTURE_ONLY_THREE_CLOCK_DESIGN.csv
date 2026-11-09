@@ -1,0 +1,11 @@
+wave,block,transport_or_cycle,carrier,spectral_support,intervention_contract,adjudication
+1,calibration,A->B,carrier_1,"gaps 1,2,3",state+observable+intervention map,fit edge transport only
+1,calibration,B->C,carrier_1,"gaps 1,2,3",state+observable+intervention map,fit edge transport only
+1,calibration,C->A,carrier_1,"gaps 1,2,3",state+observable+intervention map,fit edge transport only
+1,gauge control,all edges,carrier_1,held-out phases,local rephasing/recalibration,cycle invariants unchanged
+2,held-out triangle,A->B->C->A,carrier_1,gap 4,full transformed intervention protocol,predict Omega and multigap signature
+2,reverse triangle,A->C->B->A,carrier_1,gap 4,orientation reversal,separate curvature odd/even
+2,incomplete-map control,A->B->C->A,carrier_1,gap 4,omit intervention transform deliberately,quantify spurious cocycle
+3,carrier swap,A->B->C->A,carrier_2,"gaps 1,2,3,4",same semantic protocol,test cross-carrier transport
+3,process-tensor nuisance,all clocks,carrier_1+2,multi-time,environment/process tomography,test standard absorption
+3,future-only scale,new triangle,carrier_2,new context area,predeclared scaling law,held-out dimensional test
