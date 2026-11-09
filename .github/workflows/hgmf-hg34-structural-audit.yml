@@ -1,0 +1,88 @@
+name: HGMF HG34 structural carrier audit
+
+on:
+  push:
+    branches:
+      - hgmf-hg34-structural-falsifiers-20261109
+    paths:
+      - 'research/hgmf-hg34/**'
+      - '.github/workflows/hgmf-hg34-structural-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  structural-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout magimathics
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn h5py matplotlib
+
+      - name: Fetch pinned public source repositories
+        run: |
+          mkdir -p external
+          git clone --depth 1 https://github.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure.git external/FGT_CrSBr
+          git -C external/FGT_CrSBr checkout 66662e8aa3690cebaaef52dfc4ddd3bea458a576
+          test "$(git -C external/FGT_CrSBr rev-parse HEAD)" = "66662e8aa3690cebaaef52dfc4ddd3bea458a576"
+          git clone --depth 1 https://github.com/NIST-ISODB/AJBrownThesisIsotherms.git external/AJBrown
+          git -C external/AJBrown checkout 17a48e5d3c00e97387d0dfb1e280d8d6bf103d40
+          test "$(git -C external/AJBrown rev-parse HEAD)" = "17a48e5d3c00e97387d0dfb1e280d8d6bf103d40"
+
+      - name: Execute adsorption structural tribunal
+        run: |
+          rm -rf research/hgmf-hg34/generated
+          mkdir -p research/hgmf-hg34/generated
+          python research/hgmf-hg34/analyze_adsorption_structural.py             --csv external/AJBrown/Scanning_Isotherms/xe_scanning_isotherms.csv             --out-dir research/hgmf-hg34/generated             | tee research/hgmf-hg34/generated/HGMF_HG34_ADSORPTION_STDOUT.json
+
+      - name: Execute magnetic training tribunal
+        run: |
+          python research/hgmf-hg34/analyze_magnetic_training.py             --source-root external/FGT_CrSBr             --out-dir research/hgmf-hg34/generated             | tee research/hgmf-hg34/generated/HGMF_HG34_MAGNETIC_STDOUT.json
+
+      - name: Build execution receipt
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, hashlib, subprocess
+          root=Path('research/hgmf-hg34/generated')
+          receipt={
+            'gate':'HGMF-HG34',
+            'branch':'hgmf-hg34-structural-falsifiers-20261109',
+            'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+            'sources':{
+              'magnetism':'sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576',
+              'adsorption':'NIST-ISODB/AJBrownThesisIsotherms@17a48e5d3c00e97387d0dfb1e280d8d6bf103d40'
+            },
+            'files':[]
+          }
+          for p in sorted(root.iterdir()):
+            if p.is_file():
+              receipt['files'].append({'name':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+          (root/'HGMF_HG34_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          PY
+          cd research/hgmf-hg34
+          find generated -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
+          zip -r HGMF_HG34_STRUCTURAL_AUDIT.zip generated analyze_adsorption_structural.py analyze_magnetic_training.py
+
+      - name: Upload audit bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_HG34_STRUCTURAL_AUDIT
+          path: research/hgmf-hg34/HGMF_HG34_STRUCTURAL_AUDIT.zip
+          if-no-files-found: error
+          retention-days: 30
