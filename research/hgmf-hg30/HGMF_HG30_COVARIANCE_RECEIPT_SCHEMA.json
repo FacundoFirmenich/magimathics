@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG30 Covariance Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile","receipt_id","carrier","component","split","labels","units","estimate_artifact","covariance_artifact","covariance","extraction","provenance","self_hash"],
+  "properties": {
+    "profile": {"const": "hgmf-covariance-receipt/1.0"},
+    "receipt_id": {"type":"string","minLength":8},
+    "carrier": {"enum":["magnetism","adsorption"]},
+    "component": {"enum":["A","B","C","K","E","Q","Z"]},
+    "split": {"enum":["TRAIN","HOLDOUT"]},
+    "labels": {"type":"array","items":{"type":"string"},"minItems":1,"uniqueItems":true},
+    "units": {"type":"string","minLength":1},
+    "estimate_artifact": {"$ref":"#/$defs/artifact"},
+    "covariance_artifact": {"$ref":"#/$defs/artifact"},
+    "covariance": {
+      "type":"object",
+      "additionalProperties":false,
+      "required":["dimension","rank","psd_tolerance","regularization","symmetry_tolerance"],
+      "properties":{
+        "dimension":{"type":"integer","minimum":1},
+        "rank":{"type":"integer","minimum":0},
+        "psd_tolerance":{"type":"number","minimum":0},
+        "symmetry_tolerance":{"type":"number","minimum":0},
+        "regularization":{"enum":["NONE","DECLARED_EIGENCLIP","DECLARED_RIDGE","EXTERNAL"]}
+      }
+    },
+    "extraction": {
+      "type":"object",
+      "additionalProperties":false,
+      "required":["code_commit","environment_digest","parameters_sha256","analysis_seal_sha256"],
+      "properties":{
+        "code_commit":{"type":"string"},
+        "environment_digest":{"type":"string"},
+        "parameters_sha256":{"type":"string"},
+        "analysis_seal_sha256":{"type":"string"}
+      }
+    },
+    "provenance": {
+      "type":"object",
+      "additionalProperties":false,
+      "required":["parent_receipt_ids","activity_id","agent_ids"],
+      "properties":{
+        "parent_receipt_ids":{"type":"array","items":{"type":"string"},"minItems":1,"uniqueItems":true},
+        "activity_id":{"type":"string"},
+        "agent_ids":{"type":"array","items":{"type":"string"},"minItems":1}
+      }
+    },
+    "self_hash":{"type":"string","pattern":"^[0-9a-f]{64}$"}
+  },
+  "$defs":{
+    "artifact":{
+      "type":"object",
+      "additionalProperties":false,
+      "required":["relative_path","sha256","bytes","format"],
+      "properties":{
+        "relative_path":{"type":"string"},
+        "sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},
+        "bytes":{"type":"integer","minimum":1},
+        "format":{"enum":["npy","npz","csv","json"]}
+      }
+    }
+  }
+}
