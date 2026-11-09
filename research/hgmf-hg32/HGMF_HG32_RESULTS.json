@@ -1,0 +1,37 @@
+{
+  "gate": "HGMF-HG32",
+  "title": "Observable Jurisdiction, Cap-Free Kernel Closure and Universal-Evalue Power Audit",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_OBSERVABLE_JURISDICTION_THEOREM_PASS_QUANTUM_PT_OUT_OF_JURISDICTION_AS_DISTINCT_CURRENT_NULL_PASS_QUANTUM_ANCILLA_OUT_OF_JURISDICTION_AS_DISTINCT_CURRENT_NULL_PASS_KERNEL_PROJECTIVE_COMPACTIFICATION_PASS_HMM_NOISE_FLOOR_LIKELIHOOD_BOUND_PASS_SATURATED_HMM_POWER_NOGO_PASS_EVALUE_PER_CELL_POWER_BUDGET_PASS_CARRIER_SPECIFIC_STANDARD_MODEL_REQUIREMENT_FAIL_CURRENT_NUISANCE_REGISTRY_COMPLETENESS_ABSTAIN_EMPIRICAL_ADJUDICATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "jurisdiction": {
+    "quantum_process_tensor_current_magnetism": "OUT_OF_JURISDICTION_AS_DISTINCT_NULL",
+    "quantum_process_tensor_current_adsorption": "OUT_OF_JURISDICTION_AS_DISTINCT_NULL",
+    "quantum_ancilla_current_magnetism": "OUT_OF_JURISDICTION_AS_DISTINCT_NULL",
+    "quantum_ancilla_current_adsorption": "OUT_OF_JURISDICTION_AS_DISTINCT_NULL",
+    "classical_projections_must_still_be_tested": true
+  },
+  "kernel": {
+    "finite_shape_cap_required_for_profile_existence": false,
+    "screened_endpoints": ["green","identity"],
+    "fractional_heat_infinite_endpoint": "projection onto minimum supported eigenvalue block",
+    "machine_interval_certificate": false
+  },
+  "hmm": {
+    "positive_measurement_noise_floor_suffices_for_finite_likelihood_bound": true,
+    "unrestricted_state_count_power": "FAIL_SATURATED",
+    "physical_state_cap_sealed": false
+  },
+  "power": {
+    "holdout_cells_per_carrier": 24,
+    "log_e_threshold": 4.941642422609304,
+    "minimum_average_nats_per_cell_zero_slack": 0.205901767608721,
+    "minimum_average_bits_per_cell_zero_slack": 0.297053459039374
+  },
+  "carrier_specific_registry": {
+    "magnetism_complete": false,
+    "adsorption_complete": false,
+    "status": "ABSTAIN_CARRIER_STANDARD_MODEL_ADAPTERS"
+  },
+  "empirical_status": "ABSTAIN_NO_ADMITTED_DATA",
+  "next_gate": "HGMF-HG33 Carrier-Specific Standard-Null Tribunal for Magnetism and Adsorption"
+}
