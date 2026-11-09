@@ -152,7 +152,7 @@ def main():
       "scan_source_runs":list(AUDIT_RUNS),
       "lower_closure_anchor":anchor,
       "Vc_candidate_count":len(vcs),
-      "Vs_external_reference_available":false,
+      "Vs_external_reference_available":False,
       "Vs_identification":"ORDER_BOUNDS_ONLY: monotone film contribution >= lower-closure loading and <= adsorption-boundary loading",
       "Q_points":int(len(qdf)),
       "Q_median_interval_width":float(qdf.width.median()) if len(qdf) else None,
