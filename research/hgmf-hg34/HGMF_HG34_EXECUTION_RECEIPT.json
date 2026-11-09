@@ -1,0 +1,13 @@
+{
+  "gate": "HGMF-HG34",
+  "workflow_run_id": 42684878657,
+  "workflow_run_url": "https://github.com/FacundoFirmenich/magimathics/actions/runs/42684878657",
+  "conclusion": "success",
+  "head_sha": "0699284b2c433d938648ed3eac5f524236d49864",
+  "artifact_id": 13703818096,
+  "artifact_digest": "sha256:989ec2eb26d6c2d0a075555f4ca0da1ce3a98e10db6d5d527c3e120877addd1e",
+  "sources": {
+    "magnetism": "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576",
+    "adsorption": "NIST-ISODB/AJBrownThesisIsotherms@17a48e5d3c00e97387d0dfb1e280d8d6bf103d40"
+  }
+}
