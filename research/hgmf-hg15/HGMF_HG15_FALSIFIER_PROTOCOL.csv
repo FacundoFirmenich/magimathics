@@ -1,0 +1,11 @@
+id,target,protocol,standard_QM_prediction,adjudication
+F1,clock gauge,rephase clock basis and conditional amplitudes,all density/outcome predictions invariant,representation artifact
+F2,clock recalibration,change clock rate map while preserving calibrated relational time,equivalent dynamics after reparametrization,clock calibration artifact
+F3,single-gap phase/visibility,measure one complex coherence factor,never decisive: every point in unit disk has a 2-point time-smearing model,non-identifiable
+F4,multi-gap spectroscopy,measure coherences at >=3 gaps,common characteristic function; equal gaps agree; Toeplitz/Bochner constraints,falsifies scalar-time smearing if violated
+F5,clock substitution,repeat same relational protocol with different clock spectra/resolutions,residual follows calibrated clock model,carrier-native anomaly if reproducible
+F6,forward/reverse + echo,reverse path and cancel local dynamical phase,Berry/dynamic/noise components separate,history/context residual
+F7,matched endpoint ordering,"same endpoints and integrated controls, different order",same result for memoryless model,order-dependent memory residual
+F8,temporal QRF covariance,transform full intervention protocol between clocks,same invariant operational predictions,frame-covariance defect
+F9,environment/process tomography,fit CPTP/process-tensor model with calibrated ancilla,residual absorbed by standard dilation,not HGMF-specific
+F10,scale law,"vary gap, duration, clock quality and context",predeclared dimensionful scaling,required for attribution
