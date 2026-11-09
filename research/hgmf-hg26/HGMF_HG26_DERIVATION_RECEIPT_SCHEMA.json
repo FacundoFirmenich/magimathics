@@ -1,0 +1,52 @@
+{
+  "$id": "https://example.org/hgmf/hg26/derivation-receipt.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "activity": {
+      "additionalProperties": false,
+      "properties": {
+        "activity_id": {"type": "string"},
+        "code_commit": {"pattern": "^[0-9a-f]{40}$", "type": "string"},
+        "ended_at": {"format": "date-time", "type": "string"},
+        "environment_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "parameters_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "started_at": {"format": "date-time", "type": "string"}
+      },
+      "required": ["activity_id", "started_at", "ended_at", "code_commit", "environment_digest", "parameters_sha256"],
+      "type": "object"
+    },
+    "outputs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bytes": {"minimum": 1, "type": "integer"},
+          "media_type": {"type": "string"},
+          "relative_path": {"type": "string"},
+          "sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+        },
+        "required": ["relative_path", "sha256", "bytes", "media_type"],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "parent_receipt_ids": {"items": {"type": "string"}, "minItems": 1, "type": "array", "uniqueItems": true},
+    "provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "agent_ids": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+        "analysis_seal_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+      },
+      "required": ["agent_ids", "analysis_seal_sha256"],
+      "type": "object"
+    },
+    "receipt_id": {"minLength": 8, "type": "string"},
+    "receipt_profile": {"const": "hgmf-derivation-receipt/1.0"},
+    "receipt_type": {"enum": ["component_extraction", "causal_rectangle", "modal_projection", "carrier_map", "holdout_score"]},
+    "self_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+  },
+  "required": ["receipt_profile", "receipt_type", "receipt_id", "activity", "parent_receipt_ids", "outputs", "provenance", "self_hash"],
+  "title": "HGMF HG26 Derivation Receipt",
+  "type": "object"
+}
