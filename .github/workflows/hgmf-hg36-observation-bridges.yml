@@ -5,7 +5,8 @@ on:
     branches:
       - hgmf-hg36-observation-bridges-20261109
     paths:
-      - 'research/hgmf-hg36/**'
+      - 'research/hgmf-hg36/analyze_magnetic_raw_bootstrap.py'
+      - 'research/hgmf-hg36/analyze_vycor_set_valued_bridge.py'
       - '.github/workflows/hgmf-hg36-observation-bridges.yml'
   workflow_dispatch:
 
