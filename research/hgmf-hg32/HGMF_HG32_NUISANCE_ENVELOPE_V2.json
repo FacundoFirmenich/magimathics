@@ -1,0 +1,19 @@
+{
+  "profile": "hgmf-nuisance-envelope-v2/1.0",
+  "principle": "only observable-space statistical families enter the union null",
+  "magnetism": {
+    "required_generic": ["drift_control","alternative_standard_kernels","finite_hidden_state"],
+    "required_carrier_specific_registry": ["Preisach/generalized_Preisach","Jiles_Atherton_Duhem"],
+    "conditional_registry": ["Play_Prandtl_Ishlinskii","Stoner_Wohlfarth","dynamic_rate_dependent_hysteresis"],
+    "out_of_jurisdiction_as_distinct_null": ["quantum_process_tensor","quantum_hidden_ancilla"]
+  },
+  "adsorption": {
+    "required_generic": ["drift_control","alternative_standard_kernels","finite_hidden_state"],
+    "required_carrier_specific_registry": ["classical_DFT_lattice_gas","capillary_condensation_pore_blocking_cavitation"],
+    "conditional_registry": ["NLDFT_QSDFT","pore_network_interconnectivity","statistical_thermodynamic_hysteresis"],
+    "baseline_only": ["Langmuir_BET"],
+    "out_of_jurisdiction_as_distinct_null": ["quantum_process_tensor","quantum_hidden_ancilla"]
+  },
+  "current_confirmatory_ready": false,
+  "blocking_reason": "carrier-specific standard-model adapters and jurisdiction metadata not yet frozen"
+}
