@@ -1,0 +1,6 @@
+family,finite_sample_method,upper_bound_engine,cap_status,observation_likelihood_status,confirmatory_status
+drift_control,exact predictive F / universal likelihood compatible,IMPLEMENTED,SEALED_BY_MODEL,AVAILABLE,READY
+alternative_standard_kernels,universal e-value + certified profile likelihood upper bound,IMPLEMENTED_MATH_FLOATING,UNSEALED,AVAILABLE,ABSTAIN_CAPS
+finite_hidden_state,universal e-value + analytic emission-envelope upper bound,IMPLEMENTED,UNSEALED,AVAILABLE,ABSTAIN_CAPS
+bounded_process_tensor,universal e-value + convex outer likelihood bound,CONTRACT_ONLY,PARTIAL,MISSING,ABSTAIN_LIKELIHOOD_BRIDGE
+hidden_ancilla_control_geometry,universal e-value + certified likelihood upper bound,CONTRACT_ONLY,PARTIAL,MISSING,ABSTAIN_LIKELIHOOD_BRIDGE
