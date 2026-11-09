@@ -1,0 +1,45 @@
+{
+  "gate": "HGMF-HG15",
+  "title": "Relational Clock Dynamics and Proto-Geometric Falsifiability",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_RELATIONAL_CLOCK_DYNAMICS_PASS_CLOCK_EQUIVALENCE_QUOTIENT_PASS_MULTI_GAP_FALSIFIER_FAIL_HGMF_CORRECTION_DERIVATION_FAIL_DISTINGUISHABILITY_FROM_STANDARD_QM_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "clock_equivalence": {
+    "max_state_error": 8.473803591000892e-16,
+    "identity_shift_removable": true,
+    "clock_rate_reparametrizable": true
+  },
+  "single_gap": {
+    "samples": 256,
+    "max_reconstruction_error": 4.535829210951031e-16,
+    "identifies_new_physics": false
+  },
+  "multi_gap": {
+    "scalar_time_toeplitz_min_eigenvalue": -2.850786306037109e-16,
+    "scalar_time_toeplitz_psd_with_numerical_tolerance": true,
+    "valid_non_toeplitz_dephasing_min_eigenvalue": 0.19862322091887383,
+    "equal_gap_stationarity_defect": 0.36,
+    "falsifies_scalar_time_smearing": true,
+    "falsifies_standard_QM": false
+  },
+  "dilation": {
+    "unitarity_error": 1.1148561977913082e-16,
+    "max_channel_reconstruction_error": 0.0,
+    "CPTP_anomaly_unique_to_HGMF": false
+  },
+  "history_state_gauge": {
+    "max_density_error": 2.8930196239565705e-16,
+    "conditional_ray_invariant": true
+  },
+  "physical_correction": {
+    "nonzero_HGMF_term_derived": false,
+    "dimensionful_scale_derived": false,
+    "order_of_magnitude": "ABSTAIN",
+    "distinctive_prediction": "HOLD"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "RELATIONAL_CLOCK_FORMALISM_AND_FALSIFIER_BASIS_PASS_HGMF_CORRECTION_AND_SCALE_HOLD"
+  },
+  "next_gate": "HGMF-HG16 Proto-Geometric Correction Basis and Multi-Gap Clock Spectroscopy"
+}
