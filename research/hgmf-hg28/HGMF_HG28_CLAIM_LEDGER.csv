@@ -1,0 +1,11 @@
+claim_id,claim,class,status
+HG28-C01,The base grid identifies the intervention-order commutator,CAUSAL,FAIL
+HG28-C02,The sparse six-context-per-wave order module identifies order effects in its preregistered contexts,CAUSAL,PASS_CONDITIONAL
+HG28-C03,max of two one-sided carrier p-values is valid for a 2-of-2 directional conjunction,THEOREM,PASS
+HG28-C04,Unknown-direction 2-of-2 replicability is valid with the factor-two directional correction,THEOREM,PASS
+HG28-C05,Holm over 14 replicated causal p-values controls familywise error without a component hierarchy,STATISTICAL,PASS
+HG28-C06,A scalar mean over A-B-C-K-E-Q-Z is required for confirmation,STATISTICAL,FAIL
+HG28-C07,A meta-analytic signal can substitute for replication in both carriers,STATISTICAL,FAIL
+HG28-C08,Downstream modal and nodal gates can create a causal claim when the causal gate failed,LOGICAL,FAIL
+HG28-C09,Two carriers alone establish physical protogeometry,PHYSICAL,FAIL
+HG28-C10,Current data execute the order module and confirmatory family,EMPIRICAL,ABSTAIN
