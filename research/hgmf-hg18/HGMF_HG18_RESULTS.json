@@ -1,0 +1,47 @@
+{
+  "gate": "HGMF-HG18",
+  "title": "Context-Area Form, Dimensional Transgression and Cross-Carrier Holonomy",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_CONTEXT_AREA_FORM_CONDITIONAL_PASS_DIMENSIONLESS_CURVATURE_DENSITY_PASS_CROSS_CARRIER_QGT_TRANSPORT_CONDITIONAL_FAIL_UNIQUE_MIXED_STATE_AREA_FORM_FAIL_DIMENSIONAL_TRANSGRESSION_FAIL_STANDARD_HOLONOMY_EXCLUSION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "pure_state_context_geometry": {
+    "area_form": "dA_Q=sqrt(det g) dλ1∧dλ2",
+    "normalized_density": "chi=F12/(2 sqrt(det g))",
+    "bound": "|chi|<=1",
+    "qubit_sphere_chi": 1.0,
+    "qubit_sphere_volume": 3.141592653589793,
+    "qubit_sphere_Chern": 1
+  },
+  "small_loop": {
+    "max_flux_over_twice_metric_area_error": 0.0,
+    "max_unwrapping_error": 4.440892098500626e-16
+  },
+  "cross_carrier": {
+    "constant_isometry_QGT_max_error": 0.0,
+    "constant_isometry_coarse_probability_max_error": 0.0,
+    "hidden_ancilla_coarse_probability_max_error": 2.220446049250313e-16,
+    "hidden_ancilla_chi": 0.4472135954999579,
+    "hidden_ancilla_quantum_volume": 7.024814731040727,
+    "verdict": "QGT_TRANSPORT_REQUIRES_STRONGER_THAN_UMI_COARSE_EQUIVALENCE"
+  },
+  "scale": {
+    "coordinate_component_range_factor": 100.0,
+    "chi_rescaling_range": [1.0, 1.0],
+    "physical_area_density_range_factor": 400.0,
+    "dimensionful_scale_selected": false
+  },
+  "mixed_states": {
+    "unique_monotone_metric": false,
+    "Bures_status": "DISTINGUISHED_OPTION_NOT_DERIVED_UNIQUELY_BY_CURRENT_AXIOMS"
+  },
+  "standard_QM_boundary": {
+    "QGT_and_Berry_curvature_are_standard_QM": true,
+    "direct_experimental_access_exists": true,
+    "HGMF_distinguished": false
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "CONTEXT_AREA_AND_DIMENSIONLESS_CURVATURE_PASS_CONDITIONAL_DIMENSIONFUL_SCALE_AND_STANDARD_EXCLUSION_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG19 Operational Context Metric, Action Cost and Dimensional Coupling"
+}
