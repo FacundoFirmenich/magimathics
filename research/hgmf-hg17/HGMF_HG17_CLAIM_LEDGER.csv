@@ -1,0 +1,10 @@
+claim_id,claim,class,status,evidence
+HG17-C01,A flat pair-groupoid transport is an endpoint coboundary,THEOREM,PASS,flatness and reconstruction audits
+HG17-C02,Cycle conjugacy data are invariant under local gauge changes,THEOREM,PASS,128 gauge conjugations
+HG17-C03,A nontrivial projective cocycle can be invisible as a density-matrix channel,THEOREM/WITNESS,PASS,Pauli Z2xZ2 cocycle
+HG17-C04,Any nonzero QRF cycle proves proto-geometric physics,PHYSICAL,FAIL,standard SU(2) commutator witness
+HG17-C05,Multigap cocycle defects falsify scalar-time phases,FORMAL,PASS,linear versus quadratic phase audit
+HG17-C06,Multigap cocycle defects falsify standard QM,PHYSICAL,FAIL,nonlinear diagonal unitary is standard QM
+HG17-C07,A cocycle or holonomy selects a dimensionful scale,FORMAL/PHYSICAL,FAIL,context-area rescaling audit
+HG17-C08,Triangle data satisfy discrete Bianchi consistency when edge-derived,THEOREM,PASS,tetrahedral audit
+HG17-C09,The current programme derives a nonzero HGMF context curvature,PHYSICAL,HOLD,diagnostic only
