@@ -1,0 +1,55 @@
+{
+  "magnetism": {
+    "repository": "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure",
+    "source_commit": "66662e8aa3690cebaaef52dfc4ddd3bea458a576",
+    "publication": "Kumar et al., Small 21, e06284 (2025), DOI 10.1002/smll.202506284",
+    "data_path": "data/Minor loops/Minor loop wPF",
+    "files": [
+      "Minor_loops_PF2500mT_20250325_2005__10K.h5",
+      "Minor_loops_PF2500mT_20250325_2230__10K.h5",
+      "Minor_loops_PF2500mT_20250326_0034__10K.h5",
+      "Minor_loops_PF2500mT_20250326_0219__10K.h5"
+    ],
+    "system": "Fe3GeTe2/CrSBr van der Waals heterostructure",
+    "observable": "anomalous Hall voltage Vxy",
+    "temperature_K": 10,
+    "preset_field_mT": 2500,
+    "field_orientation": "out-of-plane",
+    "paper_device_thickness_nm": {
+      "FGT": "87 ± 2",
+      "CrSBr": "30 ± 2"
+    },
+    "paper_current_uA": 50,
+    "source_mechanism": [
+      "interfacial exchange coupling",
+      "orthogonal anisotropies",
+      "flux-closure / stripe-like domains",
+      "domain nucleation and propagation",
+      "training effect after preset field"
+    ]
+  },
+  "adsorption": {
+    "repository": "NIST-ISODB/AJBrownThesisIsotherms",
+    "source_commit": "17a48e5d3c00e97387d0dfb1e280d8d6bf103d40",
+    "publication": "Siderius, J. Res. NIST 126, 126037 (2021), data DOI 10.18434/mds2-2466",
+    "data_path": "Scanning_Isotherms/xe_scanning_isotherms.csv",
+    "adsorbent": "Vycor Glass",
+    "adsorbent_mass_mg": 61.6,
+    "adsorbate": "Xe",
+    "adsorbate_molar_mass_g_mol": 131.293,
+    "pressure_units": "relative",
+    "adsorption_units": "mg",
+    "temperature": "run-specific values around 151 K; examples include 150.73 K and 151.06 K",
+    "UMI10_run_ids": [
+      5,
+      8,
+      9,
+      10
+    ],
+    "historical_model_context": [
+      "independent domain theory",
+      "successor percolation / pore-blocking models"
+    ],
+    "metadata_resolution": "actual repository README and CSV are authoritative for the analyzed file; a 131 K statement in one NIST summary is treated as a textual inconsistency"
+  }
+}
