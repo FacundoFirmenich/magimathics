@@ -1,0 +1,38 @@
+{
+  "gate": "HGMF-HG14",
+  "title": "Canonical Contact Dynamics and Helical Falsifiers",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_CONTACT_DYNAMIC_SELECTION_CONDITIONAL_PASS_RELATIVE_PHASE_FALSIFIER_PASS_GAUGE_ROBUST_DIAGNOSTICS_FAIL_INTRINSIC_ABSOLUTE_HELICAL_SELECTION_HOLD_PHYSICAL_SPIN",
+  "contact_decomposition": {
+    "samples": 400,
+    "max_connection_error": 2.220446049250313e-16,
+    "max_horizontality_error": 7.894497640785698e-16,
+    "max_speed_error": 1.7763568394002505e-15,
+    "max_decomposition_error": 2.5589376332604516e-16
+  },
+  "relative_reference": {
+    "max_ray_infidelity": 1.1102230246251565e-15,
+    "max_phase_complex_error": 4.965068306494546e-16,
+    "common_shift_invariance": "PASS",
+    "differential_shift_observable": "PASS"
+  },
+  "forward_reverse": {
+    "contact_phase_beta": 1.0882796185405306,
+    "berry_phase_forward": -1.5707963267948961,
+    "contact_recovery_error": 2.220446049250313e-16,
+    "geometric_recovery_error": 0.0
+  },
+  "helical_selection": {
+    "absolute_intrinsic_pitch": "FAIL",
+    "relational_contact_pitch": "PASS_CONDITIONAL_ON_REFERENCE_AND_DIFFERENTIAL_ENERGY",
+    "constant_pitch": "PASS_FOR_AUTONOMOUS_RELATIVE_GENERATOR",
+    "variable_pitch_falsifier": "PASS"
+  },
+  "spin": "HOLD_PHYSICAL_SPIN_IDENTIFICATION",
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "RELATIONAL_CONTACT_HELICAL_FLOW_PASS_CONDITIONAL_ABSOLUTE_HELICITY_FAIL_SPIN_HOLD"
+  },
+  "next_gate": "HGMF-HG15 Relational Clock Dynamics and Proto-Geometric Falsifiability"
+}
