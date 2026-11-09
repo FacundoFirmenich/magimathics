@@ -1,0 +1,16 @@
+claim_id,claim,class,status
+HG33-C01,Magnetic source corpus is Fe3GeTe2/CrSBr AHE minor-loop data at 10 K after +2.5 T preset,PROVENANCE,PASS
+HG33-C02,Adsorption source corpus is Xe on 61.6 mg Vycor Glass near 151 K with relative-pressure scanning histories,PROVENANCE,PASS
+HG33-C03,The 131 K text in one NIST summary overrides the actual analyzed CSV temperature metadata,PROVENANCE,FAIL
+HG33-C04,Every scalar relay on a finite path belongs to a finite equivalence class determined by observed input levels,THEOREM,PASS
+HG33-C05,Any finite-path scalar Preisach/IDT relay superposition lies in the enumerated relay span,THEOREM,PASS
+HG33-C06,The unrestricted relay span yields a valid Gaussian likelihood upper bound,THEOREM,PASS
+HG33-C07,A single monotone or generic single-reversal path gives nontrivial likelihood power against an unrestricted Preisach outer span,THEOREM,FAIL
+HG33-C08,Independent-domain theory binary core is Preisach-like on finite pressure histories,FORMAL,PASS
+HG33-C09,The UMI10 rpm_relays Ridge feature model is equivalent to a full physical Preisach/IDT likelihood model,INFERENCE,FAIL
+HG33-C10,Preisach alone closes the physical magnetic null for FGT/CrSBr,PHYSICAL,FAIL
+HG33-C11,Jiles-Atherton alone substitutes for the source-specific interfacial domain/training mechanism,PHYSICAL,FAIL
+HG33-C12,Independent-domain theory alone closes the Xe/Vycor adsorption null,PHYSICAL,FAIL
+HG33-C13,Pore-network/percolation/pore-blocking/cavitation remains required for adsorption closure,PHYSICAL,PASS
+HG33-C14,Current carrier-specific standard-null envelope is complete,INFERENCE,FAIL
+HG33-C15,HG33 empirically confirms an HGMF component,EMPIRICAL,ABSTAIN

@@ -1,0 +1,60 @@
+{
+  "gate": "HGMF-HG33",
+  "title": "Carrier-Specific Standard-Null Tribunal",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_SOURCE_PROVENANCE_RECOVERY_PASS_MAGNETIC_JURISDICTION_RECOVERY_PASS_ADSORPTION_JURISDICTION_RECOVERY_PASS_FINITE_PATH_PREISACH_PATTERN_THEOREM_PASS_PREISACH_IDT_OUTER_LIKELIHOOD_BOUND_PASS_SINGLE_PATH_PREISACH_POWER_NOGO_PASS_ADSORPTION_IDT_HISTORICAL_MATCH_PASS_MAGNETIC_PREISACH_PHENOMENOLOGICAL_CONTROL_FAIL_MAGNETIC_SOURCE_DOMAIN_MODEL_LIKELIHOOD_BRIDGE_FAIL_ADSORPTION_PERCOLATION_NETWORK_ADAPTER_FAIL_COMPLETE_CARRIER_STANDARD_NULL_ENVELOPE_ABSTAIN_EMPIRICAL_ADJUDICATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "source_provenance": {
+    "magnetism": {
+      "source_repo": "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure",
+      "source_commit": "66662e8aa3690cebaaef52dfc4ddd3bea458a576",
+      "system": "Fe3GeTe2/CrSBr",
+      "observable": "AHE Vxy",
+      "temperature_K": 10,
+      "preset_field_T": 2.5,
+      "physical_mechanism": "interfacial exchange + correlated/flux-closure domains + domain nucleation/propagation + training effect"
+    },
+    "adsorption": {
+      "source_repo": "NIST-ISODB/AJBrownThesisIsotherms",
+      "source_commit": "17a48e5d3c00e97387d0dfb1e280d8d6bf103d40",
+      "system": "Xe adsorption on Vycor Glass",
+      "adsorbent_mass_mg": 61.6,
+      "temperature": "~151 K run-specific",
+      "umi10_runs": [
+        5,
+        8,
+        9,
+        10
+      ],
+      "historical_model": "independent domain theory",
+      "successor_models": "percolation / pore blocking / cavitation"
+    }
+  },
+  "preisach": {
+    "finite_path_pattern_enumeration": true,
+    "physical_family_subset_of_outer_span": true,
+    "gaussian_outer_profile_exact": true,
+    "single_monotone_path_outer_span_saturates": true,
+    "generic_single_reversal_path_outer_span_saturates": true,
+    "single_path_confirmatory_power": "FAIL",
+    "required_next_falsifiers": [
+      "RPM",
+      "wiping-out",
+      "congruency",
+      "Everett consistency",
+      "shared-density restrictions"
+    ]
+  },
+  "magnetism": {
+    "source_specific_model_likelihood_bridge": false,
+    "preisach_control_ready_conditional": true,
+    "jiles_atherton_role": "SECONDARY_CONTROL_NOT_SOURCE_MECHANISM",
+    "status": "ABSTAIN_MAGNETIC_PHYSICAL_NULL_CLOSURE"
+  },
+  "adsorption": {
+    "idt_preisach_shell_ready_conditional": true,
+    "percolation_network_adapter": false,
+    "status": "ABSTAIN_ADSORPTION_PHYSICAL_NULL_CLOSURE"
+  },
+  "empirical_status": "ABSTAIN_NO_NEW_ADMITTED_DATA",
+  "next_gate": "HGMF-HG34 Structural Everett/Preisach falsifiers, source-specific magnetic domain-state likelihood and adsorption percolation adapter"
+}
