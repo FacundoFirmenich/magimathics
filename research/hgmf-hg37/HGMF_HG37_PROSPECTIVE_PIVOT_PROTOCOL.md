@@ -1,4 +1,4 @@
-# HGMF-HG37 — Prospective pivot protocol
+# HGMF‑HG37 — Prospective pivot protocol
 
 ## Principle
 
@@ -11,6 +11,7 @@ No retrospective tuning of the missing nuisance is allowed.
 ### Required measurements
 
 For every field point:
+
 - commanded field;
 - independently calibrated field readback;
 - calibration device/model/serial;
@@ -25,28 +26,31 @@ For every field point:
 Historical engineering references only:
 
 1. Global trained-vector non-saturation:
-[
-u_H < 4.0754321208 mathrm{mT}.
-]
+
+\[
+u_H < 4.0754321208\ \mathrm{mT}.
+\]
 
 2. Every historical trained offset individually nonabsorbable:
-[
-u_H < 0.8838269371 mathrm{mT}.
-]
+
+\[
+u_H < 0.8838269371\ \mathrm{mT}.
+\]
 
 These values are planning references derived from historical data, not future confirmatory effect thresholds.
 
-For the future experiment, a minimum physically relevant bias (Delta^star) and target calibration bound must be frozen **before acquisition**.
+For the future experiment, a minimum physically relevant bias \(\Delta^\star\) and target calibration bound must be frozen **before acquisition**.
 
 ### Minimal logical acquisition
 
 At each coercive transition:
+
 - at least two calibrated field values bracketing the crossing;
-- raw repeated (V_{xy}) at each point.
+- raw repeated \(V_{xy}\) at each point.
 
 ### Robust acquisition
 
-Use enough local points to audit interpolation curvature and preserve the complete (V_{xy}(H)) shape. The field-axis nuisance should be shared through a calibration model, not profiled independently per loop.
+Use enough local points to audit interpolation curvature and preserve the complete \(V_{xy}(H)\) shape. The field-axis nuisance should be shared through a calibration model, not profiled independently per loop.
 
 ## B. Adsorption cartridge
 
@@ -56,16 +60,16 @@ Preferred clean route:
 2. same target temperature as the Vycor boundary/scans;
 3. nonporous silica reference of matched surface chemistry;
 4. independently measured surface area / mass normalization;
-5. (V_s(p)) measured over the full pressure range used by network inference;
+5. \(V_s(p)\) measured over the full pressure range used by network inference;
 6. Vycor boundary isotherm;
 7. preregistered scanning histories;
 8. replicate measurements sufficient for an observation-error model.
 
-Then:
+Then
 
-[
-V_s,V_c,V	o Q	o q
-]
+\[
+V_s,V_c,V\to Q\to q
+\]
 
 is identified with propagated uncertainty.
 
@@ -77,7 +81,8 @@ Prefer an independent connectivity constraint (e.g. tomography/digital reconstru
 
 A second legitimate research branch is to implement Mason's 1988 Brown-specific Bethe-tree method directly.
 
-It may rescue a standard-network likelihood without a separate (V_s) measurement, but it must first be:
+It may rescue a standard-network likelihood without a separate \(V_s\) measurement, but it must first be:
+
 - reconstructed from the full published method;
 - frozen before holdout;
 - supplied with an observation-error model;
@@ -90,6 +95,7 @@ ABSTAIN_MASON_CONFIRMATORY_IMPLEMENTATION.
 ## D. Future-only seal
 
 Historical Brown/FGT results may be used only for:
+
 - design;
 - scale selection;
 - power planning.
@@ -99,6 +105,7 @@ They may not contribute to the confirmatory likelihood of the prospective run.
 ## E. Success conditions
 
 A future carrier enters HG31 X only when:
+
 - calibration receipts are admissible;
 - observation map is identified;
 - nuisance family is physically frozen;
