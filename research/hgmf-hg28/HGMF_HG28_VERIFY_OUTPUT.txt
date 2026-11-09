@@ -1,0 +1,11 @@
+PASS_HGMF_HG28_EXACT
+alpha_component=0.0071428571428571435
+min_holdout_order_pairs_one_sided=8
+min_p_n7=0.0078125
+min_p_n8=0.00390625
+order_training_units=12
+order_holdout_units=32
+sparse_total_max=188
+savings_vs_full_reverse=100
+strong_FWER_bound=0.05
+empirical_confirmation=false
