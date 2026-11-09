@@ -1,0 +1,27 @@
+{
+  "gate": "HGMF-HG36",
+  "canonical_workflow_run_id": 42700245672,
+  "canonical_workflow_run_url": "https://github.com/FacundoFirmenich/magimathics/actions/runs/42700245672",
+  "conclusion": "success",
+  "head_sha": "eb3665e0f7f82d3ec283186243430ac065ff66aa",
+  "artifact_id": 13710418079,
+  "artifact_digest": "sha256:e8dc98e80427726e605c3ce8f6f8e097a155f46f01ded23b78787478da8e8e83",
+  "failed_precanonical_runs": [
+    {
+      "run_id": 42698811118,
+      "cause": "magnetic script resampled source-row means rather than raw five-sample voltage arrays; Vycor FHH/tangent reference family had no admissible pairs"
+    },
+    {
+      "run_id": 42699433386,
+      "cause": "raw magnetic bootstrap fixed and successful; obsolete overconstrained Vycor bridge still failed"
+    },
+    {
+      "run_id": 42699498847,
+      "cause": "set-valued Vycor method was scientifically correct but contained a lowercase JSON-style false token in Python"
+    }
+  ],
+  "sources": {
+    "magnetism": "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576",
+    "adsorption": "NIST-ISODB/AJBrownThesisIsotherms@17a48e5d3c00e97387d0dfb1e280d8d6bf103d40"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "gate": "HGMF-HG36",
+  "title": "Observation-Bridge Identifiability and Summary-Power No-Go",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_REAL_OBSERVATION_BRIDGE_EXECUTION_PASS_RAW_VOLTAGE_NOISE_PROPAGATION_PASS_MAGNETIC_FIELD_RESOLUTION_NUISANCE_THEOREM_PASS_VYCOR_SET_VALUED_REFERENCE_AUDIT_PASS_VYCOR_REFERENCE_NONIDENTIFIABILITY_THEOREM_PASS_EXACT_BETHE_Q_INVERSION_FAIL_HEB_SUMMARY_CONFIRMATORY_POWER_FAIL_VYCOR_POINT_IDENTIFICATION_FAIL_CARRIER_SPECIFIC_UNIVERSAL_EVALUE_DENOMINATOR_ABSTAIN_MAGNETIC_EXACT_LIKELIHOOD_AUTHORITY_ABSTAIN_VYCOR_NETWORK_LIKELIHOOD_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "execution": {
+    "workflow_run_id": 42700245672,
+    "conclusion": "success",
+    "head_sha": "eb3665e0f7f82d3ec283186243430ac065ff66aa",
+    "artifact_id": 13710418079,
+    "artifact_sha256": "e8dc98e80427726e605c3ce8f6f8e097a155f46f01ded23b78787478da8e8e83"
+  },
+  "magnetism": {
+    "bootstrap_B_per_loop": 5000,
+    "raw_samples_per_source_row": 5,
+    "bootstrap_sd_HEB_mT": [
+      0.006531941600378396,
+      0.005345384042603439,
+      0.006272945178691813,
+      0.010471844502360241,
+      0.014108275965787022
+    ],
+    "observed_HEB_mT": [
+      -48.42569341383035,
+      0.8838269371443452,
+      -4.075432120767836,
+      3.3382593574633646,
+      1.3416824050381848
+    ],
+    "trained_bootstrap_95pct_intervals_include_zero": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "source_field_step_bound_mT_approx": 4.2932274337233025,
+    "all_trained_abs_HEB_within_field_step_bound": true,
+    "result": "FAIL_HEB_SUMMARY_CONFIRMATORY_POWER",
+    "reason": "bounded field-axis nuisance can profile to the observed trained-loop HEB offsets"
+  },
+  "adsorption": {
+    "boundary_run": 15,
+    "boundary_temperature_K": 150.73,
+    "Vc_candidate_count": 8,
+    "external_Vs_reference_available": false,
+    "Q_points": 614,
+    "Q_interval_width": {
+      "median": 0.2858497364292968,
+      "mean": 0.30631097931800055,
+      "max": 0.9966000429132015
+    },
+    "run1_q_points": 89,
+    "q_interval_width": {
+      "median": 0.2141248632474176,
+      "mean": 0.2321314257420337,
+      "max": 0.7158386552293861
+    },
+    "result": "FAIL_POINT_IDENTIFICATION_WITH_BROWN_DATA_ALONE",
+    "required_external_object": "nonporous same-origin Xe/silica film reference or independently calibrated surface-area/FHH reference with uncertainty"
+  },
+  "universal_evalue_X_ready": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD",
+  "next_gate": "HGMF-HG37"
+}
