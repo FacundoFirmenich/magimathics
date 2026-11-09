@@ -1,0 +1,11 @@
+claim_id,claim,class,status,evidence
+HG22-C01,The relational Jacobian source da∧db has zero total flux on a closed surface,THEOREM,PASS,Stokes
+HG22-C02,"Within the declared first-order bilinear alternating natural class, the scalar source is unique up to normalization",THEOREM,PASS_CONDITIONAL,SO(2)-invariant alternating form is one-dimensional
+HG22-C03,The current programme uniquely selects the two relational potentials,PHYSICAL,FAIL/HOLD,no potential-selection axiom
+HG22-C04,Minimum local scale-free quadratic action selects the Green response,THEOREM_CONDITIONAL,PASS,Euler-Lagrange Poisson equation
+HG22-C05,Hodge/zero-flux constraints select a unique response kernel without further action,THEOREM,FAIL,kernel tribunal
+HG22-C06,The source law fixes interaction cross-terms under addition of relational potentials,THEOREM,PASS,Poisson bracket expansion
+HG22-C07,"An oriented QGT isometry transports source, Green response and nodal set",THEOREM,PASS_CONDITIONAL,intertwining of bracket and Laplacian
+HG22-C08,UMI coarse equivalence alone transports nodal geometry,THEOREM,FAIL,hidden-ancilla boundary from HG18/HG19
+HG22-C09,Memory/nonlocal response identifies physical protogeometry,PHYSICAL,FAIL,standard hidden-state/process-tensor realizations
+HG22-C10,HG22 derives a nonzero empirical HGMF field,PHYSICAL,HOLD,formal exact witness only

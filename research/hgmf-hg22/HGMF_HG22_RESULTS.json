@@ -1,0 +1,74 @@
+{
+  "gate": "HGMF-HG22",
+  "title": "Relational Source, Modal Selection and Cross-Carrier Nodal Falsifiers",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_RELATIONAL_JACOBIAN_SOURCE_CONDITIONAL_PASS_MINIMUM_ACTION_GREEN_RESPONSE_CONDITIONAL_PASS_MODAL_SUPPORT_SELECTION_PASS_CROSS_CARRIER_NODAL_FALSIFIER_CONDITIONAL_FAIL_SOURCE_POTENTIAL_UNIQUENESS_FAIL_GENERAL_KERNEL_UNIQUENESS_FAIL_STANDARD_RESPONSE_EXCLUSION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "source": {
+    "two_form": "Sigma[a,b]=da wedge db",
+    "scalar": "s=star(da wedge db)",
+    "zero_flux_closed_surface": true,
+    "antisymmetric": true,
+    "orientation_sensitive": true,
+    "unique_operator_within_declared_class": "PASS_CONDITIONAL",
+    "relational_potentials_selected": false
+  },
+  "response": {
+    "conditional_action": "1/2 int |grad f|^2 - gamma int f s",
+    "equation": "L f = gamma s",
+    "green_response_selected_within_minimal_local_scale_free_class": true,
+    "general_kernel_unique": false
+  },
+  "sphere_witness": {
+    "potentials": [
+      "a=x",
+      "b=y(z+1/18)"
+    ],
+    "source": "4(z^2-y^2+z/18)",
+    "green_response": "(z^2-y^2)/6+z/36",
+    "heldout_meridian_nodes_z": [
+      0.6666666666666666,
+      -0.75
+    ],
+    "gamma_true": 1.4,
+    "gamma_fit": 1.4,
+    "max_holdout_error": 0.0
+  },
+  "kernel_tribunal": {
+    "kernels": [
+      "identity",
+      "green_L^-1",
+      "screened_(L+8)^-1",
+      "fractional_L^-1/2",
+      "heat_exp(-0.03L)"
+    ],
+    "node_ranges": [
+      -0.75,
+      0.6933542809152231
+    ],
+    "kernel_changes_nodes": true
+  },
+  "composition": {
+    "law": "s[aA+aB,bA+bB]=sA+sB+{aA,bB}+{aB,bA}",
+    "max_identity_error": 1.1102230246251565e-15,
+    "independent_product_cross_terms_vanish": true
+  },
+  "transport": {
+    "QGT_oriented_isometry": "PASS",
+    "orientation_reversal": "response sign flips; nodes preserved",
+    "coarse_UMI_only": "FAIL",
+    "cross_carrier_holdout_max_error": 0.0
+  },
+  "standard_boundary": {
+    "Poisson_bracket_standard": true,
+    "Green_response_standard": true,
+    "spectral_kernels_standard": true,
+    "memory_process_tensor_standard": true,
+    "HGMF_specific_origin_derived": false
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION_RELATIONAL_SOURCE_TRANSPORT_BOUNDARY_ADDED",
+    "paper_C": "RELATIONAL_SOURCE_OPERATOR_AND_NODAL_FALSIFIER_PASS_CONDITIONAL_PHYSICAL_POTENTIAL_KERNEL_AND_ORIGIN_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG23 Triaxial Relational Potentials, Source Normalization and Empirical Nodal Protocol"
+}
