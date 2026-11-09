@@ -1,0 +1,8 @@
+PASS_HGMF_HG31_EXACT
+alpha_component=0.0071428571428571435
+carrier_evalue_threshold=140
+universal_union_evalue=PASS
+bounded_hmm_upper_bound=PASS
+fixed_kernel_profile=PASS
+continuous_kernel_lipschitz_bound=PASS
+empirical_adjudication=false
