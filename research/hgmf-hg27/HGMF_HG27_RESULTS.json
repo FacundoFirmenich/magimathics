@@ -1,0 +1,62 @@
+{
+  "acquisition": {
+    "dual_carrier_core_units": 144,
+    "holdout_units": 48,
+    "maximum_cumulative_rectangle_utility": 148,
+    "minimum_loops_formula": {
+      "q0": 0,
+      "q1": 4,
+      "q_ge_2": "ceil(3q/2)+3"
+    },
+    "minimum_switches_at_maximum_utility": 13,
+    "one_wave_cells": 24,
+    "rectangle_sequence": [0,0,0,1,1,2,2,3,4,4,5,6,6,7,8,8,9,10,10,11,12,12,13,14],
+    "rectangles_per_wave": 14,
+    "training_units": 96
+  },
+  "date": "2026-11-09",
+  "evidence_budget": {
+    "base_grid": 144,
+    "full_order_sensitive_total_if_duplicated": 288,
+    "nuisance_controls": "ABSTAIN",
+    "precision_expansion": "ABSTAIN",
+    "resource_constrained_total": "ABSTAIN"
+  },
+  "execution": {
+    "adsorption_receipts_admitted": 0,
+    "empirical_verdict": "ABSTAIN_NO_DATA",
+    "magnetic_receipts_admitted": 0
+  },
+  "gate": "HGMF-HG27",
+  "global_verdict": "PASS_RECTANGLE_PREFIX_OPTIMAL_SCHEDULE_PASS_SWITCH_PARETO_SCHEDULE_PASS_BLINDED_VARIANCE_REESTIMATION_CONDITIONAL_PASS_PREREGISTERED_STOPPING_RULE_PASS_HOLDOUT_PRESERVATION_FAIL_ORDER_COMMUTATOR_IDENTIFIABILITY_FROM_BASE_GRID_ABSTAIN_NUMERIC_EXPANSION_ABSTAIN_EMPIRICAL_ACQUISITION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "next_gate": "HGMF-HG28 Order-Sensitive Causal Design, Multicomponent Gatekeeping and Confirmatory Decision",
+  "order_effect": {
+    "full_reverse_grid_additional_units": 144,
+    "identified_by_base_grid": false,
+    "sparse_module_units": "2 joint-order outcomes per selected context plus missing controls",
+    "symmetric_factorial_interaction_identified": true,
+    "verdict": "ABSTAIN_ORDER_COMMUTATOR"
+  },
+  "stopping": {
+    "alpha_spending_in_canonical_mode": 0,
+    "anytime_valid_contingency": "separate sealed protocol required",
+    "continuous_QC_stop": true,
+    "early_success_allowed": false,
+    "final_confirmatory_look": "after complete wave 3 both carriers",
+    "single_blinded_variance_look": "after wave 1 both carriers",
+    "structural_futility_look": "after waves 1-2 both carriers"
+  },
+  "title": "Sequential Acquisition, Stopping Rules and Evidence Budget",
+  "variance_reestimation": {
+    "blinded_nuisance_only": true,
+    "formula_halfwidth": "ceil((2 z_(1-alpha/2) sigma_hat / h)^2)",
+    "formula_power": "ceil((2 (z_(1-alpha/2)+z_(1-beta)) sigma_hat / Delta*)^2)",
+    "numeric_expansion_authorized": false,
+    "reason": "no preregistered Delta*, halfwidth, multiplicity rule or Nmax"
+  },
+  "wave_priorities": {
+    "adsorption": {"wave1":"LEFT","wave2":"RIGHT","wave3":"RIGHT"},
+    "magnetism": {"wave1":"RIGHT","wave2":"LEFT","wave3":"LEFT"},
+    "wave3_seed_source": "bda46dbade92ba17f58c372beb114a74f6e79c2cad15871f1fcf5b4eb8560a3d"
+  }
+}
