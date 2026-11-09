@@ -1,0 +1,119 @@
+{
+  "gate": "HGMF-HG34",
+  "title": "Structural Cross-History Falsifiers and Source-Specific Carrier Nulls",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_REAL_PUBLIC_STRUCTURAL_EXECUTION_PASS_MAGNETIC_TRAINING_EFFECT_RECOVERY_PASS_MAGNETIC_SOURCE_STRUCTURAL_COMPATIBILITY_PASS_ADSORPTION_IMMEDIATE_RPM_AUDIT_FAIL_ADSORPTION_EXACT_RPM_WITH_QUOTED_LAST_DIGIT_UNCERTAINTY_PASS_CONGRUENCY_AUDIT_EXECUTED_PASS_PORE_NETWORK_SATURATION_NOGO_FAIL_MAGNETIC_STANDARD_NULL_EXCLUSION_ABSTAIN_PHYSICAL_IDT_REJECTION_ABSTAIN_WIPING_OUT_REJOIN_ABSTAIN_PORE_NETWORK_PHYSICAL_ADAPTER_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "execution": {
+    "workflow_run_id": 42684878657,
+    "workflow_run_conclusion": "success",
+    "head_sha": "0699284b2c433d938648ed3eac5f524236d49864",
+    "artifact_id": 13703818096,
+    "artifact_sha256": "989ec2eb26d6c2d0a075555f4ca0da1ce3a98e10db6d5d527c3e120877addd1e"
+  },
+  "magnetism": {
+    "source": "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576",
+    "loop1_abs_HEB_mT": 48.42569341383035,
+    "loop1_HEB_error_mT": 5.151872920467966,
+    "later_abs_HEB_mT": [
+      0.8838269371443452,
+      4.075432120767836,
+      3.3382593574633646,
+      1.3416824050381848
+    ],
+    "max_later_over_loop1_abs_HEB": 0.0841584669927286,
+    "loop1_transition_widths_mT": [
+      4.122747023431032,
+      152.65311030367033
+    ],
+    "loop1_width_ratio": 37.02703790363285,
+    "loop1_log_width_asymmetry": 3.6116483999256515,
+    "later_log_width_asymmetry": [
+      0.0010822284738090458,
+      0.025955440573885248,
+      0.032502608607245465,
+      0.021011263736041157
+    ],
+    "loop1_HEB_dominates_all_later": true,
+    "loop1_width_asymmetry_dominates_all_later": true,
+    "adjudication": "PASS_SOURCE_STRUCTURAL_COMPATIBILITY_STANDARD_NULL_NOT_EXCLUDED"
+  },
+  "adsorption": {
+    "source": "NIST-ISODB/AJBrownThesisIsotherms@17a48e5d3c00e97387d0dfb1e280d8d6bf103d40",
+    "runs": [
+      5,
+      8,
+      9,
+      10
+    ],
+    "immediate_RPM_closures_total": 57,
+    "quoted_last_digit_uncertainty_compatible": 20,
+    "quoted_last_digit_uncertainty_incompatible": 37,
+    "closure_error_mg": {
+      "mean": 0.6675361609941997,
+      "median": 0.12317728319263566,
+      "max": 7.922334923981797,
+      "min": 0.0038461538461547207
+    },
+    "closure_error_fraction_span": {
+      "mean": 0.0366659184984217,
+      "median": 0.006158385684370754,
+      "max": 0.3566249141274858,
+      "min": 0.00020264245764777238
+    },
+    "per_run": {
+      "5": {
+        "closures": 13,
+        "compatible": 5,
+        "incompatible": 8,
+        "median_error_mg": 0.38102639296187846
+      },
+      "8": {
+        "closures": 9,
+        "compatible": 7,
+        "incompatible": 2,
+        "median_error_mg": 0.02739130434782666
+      },
+      "9": {
+        "closures": 17,
+        "compatible": 7,
+        "incompatible": 10,
+        "median_error_mg": 0.06548780487805672
+      },
+      "10": {
+        "closures": 18,
+        "compatible": 1,
+        "incompatible": 17,
+        "median_error_mg": 0.2631215046499946
+      }
+    },
+    "congruency_pairs": 8,
+    "congruency_rmse_mg": {
+      "mean": 0.5429928471770846,
+      "median": 0.5166507538838465,
+      "max": 0.9557984394526386,
+      "min": 0.22489131922233874
+    },
+    "digitized_RPM_with_quoted_last_digit_uncertainty": "FAIL",
+    "physical_IDT_RPM_rejection": "HOLD_NO_FULL_STOCHASTIC_MEASUREMENT_MODEL",
+    "wiping_out_rejoin": "ABSTAIN_NO_COUNTERFACTUAL_PARENT_BRANCH_OBSERVED_AFTER_REJOIN",
+    "adjudication": "FAIL_EXACT_DIGITIZED_RPM_HOLD_PHYSICAL_IDT_REJECTION"
+  },
+  "pore_network": {
+    "unrestricted_network_status": "UNFALSIFIABLE_OR_POWERLESS_IF_TOPOLOGY_THRESHOLDS_AND_K_ARE_FREE",
+    "physical_constraints_required": [
+      "pore-size distribution",
+      "connectivity/coordination statistics",
+      "topology family",
+      "condensation/evaporation kernel",
+      "cavitation rule",
+      "Xe/Vycor material parameters"
+    ],
+    "adapter_status": "ABSTAIN_PHYSICAL_NETWORK_CAPS"
+  },
+  "paper_status": {
+    "paper_A": "PUBLIC_HISTORY_DATA_SHOW_CARRIER_SPECIFIC_STANDARD_MEMORY_MECHANISMS; FUTURE_DESIGN_UNCHANGED",
+    "paper_B": "FORMAL_UMI_CORE_UNCHANGED; OPERATOR_SHELL_NONIDENTITY_REINFORCED",
+    "paper_C": "STANDARD_NULL_TRIBUNAL_STRONGER; MAGNETIC_SOURCE_NULL_SURVIVES; ADSORPTION_IDT_EXACT_CORE_STRESSED_BUT_NETWORK_NULL_OPEN; NO_HGMF_EMPIRICAL_CLAIM"
+  },
+  "next_gate": "HGMF-HG35 Quantitative Source-Specific Magnetic Likelihood and Physically Constrained Xe/Vycor Network Null"
+}
