@@ -84,7 +84,7 @@ jobs:
           PY
           cd research/hgmf-hg35
           find generated -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
-          zip -r HGMF_HG35_QUANTITATIVE_AUDIT.zip generated analyze_magnetic_quantitative.py hgmf_hg35_bethe_network.py hgmf_hg35_exact_verify.py
+          zip -r HGMF_HG35_QUANTITATIVE_AUDIT.zip . -x HGMF_HG35_QUANTITATIVE_AUDIT.zip
 
       - name: Upload audit bundle
         uses: actions/upload-artifact@v4
