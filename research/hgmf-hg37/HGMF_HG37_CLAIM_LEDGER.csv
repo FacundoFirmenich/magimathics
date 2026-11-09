@@ -1,0 +1,15 @@
+claim_id,claim,class,status
+HG37-C01,The public FGT/CrSBr source provides an independent field-axis calibration certificate tighter than the published field-step bound,PROVENANCE,FAIL
+HG37-C02,The HDF5 files expose a field conversion factor and acquisition metadata,PROVENANCE,PASS
+HG37-C03,The trained zero-bias vector ceases to be set-membership saturated when the total field nuisance bound is below 4.0754321208 mT,THEOREM,PASS
+HG37-C04,All four historical trained offsets become individually nonabsorbable when the field nuisance bound is below 0.8838269371 mT,THEOREM,PASS
+HG37-C05,The current 4.2932274337 mT public field-step bound already satisfies the global rescue threshold,EMPIRICAL,FAIL
+HG37-C06,The Brown/NIST repository contains the external nonporous film reference required to point-identify the Cimino Vs bridge,PROVENANCE,FAIL
+HG37-C07,Failure of the Cimino film-reference bridge excludes standard pore-network physics,INFERENCE,FAIL
+HG37-C08,Mason 1988 applied a Bethe-tree network model to the same Brown Xe/Vycor benchmark without requiring prior separation of surface adsorption and capillary condensation,LITERATURE,PASS
+HG37-C09,The Mason route is already implemented as a confirmatory likelihood in magimathics,TECHNICAL,FAIL
+HG37-C10,The historical public carriers currently provide a complete HG31 standard-null denominator,STATISTICAL,FAIL
+HG37-C11,Historical public data can presently support a beyond-standard HGMF attribution,INFERENCE,FAIL
+HG37-C12,A prospective experiment that measures the missing calibration variables can in principle restore identifiability,THEOREM,PASS
+HG37-C13,The prospective pivot protocol is frozen future-only,PROTOCOL,PASS
+HG37-C14,HG37 confirms physical protogeometry,PHYSICAL,FAIL
