@@ -1,0 +1,90 @@
+{
+  "gate": "HGMF-HG28",
+  "title": "Order-Sensitive Causal Design, Multicomponent Gatekeeping and Confirmatory Decision",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_SPARSE_ORDER_SUBDESIGN_PASS_DIRECTIONAL_2OF2_REPLICABILITY_PASS_14_CLAIM_HOLM_GATEKEEPING_PASS_CONFIRMATORY_CLAIM_LATTICE_FAIL_ORDER_FROM_BASE_GRID_FAIL_UNADJUSTED_COMPONENT_SELECTION_ABSTAIN_NUMERIC_ORDER_POWER_ABSTAIN_EMPIRICAL_CONFIRMATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "order_module": {
+    "contexts_per_wave_per_carrier": 6,
+    "paths_per_context": 2,
+    "sequence_blocks_per_carrier": 36,
+    "sequence_blocks_total": 72,
+    "training_blocks": 48,
+    "holdout_blocks": 24,
+    "history_edges": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "magnetism_lateral_edges": [
+      [
+        100,
+        150
+      ],
+      [
+        150,
+        200
+      ]
+    ],
+    "adsorption_lateral_edges": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "outcome_blind_selection": true
+  },
+  "evidence_budget": {
+    "base_dual_carrier_grid": 144,
+    "sparse_order_sequence_blocks": 72,
+    "structural_total": 216,
+    "full_paired_order_all_rectangles_blocks": 168,
+    "full_paired_order_structural_total": 312
+  },
+  "causal_family": {
+    "components": [
+      "A",
+      "B",
+      "C",
+      "K",
+      "E",
+      "Q",
+      "Z"
+    ],
+    "estimands": [
+      "symmetric",
+      "order"
+    ],
+    "confirmatory_hypotheses": 14,
+    "cross_carrier_rule": "same-direction 2-of-2 intersection-union",
+    "unknown_direction_correction": "factor 2",
+    "multiplicity": "Holm step-down",
+    "familywise_alpha": 0.05,
+    "independence_required": false,
+    "scalar_component_average_used": false
+  },
+  "claim_lattice": [
+    "NO_CONFIRMATORY_CAUSAL_SIGNAL",
+    "REPLICATED_SYMMETRIC_CAUSAL_COMPONENT",
+    "REPLICATED_ORDER_EFFECT_COMPONENT",
+    "REPLICATED_CAUSAL_MODAL_STRUCTURE",
+    "CROSS_CARRIER_KERNEL_NODAL_LAW",
+    "CANDIDATE_NONSTANDARD_CROSS_CARRIER_RESPONSE",
+    "HGMF_COMPATIBLE_PHYSICAL_CANDIDATE"
+  ],
+  "maximum_authorized_claim": "HGMF_COMPATIBLE_PHYSICAL_CANDIDATE",
+  "physical_protogeometry": "HOLD",
+  "next_gate": "HGMF-HG29 Confirmatory Loss Functions, Nuisance Closure and Third-Carrier Escalation"
+}
