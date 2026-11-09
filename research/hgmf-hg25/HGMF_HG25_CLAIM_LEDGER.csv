@@ -1,0 +1,11 @@
+claim_id,claim,class,status,evidence
+HG25-C01,The current repository contains executed HG25 magnetic and adsorption grids,EMPIRICAL,FAIL,no execution receipts or target-grid data
+HG25-C02,The 18-loop number is the total remaining empirical backlog,DESIGN,FAIL,it is conditional on prior UMI17+UMI22 execution
+HG25-C03,The full preset-minus grid contains 72 loops and 42 adjacent causal rectangles,THEOREM,PASS,exact combinatorial count
+HG25-C04,A causal rectangle is identifiable if any one corner is missing,THEOREM,FAIL,four-corner no-imputation requirement
+HG25-C05,The conditional 18-loop extension unlocks 18 missing adjacent rectangles,THEOREM,PASS,six per wave
+HG25-C06,Five supported nondegenerate eigenblocks suffice for robust 3-train/2-holdout kernel tribunal,PROTOCOL,PASS_CONDITIONAL,Jacobian rank and held-out transfer
+HG25-C07,Three waves alone guarantee high power for small interactions,STATISTICAL,FAIL,symbolic MDE remains large unless component uncertainty is small
+HG25-C08,Existing public loops can substitute for the target intervention grid,EMPIRICAL,FAIL,wrong intervention ancestry and no crossed rectangles
+HG25-C09,HG25 empirically selects a physical kernel,EMPIRICAL,ABSTAIN,no executed grids
+HG25-C10,HG25 distinguishes physical protogeometry,PHYSICAL,HOLD,execution and nuisance exclusion absent
