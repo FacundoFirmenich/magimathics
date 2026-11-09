@@ -1,0 +1,82 @@
+{
+  "gate": "HGMF-HG35",
+  "title": "Quantitative Source-Specific Magnetic Null and Constrained Xe/Vycor Bethe Network Core",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_REAL_QUANTITATIVE_EXECUTION_PASS_MAGNETIC_SOURCE_INTERVAL_NULL_PASS_MAGNETIC_TRAINING_ONE_SHOT_COMPATIBILITY_PASS_BETHE_TOPOLOGY_CORE_PASS_XE_VYCOR_NETWORK_NULL_EXISTS_PASS_NETWORK_CONNECTIVITY_RANGE_FREEZE_PASS_BETHE_NUMERICAL_ROOT_CERTIFICATION_FAIL_FULL_MAGNETIC_VXY_LIKELIHOOD_BRIDGE_FAIL_COMPLETE_XE_VYCOR_OBSERVATION_LIKELIHOOD_FAIL_BEYOND_STANDARD_CLAIM_FROM_HG34_RPM_RESIDUALS_ABSTAIN_UNIVERSAL_EVALUE_X_ABSTAIN_PHYSICAL_IDT_REJECTION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "execution": {
+    "workflow_run_id": 42688364785,
+    "workflow_conclusion": "success",
+    "head_sha": "90bc53efb15dac74810d672c18f8a653a4f7705d",
+    "artifact_id": 13704828287,
+    "artifact_sha256": "a490be54bad1dd9d1d1fe5d91f4010ba1923ddff42bad2094c437129e28b1ec1"
+  },
+  "magnetism": {
+    "source_interval_null_pass": true,
+    "loop1_HEB_mT": -48.42569341383035,
+    "loop1_resolution_mT": 5.151872920467966,
+    "loop1_interval_mT": [
+      -53.57756633429832,
+      -43.273820493362386
+    ],
+    "later_HEB_mT": [
+      0.8838269371443452,
+      -4.075432120767836,
+      3.3382593574633646,
+      1.3416824050381848
+    ],
+    "later_resolution_mT": [
+      4.2932274337233025,
+      4.2932274337233025,
+      4.2932274337233025,
+      4.2932274337233025
+    ],
+    "later_zero_in_interval": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "max_abs_later_over_resolution": 0.949270026729848,
+    "one_shot": {
+      "Hinf_mT": 0.3720841447195147,
+      "rmse_loops2_5_mT": 2.7285801159431955
+    },
+    "binek_diagnostic": {
+      "Hinf_mT": 16.483250013773084,
+      "Gamma_mT_minus2": 0.00017392841214435535,
+      "rmse_loops2_5_mT": 2.569205845152898,
+      "relative_rmse_improvement_vs_one_shot": 0.05840923264780373
+    },
+    "full_Vxy_likelihood_bridge": false,
+    "authority": "SET_MEMBERSHIP_QUANTITATIVE_NOT_PROBABILISTIC"
+  },
+  "adsorption_network": {
+    "topology_core": "BETHE_PERCOLATION",
+    "z_range": [
+      6.6,
+      7.2
+    ],
+    "qc_range": [
+      0.16129032258064516,
+      0.17857142857142858
+    ],
+    "published_Qplus_examples": [
+      0.12,
+      0.34
+    ],
+    "primary_threshold_check": true,
+    "bounds_check": true,
+    "scan_monotonicity_check": true,
+    "Vs_available_in_pipeline": false,
+    "Vc_available_in_pipeline": false,
+    "q_of_pressure_available_in_pipeline": false,
+    "complete_observation_likelihood": false
+  },
+  "claim_boundary": {
+    "hg34_RPM_residual_beyond_standard": false,
+    "physical_IDT_rejected": false,
+    "universal_evalue_X_ready": false,
+    "physical_protogeometry": "HOLD"
+  },
+  "next_gate": "HGMF-HG36"
+}

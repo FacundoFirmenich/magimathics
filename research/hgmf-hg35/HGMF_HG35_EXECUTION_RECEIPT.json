@@ -1,0 +1,22 @@
+{
+  "gate": "HGMF-HG35",
+  "workflow_run_id": 42688364785,
+  "workflow_run_url": "https://github.com/FacundoFirmenich/magimathics/actions/runs/42688364785",
+  "conclusion": "success",
+  "head_sha": "90bc53efb15dac74810d672c18f8a653a4f7705d",
+  "artifact_id": 13704828287,
+  "artifact_digest": "sha256:a490be54bad1dd9d1d1fe5d91f4010ba1923ddff42bad2094c437129e28b1ec1",
+  "failed_prior_run": {
+    "workflow_run_id": 42688062376,
+    "conclusion": "failure",
+    "cause": "critical slowing/nonconvergence of naive Bethe fixed-point iteration near qc",
+    "correction": "bracketed root solver using analytic critical-point bracket for the primary Bethe branch and brentq for scanning branch"
+  },
+  "sources": {
+    "magnetism": "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576",
+    "network_literature": [
+      "Mason 1988",
+      "Cimino et al. 2013"
+    ]
+  }
+}
