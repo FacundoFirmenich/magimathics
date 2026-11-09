@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG29 Confirmatory Adjudicator Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile", "seal_sha256", "components"],
+  "properties": {
+    "profile": {"const": "hgmf-hg29-confirmatory-input/1.0"},
+    "seal_sha256": {"type": "string", "minLength": 16},
+    "components": {
+      "type": "object",
+      "required": ["A","B","C","K","E","Q","Z"],
+      "additionalProperties": false,
+      "properties": {
+        "A": {"$ref": "#/$defs/component"},
+        "B": {"$ref": "#/$defs/component"},
+        "C": {"$ref": "#/$defs/component"},
+        "K": {"$ref": "#/$defs/component"},
+        "E": {"$ref": "#/$defs/component"},
+        "Q": {"$ref": "#/$defs/component"},
+        "Z": {"$ref": "#/$defs/component"}
+      }
+    }
+  },
+  "$defs": {
+    "carrierP": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["p_value", "holdout_only", "direction_concordant"],
+      "properties": {
+        "p_value": {"type": ["number","null"], "minimum": 0, "maximum": 1},
+        "holdout_only": {"type": "boolean"},
+        "direction_concordant": {"type": "boolean"}
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["magnetism","adsorption"],
+      "properties": {
+        "magnetism": {"$ref": "#/$defs/carrierP"},
+        "adsorption": {"$ref": "#/$defs/carrierP"}
+      }
+    },
+    "nuisanceCarrier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["family_pvalues","holdout_only"],
+      "properties": {
+        "family_pvalues": {
+          "type": "object",
+          "additionalProperties": {"type": ["number","null"], "minimum": 0, "maximum": 1}
+        },
+        "holdout_only": {"type": "boolean"}
+      }
+    },
+    "orderCarrier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["positive","negative","ties","holdout_only"],
+      "properties": {
+        "positive": {"type": "integer", "minimum": 0},
+        "negative": {"type": "integer", "minimum": 0},
+        "ties": {"type": "integer", "minimum": 0},
+        "holdout_only": {"type": "boolean"}
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["causal","modal","nodal","nuisance"],
+      "properties": {
+        "causal": {"$ref": "#/$defs/node"},
+        "modal": {"$ref": "#/$defs/node"},
+        "nodal": {"$ref": "#/$defs/node"},
+        "nuisance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["magnetism","adsorption"],
+          "properties": {
+            "magnetism": {"$ref": "#/$defs/nuisanceCarrier"},
+            "adsorption": {"$ref": "#/$defs/nuisanceCarrier"}
+          }
+        },
+        "order": {
+          "type": ["object","null"],
+          "additionalProperties": false,
+          "properties": {
+            "magnetism": {"$ref": "#/$defs/orderCarrier"},
+            "adsorption": {"$ref": "#/$defs/orderCarrier"}
+          }
+        }
+      }
+    }
+  }
+}

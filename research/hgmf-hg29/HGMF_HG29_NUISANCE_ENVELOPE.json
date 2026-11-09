@@ -1,0 +1,41 @@
+{
+  "profile": "hgmf-frozen-nuisance-envelope/1.0",
+  "fit_scope": "waves_1_2_only",
+  "evaluation_scope": "wave_3_only",
+  "families": [
+    {
+      "id": "drift_control",
+      "required": true,
+      "adapter_status": "NOT_IMPLEMENTED",
+      "requirement": "training-fitted predictive distribution with calibrated holdout discrepancy p-value"
+    },
+    {
+      "id": "finite_hidden_state",
+      "required": true,
+      "adapter_status": "NOT_IMPLEMENTED",
+      "requirement": "finite/regularized hidden-state algorithm frozen before holdout"
+    },
+    {
+      "id": "bounded_process_tensor",
+      "required": true,
+      "adapter_status": "NOT_IMPLEMENTED",
+      "requirement": "memory/complexity-bounded process-tensor algorithm frozen before holdout"
+    },
+    {
+      "id": "alternative_standard_kernels",
+      "required": true,
+      "adapter_status": "NOT_IMPLEMENTED",
+      "requirement": "identity/Green/screened/fractional/heat or frozen declared superset"
+    },
+    {
+      "id": "hidden_ancilla_control_geometry",
+      "required": true,
+      "adapter_status": "NOT_IMPLEMENTED",
+      "requirement": "training-fitted bounded geometry/ancilla predictive family"
+    }
+  ],
+  "combiner": "max_valid_family_pvalue",
+  "missing_required_family": "ABSTAIN_NUISANCE_ENVELOPE_INCOMPLETE",
+  "claim_ceiling": "CANDIDATE_OUTSIDE_FROZEN_STANDARD_NUISANCE_ENVELOPE",
+  "unrestricted_standard_physics_exclusion": false
+}
