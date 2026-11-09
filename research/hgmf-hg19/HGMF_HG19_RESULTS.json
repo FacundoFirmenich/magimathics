@@ -1,0 +1,43 @@
+{
+  "gate": "HGMF-HG19",
+  "title": "Operational Context Metric, Action Cost and Dimensional Coupling",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_OPERATIONAL_CONTEXT_METRIC_CONDITIONAL_PASS_STANDARD_ACTION_TRANSGRESSION_PASS_BURES_SELECTION_CONDITIONAL_PASS_ACCESSIBLE_CROSS_CARRIER_TRANSPORT_FAIL_NONZERO_HGMF_COUPLING_SELECTION_FAIL_STANDARD_GEOMETRY_EXCLUSION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "pure_state_action_metric": {
+    "identity": "h_action = hbar^2 g_Q",
+    "max_minimal_HS_error": 1.1102230246251565e-15,
+    "max_state_covariance_error": 1.3322676295501878e-15,
+    "max_gauge_QGT_error": 2.5028759599055835e-16,
+    "max_isometric_embedding_error": 0,
+    "formal_holdout_scale_estimate": 5.289999999999998,
+    "expected_hbar_squared": 5.289999999999999,
+    "formal_holdout_max_relative_error": 1.1315016894890976e-14
+  },
+  "mixed_state_metric": {
+    "monotonicity_alone_unique": false,
+    "SLD_Petz_value": 0.3600000000000001,
+    "Wigner_Yanase_ratio_to_SLD": 1.111111111111111,
+    "BKM_ratio_to_SLD": 1.155245300933242,
+    "Bures_selected_by_minimum_purification_action": "PASS_CONDITIONAL"
+  },
+  "cross_carrier": {
+    "constant_isometry": "PASS_EXACT",
+    "hidden_ancilla_total_area_ratio": 2.23606797749979,
+    "accessible_metric_preserved": "PASS_RELATIVE_TO_DECLARED_ACCESSIBLE_STATE",
+    "depolarizing_contraction_max_error": 1.3877787807814457e-16
+  },
+  "dimensional_transgression": {
+    "action_area": "dA_action = hbar^2 dA_Q",
+    "standard_curvature_relation": "F = (2 chi_Q / hbar^2) dA_action",
+    "universal_action_unit_selected": "hbar^2",
+    "nonzero_HGMF_dimensionless_coefficient_selected": false,
+    "lambda_HG_form": "c_HG / hbar^2",
+    "experimental_magnitude": "ABSTAIN"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "OPERATIONAL_ACTION_METRIC_AND_STANDARD_DIMENSIONAL_TRANSGRESSION_PASS_HGMF_COUPLING_AND_STANDARD_EXCLUSION_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG20 Dimensionless Coupling Selection and Cross-Carrier Residual Tribunal"
+}
