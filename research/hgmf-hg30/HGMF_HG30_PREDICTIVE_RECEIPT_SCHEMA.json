@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG30 Nuisance Predictive Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile","receipt_id","family_id","carrier","component","training","complexity_cap","holdout","predictive","discrepancy","calibration","provenance","self_hash"],
+  "properties": {
+    "profile":{"const":"hgmf-nuisance-predictive-receipt/1.0"},
+    "receipt_id":{"type":"string","minLength":8},
+    "family_id":{"enum":["drift_control","finite_hidden_state","bounded_process_tensor","alternative_standard_kernels","hidden_ancilla_control_geometry"]},
+    "carrier":{"enum":["magnetism","adsorption"]},
+    "component":{"enum":["A","B","C","K","E","Q","Z"]},
+    "training":{
+      "type":"object","additionalProperties":false,
+      "required":["parent_receipt_ids","waves","fit_commit","parameters_hash"],
+      "properties":{
+        "parent_receipt_ids":{"type":"array","items":{"type":"string"},"minItems":1},
+        "waves":{"type":"array","prefixItems":[{"const":1},{"const":2}],"minItems":2,"maxItems":2},
+        "fit_commit":{"type":"string"},
+        "parameters_hash":{"type":"string"}
+      }
+    },
+    "complexity_cap":{"type":"object"},
+    "holdout":{
+      "type":"object","additionalProperties":false,
+      "required":["wave","cell_keys"],
+      "properties":{
+        "wave":{"const":3},
+        "cell_keys":{"type":"array","items":{"type":"string"},"minItems":1,"uniqueItems":true}
+      }
+    },
+    "predictive":{
+      "type":"object","additionalProperties":false,
+      "required":["representation","artifact_ids"],
+      "properties":{
+        "representation":{"enum":["GAUSSIAN_MEAN_COV","MONTE_CARLO_DRAWS","MODEL_SPECIFIC"]},
+        "artifact_ids":{"type":"array","items":{"type":"string"},"minItems":1}
+      }
+    },
+    "discrepancy":{"type":"object","required":["id","frozen_before_holdout"]},
+    "calibration":{
+      "type":"object","additionalProperties":false,
+      "required":["authority","confirmatory_authorized","justification"],
+      "properties":{
+        "authority":{"enum":["EXACT_FINITE_SAMPLE","EXACT_CONDITIONAL_RANDOMIZATION","ASYMPTOTIC_THEOREM","EMPIRICAL_CALIBRATION_ONLY","UNPROVEN"]},
+        "confirmatory_authorized":{"type":"boolean"},
+        "justification":{"type":"string"}
+      }
+    },
+    "provenance":{"type":"object"},
+    "self_hash":{"type":"string","pattern":"^[0-9a-f]{64}$"}
+  }
+}
