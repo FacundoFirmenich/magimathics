@@ -1,0 +1,40 @@
+{
+  "gate": "HGMF-HG31",
+  "title": "Finite-Sample Universal E-values and Certified Nuisance Likelihood Bounds",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_FINITE_SAMPLE_UNIVERSAL_EVALUE_THEOREM_PASS_UNION_NUISANCE_EVALUE_PASS_KERNEL_CERTIFIED_LIKELIHOOD_BOUND_METHOD_PASS_BOUNDED_HMM_LIKELIHOOD_UPPER_BOUND_PASS_LIKELIHOOD_BOUND_RECEIPT_PROFILE_FAIL_UNBOUNDED_NUISANCE_CONFIRMATORY_ADMISSIBILITY_ABSTAIN_KERNEL_PARAMETER_CAPS_UNSEALED_ABSTAIN_HMM_EMISSION_CAPS_UNSEALED_ABSTAIN_PROCESS_TENSOR_OBSERVATION_LIKELIHOOD_ABSTAIN_ANCILLA_OBSERVATION_LIKELIHOOD_ABSTAIN_EMPIRICAL_ADJUDICATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "universal_inference": {
+    "local_alpha": 0.007142857142857143,
+    "evalue_threshold_per_carrier": 140.0,
+    "derived_pvalue": "min(1,1/E)",
+    "union_null_bound": "max family likelihood upper bound",
+    "finite_sample": true,
+    "regularity_conditions_for_type1": "none beyond normalized candidate density and valid null likelihood upper bound"
+  },
+  "kernel": {
+    "fixed_identity_green_profile": "EXACT",
+    "continuous_bound": "GLOBAL_LIPSCHITZ_GRID_THEOREM",
+    "machine_interval_certificate": false,
+    "parameter_caps_sealed": false,
+    "status": "ABSTAIN_KERNEL_PARAMETER_CAPS_UNSEALED"
+  },
+  "hmm": {
+    "bound": "PRODUCT_OF_PER_TIME_MAXIMUM_BOUNDED_EMISSION_DENSITIES",
+    "transition_family": "arbitrary stochastic",
+    "finite_sample_validity": true,
+    "emission_caps_sealed": false,
+    "status": "ABSTAIN_HMM_EMISSION_CAPS_UNSEALED"
+  },
+  "process_tensor": {
+    "outer_convex_bound_contract": true,
+    "observation_likelihood_bridge": false,
+    "status": "ABSTAIN_PROCESS_TENSOR_OBSERVATION_LIKELIHOOD"
+  },
+  "ancilla": {
+    "likelihood_upper_bound_contract": true,
+    "observation_likelihood_bridge": false,
+    "status": "ABSTAIN_ANCILLA_OBSERVATION_LIKELIHOOD"
+  },
+  "empirical_status": "ABSTAIN_NO_ADMITTED_DATA",
+  "next_gate": "HGMF-HG32 Complexity-Cap Selection, Process-Tensor/Ancilla Likelihood Bridge and Universal-Evalue Power Audit"
+}

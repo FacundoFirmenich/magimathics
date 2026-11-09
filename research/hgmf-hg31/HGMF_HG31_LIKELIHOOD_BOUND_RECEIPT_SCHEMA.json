@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG31 Likelihood Upper-Bound Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile","receipt_id","family_id","carrier","component","holdout","complexity_cap_sha256","bound","method","authority","provenance","self_hash"],
+  "properties": {
+    "profile": {"const":"hgmf-likelihood-upper-bound/1.0"},
+    "receipt_id": {"type":"string","minLength":8},
+    "family_id": {"enum":["drift_control","finite_hidden_state","bounded_process_tensor","alternative_standard_kernels","hidden_ancilla_control_geometry"]},
+    "carrier": {"enum":["magnetism","adsorption"]},
+    "component": {"enum":["A","B","C","K","E","Q","Z"]},
+    "holdout": {
+      "type":"object",
+      "required":["wave","cell_keys","observation_measure"],
+      "additionalProperties":false,
+      "properties":{
+        "wave":{"const":3},
+        "cell_keys":{"type":"array","items":{"type":"string"},"minItems":1,"uniqueItems":true},
+        "observation_measure":{"type":"string","minLength":1}
+      }
+    },
+    "complexity_cap_sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},
+    "bound":{
+      "type":"object",
+      "required":["log_likelihood_upper_bound","numeric_slack"],
+      "additionalProperties":false,
+      "properties":{
+        "log_likelihood_upper_bound":{"type":"number"},
+        "numeric_slack":{"type":"number","minimum":0}
+      }
+    },
+    "method":{"enum":["EXACT_PROFILE","ANALYTIC_UPPER_BOUND","CERTIFIED_GRID_LIPSCHITZ","CONVEX_OUTER_RELAXATION","OTHER_CERTIFIED"]},
+    "authority":{"enum":["CERTIFIED","UNPROVEN"]},
+    "provenance":{"type":"object"},
+    "self_hash":{"type":"string","pattern":"^[0-9a-f]{64}$"}
+  }
+}
