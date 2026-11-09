@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "updated": "2026-11-09",
+  "super_repository": "FacundoFirmenich/magimathics",
+  "policy": "specialized repository is authoritative for its paper-scale evidence; magimathics stores immutable pointers and programme-level status",
+  "repositories": [
+    {"code":"RGPHI","repository":"FacundoFirmenich/rgphi-radix-mobius-dynamics","branch":"Ulalito's-Island","commit":"a116ff21bd5b2fd973c39445931d8a4b832069b7","authority":"CANONICAL_ACTIVE","object":"Exact radix-Mobius dynamics, portals, traps, Bellman and tau_m","next_gate":"Stage B2: exact layers 186..211","visibility":"public"},
+    {"code":"BQ","repository":"FacundoFirmenich/quaternary-query-tomography","branch":"Ulalito's-Island","commit":"114546cba397c8bbb99b6ff252dee70e4b967461","authority":"EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER","object":"Adaptive quaternary tomography and signed-permutation query complexity","next_gate":"BQ-010E: four-mixed frontier schedules in Z4^4","visibility":"private"},
+    {"code":"ACTIVATION","repository":"FacundoFirmenich/radix-mobius-activation-surfaces","branch":"Ulalito's-Island","commit":"e3cd96f93c14460d566fe6eafa31beb8c28867ac","authority":"PARALLEL_ISOLATED_INDEPENDENT_PAPER","object":"Resolution-time activation surfaces and modular-rank reachability","next_gate":"ODT-015C: unresolved temporal surfaces and exact censoring","visibility":"private"},
+    {"code":"METHODS","repository":"FacundoFirmenich/certified-radix-mobius-computation","branch":"Ulalito's-Island","commit":"8b7f307c43924747e7082b5840ade78a151d7891","authority":"METHODS_COMPANION","object":"Exact computation, proof objects, checkpoints and trusted checkers","next_gate":"Stable certificate schema and proof-assistant core","visibility":"private"},
+    {"code":"HM","repository":"FacundoFirmenich/toeplitz-kasparov-interfaces","branch":"Ulalito's-Island","commit":"41f1baeb7a7a1c416a211b16282cd7457ecd8db2","authority":"EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER","object":"Stable Toeplitz interfaces, unbounded KK and Real/APS refinements","next_gate":"HM-014: selection data for Real lifts and half-shift","visibility":"private"},
+    {"code":"OBS","repository":"FacundoFirmenich/observational-degeneration-synergy","branch":"Ulalito's-Island","commit":"e858229fe9211d8d0e5ddfb243e8bf60847f6d6c","authority":"FOUNDATIONS_TRACK","object":"Observational degeneration and higher-order observer synergy","next_gate":"New prospective Sysmic-X and KwanTube-X validations","visibility":"private"},
+    {"code":"U5HD","repository":"FacundoFirmenich/u5-hd","branch":"Ulalito's-Island","commit":"ccf5c998a5ae15e81962d2a9278b931dab6de619","authority":"PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY","object":"Private integrated U5-HD prearchitecture and falsifier ledger","next_gate":"Minimal axioms and natural semiconjugation","visibility":"private"}
+  ]
+}

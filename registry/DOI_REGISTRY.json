@@ -1,0 +1,13 @@
+{
+  "updated":"2026-11-09",
+  "policy":"No DOI is minted before the specialized repository release checklist passes.",
+  "objects":[
+    {"repository":"rgphi-radix-mobius-dynamics","concept_doi":null,"latest_version_doi":null,"zenodo_enabled":false},
+    {"repository":"quaternary-query-tomography","concept_doi":null,"latest_version_doi":null,"zenodo_enabled":false},
+    {"repository":"radix-mobius-activation-surfaces","concept_doi":null,"latest_version_doi":null,"zenodo_enabled":false},
+    {"repository":"certified-radix-mobius-computation","concept_doi":null,"latest_version_doi":null,"zenodo_enabled":false},
+    {"repository":"toeplitz-kasparov-interfaces","concept_doi":null,"latest_version_doi":null,"zenodo_enabled":false},
+    {"repository":"observational-degeneration-synergy","concept_doi":null,"latest_version_doi":null,"zenodo_enabled":false},
+    {"repository":"u5-hd","concept_doi":null,"latest_version_doi":null,"zenodo_enabled":false,"note":"programme repository; no DOI until stable citable object"}
+  ]
+}

@@ -1,0 +1,8 @@
+code,current_sota_score,potential_score,publication_state,target_track
+BQ,8.03,9.50,MANUSCRIPT_PRIORITY,IEEE TIT or SIAM JDM
+RGPHI,7.60,9.20,MANUSCRIPT_PRIORITY,Mathematics of Computation or ETDS
+METHODS,7.46,8.70,COMPANION_BUILD,Mathematics of Computation or ACM TOMS
+ACTIVATION,7.37,8.80,ONE_OR_MORE_GATES,Experimental Mathematics or Nonlinearity
+OBS,6.38,9.00,EXTERNAL_VALIDATION_REQUIRED,Philosophy of Science or BJPS or Synthese
+U5HD,6.04,8.50,PROGRAMME_NOT_PAPER,Future monograph or perspective
+HM,5.91,8.30,SPECIALIST_AUDIT_REQUIRED,JNCG or JFA or JOT
