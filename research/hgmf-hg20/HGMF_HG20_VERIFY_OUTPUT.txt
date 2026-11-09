@@ -1,0 +1,8 @@
+PASS_HGMF_HG20_EXACT
+area_A=2.0
+area_B=2.0
+area_composite=5.0
+composition_defect=1.0
+common_nonzero_topological_c=false
+same_bundle_constant_mode=excluded
+zero_flux_cos_theta_integral=0.0

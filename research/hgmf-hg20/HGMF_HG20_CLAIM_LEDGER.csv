@@ -1,0 +1,9 @@
+claim_id,claim,class,status,evidence
+HG20-C01,A constant area-proportional residual on the same closed line bundle can be nonzero,THEOREM,FAIL,same-bundle exactness forces zero flux
+HG20-C02,A universal local area law is compatible with independent product composition,THEOREM,FAIL,2+2 versus 5 area witness
+HG20-C03,Topology selects a discrete nonzero universal coefficient,THEOREM,FAIL,cross-carrier irrational volume ratio forces zero
+HG20-C04,The universal local area ansatz selects c_HG=0,THEOREM,PASS,same-bundle composition and cross-carrier proofs
+HG20-C05,A nonzero sign-changing zero-flux residual remains possible,FORMAL,PASS_OPEN,cos(theta) witness
+HG20-C06,Mixed-state monotonicity produces a metric-independent coefficient,THEOREM,FAIL,Petz-family sensitivity
+HG20-C07,Historical constants are selected as this coefficient,FORMAL,FAIL,Bloch-sphere integrality audit
+HG20-C08,HG20 rules out all HGMF corrections,PHYSICAL,FAIL,only one local universal ansatz is excluded
