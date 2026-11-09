@@ -1,0 +1,12 @@
+claim_id,claim,class,status
+HG29-C01,A training-frozen causal projection with valid propagated covariance yields an executable one-sided holdout test,STATISTICAL,PASS_CONDITIONAL
+HG29-C02,A matched-filter modal test confirms kernel ontology uniquely,PHYSICAL,FAIL
+HG29-C03,A nodal conjunction can be tested without an arbitrary distance threshold by preregistered flank signs,STATISTICAL,PASS
+HG29-C04,max family p-value is valid for rejecting a union of frozen nuisance nulls,THEOREM,PASS
+HG29-C05,Rejecting the frozen nuisance envelope excludes all standard quantum dynamics,PHYSICAL,FAIL
+HG29-C06,An unrestricted saturated nuisance class is falsifiable by the same finite target data,THEOREM,FAIL
+HG29-C07,The exact one-sided sign test over eight non-tied pairs can cross alpha/7,THEOREM,PASS
+HG29-C08,Missing nuisance families may be ignored if the remaining models fail,INFERENCE,FAIL
+HG29-C09,The machine adjudicator may skip a failed gate,PROTOCOL,FAIL
+HG29-C10,Current data support an empirical component claim,EMPIRICAL,ABSTAIN
+HG29-C11,The highest current in-program claim is physical protogeometry,PHYSICAL,FAIL
