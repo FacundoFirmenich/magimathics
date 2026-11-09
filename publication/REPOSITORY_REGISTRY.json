@@ -1,0 +1,82 @@
+[
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "rgphi-radix-mobius-dynamics",
+    "role": "Paper A: exact RGΦ dynamics",
+    "type": "existing",
+    "status": "EXISTING_PUBLIC",
+    "zenodo_plan": "planned v1.0.0"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "fractal_analysis_of_seismics",
+    "role": "Multi-Planar Hierarchy",
+    "type": "existing",
+    "status": "EXISTING_PUBLIC",
+    "zenodo_plan": "existing workflow / audit"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "sysmic",
+    "role": "Fractal Tomography and Fisher Information Barrier",
+    "type": "existing",
+    "status": "EXISTING_PUBLIC",
+    "zenodo_plan": "existing workflow / audit"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "KwanTube",
+    "role": "Beyond Redfield",
+    "type": "existing",
+    "status": "EXISTING_PUBLIC",
+    "zenodo_plan": "existing workflow / audit"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "magimathics",
+    "role": "Program centrum, registry and future monograph",
+    "type": "existing",
+    "status": "EXISTING_PUBLIC",
+    "zenodo_plan": "do not use as substitute for paper-specific DOIs"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "quaternary-query-tomography",
+    "role": "Exact Adaptive Quaternary Tomography of Signed Permutations",
+    "type": "new",
+    "status": "PRIORITY_1__START_NOW",
+    "zenodo_plan": "GitHub release -> Zenodo DOI after publication gate"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "modular-rank-activation-dynamics",
+    "role": "Resolution–Time Activation Surfaces and Modular Rank in Rational Semigroup Reachability",
+    "type": "new",
+    "status": "PRIORITY_3__ONE_OR_MORE_GATES",
+    "zenodo_plan": "GitHub release -> Zenodo DOI after publication gate"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "rgphi-certified-computation",
+    "role": "Certified Exact Computation for Rational Radix–Möbius Dynamics",
+    "type": "new",
+    "status": "PRIORITY_4__BUILD_IN_PARALLEL",
+    "zenodo_plan": "GitHub release -> Zenodo DOI after publication gate"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "stable-toeplitz-interfaces",
+    "role": "Stable Toeplitz Interfaces, Unbounded Kasparov Cycles, and Nonuniqueness of Real Half-Shifts",
+    "type": "new",
+    "status": "PRIORITY_5__SPECIALIST_AUDIT_REQUIRED",
+    "zenodo_plan": "GitHub release -> Zenodo DOI after publication gate"
+  },
+  {
+    "owner": "FacundoFirmenich",
+    "repository": "observational-degeneration-synergy",
+    "role": "Observational Degeneration and Higher-Order Observer Synergy",
+    "type": "new",
+    "status": "PRIORITY_6__PROGRAM_NOT_YET_MANUSCRIPT",
+    "zenodo_plan": "GitHub release -> Zenodo DOI after publication gate"
+  }
+]
