@@ -1,0 +1,16 @@
+PASS_HGMF_HG30_EXACT
+alpha_component=0.0071428571428571435
+minimum_mc_draws=139
+covariance_rank_full=2
+propagated_rectangle_variance=2.5
+singular_support_check=PASS
+empirical_outcomes_generated=false
+
+PASS_HGMF_HG30_STRUCTURAL_DRYRUN
+empirical_outcomes_generated=false
+covariance_contract=PASS
+minimum_mc_draws_alpha_over_7=139
+process_tensor_interface=PASS
+ancilla_interface=PASS
+nuisance_envelope_confirmatory_ready=false
+expected_X_status=ABSTAIN_NUISANCE_ENVELOPE_INCOMPLETE
