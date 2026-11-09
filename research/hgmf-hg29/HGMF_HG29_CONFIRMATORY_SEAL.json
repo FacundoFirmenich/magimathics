@@ -1,0 +1,17 @@
+{
+  "profile": "hgmf-hg29-confirmatory-seal/1.0",
+  "parent_hg28_branch": "hgmf-hg28-confirmatory-gatekeeping-20261109",
+  "alpha_global": 0.05,
+  "alpha_component": 0.007142857142857143,
+  "components": ["A","B","C","K","E","Q","Z"],
+  "chain": ["causal","modal","nodal","frozen_nuisance_exclusion","order_optional"],
+  "replication_rule": "max carrier p-value",
+  "holdout": "wave3_only",
+  "causal_test": "training-frozen linear projection z-test with propagated holdout covariance",
+  "modal_test": "training-frozen matched-filter z-test over holdout modal blocks",
+  "nodal_test": "intersection-union max of preregistered one-sided flank p-values",
+  "nuisance_test": "intersection-union max of calibrated holdout predictive p-values from every required nuisance family",
+  "order_test": "one-sided exact sign test on eight preregistered holdout pairs per carrier",
+  "highest_authorized_claim": "ORDER_SENSITIVE_CANDIDATE_OUTSIDE_FROZEN_NUISANCE_ENVELOPE",
+  "physical_protogeometry_confirmed": false
+}
