@@ -1,0 +1,26 @@
+{
+  "profile": "hgmf-confirmatory-gatekeeping/1.0",
+  "alpha": 0.05,
+  "components": [
+    "A",
+    "B",
+    "C",
+    "K",
+    "E",
+    "Q",
+    "Z"
+  ],
+  "estimands": [
+    "symmetric",
+    "order"
+  ],
+  "per_claim": {
+    "positive_replication_p": "max(p_M_plus,p_A_plus)",
+    "negative_replication_p": "max(p_M_minus,p_A_minus)",
+    "unknown_direction_p": "min(1,2*min(p_rep_plus,p_rep_minus))"
+  },
+  "family_adjustment": "Holm over 14 replicated causal claims",
+  "missing_claim_rule": "ABSTAIN_NOT_TESTABLE and non-rejectable in confirmatory family",
+  "meta_analysis_substitution": false,
+  "scalar_average_gate": false
+}
