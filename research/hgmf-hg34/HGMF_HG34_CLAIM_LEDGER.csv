@@ -1,0 +1,16 @@
+claim_id,claim,class,status
+HG34-C01,The corrected structural workflow executed successfully on both pinned public source repositories,EXECUTION,PASS
+HG34-C02,Loop 1 has the largest absolute exchange bias in the five-loop FGT/CrSBr training series,EMPIRICAL,PASS
+HG34-C03,Loop 1 has the largest switching-width asymmetry in the five-loop FGT/CrSBr training series,EMPIRICAL,PASS
+HG34-C04,The FGT/CrSBr source-specific domain/training standard null is excluded by these public data,INFERENCE,FAIL
+HG34-C05,Every equal-pressure reversal pair is a valid RPM closure,THEOREM,FAIL
+HG34-C06,Immediate reversal-return closures provide valid RPM structural constraints,THEOREM,PASS
+HG34-C07,All 57 genuine Xe/Vycor RPM closures are compatible with quoted last-digit uncertainty,EMPIRICAL,FAIL
+HG34-C08,The digitized Xe/Vycor data satisfy exact RPM within quoted last-digit uncertainty,EMPIRICAL,FAIL
+HG34-C09,Failure of digitized RPM alone rejects physical independent-domain theory,INFERENCE,HOLD
+HG34-C10,Congruency was audited on repeated same-limit branches,EXECUTION,PASS
+HG34-C11,Congruency can be confirmatorily rejected without a stochastic measurement model,INFERENCE,HOLD
+HG34-C12,Wiping-out rejoin is identifiable when the counterfactual parent branch is unobserved after rejoin,THEOREM,FAIL
+HG34-C13,An unconstrained pore-network family is a useful falsifiable null on a finite path,THEOREM,FAIL
+HG34-C14,Carrier-specific standard physics is fully excluded,PHYSICAL,FAIL
+HG34-C15,HG34 supplies empirical evidence for physical protogeometry,PHYSICAL,FAIL
