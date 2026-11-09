@@ -1,0 +1,15 @@
+status,meaning,authority
+RECEIVED,receipt exists but has not been verified,NONE
+BYTE_INTEGRITY_PASS,raw bytes match declared SHA-256,INTEGRITY_ONLY
+SCHEMA_PASS,receipt conforms to required fields and types,METADATA_ONLY
+PROVENANCE_CLOSURE_PASS,parents activities agents and ordering are closed,PROVENANCE
+CALIBRATION_PASS,referenced calibration is admitted,EXPERIMENTAL_PRECONDITION
+RESET_AND_PREFIX_PASS,history ancestry and reset contract pass,INTERVENTION
+QC_PASS,preregistered quality gates pass,QUALITY
+HOLDOUT_SEAL_PASS,receipt belongs to declared split and analysis seal,PROSPECTIVE
+ADMITTED,all noncompensatory gates pass,ANALYSIS_ELIGIBLE
+QUARANTINED,a verified gate failed,EXCLUDED_PENDING_RESOLUTION
+ABSTAIN_INCOMPLETE_RECEIPT,required evidence is absent,NO_AUTHORITY
+DUPLICATE_CELL,cell has uncontracted multiple receipts,NO_AUTHORITY
+ORPHAN_DERIVATION,derived output lacks admitted parents,NO_AUTHORITY
+HOLDOUT_CONTAMINATED,holdout was used or plan changed after access,NO_HOLDOUT_AUTHORITY

@@ -1,0 +1,23 @@
+{
+  "abstention_rules": ["missing_receipt", "missing_corner", "failed_calibration", "failed_reset", "non_prefix_closed", "rank_deficient_source", "insufficient_modal_blocks", "holdout_contamination"],
+  "base_commit": "90670a4a5ca001086cc88d70c24a1d5f05ded827",
+  "components": ["A", "B", "C", "K", "E", "Q", "Z"],
+  "created_at": "2026-11-09T17:00:00+01:00",
+  "files": {
+    "HGMF_HG26_ACQUISITION_RECEIPT_SCHEMA.json": "520f8af7648b5f07b6adcb32b50d6246a633b15a7902efa18bf3c3c418b81169",
+    "HGMF_HG26_DERIVATION_RECEIPT_SCHEMA.json": "79044676e800f1a263e6b1486125b6800ca424fe2a0a3da3410e41533c6cd6ae",
+    "HGMF_HG26_STATUS_LEDGER.csv": "9ac3d25d4eb5a2a97c62aa8d8a1d6e00fc2d2dee23dfbc95ab00f10173251e5e",
+    "HGMF_HG26_TARGET_GRID_ADSORPTION.csv": "a221994f2df84cfe04863be705f65d6b301d7b60e3ee70c0166e2a849bbd5536",
+    "HGMF_HG26_TARGET_GRID_MAGNETIC.csv": "1e0a7c62b833949ab51b0f42dbbc80f2e8e8f5ac8b995a600f4606d08af39bec",
+    "hgmf_hg26_validate_receipts.py": "72de843834d86eef46f50ff3d0dbf958ada4c560f45c69303b8014d81ff399a1"
+  },
+  "git_branch": "hgmf-hg26-acquisition-receipts-20261109",
+  "holdout_waves": [3],
+  "kernel_candidates": ["identity", "green", "screened", "fractional", "heat"],
+  "nuisance_classes": ["drift", "hidden_state", "process_tensor", "control_geometry", "alternative_kernel", "outcome_rescaling"],
+  "primary_scores": ["causal_rectangle", "modal_ratio", "relative_residual", "nodal_distance", "sign_agreement", "partial_flux", "cross_carrier_transfer"],
+  "project": "HGMF-HG25/HG26 dual-carrier causal-modal adjudication",
+  "seal_profile": "hgmf-analysis-seal/1.0",
+  "self_hash": "bda46dbade92ba17f58c372beb114a74f6e79c2cad15871f1fcf5b4eb8560a3d",
+  "train_waves": [1, 2]
+}

@@ -1,0 +1,113 @@
+{
+  "$id": "https://example.org/hgmf/hg26/acquisition-receipt.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {"properties": {"carrier": {"const": "magnetism"}}},
+      "then": {"properties": {"cell": {
+        "additionalProperties": false,
+        "properties": {
+          "cycle": {"maximum": 8, "minimum": 1, "type": "integer"},
+          "field_mT": {"enum": [100, 150, 200]},
+          "preset": {"const": "-"},
+          "wave": {"maximum": 3, "minimum": 1, "type": "integer"}
+        },
+        "required": ["wave", "preset", "field_mT", "cycle"],
+        "type": "object"
+      }}}
+    },
+    {
+      "if": {"properties": {"carrier": {"const": "adsorption"}}},
+      "then": {"properties": {"cell": {
+        "additionalProperties": false,
+        "properties": {
+          "control_slot": {"maximum": 3, "minimum": 1, "type": "integer"},
+          "reversal_depth": {"maximum": 8, "minimum": 1, "type": "integer"},
+          "wave": {"maximum": 3, "minimum": 1, "type": "integer"}
+        },
+        "required": ["wave", "control_slot", "reversal_depth"],
+        "type": "object"
+      }}}
+    }
+  ],
+  "properties": {
+    "acquisition": {
+      "additionalProperties": false,
+      "properties": {
+        "ended_at": {"format": "date-time", "type": "string"},
+        "environment_digest": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "instrument_id": {"minLength": 1, "type": "string"},
+        "operator_agent_id": {"minLength": 1, "type": "string"},
+        "protocol_commit": {"pattern": "^[0-9a-f]{40}$", "type": "string"},
+        "started_at": {"format": "date-time", "type": "string"}
+      },
+      "required": ["started_at", "ended_at", "instrument_id", "operator_agent_id", "protocol_commit", "environment_digest"],
+      "type": "object"
+    },
+    "carrier": {"enum": ["magnetism", "adsorption"]},
+    "cell": {"type": "object"},
+    "intervention": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_receipt_ids": {"items": {"minLength": 1, "type": "string"}, "minItems": 1, "type": "array", "uniqueItems": true},
+        "prefix_closed": {"type": "boolean"},
+        "previous_cycle_receipt_id": {"type": ["string", "null"]},
+        "reset_receipt_id": {"minLength": 1, "type": "string"},
+        "sequence_index": {"minimum": 1, "type": "integer"}
+      },
+      "required": ["reset_receipt_id", "calibration_receipt_ids", "prefix_closed", "sequence_index", "previous_cycle_receipt_id"],
+      "type": "object"
+    },
+    "provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "activity_id": {"minLength": 1, "type": "string"},
+        "agent_ids": {"items": {"type": "string"}, "minItems": 1, "type": "array", "uniqueItems": true},
+        "parent_receipt_ids": {"items": {"type": "string"}, "type": "array", "uniqueItems": true}
+      },
+      "required": ["activity_id", "agent_ids", "parent_receipt_ids"],
+      "type": "object"
+    },
+    "qc": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration_pass": {"type": "boolean"},
+        "flags": {"items": {"type": "string"}, "type": "array"},
+        "raw_trace_pass": {"type": "boolean"},
+        "reset_pass": {"type": "boolean"},
+        "status": {"enum": ["PASS", "FAIL", "ABSTAIN"]}
+      },
+      "required": ["status", "calibration_pass", "reset_pass", "raw_trace_pass", "flags"],
+      "type": "object"
+    },
+    "raw_artifact": {
+      "additionalProperties": false,
+      "properties": {
+        "bytes": {"minimum": 1, "type": "integer"},
+        "media_type": {"minLength": 1, "type": "string"},
+        "relative_path": {"minLength": 1, "type": "string"},
+        "sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+      },
+      "required": ["relative_path", "sha256", "bytes", "media_type"],
+      "type": "object"
+    },
+    "receipt_id": {"minLength": 8, "type": "string"},
+    "receipt_profile": {"const": "hgmf-acquisition-receipt/1.0"},
+    "receipt_type": {"const": "raw_acquisition"},
+    "self_hash": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "split": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis_seal_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "role": {"enum": ["TRAIN", "HOLDOUT"]},
+        "seen_during_training": {"type": "boolean"}
+      },
+      "required": ["role", "analysis_seal_sha256", "seen_during_training"],
+      "type": "object"
+    }
+  },
+  "required": ["receipt_profile", "receipt_type", "receipt_id", "carrier", "cell", "acquisition", "raw_artifact", "intervention", "provenance", "split", "qc", "self_hash"],
+  "title": "HGMF HG26 Acquisition Receipt",
+  "type": "object"
+}

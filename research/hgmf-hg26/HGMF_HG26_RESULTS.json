@@ -1,0 +1,40 @@
+{
+  "analysis_seal": {
+    "components": ["A", "B", "C", "K", "E", "Q", "Z"],
+    "holdout_waves": [3],
+    "sha256": "bda46dbade92ba17f58c372beb114a74f6e79c2cad15871f1fcf5b4eb8560a3d",
+    "train_waves": [1, 2]
+  },
+  "current_admission": {
+    "admitted_receipts": 0,
+    "adsorption_grid": "0/72",
+    "magnetic_grid": "0/72",
+    "magnetic_rectangles": "0/42",
+    "receipt_files": 0,
+    "verdict": "ABSTAIN_INCOMPLETE_RECEIPTS"
+  },
+  "date": "2026-11-09",
+  "gate": "HGMF-HG26",
+  "global_verdict": "PASS_RECEIPT_PROFILE_PASS_PROVENANCE_DAG_PASS_CAUSAL_ANCESTRY_PASS_ANALYSIS_SEAL_PASS_ADMISSION_VALIDATOR_FAIL_DATA_ADMISSION_ABSTAIN_FIRST_EMPIRICAL_ADJUDICATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "next_gate": "HGMF-HG27 Sequential Acquisition, Stopping Rules and Evidence Budget",
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_RECEIPT_PROFILE_AVAILABLE_EXECUTION_PENDING",
+    "paper_B": "FORMAL_CORE_STABLE_PROVENANCE_BOUNDARY_ADDED",
+    "paper_C": "EMPIRICAL_PIPELINE_AUDITABLE_NO_DATA_ADMITTED"
+  },
+  "standards_alignment": {
+    "JSON_Schema": "Draft 2020-12",
+    "RO_Crate": "1.2-compatible research-object packaging profile",
+    "W3C_PROV": "entity-activity-agent and ordering semantics",
+    "receipt_hash_profile": "HG26 canonical integer/string JSON subset + SHA-256"
+  },
+  "theorems": {
+    "hash_does_not_imply_validity": "PASS",
+    "holdout_seal": "PASS_CONTRACT",
+    "layered_admission": "PASS",
+    "missing_corner_no_imputation": "PASS_FROM_HG25",
+    "prefix_ancestry": "PASS_CONTRACT",
+    "provenance_closure": "PASS_CONDITIONAL"
+  },
+  "title": "Acquisition Receipts, Causal Integrity and Prospective Analysis Seal"
+}

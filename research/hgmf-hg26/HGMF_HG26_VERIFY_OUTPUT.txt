@@ -1,0 +1,7 @@
+PASS_HGMF_HG26_EXACT
+analysis_seal_sha256=bda46dbade92ba17f58c372beb114a74f6e79c2cad15871f1fcf5b4eb8560a3d
+magnetic_target_cells=72
+adsorption_target_cells=72
+receipt_files=0
+admitted_receipts=0
+empirical_verdict=ABSTAIN_INCOMPLETE_RECEIPTS

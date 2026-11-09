@@ -1,0 +1,15 @@
+{
+  "admitted_receipts": 0,
+  "adsorption_grid": {"admitted": 0, "required": 72},
+  "ancestry_errors": [],
+  "duplicate_cells": {},
+  "duplicate_receipt_ids": [],
+  "empirical_verdict": "ABSTAIN_INCOMPLETE_RECEIPTS",
+  "load_errors": [],
+  "magnetic_adjacent_rectangles": {"admitted": 0, "required": 42},
+  "magnetic_grid": {"admitted": 0, "required": 72},
+  "missing_parent_receipt_ids": [],
+  "provenance_graph_cycle": false,
+  "receipt_files": 0,
+  "records": []
+}
