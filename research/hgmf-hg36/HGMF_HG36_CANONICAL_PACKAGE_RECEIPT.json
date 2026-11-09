@@ -1,0 +1,20 @@
+{
+  "gate": "HGMF-HG36",
+  "scientific_execution": {
+    "run_id": 42700245672,
+    "artifact_id": 13710418079,
+    "artifact_sha256": "e8dc98e80427726e605c3ce8f6f8e097a155f46f01ded23b78787478da8e8e83",
+    "head_sha": "eb3665e0f7f82d3ec283186243430ac065ff66aa"
+  },
+  "canonical_verification_and_packaging": {
+    "run_id": 42701296857,
+    "artifact_id": 13711836483,
+    "artifact_sha256": "1f496ddef3e98ca988fa4217cfc82d13535ab1381b7f4f67df9a94d3a5ca2960",
+    "head_sha": "dc8c28216b4140ed872fc95e16ee3b833335a960",
+    "conclusion": "success",
+    "exact_verifier": "PASS"
+  },
+  "branch": "hgmf-hg36-observation-bridges-20261109",
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}
