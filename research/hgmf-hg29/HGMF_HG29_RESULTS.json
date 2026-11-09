@@ -1,0 +1,33 @@
+{
+  "gate": "HGMF-HG29",
+  "title": "Executable Confirmatory Tests and Frozen-Nuisance Exclusion",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_EXECUTABLE_CAUSAL_TEST_PASS_EXECUTABLE_MODAL_ALIGNMENT_TEST_PASS_EXECUTABLE_NODAL_BRACKET_IUT_PASS_FROZEN_NUISANCE_ENVELOPE_IUT_PASS_EXECUTABLE_ORDER_SIGN_TEST_PASS_MACHINE_ADJUDICATOR_CORE_PASS_STRICT_REPLICATION_INTEGRATION_FAIL_UNRESTRICTED_STANDARD_PHYSICS_EXCLUSION_ABSTAIN_NUISANCE_FAMILY_ADAPTERS_ABSTAIN_EMPIRICAL_ADJUDICATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "tests": {
+    "causal": "training-frozen projection z-test with D Sigma D^T covariance propagation",
+    "modal": "training-frozen matched-filter z-test",
+    "nodal": "max one-sided flank p-value across all preregistered nodal brackets",
+    "nuisance": "max calibrated family p-value across frozen nuisance union",
+    "order": "one-sided exact sign test",
+    "replication": "max carrier p-value"
+  },
+  "nuisance": {
+    "required_families": ["drift_control","finite_hidden_state","bounded_process_tensor","alternative_standard_kernels","hidden_ancilla_control_geometry"],
+    "family_adapters_implemented": false,
+    "unrestricted_standard_physics_exclusion_authorized": false,
+    "claim_ceiling": "CANDIDATE_OUTSIDE_FROZEN_STANDARD_NUISANCE_ENVELOPE"
+  },
+  "order": {
+    "holdout_pairs_per_carrier": 8,
+    "local_alpha": 0.007142857142857143,
+    "minimum_attainable_p_at_n8": 0.00390625,
+    "confirmatory_test": "one-sided exact sign test"
+  },
+  "machine_adjudicator": {
+    "core_implemented": true,
+    "fit_or_imputation": false,
+    "physical_protogeometry_output_hardcoded_false": true
+  },
+  "empirical_status": "ABSTAIN_NO_ADMITTED_DATA",
+  "next_gate": "HGMF-HG30 Physical Nuisance Adapters, Covariance Receipts and End-to-End Dry Run"
+}
