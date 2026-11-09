@@ -1,0 +1,10 @@
+PASS_HGMF_HG32_EXACT
+observable_jurisdiction=PASS
+quantum_process_tensor_current_carriers=OUT_OF_JURISDICTION_AS_DISTINCT_NULL
+kernel_cap_free_projective_bounds=PASS
+hmm_noise_floor_bound=PASS
+saturated_hmm_power_nogo=PASS
+log_e_threshold=4.941642422609304
+zero_slack_nats_per_cell=0.205901767608721
+carrier_specific_registry_complete=false
+empirical_adjudication=false
