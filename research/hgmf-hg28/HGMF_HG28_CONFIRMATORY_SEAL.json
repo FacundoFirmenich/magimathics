@@ -1,0 +1,20 @@
+{
+  "alpha_global": 0.05,
+  "alpha_component": 0.007142857142857143,
+  "components": ["A","B","C","K","E","Q","Z"],
+  "component_chain": ["causal","modal","nodal","standard_nuisance_exclusion","order"],
+  "early_efficacy": false,
+  "holdout": "wave3_only",
+  "order_module": {
+    "training_pairs_per_carrier": 3,
+    "holdout_pairs_per_carrier": 8,
+    "ordered_sequences_per_pair": 2,
+    "max_additional_units": 44,
+    "test": "one-sided exact sign-flip after training-frozen direction"
+  },
+  "parent_acquisition_seal_sha256": "1a9f4a57634b6c1018182c353cf27275a70fa933acfa5b324ec900679e5c41d1",
+  "replication_rule": "p_rep=max(p_magnetism,p_adsorption); strict 2/2",
+  "seal_profile": "hgmf-confirmatory-seal/1.0",
+  "standard_claim_ceiling": "CANDIDATE_BEYOND_STANDARD_COMPONENT_SIGNATURE",
+  "transcarrier_sign_rule": "training-frozen direction after QGT/UMI orientation transport"
+}

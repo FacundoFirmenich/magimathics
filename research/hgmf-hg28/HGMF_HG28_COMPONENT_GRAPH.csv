@@ -1,0 +1,8 @@
+component,initial_alpha,node_1,node_2,node_3,node_4,node_5,replication_rule
+A,0.007142857142857143,Causal,Modal,Nodal,StandardNuisanceExclusion,Order,max_p_2_of_2
+B,0.007142857142857143,Causal,Modal,Nodal,StandardNuisanceExclusion,Order,max_p_2_of_2
+C,0.007142857142857143,Causal,Modal,Nodal,StandardNuisanceExclusion,Order,max_p_2_of_2
+K,0.007142857142857143,Causal,Modal,Nodal,StandardNuisanceExclusion,Order,max_p_2_of_2
+E,0.007142857142857143,Causal,Modal,Nodal,StandardNuisanceExclusion,Order,max_p_2_of_2
+Q,0.007142857142857143,Causal,Modal,Nodal,StandardNuisanceExclusion,Order,max_p_2_of_2
+Z,0.007142857142857143,Causal,Modal,Nodal,StandardNuisanceExclusion,Order,max_p_2_of_2

@@ -1,0 +1,12 @@
+claim_id,claim,class,status
+HG28-C01,max(p1,p2) is a valid strict 2-of-2 replication p-value,THEOREM,PASS
+HG28-C02,Seven parallel fixed-sequence chains at alpha/7 control strong global FWER at alpha,THEOREM,PASS
+HG28-C03,A pooled or meta-analytic signal may replace strict replication,INFERENCE,FAIL
+HG28-C04,Component averaging is required for multiplicity control,INFERENCE,FAIL
+HG28-C05,Seven holdout order pairs can attain the local alpha threshold under one-sided exact sign-flip,THEOREM,FAIL
+HG28-C06,Eight holdout order pairs can attain the local alpha threshold,THEOREM,PASS
+HG28-C07,Sparse order module requires 44 additional units maximum,DESIGN,PASS
+HG28-C08,Full reverse-grid duplication is the default order design,DESIGN,FAIL
+HG28-C09,Early efficacy stopping is part of the canonical confirmatory mode,PROTOCOL,FAIL
+HG28-C10,Current data confirm any component chain,EMPIRICAL,ABSTAIN
+HG28-C11,Passing a full component chain confirms physical protogeometry,PHYSICAL,FAIL

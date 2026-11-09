@@ -1,0 +1,7 @@
+module,units,status,notes
+base_dual_carrier_grid,144,FROZEN,72 magnetism + 72 adsorption
+order_training_pairs,12,CONDITIONAL,3 contexts x 2 orders x 2 carriers
+order_holdout_pairs,32,CONDITIONAL,8 contexts x 2 orders x 2 carriers
+sparse_total_max,188,SELECTED_MAX,base + sparse order
+full_reverse_order_extra,144,REJECTED_DEFAULT,would yield total 288
+savings_vs_full_reverse,100,DERIVED,288-188
