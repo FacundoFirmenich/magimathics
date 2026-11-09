@@ -1,0 +1,50 @@
+{
+  "gate": "HGMF-HG23",
+  "title": "Triaxial Relational Potentials, Source Normalization and Empirical Nodal Protocol",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_OPERATIONAL_POTENTIAL_DERIVATION_CONDITIONAL_PASS_HODGE_EXTRACTION_PASS_DIRICHLET_AND_VECTOR_NORMALIZATION_PASS_DIAGONAL_TRANSVERSALITY_FAIL_CAUSAL_INTERACTION_IDENTIFICATION_FAIL_PHYSICAL_GAMMA_FAIL_KERNEL_PHYSICAL_SELECTION_ABSTAIN_EMPIRICAL_NODAL_EXECUTION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "potential_derivation": {
+    "definition": "mean-zero Hodge exact projection of preregistered interventional response one-forms",
+    "unique_given_geometry_boundary_and_gauge": true,
+    "causal_only_if_response_forms_are_interventional": true,
+    "max_recovery_error_vertical": 8.881784197001252e-16,
+    "max_recovery_error_horizontal": 6.661338147750939e-16
+  },
+  "diagonal_source": {
+    "scalar": "star(da_V wedge db_H)",
+    "zero_flux_closed_surface": true,
+    "geometric_meaning": "oriented transversality/Jacobian",
+    "causal_interaction_implied": false,
+    "counterexample_source": 1.0,
+    "counterexample_interaction_contrast": 0.0
+  },
+  "normalization": {
+    "Dirichlet_affine_invariant": true,
+    "preserves_zero_flux": true,
+    "local_orientation_monotone_invariant": true,
+    "vector_whitening_antiaggregative": true,
+    "max_affine_normalization_error": 1.214306433183765e-15,
+    "max_monotone_orientation_error": 2.354783035229957e-13,
+    "max_whitened_singular_value_error": 9.124645483638005e-16
+  },
+  "response": {
+    "Green_selected_within_minimum_Dirichlet_class": true,
+    "general_kernel_unique": false,
+    "physical_gamma_selected": false
+  },
+  "empirical_protocol": {
+    "magnetic_additional_loops": 18,
+    "combined_magnetic_programme_loops": 156,
+    "magnetic_complete_grid_loops": 72,
+    "adsorption_homologous_runs": 72,
+    "magnetic_executed": false,
+    "second_carrier_executed": false,
+    "status": "ABSTAIN_EMPIRICAL_NODAL_EXECUTION"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED_HG23_EXTENSION_OPTIONAL",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_ANTIAGGREGATIVE_SOURCE_TRANSPORT_BOUNDARY_ADDED",
+    "paper_C": "OPERATIONAL_POTENTIAL_AND_NORMALIZED_DIAGONAL_SOURCE_PASS_CONDITIONAL_CAUSALITY_GAMMA_KERNEL_AND_EMPIRICS_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG24 Causal Diagonal Interaction, Response Normalization and Dual-Carrier Execution"
+}

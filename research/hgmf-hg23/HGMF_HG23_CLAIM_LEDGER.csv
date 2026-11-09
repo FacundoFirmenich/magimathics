@@ -1,0 +1,12 @@
+claim_id,claim,class,status,evidence
+HG23-C01,Hodge projection uniquely extracts the exact response potential after fixing geometry and gauge,THEOREM,PASS,formal theorem and torus audit
+HG23-C02,Coexact and harmonic contamination do not bias the exact Hodge projection,THEOREM,PASS,torus audit
+HG23-C03,A nonzero relational Jacobian proves causal vertical-horizontal interaction,CAUSAL,FAIL,exact additive counterexample
+HG23-C04,Dirichlet normalization removes affine unit choices while preserving zero flux,THEOREM,PASS,normalization theorem and audit
+HG23-C05,The local orientation index is invariant under separate monotone reparameterizations,THEOREM,PASS_ON_REGULAR_SET,analytic transformation law and audit
+HG23-C06,Vector potential whitening permits antiaggregative basis-invariant source diagnostics,THEOREM,PASS,singular-value audit
+HG23-C07,Hodge/zero-flux geometry selects the physical response amplitude gamma,PHYSICAL,FAIL,no dimensional response principle
+HG23-C08,Minimum Dirichlet action uniquely selects Green among all physically admissible kernels,PHYSICAL,FAIL,conditional class only
+HG23-C09,Nodal positions can falsify the frozen potential-source-kernel triple,FORMAL,PASS,kernel tribunal
+HG23-C10,Current data execute the empirical nodal test across two carriers,EMPIRICAL,ABSTAIN,magnetic extension and homologous adsorption protocol not executed
+HG23-C11,HG23 distinguishes physical protogeometry from standard response theory,PHYSICAL,FAIL,Hodge Poisson Green and intervention methods are standard-compatible

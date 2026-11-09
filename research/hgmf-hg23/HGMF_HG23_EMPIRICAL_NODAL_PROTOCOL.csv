@@ -1,0 +1,13 @@
+stage,carrier,scope,frozen_operation,primary_output,abstention
+magnetic grid extension,magnetic preset -,"3 fields x 8 cycles x 3 waves","add cycles 6-8 at 100 and 150 mT in every wave; 18 loops",complete 72-loop context grid,ABSTAIN if reset/prefix contract fails
+response-form construction,magnetic,"A,B,C,K,E,Q,Z separately","vertical=cycle-edge do-contrast; horizontal=field-edge do-contrast",omega_V^r and omega_H^r,ABSTAIN if causal edge not identified
+Hodge training,magnetic,waves 1-2,"freeze QGT/cell metric, boundary and mean-zero gauge",exact/coexact/harmonic ledgers,ABSTAIN if rank or coverage insufficient
+source normalization,magnetic,waves 1-2,"freeze Dirichlet Gram whitening; no component averaging",matrix source singular values and nodes,ABSTAIN if Gram rank deficient
+kernel freeze,magnetic,pre-wave-3,"Green only if minimum Dirichlet action accepted; alternatives remain negative controls",one frozen kernel,ABSTAIN if no physical kernel contract
+amplitude calibration,magnetic,one nonnodal training patch,"fit one gamma only",gamma,ABSTAIN if sign/unit not stable
+nodal holdout,magnetic,wave 3,"no refit",componentwise nodes signs partial flux and interaction contrast,FAIL if predicted nodes/signs miss tolerance
+adsorption homologous design,adsorption,"3 controls x 8 reversal depths x 3 waves","execute matched intervention hierarchy",72-run carrier,ABSTAIN until executed
+carrier-map training,both,waves 1-2,"fit UMI+QGT oriented map only on training patches",frozen transport map,ABSTAIN if isometry/intertwiner gate fails
+carrier-swap holdout,both,wave 3,"transport potentials source and nodes without refit",cross-carrier nodal prediction,FAIL if carrier-specific gamma/kernel required
+causal interaction tribunal,both,held-out factorial cells,"compute do interaction separately from Jacobian source",interaction class,do not infer causality from source alone
+nuisance tribunal,both,all,"fit drift hidden-ancilla process-tensor and control-geometry nulls",attribution ledger,HOLD if standard response absorbs signal
