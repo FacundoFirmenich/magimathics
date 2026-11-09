@@ -19,63 +19,80 @@ def coercive(field,vnorm):
         if vnorm[i]*vnorm[i+1] < 0:
             den=vnorm[i+1]-vnorm[i]
             c.append(float((field[i]*vnorm[i+1]-field[i+1]*vnorm[i])/den))
-    if len(c)>=2:
-        return c[0],c[1]
-    return None
+    return (c[0],c[1]) if len(c)>=2 else None
 
-def aggregate_blocks(path):
+def load_blocks(path):
     with h5py.File(path) as f:
         field=np.asarray(f["Data"]["Magnetic_Field"],float)
         avg=np.asarray(f["Data"]["Avg_Voltage_Hp34420A_Ch1"],float)
-        raw=np.asarray(f["Data"]["Voltage_Array_Hp34420A_Ch1"])
+        raw=np.asarray(f["Data"]["Voltage_Array_Hp34420A_Ch1"],float)
+    if raw.ndim==1:
+        raw=raw[:,None]
     i=0
     while i+1<len(field) and abs(field[i]-field[i+1])<0.01:
         i+=1
     p2=i+1
-    if p2<1: raise ValueError("invalid repeat block")
     curr_inverted=bool(avg[0]*avg[1]<0)
     p=round(p2/2) if curr_inverted else p2
     blocks=[]
     j=0
-    while j<len(field):
-        stop=min(j+p2,len(field))
-        if stop-j < p2: break
-        ff=field[j:stop]
-        aa=avg[j:stop]
+    while j+p2<=len(field):
+        ff=field[j:j+p2]
+        aa=avg[j:j+p2]
+        rr=raw[j:j+p2]
         if curr_inverted:
-            eff=aa[:p]-aa[p:p2]
-            if len(eff)!=p: raise ValueError("current inversion pairing")
+            pos=rr[:p].reshape(-1)
+            neg=rr[p:p2].reshape(-1)
+            obs=float(np.mean(aa[:p])-np.mean(aa[p:p2]))
+            raw_obs=float(np.mean(pos)-np.mean(neg))
+            blocks.append({
+              "field_raw_T":float(np.mean(ff)),
+              "pos_raw_V":pos,
+              "neg_raw_V":neg,
+              "observed_avg_effective_V":obs,
+              "observed_raw_effective_V":raw_obs
+            })
         else:
-            eff=aa.copy()
-        blocks.append({
-          "field_raw_T":float(np.mean(ff)),
-          "effective_row_voltages_V":np.asarray(eff,float),
-          "n_effective_rows":int(len(eff))
-        })
+            vals=rr.reshape(-1)
+            obs=float(np.mean(aa))
+            raw_obs=float(np.mean(vals))
+            blocks.append({
+              "field_raw_T":float(np.mean(ff)),
+              "raw_V":vals,
+              "observed_avg_effective_V":obs,
+              "observed_raw_effective_V":raw_obs
+            })
         j+=p2
-    return blocks, {
+    meta={
       "field_shape":list(field.shape),
       "avg_voltage_shape":list(avg.shape),
       "raw_voltage_array_shape":list(raw.shape),
       "repeat_block_P2":int(p2),
       "effective_repeat_count_P":int(p),
-      "current_inverted":curr_inverted
+      "raw_samples_per_source_row":int(raw.shape[1]),
+      "current_inverted":curr_inverted,
+      "n_field_blocks":len(blocks),
+      "max_abs_raw_vs_avg_effective_V":float(max(abs(b["observed_raw_effective_V"]-b["observed_avg_effective_V"]) for b in blocks))
     }
+    return blocks,meta
 
-def curve_from_blocks(blocks, rng=None):
-    field=[]; v=[]
+def curve(blocks,rng=None,use_raw_mean=False):
+    field=[]; vals=[]
     for b in blocks:
-        vals=b["effective_row_voltages_V"]
-        if rng is None:
-            vv=float(np.mean(vals))
-        else:
-            vv=float(np.mean(rng.choice(vals,size=len(vals),replace=True)))
         field.append(b["field_raw_T"]*8000/93.17)
-        v.append(vv*1e6)
-    field=np.asarray(field,float); v=np.asarray(v,float)
-    off=(np.max(v)+np.min(v))/2
+        if rng is None:
+            v=b["observed_raw_effective_V"] if use_raw_mean else b["observed_avg_effective_V"]
+        elif "pos_raw_V" in b:
+            pos=b["pos_raw_V"]; neg=b["neg_raw_V"]
+            v=float(np.mean(rng.choice(pos,size=len(pos),replace=True))-np.mean(rng.choice(neg,size=len(neg),replace=True)))
+        else:
+            x=b["raw_V"]
+            v=float(np.mean(rng.choice(x,size=len(x),replace=True)))
+        vals.append(v*1e6)
+    field=np.asarray(field,float); v=np.asarray(vals,float)
     amp=(np.max(v)-np.min(v))/2
     if amp<=0:return None
+    off=(np.max(v)+np.min(v))/2
     vn=(v-off)/amp
     c=coercive(field,vn)
     if c is None:return None
@@ -83,29 +100,31 @@ def curve_from_blocks(blocks, rng=None):
     return {"c1":c1,"c2":c2,"heb":(c1+c2)/2,"width":(abs(c1)+abs(c2))/2}
 
 def bootstrap_loop(path,B,seed):
-    blocks,meta=aggregate_blocks(path)
-    obs=curve_from_blocks(blocks,None)
-    if obs is None: raise RuntimeError("observed coercivity failed")
+    blocks,meta=load_blocks(path)
+    obs_avg=curve(blocks,None,False)
+    obs_raw=curve(blocks,None,True)
+    if obs_avg is None or obs_raw is None: raise RuntimeError("observed coercivity failed")
     rng=np.random.default_rng(seed)
-    vals=[]
+    a=[]
     for _ in range(B):
-        z=curve_from_blocks(blocks,rng)
+        z=curve(blocks,rng)
         if z is not None and np.isfinite(z["heb"]):
-            vals.append(z["heb"])
-    a=np.asarray(vals,float)
-    if len(a)<max(100,int(0.9*B)):
-        raise RuntimeError("too many bootstrap failures")
-    q=np.quantile(a,[0.005,0.025,0.5,0.975,0.995])
+            a.append(z["heb"])
+    x=np.asarray(a,float)
+    if len(x)<max(100,int(0.9*B)): raise RuntimeError("too many bootstrap failures")
+    q=np.quantile(x,[0.005,0.025,0.5,0.975,0.995])
+    sd=float(np.std(x,ddof=1))
+    skew=None if sd==0 else float(np.mean(((x-np.mean(x))/np.std(x,ddof=0))**3))
     return {
-      "observed":obs,
+      "observed_source_avg":obs_avg,
+      "observed_recomputed_raw_mean":obs_raw,
+      "abs_HEB_difference_raw_vs_source_mT":float(abs(obs_raw["heb"]-obs_avg["heb"])),
       "bootstrap_B_requested":B,
-      "bootstrap_B_valid":int(len(a)),
-      "bootstrap_mean_HEB_mT":float(np.mean(a)),
-      "bootstrap_sd_HEB_mT":float(np.std(a,ddof=1)),
-      "bootstrap_quantiles_HEB_mT":{
-        "q005":float(q[0]),"q025":float(q[1]),"q500":float(q[2]),"q975":float(q[3]),"q995":float(q[4])
-      },
-      "bootstrap_skewness":float(np.mean(((a-np.mean(a))/np.std(a,ddof=0))**3)),
+      "bootstrap_B_valid":int(len(x)),
+      "bootstrap_mean_HEB_mT":float(np.mean(x)),
+      "bootstrap_sd_HEB_mT":sd,
+      "bootstrap_quantiles_HEB_mT":{"q005":float(q[0]),"q025":float(q[1]),"q500":float(q[2]),"q975":float(q[3]),"q995":float(q[4])},
+      "bootstrap_skewness":skew,
       "zero_in_95pct_percentile_interval":bool(q[1]<=0<=q[3]),
       "raw_structure":meta
     }
@@ -126,13 +145,13 @@ def main():
     result={
       "status":"PASS_HGMF_HG36_RAW_VOLTAGE_BOOTSTRAP_EXECUTED",
       "source":"sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576",
-      "method":"nonparametric resampling of repeated effective row-average Hall voltages inside each source-loader field block; coercive interpolation recomputed per replicate",
+      "method":"nonparametric bootstrap of the five raw nanovoltmeter samples inside each current-polarity source row; positive/negative current halves resampled independently; full Vxy normalization and coercive interpolation recomputed per replicate",
       "loops":loops,
       "loop1_zero_excluded_95pct":bool(not loops[0]["zero_in_95pct_percentile_interval"]),
       "loops2_5_zero_included_95pct":[bool(x["zero_in_95pct_percentile_interval"]) for x in loops[1:]],
       "all_trained_loops_zero_compatible_95pct":bool(all(x["zero_in_95pct_percentile_interval"] for x in loops[1:])),
-      "calibration_authority":"EMPIRICAL_BOOTSTRAP_ONLY_NOT_EXACT_FINITE_SAMPLE",
-      "claim_boundary":"bootstrap quantifies repeated-voltage uncertainty but does not create exact universal-evalue authority"
+      "calibration_authority":"EMPIRICAL_NONPARAMETRIC_BOOTSTRAP_NOT_EXACT_FINITE_SAMPLE",
+      "claim_boundary":"raw repeated-voltage bootstrap supplies a defensible empirical sampling distribution for HEB but does not itself provide exact HG31 e-value authority"
     }
     (a.out_dir/"HGMF_HG36_MAGNETIC_RAW_BOOTSTRAP.json").write_text(json.dumps(result,indent=2)+"\n")
     print(json.dumps(result,indent=2))
