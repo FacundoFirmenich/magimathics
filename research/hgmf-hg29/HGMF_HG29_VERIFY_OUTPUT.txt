@@ -1,0 +1,7 @@
+PASS_HGMF_HG29_EXACT
+alpha_component=0.0071428571428571435
+replication_combiner=max
+nuisance_union_combiner=max
+order_p_8_of_8=0.00390625
+order_p_7_of_7=0.0078125
+physical_protogeometry_confirmed=false
