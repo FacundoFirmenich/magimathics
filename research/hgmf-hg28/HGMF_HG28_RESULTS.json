@@ -1,0 +1,47 @@
+{
+  "gate": "HGMF-HG28",
+  "title": "Order-Sensitive Causal Design, Multicomponent Gatekeeping and Confirmatory Decision",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_STRICT_TWO_CARRIER_REPLICATION_PASS_SEVEN_CHAIN_STRONG_FWER_GATEKEEPING_PASS_FIXED_FINAL_CONFIRMATORY_MODE_PASS_SPARSE_ORDER_SUBDESIGN_PASS_MINIMUM_HOLDOUT_ORDER_PAIRS_PASS_CONFIRMATORY_CLAIM_LATTICE_ABSTAIN_EMPIRICAL_CONFIRMATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "multiplicity": {
+    "alpha_global": 0.05,
+    "components": 7,
+    "alpha_per_component": 0.007142857142857143,
+    "graph": "7 parallel fixed-sequence chains",
+    "strong_FWER": true,
+    "cross_component_alpha_recycling": false,
+    "component_averaging": false
+  },
+  "replication": {
+    "carriers_required": 2,
+    "rule": "max(p_magnetism,p_adsorption)",
+    "independence_required": false,
+    "direction": "frozen from training and mapped by orientation",
+    "meta_analysis_substitution_allowed": false
+  },
+  "order_module": {
+    "training_pairs_per_carrier": 3,
+    "holdout_pairs_per_carrier": 8,
+    "minimum_holdout_pairs_at_local_alpha": 8,
+    "min_p_n7_one_sided": 0.0078125,
+    "min_p_n8_one_sided": 0.00390625,
+    "additional_units_training": 12,
+    "additional_units_holdout": 32,
+    "additional_units_max": 44,
+    "base_units": 144,
+    "sparse_total_max": 188,
+    "full_reverse_total": 288,
+    "savings_vs_full_reverse": 100
+  },
+  "sequential_mode": {
+    "early_efficacy": false,
+    "confirmatory_look": "one-shot final after both wave3 carriers",
+    "QC_and_blinded_futility": "retained from HG27"
+  },
+  "empirical_status": {
+    "admitted_receipts": 0,
+    "confirmatory_tests_run": 0,
+    "verdict": "ABSTAIN_NO_DATA"
+  },
+  "next_gate": "HGMF-HG29 Confirmatory Thresholds, Standard-Nuisance Exclusion Test and Executable Claim Preregistration"
+}
