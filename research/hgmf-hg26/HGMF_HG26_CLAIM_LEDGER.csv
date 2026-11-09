@@ -1,0 +1,10 @@
+claim_id,claim,class,status
+HG26-C01,SHA-256 proves experimental validity,FORMAL,FAIL
+HG26-C02,SHA-256 verifies byte identity against a declared digest,FORMAL,PASS
+HG26-C03,Closed provenance DAG plus valid receipts makes a unit auditable,FORMAL,PASS_CONDITIONAL
+HG26-C04,Provenance closure alone proves causal identification,CAUSAL,FAIL
+HG26-C05,A missing rectangle corner may be silently imputed,CAUSAL,FAIL
+HG26-C06,Wave-3 analysis remains prospective after plan changes made with holdout access,PROSPECTIVE,FAIL
+HG26-C07,Current repository contains admitted target-grid receipts,EMPIRICAL,FAIL
+HG26-C08,HG26 produces an empirical HGMF adjudication,EMPIRICAL,ABSTAIN
+HG26-C09,The receipt profile can be packaged with PROV and RO-Crate semantics,TECHNICAL,PASS
