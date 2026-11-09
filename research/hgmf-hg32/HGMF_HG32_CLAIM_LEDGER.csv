@@ -1,0 +1,12 @@
+claim_id,claim,class,status
+HG32-C01,A model label without an observable probability map is a statistical null,THEOREM,FAIL
+HG32-C02,A nuisance family must induce a pre-holdout family of laws on the carrier observation space,THEOREM,PASS
+HG32-C03,A projected family equal to the full observable simplex is falsifiable by the same experiment,THEOREM,FAIL
+HG32-C04,Quantum process tensor is a distinct required null for the current magnetism/adsorption grids without a CP-instrument bridge,PROTOCOL,FAIL
+HG32-C05,Quantum ancilla is a distinct required null for current carriers without a quantum observation bridge,PROTOCOL,FAIL
+HG32-C06,Screened/fractional/heat kernel families with free amplitude have compact projective closures on [0,infinity],THEOREM,PASS
+HG32-C07,A finite physical upper cap on kernel shape parameter is required for existence of the profile-likelihood supremum,THEOREM,FAIL
+HG32-C08,A positive measurement-noise covariance floor yields a finite HMM likelihood upper bound,THEOREM,PASS
+HG32-C09,An HMM with K>=T and arbitrary state means can be saturated and retain nontrivial universal-evalue power,THEOREM,FAIL
+HG32-C10,The current nuisance envelope is complete without carrier-specific standard hysteresis models,INFERENCE,FAIL
+HG32-C11,HG32 empirically supports Paper C,EMPIRICAL,ABSTAIN

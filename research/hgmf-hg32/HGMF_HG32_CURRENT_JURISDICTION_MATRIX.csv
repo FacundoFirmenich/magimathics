@@ -1,0 +1,8 @@
+family,magnetism,adsorption,reason
+drift_control,IN_JURISDICTION,IN_JURISDICTION,defined directly on observed component trajectories
+alternative_standard_kernels,IN_JURISDICTION,IN_JURISDICTION,defined on frozen spectral/source observables
+finite_hidden_state,IN_JURISDICTION,IN_JURISDICTION,classical latent stochastic law over observed trajectories
+quantum_process_tensor,OUT_OF_JURISDICTION_AS_DISTINCT_NULL,OUT_OF_JURISDICTION_AS_DISTINCT_NULL,no preregistered CP-instrument/quantum-outcome bridge
+quantum_hidden_ancilla,OUT_OF_JURISDICTION_AS_DISTINCT_NULL,OUT_OF_JURISDICTION_AS_DISTINCT_NULL,no preregistered quantum observation bridge
+classical_latent_control_geometry,IN_JURISDICTION,IN_JURISDICTION,must be represented by explicit classical observable family; cannot remain an ontological label
+carrier_specific_standard_models,REQUIRED_NOT_FROZEN,REQUIRED_NOT_FROZEN,domain-standard competitors missing from current nuisance envelope
