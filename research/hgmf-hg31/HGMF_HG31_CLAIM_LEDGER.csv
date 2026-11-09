@@ -1,0 +1,12 @@
+claim_id,claim,class,status
+HG31-C01,A training-frozen normalized candidate density divided by a certified null likelihood upper bound is a finite-sample e-value,THEOREM,PASS
+HG31-C02,The same construction remains valid for a union nuisance by using the maximum family upper bound,THEOREM,PASS
+HG31-C03,The reciprocal capped at one is a valid p-value,THEOREM,PASS
+HG31-C04,At alpha/7 the per-carrier universal e-value threshold is 140,THEOREM,PASS
+HG31-C05,An upper bound looser than the true profile likelihood invalidates the test,THEOREM,FAIL
+HG31-C06,A larger certified likelihood bound reduces power but preserves validity,THEOREM,PASS
+HG31-C07,The bounded HMM emission envelope is a valid likelihood upper bound for arbitrary stochastic transitions,THEOREM,PASS
+HG31-C08,The kernel Lipschitz-grid method yields a mathematical profile-likelihood upper bound on a sealed compact parameter interval,THEOREM,PASS
+HG31-C09,Unsealed kernel/HMM caps are sufficient for confirmatory use,PROTOCOL,FAIL
+HG31-C10,Process tensor dynamics alone define a likelihood on HG component summaries,PHYSICAL,FAIL
+HG31-C11,HG31 empirically excludes the nuisance envelope,EMPIRICAL,ABSTAIN
