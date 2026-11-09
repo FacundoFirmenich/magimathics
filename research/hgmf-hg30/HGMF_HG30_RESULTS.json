@@ -1,0 +1,35 @@
+{
+  "gate": "HGMF-HG30",
+  "title": "Covariance Receipts, Nuisance Adapters and Fail-Closed Dry Run",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_COVARIANCE_RECEIPT_PROFILE_PASS_PREDICTIVE_RECEIPT_PROFILE_PASS_EXACT_LINEAR_DRIFT_CONTROL_ADAPTER_PASS_STANDARD_KERNEL_ADAPTER_IMPLEMENTATION_PASS_FINITE_HIDDEN_STATE_ADAPTER_IMPLEMENTATION_PASS_EXTERNAL_BOUNDED_PROCESS_TENSOR_ADAPTER_CONTRACT_PASS_EXTERNAL_ANCILLA_CONTROL_GEOMETRY_ADAPTER_CONTRACT_PASS_CALIBRATION_AUTHORITY_LATTICE_PASS_FAIL_CLOSED_DRY_RUN_FAIL_ALL_NUISANCE_FAMILIES_CONFIRMATORY_READY_ABSTAIN_EMPIRICAL_ADJUDICATION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "covariance": {
+    "unknown_offdiagonal_may_be_zeroed": false,
+    "psd_and_rank_required": true,
+    "singular_support_check_required": true,
+    "linear_propagation": "A Sigma A^T"
+  },
+  "monte_carlo": {
+    "local_alpha": 0.007142857142857143,
+    "minimum_draws_for_resolution": 139,
+    "family_level_calibration_implied_by_resolution": false
+  },
+  "adapters": {
+    "drift_control": {"implemented": true, "authority": "EXACT_FINITE_SAMPLE", "confirmatory_ready": true},
+    "alternative_standard_kernels": {"implemented": true, "authority": "ASYMPTOTIC_THEOREM_PENDING_REGIME_AUDIT", "confirmatory_ready": false},
+    "finite_hidden_state": {"implemented": true, "authority": "FROZEN_PREDICTIVE_ONLY_NOT_FAMILY_CONFIRMATORY", "confirmatory_ready": false},
+    "bounded_process_tensor": {"interface_implemented": true, "engine_implemented": false, "confirmatory_ready": false},
+    "hidden_ancilla_control_geometry": {"interface_implemented": true, "engine_implemented": false, "confirmatory_ready": false}
+  },
+  "dry_run": {
+    "empirical_outcomes_generated": false,
+    "algebraic_contract_tests_only": true,
+    "expected_X_status": "ABSTAIN_NUISANCE_ENVELOPE_INCOMPLETE"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UNCERTAINTY_PROVENANCE_PROFILE_AVAILABLE",
+    "paper_B": "FORMAL_CORE_STABLE",
+    "paper_C": "CONFIRMATORY_TESTS_PLUS_NUISANCE_INTERFACES_READY_FULL_X_CALIBRATION_HOLD"
+  },
+  "next_gate": "HGMF-HG31 Finite-Sample Calibration of Complex Nuisance Families, Complexity Caps and Audited Null Simulation"
+}

@@ -1,0 +1,12 @@
+claim_id,claim,class,status
+HG30-C01,Covariance may be silently diagonalized when cross-cell dependence is unknown,INFERENCE,FAIL
+HG30-C02,A PSD covariance receipt with ancestry makes uncertainty propagation auditable,TECHNICAL,PASS
+HG30-C03,Gaussian linear drift/control has an exact finite-sample predictive F test under its declared assumptions,THEOREM,PASS
+HG30-C04,A fitted nuisance model is confirmatorily valid merely because it predicts holdout,INFERENCE,FAIL
+HG30-C05,Monte Carlo p-value resolution at alpha/7 requires at least 139 predictive draws,THEOREM,PASS
+HG30-C06,A bounded HMM predictive sampler is implemented,TECHNICAL,PASS
+HG30-C07,The HMM implementation alone proves family-level calibration at alpha/7,STATISTICAL,FAIL
+HG30-C08,A bounded process-tensor adapter requires explicit memory and bond-dimension caps,FORMAL,PASS
+HG30-C09,An unbounded process-tensor null is admissible in the frozen nuisance envelope,INFERENCE,FAIL
+HG30-C10,All five nuisance families are confirmatory-ready,TECHNICAL,FAIL
+HG30-C11,HG30 supplies empirical evidence for Paper C,EMPIRICAL,ABSTAIN

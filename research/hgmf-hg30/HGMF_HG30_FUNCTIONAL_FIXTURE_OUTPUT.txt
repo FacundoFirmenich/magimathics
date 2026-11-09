@@ -1,0 +1,9 @@
+PASS_FUNCTIONAL_ADAPTER_FIXTURES
+fixture_scope=software_algebra_only
+empirical_outcomes_generated=false
+drift_adapter=PASS
+kernel_adapter=PASS
+hmm_adapter=PASS
+process_tensor_interface=PASS
+ancilla_interface=PASS
+confirmatory_calibration_inferred_from_fixture=false

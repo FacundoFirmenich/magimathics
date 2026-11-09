@@ -1,0 +1,6 @@
+family,engine_status,calibration_authority,confirmatory_ready,blocking_issue
+drift_control,IMPLEMENTED,EXACT_FINITE_SAMPLE,True,none under declared Gaussian-linear assumptions
+alternative_standard_kernels,IMPLEMENTED,ASYMPTOTIC_THEOREM_PENDING_REGIME_AUDIT,False,small-sample calibration at alpha/7 not yet certified
+finite_hidden_state,IMPLEMENTED,FROZEN_PREDICTIVE_ONLY_NOT_FAMILY_CONFIRMATORY,False,family-level finite-sample calibration not proved
+bounded_process_tensor,INTERFACE_IMPLEMENTED,UNPROVEN,False,external bounded engine plus calibration required
+hidden_ancilla_control_geometry,INTERFACE_IMPLEMENTED,UNPROVEN,False,external bounded engine plus calibration required
