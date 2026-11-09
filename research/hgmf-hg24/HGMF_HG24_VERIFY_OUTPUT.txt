@@ -1,0 +1,9 @@
+PASS_HGMF_HG24_EXACT
+causal_geometry_independence=true
+ordered_interaction_H_after_V=0.12
+ordered_interaction_V_after_H=0
+gamma_original=2.5
+gamma_scaled=17.5
+screened_holdout_rmse=0
+magnetic_execution=false
+second_carrier_execution=false
