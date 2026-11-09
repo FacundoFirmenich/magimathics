@@ -1,0 +1,53 @@
+{
+  "gate": "HGMF-HG24",
+  "title": "Causal Diagonal Interaction, Response Normalization and Modal Kernel Selection",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_CAUSAL_DIAGONAL_ESTIMAND_PASS_GEOMETRIC_CAUSAL_INDEPENDENCE_PASS_ORDER_DECOMPOSITION_PASS_COLOCALIZATION_TRIBUNAL_PASS_RESPONSE_CALIBRATION_CONTRACT_PASS_MODAL_KERNEL_IDENTIFIABILITY_CONDITIONAL_FAIL_UNIVERSAL_PHYSICAL_GAMMA_FAIL_UNCONDITIONAL_KERNEL_SELECTION_ABSTAIN_DUAL_CARRIER_EXECUTION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "causal_geometry": {
+    "logical_independence": true,
+    "four_quadrants_verified": true,
+    "geometric_only": [1.0, 0.0],
+    "causal_only": [0.0, 1.0],
+    "both": [1.0, 1.0],
+    "neither": [0.0, 0.0]
+  },
+  "ordered_interventions": {
+    "I_H_after_V": 0.12,
+    "I_V_after_H": 0.0,
+    "symmetric_component": 0.06,
+    "order_component": 0.06
+  },
+  "amplitude": {
+    "gamma_hat_original": 2.5,
+    "gamma_hat_scaled": 17.5,
+    "outcome_scale": 7.0,
+    "alignment_invariant": true,
+    "relative_residual_invariant": true,
+    "universal_physical_gamma_selected": false
+  },
+  "kernel_witness": {
+    "eigenvalues": [1.0, 4.0, 9.0, 16.0, 25.0],
+    "training_eigenvalues": [1.0, 4.0, 9.0],
+    "holdout_eigenvalues": [16.0, 25.0],
+    "true_model": "screened",
+    "true_parameters": {"gamma": 2.4, "m2": 3.0},
+    "selected_on_holdout": "screened",
+    "screened_holdout_rmse": 0.0,
+    "unconditional_physical_selection": false,
+    "nested_intersection_boundary": ["green = screened(m2=0)", "green = fractional(alpha=1)"]
+  },
+  "execution": {
+    "magnetic_additional_loops": 18,
+    "magnetic_grid_total": 72,
+    "adsorption_homologous_runs": 72,
+    "magnetic_executed": false,
+    "second_carrier_executed": false,
+    "status": "ABSTAIN_DUAL_CARRIER_EXECUTION"
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED_HG24_EXTENSION_OPTIONAL",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_CAUSAL_GEOMETRIC_BOUNDARY_ADDED",
+    "paper_C": "CAUSAL_AND_MODAL_TRIBUNAL_PASS_CONDITIONAL_EXECUTION_GAMMA_KERNEL_AND_ATTRIBUTION_HOLD"
+  },
+  "next_gate": "HGMF-HG25 Causal Modal Spectroscopy and Dual-Carrier Nodal Execution"
+}

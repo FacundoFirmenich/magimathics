@@ -1,0 +1,9 @@
+claim_id,claim,class,status,evidence
+HG24-C01,A causal joint-intervention contrast is independent of the geometric Jacobian source,THEOREM,PASS,four-quadrant exact witness
+HG24-C02,Sequential intervention order decomposes into symmetric interaction and commutator/order component,THEOREM,PASS,noncommuting-flow witness
+HG24-C03,The training least-squares amplitude is unique once metric kernel and outcome units are frozen,THEOREM,PASS_CONDITIONAL,projection theorem
+HG24-C04,Geometry selects a universal physical gamma,PHYSICAL,FAIL,outcome rescaling changes gamma
+HG24-C05,Modal interventions can identify a transfer kernel on held-out eigenmodes,THEOREM_PROTOCOL,PASS_CONDITIONAL,screened formal witness
+HG24-C06,Green screened and fractional classes are always distinguishable,THEOREM,FAIL,nested/intersection boundary
+HG24-C07,Current magnetic and adsorption data execute the dual-carrier nodal tribunal,EMPIRICAL,ABSTAIN,18 loops and 72 runs absent
+HG24-C08,Causal interaction plus nodal alignment excludes standard response theory,PHYSICAL,FAIL,standard causal PDE and process models remain

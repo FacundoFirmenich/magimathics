@@ -1,0 +1,8 @@
+stage,carrier,scope,count,primary_output,status
+magnetic extension,magnetism preset -,100/150 mT cycles 6-8 in 3 waves,18 loops,complete 3 fields x 8 cycles x 3 waves,NOT_EXECUTED
+causal rectangles,magnetism,adjacent field x adjacent cycle cells per component and wave,42 cells/component,estimate symmetric and order-sensitive interaction,PENDING_DATA
+training,magnetism,waves 1-2,48 loops of 72-grid,Hodge potentials source kernel fit gamma calibration,PENDING_DATA
+holdout,magnetism,wave 3,24 loops,causal interaction nodes signs modal ratios,PENDING_DATA
+second carrier,adsorption,3 controls x 8 reversal depths x 3 waves,72 runs,homologous dual-carrier test,NOT_EXECUTED
+cross-carrier,both,QGT+UMI map frozen on waves 1-2,wave 3 held out,transport nodes modal ratios and dimensionless alignment,PENDING_DATA
+nuisance tribunal,both,"drift, hidden state, process tensor, control geometry",all,exclude standard response absorption,PENDING_DATA
