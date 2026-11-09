@@ -1,0 +1,8 @@
+PASS_HGMF_HG28_EXACT
+order_context_rows=36
+order_sequence_blocks=72
+order_training_blocks=48
+order_holdout_blocks=24
+confirmatory_causal_hypotheses=14
+familywise_alpha=0.05
+physical_protogeometry=HOLD
