@@ -1,0 +1,8 @@
+PASS_HGMF_HG27_EXACT
+rectangle_minimum_formula=PASS
+maximum_cumulative_rectangle_utility=148
+minimum_switches_at_maximum_utility=13
+dual_carrier_core_units=144
+full_order_sensitive_upper_design_units=288
+early_success_authorized=false
+empirical_acquisition=false

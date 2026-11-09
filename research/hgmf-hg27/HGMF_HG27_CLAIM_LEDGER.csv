@@ -1,0 +1,12 @@
+claim_id,claim,class,status
+HG27-C01,The one-wave schedule attains every rectangle target at the minimum possible loop count,THEOREM,PASS
+HG27-C02,Maximum cumulative rectangle utility is 148 and needs at least 13 axis switches,EXACT_ENUMERATION,PASS
+HG27-C03,The base 144-unit grid identifies intervention-order commutators,CAUSAL,FAIL
+HG27-C04,One blinded nuisance-only precision look can be preregistered without inspecting causal effects,PROTOCOL,PASS_CONDITIONAL
+HG27-C05,Three waves automatically provide adequate power,STATISTICAL,FAIL
+HG27-C06,Early positive stopping is authorized in the canonical design,PROTOCOL,FAIL
+HG27-C07,Wave 3 remains a one-shot holdout,PROSPECTIVE,PASS
+HG27-C08,A numeric adaptive expansion is selected by the current information,DESIGN,ABSTAIN
+HG27-C09,The base dual-carrier evidence budget is 144 units,COMBINATORIAL,PASS
+HG27-C10,The full order-sensitive duplicate design would require 144 additional units,DESIGN,PASS_CONDITIONAL
+HG27-C11,HG27 produces empirical HGMF evidence,EMPIRICAL,ABSTAIN

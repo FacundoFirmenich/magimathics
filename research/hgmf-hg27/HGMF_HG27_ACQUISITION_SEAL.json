@@ -1,0 +1,24 @@
+{
+  "blinded_variance_look": "after wave 1 on both carriers",
+  "carrier_order": {
+    "1": ["magnetism", "adsorption"],
+    "2": ["adsorption", "magnetism"],
+    "3": ["adsorption", "magnetism"]
+  },
+  "date": "2026-11-09",
+  "early_success_allowed": false,
+  "effect_monitoring_mode": "none_before_final_holdout",
+  "final_look": "after complete wave 3 on both carriers",
+  "holdout_waves": [3],
+  "order_commutator_claim": "not identified by base grid",
+  "parent_analysis_seal_sha256": "bda46dbade92ba17f58c372beb114a74f6e79c2cad15871f1fcf5b4eb8560a3d",
+  "project": "HGMF-HG27 dual-carrier sequential acquisition",
+  "seal_profile": "hgmf-sequential-acquisition-seal/1.0",
+  "self_hash": "1a9f4a57634b6c1018182c353cf27275a70fa933acfa5b324ec900679e5c41d1",
+  "structural_futility_look": "after wave 2 on both carriers",
+  "training_waves": [1,2],
+  "wave_priorities": {
+    "adsorption": {"1":"LEFT","2":"RIGHT","3":"RIGHT"},
+    "magnetism": {"1":"RIGHT","2":"LEFT","3":"LEFT"}
+  }
+}
