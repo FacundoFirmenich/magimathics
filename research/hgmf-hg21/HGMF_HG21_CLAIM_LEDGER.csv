@@ -1,0 +1,13 @@
+claim_id,claim,class,status,evidence
+HG21-C01,Every zero-flux two-form on a closed connected oriented surface is exact,THEOREM,PASS,Hodge/de Rham top-degree criterion
+HG21-C02,The zero-mean residual has a unique mean-zero Poisson potential,THEOREM,PASS,Laplace-Beltrami inversion on L2_0
+HG21-C03,Curvature determines the full connection difference,THEOREM,FAIL,harmonic flat sectors remain
+HG21-C04,The constant Laplace mode can survive HG20,THEOREM,FAIL,zero-flux removes lambda_0
+HG21-C05,A fully isometry-invariant nonzero scalar residual exists on a homogeneous carrier,THEOREM,FAIL,transitivity forces constant then zero
+HG21-C06,Residual two-forms compose additively while scalar densities and mode coefficients do not,THEOREM,PASS,torus product witness
+HG21-C07,Hodge theory selects a unique physical mode or nonlocal kernel,PHYSICAL,FAIL,infinitely many coefficients and multipliers
+HG21-C08,A spectral nonlocal kernel can preserve zero flux,THEOREM,PASS,zero-mode-free multipliers
+HG21-C09,History-dependent nonlocality identifies HGMF,PHYSICAL,FAIL,hidden-state/process-tensor realizations
+HG21-C10,QGT isometry transports Hodge eigenspaces and residual fields,THEOREM,PASS_CONDITIONAL,isometric pullback
+HG21-C11,The Laplace spectrum alone determines cross-carrier geometry,THEOREM,FAIL,isospectral non-isometric manifolds
+HG21-C12,HG21 derives a nonzero physical protogeometric correction,PHYSICAL,HOLD,classification only

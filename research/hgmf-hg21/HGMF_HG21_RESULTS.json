@@ -1,0 +1,59 @@
+{
+  "gate": "HGMF-HG21",
+  "title": "Zero-Flux Residual Fields, Hodge Modes and Nonlocal Coupling",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_ZERO_FLUX_RESIDUAL_BASIS_PASS_HODGE_RECONSTRUCTION_PASS_NONLOCAL_COUPLING_CLASS_PASS_HODGE_TRANSPORT_CONDITIONAL_FAIL_MODE_UNIQUENESS_FAIL_STANDARD_GEOMETRY_EXCLUSION_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "hodge": {
+    "zero_flux_iff_exact_on_closed_oriented_surface": true,
+    "unique_mean_zero_poisson_potential": true,
+    "connection_fully_determined_by_curvature": false,
+    "harmonic_dimension_genus_g": "2g",
+    "boundary_zero_flux_required": false
+  },
+  "sphere_witness": {
+    "residual": "2P1+4P2+3P3",
+    "factorization": "(5x+4)(3x^2-1)/2",
+    "nodes_x": [-0.8, -0.5773502691896258, 0.5773502691896258],
+    "eigenvalues_QGT": [8.0, 24.0, 48.0],
+    "potential_coefficients": [0.25, 0.16666666666666666, 0.0625],
+    "training_max_error": 8.881784197001252e-16,
+    "holdout_max_error": 8.881784197001252e-16
+  },
+  "composition": {
+    "natural_additive_object": "residual two-form",
+    "density_coefficients_additive": false,
+    "torus_area_A": 2.0,
+    "torus_area_B": 2.0,
+    "torus_area_AB": 5.0,
+    "composite_new_degeneracy": true
+  },
+  "nonlocal": {
+    "zero_mode_free_spectral_multiplier_class": true,
+    "kernels_audited": [
+      "identity_local_zero_mode_removed",
+      "green_inverse_laplacian",
+      "screened_green_m2_8",
+      "fractional_half",
+      "heat_tau_0p03"
+    ],
+    "kernel_unique": false,
+    "history_kernel_markovianizable_example": true
+  },
+  "transport": {
+    "QGT_isometry_exact": true,
+    "degenerate_mode_coefficients_basis_invariant": false,
+    "spectral_block_power_invariant": true,
+    "isospectrality_sufficient": false,
+    "UMI_only_sufficient": false
+  },
+  "symmetry": {
+    "transitive_isometry_invariant_zero_mean_scalar": "identically zero",
+    "nonzero_residual_requires_symmetry_breaking_data": true
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION_SPECTRAL_TRANSPORT_BOUNDARY_ADDED",
+    "paper_C": "ZERO_FLUX_HODGE_BASIS_AND_NONLOCAL_CLASS_PASS_PHYSICAL_MODE_AND_KERNEL_SELECTION_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG22 Relational Source, Modal Selection and Cross-Carrier Nodal Falsifiers"
+}
