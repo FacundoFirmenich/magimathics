@@ -1,0 +1,11 @@
+claim_id,claim,class,status,evidence
+HG19-C01,Pure-state operational action metric equals hbar squared times QGT metric,THEOREM,PASS,pure action metric audit
+HG19-C02,Total actuator cost is uniquely fixed by the ray trajectory,PHYSICAL,FAIL,generator nuisance audit
+HG19-C03,Action area equals hbar squared times QGT area,THEOREM,PASS,pure action metric audit
+HG19-C04,HG19 selects a nonzero HGMF coupling,PHYSICAL,FAIL,coupling identifiability ledger
+HG19-C05,Monotonicity uniquely selects a mixed-state metric,THEOREM,FAIL,Petz metric family audit
+HG19-C06,Minimum purification action selects Bures geometry,THEOREM_CONDITIONAL,PASS,Uhlmann purification principle
+HG19-C07,Constant isometric carrier embedding preserves action geometry,THEOREM,PASS,cross-carrier audit
+HG19-C08,Coarse outcome equivalence preserves total geometry,THEOREM,FAIL,hidden ancilla audit
+HG19-C09,Accessible Bures geometry is contractive under depolarization,THEOREM,PASS,Bures contraction audit
+HG19-C10,The positive HG19 results distinguish HGMF from standard QM,PHYSICAL,FAIL,standard-QM boundary
