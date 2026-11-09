@@ -1,0 +1,95 @@
+name: HGMF HG35 quantitative standard-null audit
+
+on:
+  push:
+    branches:
+      - hgmf-hg35-quantitative-standard-nulls-20261109
+    paths:
+      - 'research/hgmf-hg35/**'
+      - '.github/workflows/hgmf-hg35-quantitative-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  quantitative-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout magimathics
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy h5py matplotlib
+
+      - name: Fetch pinned FGT/CrSBr source repository
+        run: |
+          mkdir -p external
+          git init external/FGT_CrSBr
+          git -C external/FGT_CrSBr remote add origin https://github.com/sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure.git
+          git -C external/FGT_CrSBr fetch --depth 1 origin 66662e8aa3690cebaaef52dfc4ddd3bea458a576
+          git -C external/FGT_CrSBr checkout FETCH_HEAD
+          test "$(git -C external/FGT_CrSBr rev-parse HEAD)" = "66662e8aa3690cebaaef52dfc4ddd3bea458a576"
+
+      - name: Execute magnetic quantitative audit
+        run: |
+          rm -rf research/hgmf-hg35/generated
+          mkdir -p research/hgmf-hg35/generated
+          python research/hgmf-hg35/analyze_magnetic_quantitative.py             --source-root external/FGT_CrSBr             --out-dir research/hgmf-hg35/generated             | tee research/hgmf-hg35/generated/HGMF_HG35_MAGNETIC_STDOUT.json
+
+      - name: Execute constrained Bethe topology core
+        run: |
+          python research/hgmf-hg35/hgmf_hg35_bethe_network.py             --out-dir research/hgmf-hg35/generated             | tee research/hgmf-hg35/generated/HGMF_HG35_BETHE_STDOUT.json
+
+      - name: Execute exact verifier
+        run: |
+          PYTHONPATH=research/hgmf-hg35 python research/hgmf-hg35/hgmf_hg35_exact_verify.py             | tee research/hgmf-hg35/generated/HGMF_HG35_VERIFY_OUTPUT.txt
+
+      - name: Build execution receipt
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, hashlib, subprocess
+          root=Path('research/hgmf-hg35/generated')
+          receipt={
+            'gate':'HGMF-HG35',
+            'branch':'hgmf-hg35-quantitative-standard-nulls-20261109',
+            'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+            'sources':{
+              'magnetism':'sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576',
+              'vycor_network_literature':'Mason 1988; Cimino et al. 2013'
+            },
+            'files':[]
+          }
+          for p in sorted(root.iterdir()):
+            if p.is_file():
+              receipt['files'].append({
+                'name':p.name,
+                'bytes':p.stat().st_size,
+                'sha256':hashlib.sha256(p.read_bytes()).hexdigest()
+              })
+          (root/'HGMF_HG35_EXECUTION_RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          PY
+          cd research/hgmf-hg35
+          find generated -type f ! -name SHA256SUMS.txt -print0 | sort -z | xargs -0 sha256sum > generated/SHA256SUMS.txt
+          zip -r HGMF_HG35_QUANTITATIVE_AUDIT.zip generated analyze_magnetic_quantitative.py hgmf_hg35_bethe_network.py hgmf_hg35_exact_verify.py
+
+      - name: Upload audit bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_HG35_QUANTITATIVE_AUDIT
+          path: research/hgmf-hg35/HGMF_HG35_QUANTITATIVE_AUDIT.zip
+          if-no-files-found: error
+          retention-days: 30
