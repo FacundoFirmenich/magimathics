@@ -2,6 +2,29 @@
 
 Repositorio canónico del programa de investigación de **Facundo Firmenich**.
 
+## Portafolio de publicación
+
+Magimatics conserva el **centrum**, el mapa de dependencias, la autoridad de claims y el registro de versiones. Los objetos científicos publicables viven en repositorios autónomos y Magimatics los referencia mediante commits inmutables, tags y futuros DOI.
+
+- [`registry/REPOSITORY_REGISTRY.json`](registry/REPOSITORY_REGISTRY.json) — registro canónico machine-readable;
+- [`registry/UPDATE_PROTOCOL.md`](registry/UPDATE_PROTOCOL.md) — protocolo de actualización doble;
+- [`docs/PUBLICATION_PORTFOLIO.md`](docs/PUBLICATION_PORTFOLIO.md) — mapa editorial;
+- [`portfolio/CURRENT_FRONTIERS.md`](portfolio/CURRENT_FRONTIERS.md) — fronteras vigentes;
+- [`portfolio/PUBLICATION_SCOREBOARD.csv`](portfolio/PUBLICATION_SCOREBOARD.csv) — scoring y estado editorial;
+- [`portfolio/NEGATIVE_RESULTS_LEDGER.csv`](portfolio/NEGATIVE_RESULTS_LEDGER.csv) — negativos preservados.
+
+### Repositorios especializados
+
+- `rgphi-radix-mobius-dynamics` — dinámica exacta RGΦ;
+- `quaternary-query-tomography` — complejidad de consultas cuaternarias;
+- `radix-mobius-activation-surfaces` — resolución, tiempo y rango modular;
+- `certified-radix-mobius-computation` — certificación computacional y trusted checkers;
+- `toeplitz-kasparov-interfaces` — interfaces Toeplitz, KK y APS;
+- `observational-degeneration-synergy` — fundamentos observacionales;
+- `u5-hd` — programa privado integral, no paper todavía.
+
+La regla transaccional es: **repo especializado primero; Magimatics después con el commit exacto**.
+
 ## Primer gran cierre conformacional
 
 Este corte integra:
@@ -10,7 +33,7 @@ Este corte integra:
 - formulario matemático;
 - estado del arte y control de novedad;
 - genealogía completa de correcciones autor–asistente;
-- herencia documental previa de Magimatics, TOC, CFL, TOS\, DIN y Lógica Cuaternaria;
+- herencia documental previa de Magimatics, TOC, CFL, TOS, DIN y Lógica Cuaternaria;
 - línea HDH‑029→034;
 - programa protoforma/Born SC34→SC40;
 - HGMF / MRRM;

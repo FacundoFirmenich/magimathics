@@ -1,0 +1,8 @@
+id,result,status,authority
+NEG-001,Direct decimal-digit correlation with phi is not demonstrated,RETAINED,RGPHI
+NEG-002,tau5=212 is prohibited before Stage B2 closes,OPEN_BOUNDARY,RGPHI
+NEG-003,Pairwise null observations do not establish strong redundancy,REFUTED,OBS
+NEG-004,Generic Real structure does not uniquely select the half-shift,REFUTED,HM
+NEG-005,Fixed typed additive 35-symbol schedules with fewer than four mixed queries are impossible,PROVED,BQ
+NEG-006,Finite-window modular inactivity is not eventual impossibility,REFUTED,ACTIVATION
+NEG-007,Internal U5-HD consistency does not establish physical ontology,PROHIBITED,U5HD

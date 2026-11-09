@@ -1,0 +1,8 @@
+code,repository,branch,commit,authority,visibility,next_gate
+RGPHI,FacundoFirmenich/rgphi-radix-mobius-dynamics,Ulalito's-Island,a116ff21bd5b2fd973c39445931d8a4b832069b7,CANONICAL_ACTIVE,public,Stage B2 exact layers 186..211
+BQ,FacundoFirmenich/quaternary-query-tomography,Ulalito's-Island,114546cba397c8bbb99b6ff252dee70e4b967461,EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER,private,BQ-010E four-mixed frontier
+ACTIVATION,FacundoFirmenich/radix-mobius-activation-surfaces,Ulalito's-Island,e3cd96f93c14460d566fe6eafa31beb8c28867ac,PARALLEL_ISOLATED_INDEPENDENT_PAPER,private,ODT-015C temporal surfaces
+METHODS,FacundoFirmenich/certified-radix-mobius-computation,Ulalito's-Island,8b7f307c43924747e7082b5840ade78a151d7891,METHODS_COMPANION,private,certificate schema and formal core
+HM,FacundoFirmenich/toeplitz-kasparov-interfaces,Ulalito's-Island,41f1baeb7a7a1c416a211b16282cd7457ecd8db2,EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER,private,HM-014 Real-lift selection
+OBS,FacundoFirmenich/observational-degeneration-synergy,Ulalito's-Island,e858229fe9211d8d0e5ddfb243e8bf60847f6d6c,FOUNDATIONS_TRACK,private,Sysmic-X and KwanTube-X
+U5HD,FacundoFirmenich/u5-hd,Ulalito's-Island,ccf5c998a5ae15e81962d2a9278b931dab6de619,PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY,private,minimal axioms and semiconjugation
