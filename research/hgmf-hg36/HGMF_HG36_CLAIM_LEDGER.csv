@@ -1,0 +1,16 @@
+claim_id,claim,class,status
+HG36-C01,The final observation-bridge workflow executed successfully on pinned public sources,EXECUTION,PASS
+HG36-C02,Raw repeated voltage noise is large enough to explain trained-loop HEB offsets,EMPIRICAL,FAIL
+HG36-C03,Raw-voltage bootstrap standard deviations of HEB are about 0.005 to 0.014 mT,EMPIRICAL,PASS
+HG36-C04,All trained-loop HEB bootstrap percentile intervals include zero when only repeated-voltage noise is propagated,EMPIRICAL,FAIL
+HG36-C05,Each trained-loop absolute HEB is within the source field-step bound,EMPIRICAL,PASS
+HG36-C06,With independently profiled bounded field-axis nuisance the trained HEB summary null can attain zero residual,THEOREM,PASS
+HG36-C07,HEB summary alone has confirmatory universal-evalue power against that nuisance class,THEOREM,FAIL
+HG36-C08,Brown Xe/Vycor data contain an external nonporous film-reference isotherm that point-identifies Vs,PROVENANCE,FAIL
+HG36-C09,Brown boundary data alone point-identify Q(p),THEOREM,FAIL
+HG36-C10,Brown boundary data alone point-identify Bethe q(p),THEOREM,FAIL
+HG36-C11,Set-valued Brown-only constraints produce finite Q and q intervals,EXECUTION,PASS
+HG36-C12,Median Q interval width is about 0.286 and median q interval width about 0.214,EMPIRICAL,PASS
+HG36-C13,The carrier-specific standard-null denominator for HG31 is complete,STATISTICAL,FAIL
+HG36-C14,HG36 supplies beyond-standard evidence,INFERENCE,FAIL
+HG36-C15,HG36 supplies evidence for physical protogeometry,PHYSICAL,FAIL
