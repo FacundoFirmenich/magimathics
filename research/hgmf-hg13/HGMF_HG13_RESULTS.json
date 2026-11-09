@@ -1,0 +1,52 @@
+{
+  "gate": "HGMF-HG13",
+  "title": "Connection Selection, Physical Generator and Helicoidal Dynamics",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_CONNECTION_SELECTION_CONDITIONAL_PASS_MINIMAL_GENERATOR_PASS_NONCIRCULAR_INVARIANT_PASS_CONSTANT_PITCH_CONDITIONAL_FAIL_INTRINSIC_HELICAL_SELECTION_HOLD_PHYSICAL_SPIN",
+  "connection": {
+    "canonical_form": "A_psi(v)=-i<psi,v>",
+    "unique_under": [
+      "principal U(1) normalization",
+      "full U(n) invariance",
+      "Hilbert orthogonal horizontality"
+    ],
+    "alternative_connections_exist_if_symmetry_relaxed": true,
+    "max_numeric_invariance_error": 1.7763568394002505e-15
+  },
+  "generator": {
+    "same_ray_general_family": "H_min + h P + K, K psi=0",
+    "unique_HS_minimizer": "H_min",
+    "max_ray_derivative_error": 2.638970003411226e-15,
+    "energy_variance_fixed_by_ray_speed": true,
+    "expectation_and_orthogonal_block_not_fixed": true
+  },
+  "pitch": {
+    "canonical_formula": "kappa=-<H>/DeltaH",
+    "time_independent_H_constant": true,
+    "energy_origin_invariant": false,
+    "same_ray_variable_pitch_possible": true,
+    "intrinsic_projective_pitch": "FAIL"
+  },
+  "noncircular_invariant": {
+    "projective_excess": "L_FS-d_FS(endpoints)",
+    "gauge_and_trivialization_independent": true,
+    "detects_non_geodesicity": true,
+    "detects_unique_helicity": false
+  },
+  "holonomy": {
+    "canonical_connection_holonomy": "PASS",
+    "requires_nontrivial_pi1": false,
+    "contractible_loops_can_have_nontrivial_holonomy": true,
+    "topological_monodromy_requires_extra_defect_or_parameter_topology": true
+  },
+  "spin": {
+    "physical_identification": "HOLD",
+    "geometric_phase_sufficient": false
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "CANONICAL_CONNECTION_AND_MINIMAL_GENERATOR_PASS_INTRINSIC_HELICAL_DYNAMICS_FAIL_SPIN_HOLD"
+  },
+  "next_gate": "HGMF-HG14 Canonical Dynamics, Contact Flow and Helical Falsifiers"
+}
