@@ -1,0 +1,40 @@
+{
+  "gate": "HGMF-HG16",
+  "title": "Proto-Geometric Correction Basis and Multi-Gap Spectroscopy",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_MINIMAL_CORRECTION_BASIS_PASS_STANDARD_QM_ABSORPTION_NOGO_PASS_MULTIGAP_AND_QRF_FALSIFIERS_FAIL_HGMF_CORRECTION_FUNCTIONAL_FAIL_SCALE_IDENTIFICATION_FAIL_DISTINGUISHABILITY_FROM_STANDARD_QM_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "multigap": {
+    "complex_residual_dimension": "(d-1)(d-2)/2",
+    "minimum_levels": 3,
+    "scalar_time_gap_defect": 0.0,
+    "general_dephasing_gap_defect": 0.09933824336616051,
+    "general_dephasing_CP_defect": 0.0,
+    "non_CP_defect": 0.46130177212481277
+  },
+  "qrf_cycle": {
+    "consistent_channel_defect": 1.4848073818342024e-15,
+    "inconsistent_channel_defect": 0.4488307605303952
+  },
+  "standard_memory_order": {
+    "trace_distance_AB_BA": 0.03362182206058064,
+    "standard_unitary_environment_realization": true
+  },
+  "standard_absorption": {
+    "CPTP_channel_has_standard_dilation": true,
+    "causal_process_tensor_has_standard_unitary_realization": true,
+    "single_reduced_process_unique_to_HGMF": false
+  },
+  "correction_functional": {
+    "diagnostic_basis_defined": true,
+    "nonzero_HGMF_term_derived": false,
+    "dimensionful_scale_derived": false,
+    "unique_gap_law_derived": false,
+    "QRF_covariant_correction_derived": false
+  },
+  "paper_status": {
+    "paper_A": "EXPERIMENT_READY_UMI17_UNCHANGED",
+    "paper_B": "FORMAL_CORE_SUBSTANTIALLY_COMPLETE_UMI22_ABSTENTION",
+    "paper_C": "CORRECTION_BASIS_AND_ATTRIBUTION_CONTRACT_PASS_PHYSICAL_CORRECTION_AND_SCALE_FAIL_HOLD"
+  },
+  "next_gate": "HGMF-HG17 Cross-Context Cocycle Curvature and Scale Selection"
+}
