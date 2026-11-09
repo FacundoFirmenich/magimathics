@@ -1,14 +1,16 @@
-# HGMF-HG35 — Quantitative standard-null bridge
+# HGMF‑HG35 — Quantitative standard-null bridge
 
 **Fecha:** 9 de noviembre de 2026
 
-## Veredicto preliminar del gate
+## Veredicto
 
+PASS_REAL_QUANTITATIVE_EXECUTION  
 PASS_MAGNETIC_SOURCE_INTERVAL_NULL  
-PASS_MAGNETIC_TRAINING_LAW_DIAGNOSTIC  
-PASS_VYCOR_BETHE_TOPOLOGY_CORE  
-PASS_PUBLISHED_XE_VYCOR_NETWORK_NULL_EXISTS  
+PASS_MAGNETIC_TRAINING_ONE_SHOT_COMPATIBILITY  
+PASS_BETHE_TOPOLOGY_CORE  
+PASS_XE_VYCOR_NETWORK_NULL_EXISTS  
 PASS_NETWORK_CONNECTIVITY_RANGE_FREEZE  
+PASS_BETHE_NUMERICAL_ROOT_CERTIFICATION  
 
 FAIL_FULL_MAGNETIC_VXY_LIKELIHOOD_BRIDGE  
 FAIL_COMPLETE_XE_VYCOR_OBSERVATION_LIKELIHOOD  
@@ -18,33 +20,40 @@ ABSTAIN_UNIVERSAL_EVALUE_X
 ABSTAIN_PHYSICAL_IDT_REJECTION  
 HOLD_PHYSICAL_PROTOGEOMETRY
 
-## Resultado rector
+## Magnetic result
 
-HG35 separa tres niveles: structural null, quantitative observation null y confirmatory likelihood/e-value null.
+The source-specific interval null is supported at the source field-resolution level:
 
-Para FGT/CrSBr, el source paper soporta un null cuantitativo sobre summaries de training: loop 1 metastable/exchange-biased; loops posteriores con exchange bias aproximadamente cero y switching simétrico. Con los field-resolution bounds del propio loader, el primer loop excluye cero y los loops 2–5 incluyen cero. Esto da un source-specific interval null cuantitativo sin convertir el field step en un sigma.
+- loop 1 HEB = -48.4257 mT with deterministic field-resolution interval [-53.5776,-43.2738] mT, excluding zero;
+- loops 2–5 HEB = 0.8838, -4.0754, 3.3383, 1.3417 mT;
+- all four later resolution intervals include zero;
+- maximum |HEB| / field-resolution among loops 2–5 = 0.94927.
 
-El source repository contiene theoretical magnetization profiles M/MS de CrSBr y FM/AFM profiles, pero no un observation model probabilístico que produzca Vxy(H). El full likelihood bridge sigue abierto.
+A one-shot trained-state model gives Hinf = 0.3721 mT and RMSE 2.7286 mT over loops 2–5.
 
-Para Xe/Vycor, la literatura estándar ya contiene un network null directamente aplicado al benchmark Brown. Mason (1988) aplicó un cavity/window Bethe-tree model a los scanning isotherms de Brown, Xe/Vycor 151 K. Cimino et al. (2013) obtuvieron para Vycor effective coordination z≈6.6–7.2 y qc≈0.16–0.18; z=6.6 reproduce bien los scanning desorption curves salvo la scan más baja.
+A Binek recursive diagnostic gives RMSE 2.5692 mT, a relative improvement of only 5.84%, with fitted Hinf = 16.4833 mT. It remains a diagnostic, not an identified source mechanism.
 
-HG35 implementa el topology core exacto de ese Bethe model:
+The source repository contains theoretical M/MS curves and FM/AFM magnetization profiles, but not a calibrated stochastic forward map to Vxy(H). Therefore no pointwise source-model likelihood or e-value is authorized.
 
-Qp(q)=1-y^z,
-y=(1-q)+q y^(z-1)
+## Xe/Vycor network result
 
-y para scanning desorption:
+The published Bethe/percolation topology core is executable with externally frozen Vycor connectivity:
 
-alpha(q,Q+)=1-y^z,
-y=(1-q)+q(1-Q+) y^(z-1),
-Q-=Q+ +(1-Q+) alpha.
+- z in [6.6,7.2];
+- qc = 1/(z-1) in [0.1612903,0.1785714];
+- published scan examples Q+ = 0.12 and 0.34.
 
-El bridge completo a adsorption mass requiere reference isotherms Vs(p), Vc(p) y q(p). Esos objetos no están congelados todavía en nuestro pipeline.
+The bracketed solver passes:
+- primary threshold behavior;
+- probability bounds;
+- scanning monotonicity.
 
-## Consecuencia
+However the adsorption-mass observation bridge still requires reference isotherms Vs(p), Vc(p), and q(p). Therefore the physical network family is alive but not yet a complete likelihood family inside HG31 X.
 
-Los residuos RPM de HG34 no son evidencia beyond-standard: existe una familia estándar network/percolation históricamente aplicada al mismo benchmark que aún no fue excluida por nuestro tribunal.
+## Consequence
+
+The RPM residuals found in HG34 cannot be promoted to beyond-standard evidence. A standard pore-network/percolation family has been applied historically to the same Brown Xe/Vycor benchmark and remains unresolved in our confirmatory denominator.
 
 ## Próxima frontera
 
-HGMF-HG36 — Reconstruct Vycor reference isotherms Vs/Vc and q(p); source-summary likelihood for magnetic training; complete standard X denominator.
+HGMF‑HG36 — Set-valued reconstruction of Vs/Vc/q(p), raw-voltage uncertainty propagation for magnetic HEB, and completion of the carrier-specific universal-evalue denominator.

@@ -1,0 +1,17 @@
+claim_id,claim,class,status
+HG35-C01,The corrected quantitative workflow executed successfully,EXECUTION,PASS
+HG35-C02,Loop 1 HEB interval excludes zero at source field resolution,EMPIRICAL,PASS
+HG35-C03,Loops 2-5 HEB intervals all include zero at source field resolution,EMPIRICAL,PASS
+HG35-C04,The source-specific one-shot trained-state summary null is quantitatively compatible with the public training data,INFERENCE,PASS
+HG35-C05,The field-step bound is a Gaussian standard deviation and can be used for a likelihood,STATISTICAL,FAIL
+HG35-C06,Binek recursion uniquely identifies the source mechanism,PHYSICAL,FAIL
+HG35-C07,Binek recursion improves loops2-5 RMSE by about 5.84 percent relative to the one-shot constant-trained-state diagnostic,DIAGNOSTIC,PASS
+HG35-C08,The source repository provides a calibrated stochastic Vxy forward likelihood from its micromagnetic model,PROVENANCE,FAIL
+HG35-C09,Bethe qc equals 1/(z-1),THEOREM,PASS
+HG35-C10,Published Vycor coordination estimates z=6.6 and 7.2 freeze a physically external topology range,PHYSICAL,PASS
+HG35-C11,The Bethe topology core passes probability and monotonicity checks,EXECUTION,PASS
+HG35-C12,Vs Vc and q(p) are already frozen in the HGMF pipeline,PROTOCOL,FAIL
+HG35-C13,The constrained Bethe topology core alone is a complete adsorption-mass likelihood,STATISTICAL,FAIL
+HG35-C14,HG34 RPM residuals are beyond-standard evidence despite unresolved published network models on the same Brown benchmark,INFERENCE,FAIL
+HG35-C15,HG35 authorizes the universal X e-value for both carriers,STATISTICAL,ABSTAIN
+HG35-C16,HG35 supplies evidence for physical protogeometry,PHYSICAL,FAIL
