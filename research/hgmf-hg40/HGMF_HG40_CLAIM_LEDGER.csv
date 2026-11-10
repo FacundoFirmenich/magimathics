@@ -1,0 +1,16 @@
+claim_id,claim,class,status
+HG40-C01,Labelled affine configurations have m-2 identifiable quotient degrees,THEOREM,PASS
+HG40-C02,Affine coordinates relative to two nondegenerate labelled anchors are invariant and complete,THEOREM,PASS
+HG40-C03,A common affine magnetic calibration leaves three identifiable degrees in five HEB observations,THEOREM,PASS
+HG40-C04,Independent loop-specific offsets and one common affine calibration have equivalent nuisance dimension,THEOREM,FAIL
+HG40-C05,The real FGT/CrSBr relative training geometry survives a shared affine field transformation,EMPIRICAL,PASS
+HG40-C06,The magnetic quotient evidence excludes the source-specific standard training/domain mechanism,INFERENCE,FAIL
+HG40-C07,Vs and Vc are required for every possible statement about multiple histories at fixed pressure,THEOREM,FAIL
+HG40-C08,Pointwise affine quotients eliminate Vs and Vc exactly,THEOREM,PASS
+HG40-C09,Bethe scanning desorption is nondecreasing in its initial unfilled fraction on the stable branch,THEOREM,PASS
+HG40-C10,Run-1 primary desorption scans exhibit a no-passing violation beyond the conservative tabulated uncertainty envelope,EMPIRICAL,FAIL
+HG40-C11,Run-1 raw point estimates are exactly ordered at every evaluated pressure,EMPIRICAL,FAIL
+HG40-C12,The standard Bethe/network family is physically rejected by HG40,INFERENCE,ABSTAIN
+HG40-C13,The carrier-specific HG31 universal-evalue denominator is complete,STATISTICAL,FAIL
+HG40-C14,HG40 supplies empirical HGMF evidence,INFERENCE,FAIL
+HG40-C15,HG40 supplies evidence for physical protogeometry,PHYSICAL,FAIL
