@@ -1,15 +1,15 @@
 {
-  "schema_version":"1.3.0",
+  "schema_version":"1.4.0",
   "updated":"2026-11-10",
   "super_repository":"FacundoFirmenich/magimathics",
-  "policy":"specialized repositories remain authoritative; magimathics records immutable pointers, programme-level consequences and resource decisions",
+  "policy":"specialized repositories remain authoritative; magimathics records immutable pointers, authority boundaries, resource decisions and programme-level consequences",
   "repositories":[
     {"code":"RGPHI","repository":"FacundoFirmenich/rgphi-radix-mobius-dynamics","commit":"a116ff21bd5b2fd973c39445931d8a4b832069b7","authority":"CANONICAL_ACTIVE","latest_gate":"Stage A","next_gate":"Stage B2 exact layers 186..211","status":"RESOURCE_BLOCKED"},
     {"code":"BQ","repository":"FacundoFirmenich/quaternary-query-tomography","commit":"76ba4cc8dca910fe0e7c25655ba005a7a9750f53","authority":"EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER","latest_gate":"BQ-010H PASS/HOLD","next_gate":"BQ-010I one-sided periodic and aperiodic 12x20 branches","status":"ACTIVE"},
-    {"code":"ACTIVATION","repository":"FacundoFirmenich/radix-mobius-activation-surfaces","commit":"5d15758d8d4ab99c88fdcdb544a9913cd0a51f2d","authority":"PARALLEL_ISOLATED_INDEPENDENT_PAPER","latest_gate":"ODT-017A PASS/HOLD","next_gate":"ODT-017B arithmetic contraction predictor plus external-memory survival","status":"ACTIVE"},
+    {"code":"ACTIVATION","repository":"FacundoFirmenich/radix-mobius-activation-surfaces","commit":"5d15758d8d4ab99c88fdcdb544a9913cd0a51f2d","authority":"PARALLEL_ISOLATED_INDEPENDENT_PAPER","latest_gate":"ODT-017A PASS/HOLD","next_gate":"ODT-017B contraction predictor and external-memory survival","status":"ACTIVE"},
     {"code":"METHODS","repository":"FacundoFirmenich/certified-radix-mobius-computation","commit":"25a7df6b0a83946a86f9d24f7f5e5148216008ae","authority":"METHODS_COMPANION","latest_gate":"CERT-004 PASS/HOLD","next_gate":"CERT-005 multi-level chain and Bellman certificates","status":"ACTIVE"},
     {"code":"HM","repository":"FacundoFirmenich/toeplitz-kasparov-interfaces","commit":"28bb2e4542611ce65ea05fb3730d0a40a7ab280f","authority":"EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER","latest_gate":"HM-017 PASS/HOLD","next_gate":"HM-018 candidate swap-odd observables","status":"ACTIVE"},
-    {"code":"OBS","repository":"FacundoFirmenich/observational-degeneration-synergy","commit":"dd2c0b9a6db1f6abc4764e455d33ebd33f0fd67d","authority":"FOUNDATIONS_TRACK","latest_gate":"KwanTube-X resource amendment and Sysmic-X query lock","next_gate":"Sysmic raw snapshot hash; audit existing KwanTube artefacts only","status":"ACTIVE_WITH_HEOM_RERUN_PROHIBITED"},
+    {"code":"OBS","repository":"FacundoFirmenich/observational-degeneration-synergy","commit":"33ef7a0df087c4499f18e7fd7b894957c7149769","authority":"FOUNDATIONS_TRACK","latest_gate":"existing KwanTube artefact audit PASS/HOLD","next_gate":"Sysmic raw snapshot hash; retrospective KwanTube post-processing only","status":"ACTIVE_WITH_HEOM_RERUN_PROHIBITED"},
     {"code":"U5HD","repository":"FacundoFirmenich/u5-hd","commit":"40a687eaa50f4cffe49e26de98f2104b37976044","authority":"PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY","latest_gate":"U5-HD-MIN-003 PASS","next_gate":"MIN-004 scientifically motivated path-dependent task","status":"ACTIVE"}
   ]
 }

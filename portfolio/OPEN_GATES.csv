@@ -1,9 +1,9 @@
 priority,code,gate,status,dependency
 1,RGPHI,Stage B2,RESOURCE_BLOCKED,exact 128-bucket checkpoint
 2,BQ,BQ-010I,OPEN,one-sided periodic quotients and aperiodic 12x20 packing
-3,ACTIVATION,ODT-017B,OPEN,freeze contraction predictor and external-memory survival
-4,METHODS,CERT-005,OPEN,multi-level transaction chain and Bellman retroinduction
+3,ACTIVATION,ODT-017B,OPEN,freeze Gamma predictor and external-memory survival
+4,METHODS,CERT-005,OPEN,multi-level transaction chain restart equivalence and Bellman
 5,HM,HM-018,OPEN,natural swap-odd observable or zero-locus obstruction
 6,U5HD,U5-HD-MIN-004,OPEN,scientifically motivated path-dependent task
 7,OBS,SYSMIC-X RAW FREEZE,PENDING,materialize and hash locked GeoNet response
-8,OBS,KWANTUBE EXISTING-ARTEFACT AUDIT,ACTIVE_NO_RERUN,inventory hashes and retrospective post-processing only
+8,OBS,KWANTUBE RETROSPECTIVE POSTPROCESSING,ACTIVE_NO_RERUN,audited NC7/NK1 trajectory and committed model artefacts
