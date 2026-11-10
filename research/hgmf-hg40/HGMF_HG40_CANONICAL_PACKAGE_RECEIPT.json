@@ -1,0 +1,20 @@
+{
+  "gate": "HGMF-HG40",
+  "package_profile": "canonical-delivery/1.0",
+  "delivery_filename": "HGMF_HG40_AFFINE_QUOTIENT_IDENTIFIABILITY_2026-11-10.zip",
+  "delivery_sha256": "98936a55c098cfa0fd3e10a0599b6f38e260218ad60d4d41f5e97911d7a6053e",
+  "delivery_file_count": 26,
+  "scientific_execution": {
+    "workflow_run_id": 42751607533,
+    "artifact_id": 13732829925,
+    "artifact_sha256": "4a4926bbffc455cbe66a7736afe3d5c00f4740995013e1e907d5a5884a755202",
+    "conclusion": "success"
+  },
+  "repository": "FacundoFirmenich/magimathics",
+  "branch": "hgmf-hg40-affine-quotient-identifiability-20261110",
+  "pull_request": 64,
+  "external_contact_performed": false,
+  "acquisition_authorized": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}

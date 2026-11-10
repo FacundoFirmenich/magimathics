@@ -1,0 +1,19 @@
+{
+  "profile": "hgmf-hg40-order-diagnostic/1.0",
+  "source": "NIST-ISODB/AJBrownThesisIsotherms@17a48e5d3c00e97387d0dfb1e280d8d6bf103d40",
+  "run_id": 1,
+  "temperature_K": 150.73,
+  "pairs_total": 10,
+  "pairs_with_any_raw_negative_difference": 6,
+  "pairwise_evaluation_points": 713,
+  "raw_negative_difference_points": 51,
+  "strict_violation_points_beyond_conservative_tolerance": 0,
+  "minimum_raw_difference_mg": -0.0545251396648058,
+  "maximum_negative_fraction_of_tolerance": 0.31976744186046335,
+  "quotient_coordinates_total": 242,
+  "quotient_coordinates_outside_unit_interval_raw": 11,
+  "affine_coordinate_minimum": 0.0,
+  "affine_coordinate_maximum": 1.0853341707825412,
+  "interpretation": "raw point estimates contain small local order inversions, but none exceeds the conservative last-digit uncertainty plus rounding envelope; exact pointwise order fails while Bethe no-passing is not rejected at that uncertainty authority",
+  "claim_boundary": "the tolerance is conservative and correlated interpolation nodes are not independent tests; no p-value or physical network rejection is claimed"
+}

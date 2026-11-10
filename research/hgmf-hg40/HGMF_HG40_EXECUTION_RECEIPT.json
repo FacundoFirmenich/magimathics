@@ -1,0 +1,23 @@
+{
+  "gate": "HGMF-HG40",
+  "execution_profile": "real-public-data-affine-quotient/1.0",
+  "workflow_run_id": 42751607533,
+  "workflow_run_url": "https://github.com/FacundoFirmenich/magimathics/actions/runs/42751607533",
+  "workflow_conclusion": "success",
+  "workflow_head_sha": "8233490f8f084c132c3d523fdb40811d299837e4",
+  "artifact_id": 13732829925,
+  "artifact_name": "HGMF_HG40_AFFINE_QUOTIENT",
+  "artifact_sha256": "4a4926bbffc455cbe66a7736afe3d5c00f4740995013e1e907d5a5884a755202",
+  "sources": {
+    "magnetism": "sadityakr/EB-in-FGT_CrSBr-vdW-heterostructure@66662e8aa3690cebaaef52dfc4ddd3bea458a576",
+    "adsorption": "NIST-ISODB/AJBrownThesisIsotherms@17a48e5d3c00e97387d0dfb1e280d8d6bf103d40"
+  },
+  "real_data_only": true,
+  "synthetic_scientific_data": false,
+  "external_contact_performed": false,
+  "email_or_provider_action_performed": false,
+  "absolute_calibration_claim": false,
+  "universal_evalue_ready": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}

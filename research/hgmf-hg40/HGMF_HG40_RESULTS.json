@@ -1,0 +1,63 @@
+{
+  "gate": "HGMF-HG40",
+  "title": "Affine-Quotient Identifiability and Reference-Free Historical Rescue",
+  "date": "2026-11-10",
+  "global_verdict": "PASS_AFFINE_QUOTIENT_IDENTIFIABILITY_THEOREM_PASS_MAGNETIC_COMMON_AFFINE_NUISANCE_CANCELLATION_PASS_MAGNETIC_RELATIVE_TRAINING_GEOMETRY_PASS_ADSORPTION_REFERENCE_FREE_QUOTIENT_PASS_BETHE_NO_PASSING_THEOREM_PASS_NO_PASSING_NOT_REJECTED_AT_TABULATED_UNCERTAINTY_PASS_PARTIAL_HISTORICAL_IDENTIFIABILITY_RESCUE_FAIL_EXACT_POINTWISE_NO_PASSING_ON_RAW_POINT_ESTIMATES_FAIL_ABSOLUTE_FIELD_IDENTIFICATION_FAIL_ABSOLUTE_Q_q_IDENTIFICATION_FAIL_STANDARD_SOURCE_NULL_EXCLUSION_ABSTAIN_MODEL_SPECIFIC_QUOTIENT_LIKELIHOOD_ABSTAIN_HG31_UNIVERSAL_X_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "execution": {
+    "workflow_run_id": 42751607533,
+    "conclusion": "success",
+    "head_sha": "8233490f8f084c132c3d523fdb40811d299837e4",
+    "artifact_id": 13732829925,
+    "artifact_sha256": "4a4926bbffc455cbe66a7736afe3d5c00f4740995013e1e907d5a5884a755202"
+  },
+  "formal": {
+    "affine_quotient_dimension": "m-2 for m labelled nondegenerate observations",
+    "magnetic_common_affine_action": "HEB' = alpha*HEB + beta; width' = alpha*width",
+    "adsorption_pointwise_affine_action": "V_h = V_c - (V_c-V_s) Q_h",
+    "bethe_no_passing": "Qminus is nondecreasing in Qplus on the stable branch"
+  },
+  "magnetism": {
+    "loops": 5,
+    "HEB_mT": [-48.42569341383035, 0.8838269371443452, -4.075432120767836, 3.3382593574633646, 1.3416824050381848],
+    "coercive_halfwidth_mT": [83.80649197425774, 39.45696539473883, 44.8481563272867, 38.427642988196666, 42.719237551378704],
+    "trained_mean_HEB_mT": 0.3720841447195147,
+    "trained_mean_halfwidth_mT": 41.36300056540023,
+    "loop1_training_contrast_in_trained_halfwidths": -1.1797446242178273,
+    "HEB_affine_coordinates": [0.0, 1.0, 0.8994259318968584, 1.0497760351925733, 1.0092853360696865],
+    "identified_quotient_dimension": 3,
+    "affine_invariance_max_abs_error": 2.220446049250313e-16,
+    "loop1_log_width_asymmetry": 3.6116483999256515,
+    "later_log_width_asymmetry": [0.0010822284738090458, 0.025955440573885248, 0.032502608607245465, 0.021011263736041157],
+    "adjudication": "PASS_RELATIVE_TRAINING_GEOMETRY_STANDARD_SOURCE_NULL_SURVIVES"
+  },
+  "adsorption": {
+    "run_id": 1,
+    "temperature_K": 150.73,
+    "simple_desorption_scans": 5,
+    "pairwise_histories": 10,
+    "pairwise_evaluation_points": 713,
+    "raw_negative_difference_points": 51,
+    "strict_violations_beyond_conservative_uncertainty": 0,
+    "pairs_with_any_raw_negative_difference": 6,
+    "minimum_raw_difference_mg": -0.0545251396648058,
+    "maximum_negative_fraction_of_tolerance": 0.31976744186046335,
+    "quotient_rows": 242,
+    "quotient_pressures": 63,
+    "maximum_simultaneous_histories": 5,
+    "identified_quotient_degrees": 116,
+    "raw_coordinates_outside_unit_interval": 11,
+    "maximum_affine_coordinate": 1.0853341707825412,
+    "bethe_derivative_minimum_closed_grid": 0.0,
+    "bethe_derivative_minimum_interior": 3.981071705647967e-15,
+    "adjudication": "PASS_NO_PASSING_NOT_REJECTED_AT_CONSERVATIVE_TABULATED_UNCERTAINTY"
+  },
+  "historical_route": {
+    "relative_identifiability": "PASS_PARTIAL_RESCUE",
+    "absolute_identifiability": false,
+    "model_specific_quotient_likelihood": false,
+    "universal_evalue_X_ready": false,
+    "empirical_hgmf_claim": false,
+    "physical_protogeometry": "HOLD"
+  },
+  "next_gate": "HGMF-HG41 Maximal-Invariant Likelihoods and Quotient-Space Universal E-values"
+}
