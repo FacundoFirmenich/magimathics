@@ -1,0 +1,102 @@
+name: HGMF HG39 commissioning dossier
+
+on:
+  push:
+    branches:
+      - hgmf-hg39-commissioning-dossier-20261110
+    paths:
+      - 'research/hgmf-hg39/payload_00.txt'
+      - 'research/hgmf-hg39/materialize_hg39.py'
+      - '.github/workflows/hgmf-hg39-materialize.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  materialize-and-verify:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: hgmf-hg39-commissioning-dossier-20261110
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy scipy
+
+      - name: Materialize canonical gate
+        run: |
+          python research/hgmf-hg39/materialize_hg39.py
+
+      - name: Compile and execute exact verification
+        run: |
+          cd research/hgmf-hg39
+          python -m py_compile hgmf_hg39_fitness_compiler.py hgmf_hg39_commissioning_validator.py hgmf_hg39_exact_verify.py
+          python hgmf_hg39_fitness_compiler.py HGMF_HG39_CURRENT_FITNESS_INPUT.json --output HGMF_HG39_CURRENT_FITNESS_OUTPUT.json
+          python hgmf_hg39_commissioning_validator.py HGMF_HG39_CURRENT_DOSSIER.json --output HGMF_HG39_CURRENT_ADJUDICATION.json
+          python hgmf_hg39_exact_verify.py | tee HGMF_HG39_VERIFY_OUTPUT.txt
+
+      - name: Verify canonical manifest
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv, hashlib
+          root=Path('research/hgmf-hg39')
+          rows=list(csv.DictReader((root/'HGMF_HG39_HASH_MANIFEST.csv').open(encoding='utf-8')))
+          for row in rows:
+              p=root/row['file']
+              assert p.exists(), row['file']
+              b=p.read_bytes()
+              assert len(b)==int(row['bytes']), row['file']
+              assert hashlib.sha256(b).hexdigest()==row['sha256'], row['file']
+          print(f'manifest_verified={len(rows)}')
+          PY
+
+      - name: Build canonical artifact
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          root=Path('research/hgmf-hg39')
+          out=Path('/tmp/HGMF_HG39_COMMISSIONING_DOSSIER.zip')
+          excluded={'payload_00.txt','materialize_hg39.py'}
+          with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(root.iterdir()):
+                  if p.is_file() and p.name not in excluded and p.suffix!='.pyc':
+                      z.write(p,arcname=f'HGMF_HG39_COMMISSIONING_DOSSIER/{p.name}')
+          with zipfile.ZipFile(out) as z:
+              assert z.testzip() is None
+              print(f'artifact_files={len(z.namelist())}')
+          PY
+
+      - name: Persist expanded canonical files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm research/hgmf-hg39/payload_00.txt research/hgmf-hg39/materialize_hg39.py
+          git add research/hgmf-hg39
+          git commit -m '[skip ci] HGMF-HG39: materialize canonical commissioning dossier'
+          git push origin HEAD:hgmf-hg39-commissioning-dossier-20261110
+
+      - name: Upload canonical artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_HG39_COMMISSIONING_DOSSIER
+          path: /tmp/HGMF_HG39_COMMISSIONING_DOSSIER.zip
+          if-no-files-found: error
+          retention-days: 30
