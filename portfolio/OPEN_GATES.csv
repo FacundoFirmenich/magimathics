@@ -1,9 +1,10 @@
 priority,code,gate,status,dependency
 1,RGPHI,Stage B2,RESOURCE_BLOCKED,exact 128-bucket checkpoint
-2,BQ,BQ-010H,OPEN,6x10 quotient certificate and aperiodic 12x20 packing
-3,ACTIVATION,ODT-017,OPEN,external-memory P1 temporal survival H40-H50
-4,METHODS,CERT-004,OPEN,production bucket manifests and streaming checker
-5,HM,HM-017,OPEN,natural trivialization or obstruction theorem
-6,OBS,SYSMIC-X RAW FREEZE,PENDING,materialize and hash locked GeoNet response
-7,OBS,KWANTUBE-X PRODUCTION,FROZEN_UNRUN,NC7-NC8 two-block compute
-8,U5HD,U5-HD-MIN-003,OPEN,task-sufficient finite genealogy quotient
+2,BQ,BQ-010G,OPEN,carry-coupled high-bit packing
+3,ACTIVATION,ODT-016,OPEN,untouched bases and two-target survival analysis
+4,METHODS,CERT-003,OPEN,streaming external-memory and Bellman certificates
+5,HM,HM-016,OPEN,natural origin or obstruction of species ordering
+6,OBS,SYSMIC-X FULL FREEZE,PREPARATION,untouched catalog or network and immutable hashes
+7,OBS,KWANTUBE-X PRODUCTION,DEFERRED_NO_AUTHORIZATION,explicit future authorization plus benchmarked compute budget
+8,OBS,KWANTUBE ARTEFACT AUDIT,OPEN,existing outputs hashes ledgers and resource receipts
+9,U5HD,SEMICONJUGATION,OPEN,minimal axioms and natural external dynamics
