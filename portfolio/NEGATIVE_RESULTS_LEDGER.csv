@@ -1,15 +1,13 @@
 id,result,status,authority
-NEG-001,Direct decimal-digit correlation with phi is not demonstrated,RETAINED,RGPHI
-NEG-002,tau5=212 is prohibited before Stage B2 closes,OPEN_BOUNDARY,RGPHI
-NEG-003,Pairwise null observations do not establish strong redundancy,REFUTED,OBS
-NEG-004,Generic Real structure or rho=1/2 does not uniquely select a lift,PROVED_NONUNIQUENESS,HM
-NEG-005,A species-swap-invariant rule cannot select a unique ordered lift,PROVED,HM
-NEG-006,Fixed typed additive 35-symbol schedules with fewer than four mixed queries are impossible,PROVED,BQ
-NEG-007,Neither factor of a direct 12x20 packing can have an order-four period,PROVED,BQ
-NEG-008,A common nonzero order-two period is impossible for the two direct-sum factors,PROVED,BQ
-NEG-009,A 600-second quotient MILP timeout proves infeasibility,PROHIBITED_INFERENCE,BQ
-NEG-010,Finite-window modular inactivity is eventual impossibility,REFUTED,ACTIVATION
-NEG-011,Zero P_B2 hits through H50 proves no P_B2 trajectory exists,PROHIBITED_INFERENCE,ACTIVATION
-NEG-012,A positive witness path alone proves global shortest-distance minimality,REFUTED,METHODS
-NEG-013,The RGΦ path cocycle descends to rational endpoint alone,REFUTED,U5HD
-NEG-014,Internal U5-HD consistency establishes physical ontology,PROHIBITED,U5HD
+NEG-001,tau5=212 is prohibited before Stage B2 closes,OPEN_BOUNDARY,RGPHI
+NEG-002,No direct 6x10 sum exists in Z4^2 x Z2^2,PROVED,BQ
+NEG-003,The distinct-order-two-period branch of the 12x20 frontier survives,REFUTED,BQ
+NEG-004,A timeout without a proof object establishes BQ infeasibility,PROHIBITED_INFERENCE,BQ
+NEG-005,Base arithmetic is merely a statistical feature,REFUTED_BY_MECHANISM,ACTIVATION
+NEG-006,A positive witness alone proves global shortest-distance minimality,REFUTED,METHODS
+NEG-007,A natural ordered species selector exists in the unenriched swap-symmetric category,REFUTED,HM
+NEG-008,Genealogy improves ordinary exact RGΦ portal Bellman prediction,REFUTED,U5HD
+NEG-009,Endpoint state alone recovers phase-parity genealogy,REFUTED,U5HD
+NEG-010,New HEOM production is an active portfolio priority,WITHDRAWN_RESOURCE_DECISION,OBS
+NEG-011,Retrospective KwanTube post-processing is a new prospective validation,PROHIBITED_INFERENCE,OBS
+NEG-012,Internal U5-HD consistency establishes physical ontology,PROHIBITED,U5HD
