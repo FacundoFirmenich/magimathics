@@ -1,8 +1,8 @@
-code,repository,branch,commit,authority,visibility,next_gate
-RGPHI,FacundoFirmenich/rgphi-radix-mobius-dynamics,Ulalito's-Island,a116ff21bd5b2fd973c39445931d8a4b832069b7,CANONICAL_ACTIVE,public,Stage B2 exact layers 186..211
-BQ,FacundoFirmenich/quaternary-query-tomography,Ulalito's-Island,114546cba397c8bbb99b6ff252dee70e4b967461,EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER,private,BQ-010E four-mixed frontier
-ACTIVATION,FacundoFirmenich/radix-mobius-activation-surfaces,Ulalito's-Island,e3cd96f93c14460d566fe6eafa31beb8c28867ac,PARALLEL_ISOLATED_INDEPENDENT_PAPER,private,ODT-015C temporal surfaces
-METHODS,FacundoFirmenich/certified-radix-mobius-computation,Ulalito's-Island,8b7f307c43924747e7082b5840ade78a151d7891,METHODS_COMPANION,private,certificate schema and formal core
-HM,FacundoFirmenich/toeplitz-kasparov-interfaces,Ulalito's-Island,41f1baeb7a7a1c416a211b16282cd7457ecd8db2,EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER,private,HM-014 Real-lift selection
-OBS,FacundoFirmenich/observational-degeneration-synergy,Ulalito's-Island,e858229fe9211d8d0e5ddfb243e8bf60847f6d6c,FOUNDATIONS_TRACK,private,Sysmic-X and KwanTube-X
-U5HD,FacundoFirmenich/u5-hd,Ulalito's-Island,ccf5c998a5ae15e81962d2a9278b931dab6de619,PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY,private,minimal axioms and semiconjugation
+code,repository,branch,commit,authority,visibility,latest_gate,next_gate
+RGPHI,FacundoFirmenich/rgphi-radix-mobius-dynamics,Ulalito's-Island,a116ff21bd5b2fd973c39445931d8a4b832069b7,CANONICAL_ACTIVE,public,Stage A,Stage B2 exact layers 186..211
+BQ,FacundoFirmenich/quaternary-query-tomography,Ulalito's-Island,ad11cd3e5d7e33dd93b1011e22e97552e6cffe37,EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER,private,BQ-010E PASS,BQ-010F decide 12x20 direct-sum frontier
+ACTIVATION,FacundoFirmenich/radix-mobius-activation-surfaces,Ulalito's-Island,a71c1758d6ca3d09b4092d8d9bcbedb8f5e55b68,PARALLEL_ISOLATED_INDEPENDENT_PAPER,private,ODT-015C PASS/HOLD,ODT-016 temporal-survival law
+METHODS,FacundoFirmenich/certified-radix-mobius-computation,Ulalito's-Island,ed7c4cd3f769ed93748285f4848551dc537f581b,METHODS_COMPANION,private,CERT-001 PASS,CERT-002 negative and minimality certificates
+HM,FacundoFirmenich/toeplitz-kasparov-interfaces,Ulalito's-Island,ae84a4ad543a8d8887d7a1ac87f90b19887425c6,EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER,private,HM-014 PASS,HM-015 natural selection or extrinsic-data no-go
+OBS,FacundoFirmenich/observational-degeneration-synergy,Ulalito's-Island,147ffc477138c76b8a7b3baa41d72db068d10312,FOUNDATIONS_TRACK,private,protocol preparation PASS,full Sysmic-X and KwanTube-X freezes
+U5HD,FacundoFirmenich/u5-hd,Ulalito's-Island,ccf5c998a5ae15e81962d2a9278b931dab6de619,PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY,private,repository initialized,minimal axioms and semiconjugation

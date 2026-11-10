@@ -1,8 +1,9 @@
 priority,code,gate,status,dependency
 1,RGPHI,Stage B2,RESOURCE_BLOCKED,exact 128-bucket checkpoint
-2,BQ,BQ-010E,OPEN,four-mixed Z4^4 frontier
-3,ACTIVATION,ODT-015C,OPEN,external-memory temporal completion
-4,METHODS,FORMAL-001D,OPEN,proof-assistant environment and stable schema
-5,HM,HM-014,OPEN,declared Real/spin selection data
-6,OBS,Sysmic-X and KwanTube-X,OPEN,new preregistered outcomes
-7,U5HD,Semiconjugation gate,OPEN,natural external dynamics
+2,BQ,BQ-010F,OPEN,12x20 direct-sum frontier in Z4^4
+3,ACTIVATION,ODT-016,OPEN,untouched bases second target and external-memory survival analysis
+4,METHODS,CERT-002,OPEN,negative reachability global minimality and Bellman schemas
+5,HM,HM-015,OPEN,natural Real spin or species-selection datum
+6,OBS,SYSMIC-X FULL FREEZE,PREPARATION,untouched catalog or network and immutable hashes
+7,OBS,KWANTUBE-X FULL FREEZE,PREPARATION,untouched physical parameter block and hashes
+8,U5HD,SEMICONJUGATION,OPEN,minimal axioms and natural external dynamics
