@@ -3,9 +3,13 @@ NEG-001,Direct decimal-digit correlation with phi is not demonstrated,RETAINED,R
 NEG-002,tau5=212 is prohibited before Stage B2 closes,OPEN_BOUNDARY,RGPHI
 NEG-003,Pairwise null observations do not establish strong redundancy,REFUTED,OBS
 NEG-004,Generic Real structure or rho=1/2 does not uniquely select a lift,PROVED_NONUNIQUENESS,HM
-NEG-005,Fixed typed additive 35-symbol schedules with fewer than four mixed queries are impossible,PROVED,BQ
-NEG-006,The fixed typed (2 29 4) schedule is impossible by the odd-factor Fourier bound,PROVED,BQ
-NEG-007,Finite-window modular inactivity is not eventual impossibility,REFUTED,ACTIVATION
-NEG-008,H40 is uncensored for the pending five full-rank bases,REFUTED,ACTIVATION
-NEG-009,A positive witness path alone proves global shortest-distance minimality,REFUTED,METHODS
-NEG-010,Internal U5-HD consistency establishes physical ontology,PROHIBITED,U5HD
+NEG-005,A species-swap-invariant rule cannot select a unique ordered lift,PROVED,HM
+NEG-006,Fixed typed additive 35-symbol schedules with fewer than four mixed queries are impossible,PROVED,BQ
+NEG-007,Neither factor of a direct 12x20 packing can have an order-four period,PROVED,BQ
+NEG-008,A common nonzero order-two period is impossible for the two direct-sum factors,PROVED,BQ
+NEG-009,A 600-second quotient MILP timeout proves infeasibility,PROHIBITED_INFERENCE,BQ
+NEG-010,Finite-window modular inactivity is eventual impossibility,REFUTED,ACTIVATION
+NEG-011,Zero P_B2 hits through H50 proves no P_B2 trajectory exists,PROHIBITED_INFERENCE,ACTIVATION
+NEG-012,A positive witness path alone proves global shortest-distance minimality,REFUTED,METHODS
+NEG-013,The RGΦ path cocycle descends to rational endpoint alone,REFUTED,U5HD
+NEG-014,Internal U5-HD consistency establishes physical ontology,PROHIBITED,U5HD
