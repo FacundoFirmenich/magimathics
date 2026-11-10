@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG38 Prospective Protocol Seal",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "profile",
+    "gate",
+    "state",
+    "authority",
+    "future_only",
+    "magnetic_cartridge",
+    "adsorption_cartridge",
+    "split",
+    "current_arming_status",
+    "self_hash"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-hg38-prospective-protocol-seal/1.0"
+    },
+    "gate": {
+      "const": "HGMF-HG38"
+    },
+    "state": {
+      "enum": [
+        "PROTOCOL_FROZEN_UNARMED",
+        "ARMED"
+      ]
+    },
+    "authority": {
+      "enum": [
+        "NO_ACQUISITION_AUTHORITY",
+        "HOLDOUT_ACQUISITION_AUTHORIZED"
+      ]
+    },
+    "self_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

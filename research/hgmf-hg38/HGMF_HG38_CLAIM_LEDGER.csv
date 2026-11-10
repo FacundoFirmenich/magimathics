@@ -1,0 +1,14 @@
+claim_id,claim,class,status
+HG38-C01,A protocol seal may validly exist before real calibration receipts,FORMAL,PASS
+HG38-C02,A valid protocol seal alone authorizes holdout acquisition,PROTOCOL,FAIL
+HG38-C03,Metrological traceability is a property of the measurement result rather than the instrument alone,METROLOGY,PASS
+HG38-C04,Traceability alone guarantees fitness for purpose,METROLOGY,FAIL
+HG38-C05,The magnetic cartridge must include a reference-field map and uncertainty covariance over the experimental range,DESIGN,PASS
+HG38-C06,HEB summary is the primary prospective magnetic observable,DESIGN,FAIL
+HG38-C07,The adsorption cartridge requires an independently measured film reference,DESIGN,PASS
+HG38-C08,The topology model may be selected using holdout scanning outcomes,PROTOCOL,FAIL
+HG38-C09,Future-only acquisition requires an arming timestamp before the first holdout event,PROTOCOL,PASS
+HG38-C10,A hash mismatch may be repaired silently,PROTOCOL,FAIL
+HG38-C11,Current real calibration receipts exist and the cartridge is armed,EMPIRICAL,ABSTAIN
+HG38-C12,HG38 supplies empirical HGMF evidence,EMPIRICAL,FAIL
+HG38-C13,HG38 confirms physical protogeometry,PHYSICAL,FAIL

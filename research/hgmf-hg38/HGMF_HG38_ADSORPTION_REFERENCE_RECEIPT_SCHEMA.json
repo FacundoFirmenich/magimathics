@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF Adsorption Film-Reference Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "receipt_id",
+    "status",
+    "reference_material",
+    "adsorbate",
+    "conditions",
+    "calibration_chain",
+    "curves",
+    "uncertainty",
+    "interleaving",
+    "artifacts",
+    "self_hash"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-adsorption-reference-receipt/1.0"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "status": {
+      "enum": [
+        "REAL_REFERENCE_MEASUREMENT",
+        "INVALIDATED"
+      ]
+    },
+    "reference_material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "material",
+        "nonporous_evidence",
+        "surface_chemistry_match",
+        "pretreatment_match",
+        "mass_result",
+        "surface_area_result"
+      ],
+      "properties": {
+        "material": {
+          "type": "string"
+        },
+        "nonporous_evidence": {
+          "type": "string"
+        },
+        "surface_chemistry_match": {
+          "type": "string"
+        },
+        "pretreatment_match": {
+          "type": "string"
+        },
+        "mass_result": {
+          "type": "object"
+        },
+        "surface_area_result": {
+          "type": "object"
+        }
+      }
+    },
+    "adsorbate": {
+      "type": "object",
+      "required": [
+        "identity",
+        "lot",
+        "purity",
+        "same_lot_as_sample"
+      ],
+      "properties": {
+        "identity": {
+          "const": "Xe"
+        },
+        "lot": {
+          "type": "string"
+        },
+        "purity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "same_lot_as_sample": {
+          "const": true
+        }
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "required": [
+        "target_temperature_K",
+        "temperature_result",
+        "pressure_result",
+        "equilibrium_rule",
+        "pressure_grid_hash"
+      ],
+      "properties": {
+        "target_temperature_K": {
+          "type": "number"
+        },
+        "temperature_result": {
+          "type": "object"
+        },
+        "pressure_result": {
+          "type": "object"
+        },
+        "equilibrium_rule": {
+          "type": "string",
+          "minLength": 10
+        },
+        "pressure_grid_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "calibration_chain": {
+      "type": "object",
+      "required": [
+        "temperature",
+        "pressure",
+        "mass"
+      ],
+      "properties": {
+        "temperature": {
+          "type": "object"
+        },
+        "pressure": {
+          "type": "object"
+        },
+        "mass": {
+          "type": "object"
+        }
+      }
+    },
+    "curves": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Vs_artifact",
+        "Vc_artifact",
+        "covariance_artifact",
+        "full_pressure_domain_covered"
+      ],
+      "properties": {
+        "Vs_artifact": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "Vc_artifact": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "covariance_artifact": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "full_pressure_domain_covered": {
+          "type": "boolean"
+        }
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "required": [
+        "framework",
+        "temperature_limit_pass",
+        "pressure_limit_pass",
+        "surface_area_uncertainty_included",
+        "curve_covariance_included"
+      ],
+      "properties": {
+        "framework": {
+          "type": "string"
+        },
+        "temperature_limit_pass": {
+          "type": "boolean"
+        },
+        "pressure_limit_pass": {
+          "type": "boolean"
+        },
+        "surface_area_uncertainty_included": {
+          "type": "boolean"
+        },
+        "curve_covariance_included": {
+          "type": "boolean"
+        }
+      }
+    },
+    "interleaving": {
+      "type": "object",
+      "required": [
+        "reference_sample_interleaved",
+        "order_schedule_hash"
+      ],
+      "properties": {
+        "reference_sample_interleaved": {
+          "const": true
+        },
+        "order_schedule_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "bytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "self_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

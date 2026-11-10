@@ -1,0 +1,10 @@
+PASS_HGMF_HG38_EXACT
+protocol_self_hash=PASS
+current_state=PROTOCOL_FROZEN_UNARMED
+missing_real_receipts=ABSTAIN
+tamper_detection=PASS
+fake_arming_fail_closed=PASS
+prospective_outcomes_admitted=false
+acquisition_authorized=false
+empirical_hgmf_claim=false
+physical_protogeometry=HOLD

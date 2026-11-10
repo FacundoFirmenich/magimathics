@@ -1,0 +1,30 @@
+{
+  "gate": "HGMF-HG38",
+  "title": "Prospective Identifiability Cartridge and Future-Only Seal",
+  "date": "2026-11-10",
+  "global_verdict": "PASS_TWO_STAGE_PROSPECTIVE_SEAL_PASS_MAGNETIC_CALIBRATION_RECEIPT_CONTRACT_PASS_ADSORPTION_FILM_REFERENCE_RECEIPT_CONTRACT_PASS_INDEPENDENT_TOPOLOGY_RECEIPT_CONTRACT_PASS_HASH_CHAINED_ACQUISITION_CONTRACT_PASS_FAIL_CLOSED_ARMING_VALIDATOR_PASS_FUTURE_ONLY_INFORMATION_BARRIER_PASS_METROLOGICAL_TRACEABILITY_REQUIREMENTS_ABSTAIN_REAL_RECEIPTS_ABSTAIN_CARTRIDGE_ARMING_HOLD_PROSPECTIVE_OUTCOMES_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "protocol": {
+    "state": "PROTOCOL_FROZEN_UNARMED",
+    "self_hash": "2406dafddfbec2f98b2a3d83c1f48381a3d7cd16130eb8ef48dc2f9a93d471aa",
+    "acquisition_authority": false
+  },
+  "magnetism": {
+    "primary_observable": "FULL_VXY_VERSUS_TRACEABLE_FIELD_CURVE",
+    "historical_planning_ceiling_mT": 0.8,
+    "planning_ceiling_confirmatory": false,
+    "real_calibration_receipt": false
+  },
+  "adsorption": {
+    "independent_film_reference_required": true,
+    "independent_topology_receipt_required": true,
+    "real_reference_receipt": false
+  },
+  "validator": {
+    "fail_closed": true,
+    "current_status": "ABSTAIN_NOT_ARMED_MISSING_REAL_RECEIPTS"
+  },
+  "prospective_outcomes_admitted": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD",
+  "next_gate": "HGMF-HG39 Real Metrological Commissioning and Pre-Outcome Arming"
+}
