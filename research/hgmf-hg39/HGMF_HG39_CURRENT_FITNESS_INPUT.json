@@ -1,0 +1,19 @@
+{
+  "profile": "hgmf-hg39-fitness-input/1.0",
+  "magnetic": {
+    "coverage_factor": null,
+    "maximum_expanded_uncertainty_mT": null,
+    "components_standard_uncertainty_mT": {
+      "reference": null,
+      "map": null,
+      "position": null,
+      "repeatability": null,
+      "drift": null,
+      "hysteresis": null
+    }
+  },
+  "adsorption": {
+    "maximum_standard_uncertainty_Q": null,
+    "maximum_standard_uncertainty_q": null
+  }
+}

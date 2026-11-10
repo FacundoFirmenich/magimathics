@@ -1,0 +1,15 @@
+claim_id,claim,class,status
+HG39-C01,A provider website is a traceable measurement result,METROLOGY,FAIL
+HG39-C02,An accredited scope can qualify a provider but cannot replace the future result receipt,METROLOGY,PASS
+HG39-C03,"UPM LMM, CEM MAGLAB and NPL provide credible magnetic commissioning routes",ROUTE,PASS
+HG39-C04,The current evidence includes a completed sample-plane magnetic calibration,EMPIRICAL,ABSTAIN
+HG39-C05,A BET/SAXS reference material can replace the matched nonporous Xe/silica film reference,METROLOGY,FAIL
+HG39-C06,CCiTUB and ALBA provide relevant local capabilities for adsorption/topology commissioning,ROUTE,PASS
+HG39-C07,SAXS alone identifies pore connectivity,PHYSICAL,FAIL
+HG39-C08,A combined size/surface and connectivity receipt can define an independent topology constraint,FORMAL,PASS
+HG39-C09,Magnetic expanded uncertainty can be compiled from component covariance and a frozen coverage factor,THEOREM,PASS
+HG39-C10,"Q uncertainty follows from the full covariance of V, Vs and Vc",THEOREM,PASS
+HG39-C11,Current numeric fitness limits are frozen,PROTOCOL,ABSTAIN
+HG39-C12,HG38 arming is authorized,AUTHORITY,ABSTAIN
+HG39-C13,Prospective acquisition may begin,AUTHORITY,FAIL
+HG39-C14,HG39 supplies empirical HGMF evidence,EMPIRICAL,FAIL

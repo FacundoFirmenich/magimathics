@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG39 Commissioning Dossier",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "dossier_id",
+    "protocol_seal_hash",
+    "state",
+    "work_packages",
+    "fitness",
+    "future_only",
+    "authority",
+    "self_hash"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-hg39-commissioning-dossier/1.0"
+    },
+    "dossier_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "protocol_seal_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "state": {
+      "enum": [
+        "DOSSIER_FROZEN_UNCOMMISSIONED",
+        "COMMISSIONING_IN_PROGRESS",
+        "COMMISSIONED_READY_FOR_ARMING",
+        "INVALIDATED"
+      ]
+    },
+    "work_packages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "magnetic",
+        "adsorption_reference",
+        "topology"
+      ],
+      "properties": {
+        "magnetic": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidate_routes",
+            "signed_service_confirmation",
+            "actual_result_receipt"
+          ],
+          "properties": {
+            "candidate_routes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "provider",
+                  "evidence_level",
+                  "official_source"
+                ],
+                "properties": {
+                  "provider": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_level": {
+                    "enum": [
+                      "CAPABILITY_DISCOVERY",
+                      "ACCREDITED_SCOPE",
+                      "NATIONAL_METROLOGY_CAPABILITY",
+                      "FACILITY_CAPABILITY",
+                      "CERTIFIED_REFERENCE_MATERIAL"
+                    ]
+                  },
+                  "official_source": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "minItems": 1
+            },
+            "signed_service_confirmation": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "actual_result_receipt": {
+              "type": [
+                "object",
+                "null"
+              ]
+            }
+          }
+        },
+        "adsorption_reference": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidate_routes",
+            "signed_service_confirmation",
+            "actual_result_receipt"
+          ],
+          "properties": {
+            "candidate_routes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "provider",
+                  "evidence_level",
+                  "official_source"
+                ],
+                "properties": {
+                  "provider": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_level": {
+                    "enum": [
+                      "CAPABILITY_DISCOVERY",
+                      "ACCREDITED_SCOPE",
+                      "NATIONAL_METROLOGY_CAPABILITY",
+                      "FACILITY_CAPABILITY",
+                      "CERTIFIED_REFERENCE_MATERIAL"
+                    ]
+                  },
+                  "official_source": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "minItems": 1
+            },
+            "signed_service_confirmation": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "actual_result_receipt": {
+              "type": [
+                "object",
+                "null"
+              ]
+            }
+          }
+        },
+        "topology": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "candidate_routes",
+            "signed_service_confirmation",
+            "actual_result_receipt"
+          ],
+          "properties": {
+            "candidate_routes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "provider",
+                  "evidence_level",
+                  "official_source"
+                ],
+                "properties": {
+                  "provider": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_level": {
+                    "enum": [
+                      "CAPABILITY_DISCOVERY",
+                      "ACCREDITED_SCOPE",
+                      "NATIONAL_METROLOGY_CAPABILITY",
+                      "FACILITY_CAPABILITY",
+                      "CERTIFIED_REFERENCE_MATERIAL"
+                    ]
+                  },
+                  "official_source": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "minItems": 1
+            },
+            "signed_service_confirmation": {
+              "type": [
+                "object",
+                "null"
+              ]
+            },
+            "actual_result_receipt": {
+              "type": [
+                "object",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "fitness": {
+      "type": "object",
+      "required": [
+        "numeric_limits_frozen",
+        "fitness_input_artifact",
+        "fitness_output_artifact"
+      ],
+      "properties": {
+        "numeric_limits_frozen": {
+          "type": "boolean"
+        },
+        "fitness_input_artifact": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "fitness_output_artifact": {
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      }
+    },
+    "future_only": {
+      "type": "object",
+      "required": [
+        "holdout_accessed",
+        "prospective_outcomes_present"
+      ],
+      "properties": {
+        "holdout_accessed": {
+          "const": false
+        },
+        "prospective_outcomes_present": {
+          "const": false
+        }
+      }
+    },
+    "authority": {
+      "const": "NO_ARMING_AUTHORITY"
+    },
+    "self_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}
