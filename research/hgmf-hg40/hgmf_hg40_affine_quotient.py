@@ -96,16 +96,25 @@ def bethe_scan_state(q: float, qplus: float, z: float) -> dict:
 
 
 def verify_bethe_no_passing_grid() -> dict:
-    minimum = math.inf
-    count = 0
+    closed_minimum = math.inf
+    interior_minimum = math.inf
+    closed_count = 0
+    interior_count = 0
     for z in np.linspace(6.6, 7.2, 7):
         for q in np.linspace(0.0, 1.0, 101):
             for qplus in np.linspace(0.01, 0.95, 48):
                 ans = bethe_scan_state(float(q), float(qplus), float(z))
-                minimum = min(minimum, ans["dQminus_dQplus"])
-                count += 1
+                derivative = ans["dQminus_dQplus"]
+                closed_minimum = min(closed_minimum, derivative)
+                closed_count += 1
+                if 0.0 < q < 1.0:
+                    interior_minimum = min(interior_minimum, derivative)
+                    interior_count += 1
     return {
-        "grid_points": count,
-        "minimum_dQminus_dQplus": float(minimum),
-        "strictly_positive": bool(minimum > 0.0),
+        "closed_grid_points": closed_count,
+        "interior_grid_points": interior_count,
+        "minimum_dQminus_dQplus_closed": float(closed_minimum),
+        "minimum_dQminus_dQplus_interior": float(interior_minimum),
+        "nonnegative_on_closed_grid": bool(closed_minimum >= -1e-13),
+        "strictly_positive_interior": bool(interior_minimum > 0.0),
     }
