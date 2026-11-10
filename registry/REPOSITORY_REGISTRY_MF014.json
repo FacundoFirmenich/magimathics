@@ -1,0 +1,14 @@
+{
+  "schema_version":"1.5.0",
+  "updated":"2026-11-10",
+  "snapshot":"MULTIFRONT-014",
+  "repositories":[
+    {"code":"RGPHI","repository":"FacundoFirmenich/rgphi-radix-mobius-dynamics","commit":"a116ff21bd5b2fd973c39445931d8a4b832069b7","latest_gate":"Stage A","next_gate":"Stage B2","status":"RESOURCE_BLOCKED"},
+    {"code":"BQ","repository":"FacundoFirmenich/quaternary-query-tomography","commit":"825ea2c0019dd4762be0eae546c30a36bebb707b","latest_gate":"BQ-010I-A","next_gate":"BQ-010I-B","status":"PASS_WITH_OPEN_BRANCHES"},
+    {"code":"ACTIVATION","repository":"FacundoFirmenich/radix-mobius-activation-surfaces","commit":"dcd4352ef92e3b8ec998d7625acefcf9178105b7","latest_gate":"ODT-017B","next_gate":"ODT-017C","status":"PASS_WITH_RESOURCE_HOLD"},
+    {"code":"METHODS","repository":"FacundoFirmenich/certified-radix-mobius-computation","commit":"7ae9b75fbcab8593eda8f8294d22e7bce71949e5","latest_gate":"CERT-005","next_gate":"CERT-006","status":"PASS_WITH_STAGEB2_HOLD"},
+    {"code":"HM","repository":"FacundoFirmenich/toeplitz-kasparov-interfaces","commit":"92650b226aedd800a7ff7d3cfae7cd2237ee778a","latest_gate":"HM-018","next_gate":"HM-019","status":"PASS_WITH_INTRINSIC_CANDIDATE_HOLD"},
+    {"code":"OBS","repository":"FacundoFirmenich/observational-degeneration-synergy","commit":"2ca463a9822490f459576542c8a60f440cef0c38","latest_gate":"KwanTube-RETRO-001","next_gate":"retrospective observable/model audit; no rerun","status":"RETROSPECTIVE_ONLY"},
+    {"code":"U5HD","repository":"FacundoFirmenich/u5-hd","commit":"ba5742e938d77166e660a61d55b4eae23d6f064b","latest_gate":"U5-HD-MIN-004","next_gate":"U5-HD-MIN-005","status":"PASS_EXPERIMENTAL_ISOLATED"}
+  ]
+}
