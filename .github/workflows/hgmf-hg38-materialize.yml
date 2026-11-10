@@ -1,0 +1,97 @@
+name: HGMF HG38 prospective identifiability
+
+on:
+  push:
+    branches:
+      - hgmf-hg38-prospective-identifiability-20261110
+    paths:
+      - 'research/hgmf-hg38/payload_*.txt'
+      - 'research/hgmf-hg38/materialize_hg38.py'
+      - '.github/workflows/hgmf-hg38-materialize.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  materialize-and-verify:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: hgmf-hg38-prospective-identifiability-20261110
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Materialize canonical gate
+        run: |
+          python research/hgmf-hg38/materialize_hg38.py
+
+      - name: Compile and execute exact verification
+        run: |
+          cd research/hgmf-hg38
+          python -m py_compile hgmf_hg38_validator.py hgmf_hg38_exact_verify.py
+          python hgmf_hg38_exact_verify.py | tee HGMF_HG38_VERIFY_OUTPUT.txt
+          python hgmf_hg38_validator.py HGMF_HG38_PROSPECTIVE_SEAL.json \
+            --output HGMF_HG38_CURRENT_ADJUDICATION.json
+
+      - name: Verify canonical manifest
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv, hashlib
+          root=Path('research/hgmf-hg38')
+          rows=list(csv.DictReader((root/'HGMF_HG38_HASH_MANIFEST.csv').open(encoding='utf-8')))
+          for row in rows:
+              p=root/row['file']
+              assert p.exists(), row['file']
+              b=p.read_bytes()
+              assert len(b)==int(row['bytes']), row['file']
+              assert hashlib.sha256(b).hexdigest()==row['sha256'], row['file']
+          print(f'manifest_verified={len(rows)}')
+          PY
+
+      - name: Build canonical artifact
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          root=Path('research/hgmf-hg38')
+          out=Path('/tmp/HGMF_HG38_PROSPECTIVE_IDENTIFIABILITY.zip')
+          excluded={'materialize_hg38.py',*(f'payload_{i:02d}.txt' for i in range(7))}
+          with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(root.iterdir()):
+                  if p.is_file() and p.name not in excluded and p.suffix!='.pyc':
+                      z.write(p,arcname=f'HGMF_HG38_PROSPECTIVE_IDENTIFIABILITY/{p.name}')
+          with zipfile.ZipFile(out) as z:
+              assert z.testzip() is None
+              print(f'artifact_files={len(z.namelist())}')
+          PY
+
+      - name: Persist expanded canonical files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm research/hgmf-hg38/payload_*.txt research/hgmf-hg38/materialize_hg38.py
+          git add research/hgmf-hg38
+          git commit -m '[skip ci] HGMF-HG38: materialize canonical prospective gate'
+          git push origin HEAD:hgmf-hg38-prospective-identifiability-20261110
+
+      - name: Upload canonical artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_HG38_PROSPECTIVE_IDENTIFIABILITY
+          path: /tmp/HGMF_HG38_PROSPECTIVE_IDENTIFIABILITY.zip
+          if-no-files-found: error
+          retention-days: 30
