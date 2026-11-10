@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF Hash-Chained Acquisition Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "event_id",
+    "sequence",
+    "carrier",
+    "phase",
+    "acquired_at",
+    "prior_event_hash",
+    "payload_artifact",
+    "calibration_receipt_ids",
+    "seal_hash",
+    "operator",
+    "self_hash"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-acquisition-event/1.0"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "carrier": {
+      "enum": [
+        "magnetism",
+        "adsorption"
+      ]
+    },
+    "phase": {
+      "enum": [
+        "CALIBRATION",
+        "TRAINING",
+        "HOLDOUT"
+      ]
+    },
+    "acquired_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "prior_event_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "payload_artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "calibration_receipt_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "seal_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "self_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

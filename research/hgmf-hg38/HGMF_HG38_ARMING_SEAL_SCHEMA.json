@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG38 Arming Seal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "state",
+    "protocol_seal_hash",
+    "armed_at",
+    "first_holdout_not_before",
+    "magnetic_calibration_receipt",
+    "adsorption_reference_receipt",
+    "topology_receipt",
+    "frozen_design_artifacts",
+    "analysis_environment",
+    "holdout_access_log",
+    "self_hash"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-hg38-arming-seal/1.0"
+    },
+    "state": {
+      "const": "ARMED"
+    },
+    "protocol_seal_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "armed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "first_holdout_not_before": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "magnetic_calibration_receipt": {
+      "type": "object"
+    },
+    "adsorption_reference_receipt": {
+      "type": "object"
+    },
+    "topology_receipt": {
+      "type": "object"
+    },
+    "frozen_design_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "bytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "analysis_environment": {
+      "type": "object",
+      "required": [
+        "commit",
+        "container_digest",
+        "lockfile_hash"
+      ],
+      "properties": {
+        "commit": {
+          "type": "string"
+        },
+        "container_digest": {
+          "type": "string"
+        },
+        "lockfile_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "holdout_access_log": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "self_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

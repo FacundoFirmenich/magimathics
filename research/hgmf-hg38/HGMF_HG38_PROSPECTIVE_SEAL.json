@@ -1,0 +1,107 @@
+{
+  "profile": "hgmf-hg38-prospective-protocol-seal/1.0",
+  "gate": "HGMF-HG38",
+  "protocol_version_date": "2026-11-10",
+  "state": "PROTOCOL_FROZEN_UNARMED",
+  "authority": "NO_ACQUISITION_AUTHORITY",
+  "parent_branch": "hgmf-hg37-calibration-rescue-or-pivot-20261109",
+  "historical_inputs": {
+    "status": "DESIGN_ONLY_NEVER_CONFIRMATORY",
+    "magnetic_global_break_reference_mT": 4.075432120767836,
+    "magnetic_all_offsets_reference_mT": 0.8838269371443452,
+    "note": "Historical values may guide engineering design but may not be reused as prospective outcomes or post-hoc thresholds."
+  },
+  "seal_sequence": {
+    "stage_0": "PROTOCOL_SEAL_THIS_ARTIFACT",
+    "stage_1": "ARMING_SEAL_AFTER_REAL_CALIBRATION_AND_TRAINING_BEFORE_HOLDOUT",
+    "stage_2": "HASH_CHAINED_ACQUISITION_EVENTS",
+    "stage_3": "ONE_SHOT_HOLDOUT_ADJUDICATION"
+  },
+  "future_only": {
+    "prospective_outcomes_admitted": false,
+    "holdout_access_before_arming": "PROHIBITED",
+    "calibration_may_use_holdout": false,
+    "training_may_use_holdout": false,
+    "threshold_changes_after_arming": "PROHIBITED",
+    "analysis_code_changes_after_arming": "PROHIBITED_EXCEPT_FAIL_CLOSED_BUGFIX_WITH_NEW_PROTOCOL_VERSION",
+    "early_efficacy": false
+  },
+  "common_requirements": {
+    "traceability_definition": "documented unbroken calibration chain, each link contributing to uncertainty",
+    "uncertainty_framework": [
+      "JCGM 100:2008",
+      "JCGM GUM-6:2020",
+      "JCGM 106:2012"
+    ],
+    "measurement_result_requires_value_and_uncertainty": true,
+    "environment_receipt_required": true,
+    "software_environment_hash_required": true,
+    "raw_data_hash_at_capture_required": true,
+    "pre_and_post_calibration_required": true,
+    "holdout_access_log_required": true,
+    "all_receipts_self_hashed": true
+  },
+  "magnetic_cartridge": {
+    "primary_observable": "FULL_VXY_VERSUS_TRACEABLE_FIELD_CURVE",
+    "secondary_observable": "HEB_SUMMARY",
+    "field_calibration_model": "TRACEABLE_REFERENCE_FIELD_AS_FUNCTION_OF_COMMAND_AND_READBACK_WITH_COVARIANCE",
+    "field_coverage": "FULL_EXPERIMENTAL_RANGE_AND_ALL_REVERSAL_REGIONS",
+    "minimum_raw_voltage_samples_per_polarity_per_field_point": 5,
+    "calibration_sweeps": [
+      "PRE_ACQUISITION_ASCENDING",
+      "PRE_ACQUISITION_DESCENDING",
+      "POST_ACQUISITION_ASCENDING",
+      "POST_ACQUISITION_DESCENDING"
+    ],
+    "max_permissible_expanded_field_uncertainty_mT": null,
+    "max_permissible_drift_mT": null,
+    "decision_rule": null,
+    "arming_blockers": [
+      "REAL_TRACEABLE_FIELD_CALIBRATION_RECEIPT",
+      "PREDECLARED_FITNESS_FOR_PURPOSE_LIMITS",
+      "FULL_CURVE_LIKELIHOOD_OR_CERTIFIED_UPPER_BOUND",
+      "FROZEN_FIELD_GRID_AND_REVERSAL_PROTOCOL"
+    ],
+    "planning_ceiling_not_confirmatory_mT": 0.8,
+    "planning_ceiling_note": "Engineering target rounded below the smallest historical trained-loop offset; must be replaced by a prospective fitness-for-purpose decision rule before arming."
+  },
+  "adsorption_cartridge": {
+    "adsorbate": "Xe",
+    "sample_class": "Vycor_or_preregistered_equivalent",
+    "primary_observable": "ADSORPTION_MASS_VERSUS_TRACEABLE_RELATIVE_PRESSURE_AND_TEMPERATURE",
+    "required_reference": "NONPOROUS_SILICA_FILM_REFERENCE_WITH_MATCHED_SURFACE_CHEMISTRY_AND_PRETREATMENT",
+    "required_reference_curve": "Vs(p,T)",
+    "required_condensed_reference": "Vc(p,T)",
+    "required_topology_receipt": true,
+    "same_adsorbate_batch_for_reference_and_sample": true,
+    "interleaved_reference_and_sample_measurements": true,
+    "pressure_calibration_required": true,
+    "temperature_calibration_required": true,
+    "surface_area_and_mass_uncertainty_required": true,
+    "max_permissible_temperature_uncertainty_K": null,
+    "max_permissible_relative_pressure_uncertainty": null,
+    "decision_rule": null,
+    "arming_blockers": [
+      "REAL_FILM_REFERENCE_RECEIPT",
+      "REAL_PRESSURE_AND_TEMPERATURE_CALIBRATION_RECEIPTS",
+      "INDEPENDENT_TOPOLOGY_RECEIPT",
+      "FROZEN_Vs_Vc_q_OBSERVATION_MODEL",
+      "FROZEN_SCANNING_PATHS_AND_EQUILIBRIUM_RULE"
+    ]
+  },
+  "split": {
+    "calibration": "INDEPENDENT_OF_PROSPECTIVE_OUTCOMES",
+    "training": "MAY_FIT_ALLOWED_MODELS_AND_SELECT_NUMERIC_GRID_USING_ONLY_CALIBRATION_AND_TRAINING_DATA",
+    "holdout": "SEALED_BEFORE_FIRST_HOLDOUT_ACQUISITION",
+    "holdout_units_per_carrier": 24,
+    "confirmatory_look": "ONE_FINAL_LOOK"
+  },
+  "required_real_receipt_profiles_for_arming": [
+    "hgmf-magnetic-calibration-receipt/1.0",
+    "hgmf-adsorption-reference-receipt/1.0",
+    "hgmf-topology-receipt/1.0",
+    "hgmf-hg38-arming-seal/1.0"
+  ],
+  "current_arming_status": "ABSTAIN_MISSING_REAL_RECEIPTS_AND_NUMERIC_DECISION_RULES",
+  "self_hash": "2406dafddfbec2f98b2a3d83c1f48381a3d7cd16130eb8ef48dc2f9a93d471aa"
+}

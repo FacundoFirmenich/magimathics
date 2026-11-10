@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF Independent Topology Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "receipt_id",
+    "status",
+    "sample_identity",
+    "methods",
+    "outputs",
+    "independence",
+    "artifacts",
+    "self_hash"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-topology-receipt/1.0"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "status": {
+      "enum": [
+        "REAL_INDEPENDENT_CHARACTERIZATION",
+        "INVALIDATED"
+      ]
+    },
+    "sample_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "methods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "calibration",
+          "uncertainty"
+        ]
+      },
+      "minItems": 1
+    },
+    "outputs": {
+      "type": "object",
+      "required": [
+        "pore_size_distribution",
+        "connectivity_constraint",
+        "covariance_or_set_artifact"
+      ],
+      "properties": {
+        "pore_size_distribution": {
+          "type": "object"
+        },
+        "connectivity_constraint": {
+          "type": "object"
+        },
+        "covariance_or_set_artifact": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      }
+    },
+    "independence": {
+      "type": "object",
+      "required": [
+        "holdout_outcomes_used",
+        "characterization_completed_before_holdout"
+      ],
+      "properties": {
+        "holdout_outcomes_used": {
+          "const": false
+        },
+        "characterization_completed_before_holdout": {
+          "const": true
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "bytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "self_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

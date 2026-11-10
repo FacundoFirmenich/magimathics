@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF Magnetic Calibration Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "receipt_id",
+    "status",
+    "measurand",
+    "reference_chain",
+    "instrument",
+    "calibration_window",
+    "model",
+    "uncertainty_budget",
+    "coverage",
+    "artifacts",
+    "self_hash"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-magnetic-calibration-receipt/1.0"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "status": {
+      "enum": [
+        "REAL_CALIBRATION",
+        "INVALIDATED"
+      ]
+    },
+    "measurand": {
+      "const": "MAGNETIC_FLUX_DENSITY_OR_FIELD_AT_SAMPLE"
+    },
+    "reference_chain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "specified_reference",
+        "unbroken_chain",
+        "certificate_ids",
+        "traceability_statement"
+      ],
+      "properties": {
+        "specified_reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unbroken_chain": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "certificate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "traceability_statement": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    },
+    "instrument": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_sensor",
+        "serial",
+        "calibration_date",
+        "valid_until",
+        "location_at_sample",
+        "temperature_compensation"
+      ],
+      "properties": {
+        "reference_sensor": {
+          "type": "string"
+        },
+        "serial": {
+          "type": "string"
+        },
+        "calibration_date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "valid_until": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "location_at_sample": {
+          "type": "string"
+        },
+        "temperature_compensation": {
+          "type": "string"
+        }
+      }
+    },
+    "calibration_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pre_start",
+        "pre_end",
+        "post_start",
+        "post_end",
+        "acquisition_start",
+        "acquisition_end"
+      ],
+      "properties": {
+        "pre_start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "pre_end": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "post_start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "post_end": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "acquisition_start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "acquisition_end": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "equation",
+        "parameters",
+        "covariance_artifact",
+        "residual_diagnostics",
+        "sweep_direction_modeled"
+      ],
+      "properties": {
+        "equation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "covariance_artifact": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "residual_diagnostics": {
+          "type": "object"
+        },
+        "sweep_direction_modeled": {
+          "type": "boolean"
+        }
+      }
+    },
+    "uncertainty_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "framework",
+        "coverage_factor",
+        "expanded_uncertainty_mT",
+        "components",
+        "fitness_limit_mT",
+        "fitness_pass"
+      ],
+      "properties": {
+        "framework": {
+          "enum": [
+            "JCGM_100_2008",
+            "GUM_MONTE_CARLO"
+          ]
+        },
+        "coverage_factor": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "expanded_uncertainty_mT": {
+          "type": "number",
+          "minimum": 0
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 1
+        },
+        "fitness_limit_mT": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "fitness_pass": {
+          "type": "boolean"
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "experimental_min_mT",
+        "experimental_max_mT",
+        "calibration_min_mT",
+        "calibration_max_mT",
+        "all_experimental_points_bracketed",
+        "pre_post_drift_mT",
+        "drift_limit_mT",
+        "drift_pass"
+      ],
+      "properties": {
+        "experimental_min_mT": {
+          "type": "number"
+        },
+        "experimental_max_mT": {
+          "type": "number"
+        },
+        "calibration_min_mT": {
+          "type": "number"
+        },
+        "calibration_max_mT": {
+          "type": "number"
+        },
+        "all_experimental_points_bracketed": {
+          "type": "boolean"
+        },
+        "pre_post_drift_mT": {
+          "type": "number",
+          "minimum": 0
+        },
+        "drift_limit_mT": {
+          "type": "number",
+          "minimum": 0
+        },
+        "drift_pass": {
+          "type": "boolean"
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "bytes"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "self_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}
