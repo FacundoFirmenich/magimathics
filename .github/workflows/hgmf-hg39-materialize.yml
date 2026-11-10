@@ -5,7 +5,7 @@ on:
     branches:
       - hgmf-hg39-commissioning-dossier-20261110
     paths:
-      - 'research/hgmf-hg39/payload_00.txt'
+      - 'research/hgmf-hg39/payload_*.txt'
       - 'research/hgmf-hg39/materialize_hg39.py'
       - '.github/workflows/hgmf-hg39-materialize.yml'
   workflow_dispatch:
@@ -74,7 +74,7 @@ jobs:
           import zipfile
           root=Path('research/hgmf-hg39')
           out=Path('/tmp/HGMF_HG39_COMMISSIONING_DOSSIER.zip')
-          excluded={'payload_00.txt','materialize_hg39.py'}
+          excluded={'materialize_hg39.py',*(f'payload_{i:02d}.txt' for i in range(19))}
           with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
               for p in sorted(root.iterdir()):
                   if p.is_file() and p.name not in excluded and p.suffix!='.pyc':
@@ -88,7 +88,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git rm research/hgmf-hg39/payload_00.txt research/hgmf-hg39/materialize_hg39.py
+          git rm research/hgmf-hg39/payload_*.txt research/hgmf-hg39/materialize_hg39.py
           git add research/hgmf-hg39
           git commit -m '[skip ci] HGMF-HG39: materialize canonical commissioning dossier'
           git push origin HEAD:hgmf-hg39-commissioning-dossier-20261110
