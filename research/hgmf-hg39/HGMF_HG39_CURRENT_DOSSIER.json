@@ -1,0 +1,82 @@
+{
+  "profile": "hgmf-hg39-commissioning-dossier/1.0",
+  "dossier_id": "HG39-20261110-COMMISSIONING-DOSSIER",
+  "protocol_seal_hash": "2406dafddfbec2f98b2a3d83c1f48381a3d7cd16130eb8ef48dc2f9a93d471aa",
+  "state": "DOSSIER_FROZEN_UNCOMMISSIONED",
+  "work_packages": {
+    "magnetic": {
+      "candidate_routes": [
+        {
+          "provider": "UPM Laboratorio de Medidas Magn\u00e9ticas",
+          "evidence_level": "ACCREDITED_SCOPE",
+          "official_source": "https://www.etsidi.upm.es/investigacion/laboratorios-de-investigacion/Medidas_magnet/"
+        },
+        {
+          "provider": "Centro Espa\u00f1ol de Metrolog\u00eda MAGLAB",
+          "evidence_level": "NATIONAL_METROLOGY_CAPABILITY",
+          "official_source": "https://www.cem.es/es/divulgacion/proyectos-idi/laboratorio-medidas-magneticas-maglab"
+        },
+        {
+          "provider": "NPL Magnetics",
+          "evidence_level": "ACCREDITED_SCOPE",
+          "official_source": "https://www.npl.co.uk/products-services/magnetics/validation-of-magnetic-instrumentation"
+        }
+      ],
+      "signed_service_confirmation": null,
+      "actual_result_receipt": null
+    },
+    "adsorption_reference": {
+      "candidate_routes": [
+        {
+          "provider": "CCiTUB BET and porosimetry",
+          "evidence_level": "CAPABILITY_DISCOVERY",
+          "official_source": "https://www.ccit.ub.edu/"
+        },
+        {
+          "provider": "Custom Xe matched-reference campaign",
+          "evidence_level": "CAPABILITY_DISCOVERY",
+          "official_source": "HGMF_HG39_RFQ_ADSORPTION.md"
+        },
+        {
+          "provider": "NIST SRM 1897/2207 for instrument validation",
+          "evidence_level": "CERTIFIED_REFERENCE_MATERIAL",
+          "official_source": "https://www.nist.gov/mml/mmsd/standards-and-tools/reference-materials"
+        }
+      ],
+      "signed_service_confirmation": null,
+      "actual_result_receipt": null
+    },
+    "topology": {
+      "candidate_routes": [
+        {
+          "provider": "ALBA NCD-SWEET",
+          "evidence_level": "FACILITY_CAPABILITY",
+          "official_source": "https://www.cells.es/en/instruments/beamlines/bl11-ncd-sweet"
+        },
+        {
+          "provider": "CCiTUB TEM materials",
+          "evidence_level": "CAPABILITY_DISCOVERY",
+          "official_source": "https://www.ccit.ub.edu/EN/m2.html"
+        },
+        {
+          "provider": "NIST SRM 3600 for SAXS instrument validation",
+          "evidence_level": "CERTIFIED_REFERENCE_MATERIAL",
+          "official_source": "https://www.nist.gov/publications/nist-standard-reference-material-3600-absolute-intensity-calibration-standard-small"
+        }
+      ],
+      "signed_service_confirmation": null,
+      "actual_result_receipt": null
+    }
+  },
+  "fitness": {
+    "numeric_limits_frozen": false,
+    "fitness_input_artifact": null,
+    "fitness_output_artifact": null
+  },
+  "future_only": {
+    "holdout_accessed": false,
+    "prospective_outcomes_present": false
+  },
+  "authority": "NO_ARMING_AUTHORITY",
+  "self_hash": "5ecfeb4b2ba67fc59533bbc0adc032b54fe918ce6f94062ec52821ed50dbf102"
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HGMF HG39 Fitness Input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "magnetic",
+    "adsorption"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-hg39-fitness-input/1.0"
+    },
+    "magnetic": {
+      "type": "object",
+      "required": [
+        "coverage_factor",
+        "maximum_expanded_uncertainty_mT",
+        "components_standard_uncertainty_mT"
+      ],
+      "properties": {
+        "coverage_factor": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "maximum_expanded_uncertainty_mT": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "components_standard_uncertainty_mT": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "adsorption": {
+      "type": "object",
+      "required": [
+        "maximum_standard_uncertainty_Q",
+        "maximum_standard_uncertainty_q"
+      ],
+      "properties": {
+        "maximum_standard_uncertainty_Q": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "maximum_standard_uncertainty_q": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        }
+      }
+    }
+  }
+}

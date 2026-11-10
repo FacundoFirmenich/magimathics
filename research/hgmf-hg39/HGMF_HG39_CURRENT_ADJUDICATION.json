@@ -1,0 +1,19 @@
+{
+  "profile": "hgmf-hg39-adjudication/1.0",
+  "status": "ABSTAIN_REAL_COMMISSIONING_NOT_COMPLETE",
+  "authorized_for_hg38_arming_review": false,
+  "acquisition_authorized": false,
+  "errors": [],
+  "blockers": [
+    "MISSING_SIGNED_SERVICE_CONFIRMATION:magnetic",
+    "MISSING_ACTUAL_RESULT_RECEIPT:magnetic",
+    "MISSING_SIGNED_SERVICE_CONFIRMATION:adsorption_reference",
+    "MISSING_ACTUAL_RESULT_RECEIPT:adsorption_reference",
+    "MISSING_SIGNED_SERVICE_CONFIRMATION:topology",
+    "MISSING_ACTUAL_RESULT_RECEIPT:topology",
+    "NUMERIC_FITNESS_LIMITS_NOT_FROZEN",
+    "FITNESS_INPUT_ARTIFACT_MISSING",
+    "FITNESS_OUTPUT_ARTIFACT_MISSING",
+    "DOSSIER_STATE_NOT_COMMISSIONED"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "gate": "HGMF-HG39",
+  "date": "2026-11-10",
+  "protocol_parent_hash": "2406dafddfbec2f98b2a3d83c1f48381a3d7cd16130eb8ef48dc2f9a93d471aa",
+  "software_verification": "PASS_HGMF_HG39_EXACT",
+  "current_adjudication": {
+    "profile": "hgmf-hg39-adjudication/1.0",
+    "status": "ABSTAIN_REAL_COMMISSIONING_NOT_COMPLETE",
+    "authorized_for_hg38_arming_review": false,
+    "acquisition_authorized": false,
+    "errors": [],
+    "blockers": [
+      "MISSING_SIGNED_SERVICE_CONFIRMATION:magnetic",
+      "MISSING_ACTUAL_RESULT_RECEIPT:magnetic",
+      "MISSING_SIGNED_SERVICE_CONFIRMATION:adsorption_reference",
+      "MISSING_ACTUAL_RESULT_RECEIPT:adsorption_reference",
+      "MISSING_SIGNED_SERVICE_CONFIRMATION:topology",
+      "MISSING_ACTUAL_RESULT_RECEIPT:topology",
+      "NUMERIC_FITNESS_LIMITS_NOT_FROZEN",
+      "FITNESS_INPUT_ARTIFACT_MISSING",
+      "FITNESS_OUTPUT_ARTIFACT_MISSING",
+      "DOSSIER_STATE_NOT_COMMISSIONED"
+    ]
+  },
+  "fitness_output": {
+    "profile": "hgmf-hg39-fitness-output/1.0",
+    "magnetic": {
+      "status": "ABSTAIN_NUMERIC_MAGNETIC_FITNESS_INPUT_INCOMPLETE",
+      "pass": false,
+      "combined_standard_uncertainty_mT": null,
+      "expanded_uncertainty_mT": null
+    },
+    "adsorption_limits_ready": false,
+    "status": "ABSTAIN_NUMERIC_FITNESS_INPUT_INCOMPLETE",
+    "arming_eligible": false,
+    "note": "Compilation is a software result. Arming also requires real receipts and future-only checks."
+  },
+  "web_research_basis": "official metrology, accreditation, standards, national laboratory and facility sources",
+  "real_measurement_receipts_created": false,
+  "signed_service_confirmations_created": false,
+  "prospective_outcomes_present": false,
+  "acquisition_authorized": false,
+  "physical_protogeometry": "HOLD"
+}

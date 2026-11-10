@@ -1,0 +1,13 @@
+PASS_HGMF_HG39_EXACT
+dossier_self_hash=PASS
+current_state=ABSTAIN_REAL_COMMISSIONING_NOT_COMPLETE
+tamper_detection=PASS
+capability_not_promoted_to_result=PASS
+fitness_compiler=PASS
+Q_covariance_propagation=PASS
+Bethe_q_inversion_and_covariance=PASS
+arming_authorized=false
+acquisition_authorized=false
+prospective_outcomes_present=false
+empirical_hgmf_claim=false
+physical_protogeometry=HOLD

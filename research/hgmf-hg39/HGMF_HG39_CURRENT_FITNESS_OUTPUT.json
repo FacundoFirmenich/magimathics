@@ -1,0 +1,13 @@
+{
+  "profile": "hgmf-hg39-fitness-output/1.0",
+  "magnetic": {
+    "status": "ABSTAIN_NUMERIC_MAGNETIC_FITNESS_INPUT_INCOMPLETE",
+    "pass": false,
+    "combined_standard_uncertainty_mT": null,
+    "expanded_uncertainty_mT": null
+  },
+  "adsorption_limits_ready": false,
+  "status": "ABSTAIN_NUMERIC_FITNESS_INPUT_INCOMPLETE",
+  "arming_eligible": false,
+  "note": "Compilation is a software result. Arming also requires real receipts and future-only checks."
+}

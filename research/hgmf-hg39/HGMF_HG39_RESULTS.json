@@ -1,0 +1,24 @@
+{
+  "gate": "HGMF-HG39",
+  "date": "2026-11-10",
+  "title": "Commissioning Dossier and Arming Preflight",
+  "global_verdict": "PASS_COMMISSIONING_ROUTE_CLOSURE_PASS_MAGNETIC_TRACEABILITY_ROUTE_PASS_ADSORPTION_REFERENCE_ROUTE_PASS_INDEPENDENT_TOPOLOGY_ROUTE_PASS_FITNESS_RULE_COMPILER_PASS_COMMISSIONING_EVIDENCE_SCHEMA_PASS_FAIL_CLOSED_PREARMING_VALIDATOR_PASS_LOCAL_AND_NATIONAL_CAPABILITY_DISCOVERY_ABSTAIN_REAL_MAGNETIC_CALIBRATION_RECEIPT_ABSTAIN_REAL_ADSORPTION_REFERENCE_RECEIPT_ABSTAIN_REAL_TOPOLOGY_RECEIPT_ABSTAIN_SIGNED_SCOPE_CONFIRMATIONS_ABSTAIN_NUMERIC_FITNESS_LIMITS_ABSTAIN_HG38_ARMING_HOLD_ACQUISITION_HOLD_PROSPECTIVE_OUTCOMES_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "state": "DOSSIER_FROZEN_UNCOMMISSIONED",
+  "protocol_seal_hash": "2406dafddfbec2f98b2a3d83c1f48381a3d7cd16130eb8ef48dc2f9a93d471aa",
+  "route_counts": {
+    "magnetic": 4,
+    "adsorption": 2,
+    "topology": 3,
+    "instrument_validation": 2
+  },
+  "real_receipts_present": {
+    "magnetic": false,
+    "adsorption_reference": false,
+    "topology": false
+  },
+  "numeric_fitness_limits_frozen": false,
+  "arming_authorized": false,
+  "acquisition_authorized": false,
+  "prospective_outcomes_present": false,
+  "next_gate": "HGMF-HG40"
+}
