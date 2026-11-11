@@ -1,0 +1,41 @@
+{
+  "gate": "HGMF-HG41",
+  "status": "PASS_HISTORICAL_QUOTIENT_POWER_AUDIT_EXECUTED",
+  "magnetism": {
+    "anchor_labels": ["loop1", "loop2"],
+    "nonanchor_indices": [2, 3, 4],
+    "observed_affine_coordinates": [0.8994259318968584, 1.0497760351925733, 1.0092853360696865],
+    "feasible": true,
+    "common_trained_interval_lo": -0.954968076259938,
+    "common_trained_interval_hi": 0.2177953129554666,
+    "common_trained_interval_width": 1.1727633892154046,
+    "support_only_evalue_ceiling": 1.0,
+    "equal_trained_null_quotient_prediction": [1.0, 1.0, 1.0],
+    "carrier_threshold": 140,
+    "historical_quotient_power": "FAIL_SUPPORT_ONLY_POINTWISE_CEILING"
+  },
+  "adsorption": {
+    "source_results": "HG40",
+    "run_id": 1,
+    "temperature_K": 150.73,
+    "pairs_total": 10,
+    "pairwise_evaluation_points": 713,
+    "raw_negative_difference_points": 51,
+    "strict_violation_points_beyond_conservative_tolerance": 0,
+    "minimum_raw_difference_mg": -0.0545251396648058,
+    "maximum_negative_fraction_of_tolerance": 0.31976744186046335,
+    "quotient_coordinates_total": 242,
+    "quotient_coordinates_outside_unit_interval_raw": 11,
+    "joint_stochastic_interpolation_model": false,
+    "all_local_comparisons_support_feasible": true,
+    "support_only_evalue_ceiling": 1.0,
+    "joint_quotient_likelihood_authority": "ABSTAIN_NO_JOINT_STOCHASTIC_INTERPOLATION_MODEL",
+    "historical_quotient_power": "FAIL_SUPPORT_ONLY_POINTWISE_CEILING"
+  },
+  "quotient_universal_evalue_theorem": true,
+  "actual_historical_quotient_evalue_computed": false,
+  "reason": "proper model-specific quotient densities are absent; support-only nulls impose pointwise e-value ceiling one on the observed feasible set",
+  "retrospective_confirmatory_authority": "ABSTAIN",
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}
