@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hgmf-hg43-power-certificate.schema.json",
+  "title": "HGMF HG43 local finite-sample power certificate",
+  "type": "object",
+  "required": [
+    "cell_id",
+    "mean_log_increment_lower",
+    "variance_log_increment_upper",
+    "independent_clusters",
+    "target_power",
+    "threshold_evalue",
+    "proof_hash"
+  ],
+  "properties": {
+    "cell_id": {"type": "string", "minLength": 1},
+    "mean_log_increment_lower": {"type": "number", "exclusiveMinimum": 0},
+    "variance_log_increment_upper": {"type": "number", "minimum": 0},
+    "independent_clusters": {"type": "integer", "minimum": 1},
+    "target_power": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+    "threshold_evalue": {"type": "number", "exclusiveMinimum": 1},
+    "proof_hash": {"type": "string", "minLength": 1}
+  }
+}
