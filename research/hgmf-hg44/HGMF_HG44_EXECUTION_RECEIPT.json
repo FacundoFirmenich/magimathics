@@ -1,0 +1,33 @@
+{
+  "gate": "HGMF-HG44",
+  "execution_profile": "local-exact-and-github-actions/1.0",
+  "repository": "FacundoFirmenich/magimathics",
+  "branch": "hgmf-hg44-conformational-eprocess-20261111",
+  "base": "hgmf-hg43-receipt-conditioned-arming-20261111",
+  "materialized_head_before_receipt": "e8c25c57ba093476ca26f353fcdabc267bcf52b5",
+  "payload": {
+    "decoded_zip_sha256": "067aaa1db6a8ad27f7d616d6adb58bd65e0da4ae5003f9d8d2c869b6248f5fe6",
+    "multipart_count": 6,
+    "pre_extraction_sha256_verified": true,
+    "zip_crc_verified": true
+  },
+  "local_exact_verifier": "PASS",
+  "github_actions": {
+    "run_id": 43081535667,
+    "conclusion": "success",
+    "workflow_head_sha": "60ed2e06a990c21c3ba355d1ca12de2e8b0558e6",
+    "materialized_commit_sha": "e8c25c57ba093476ca26f353fcdabc267bcf52b5",
+    "artifact_id": 13884187303,
+    "artifact_sha256": "c3df721129528d7152c9764111baed11c4a73b0fbd11a91a44ac3b3a20c0e9fd",
+    "inner_canonical_zip_sha256": "48e07d9b291c2294e6e7bdcc6fe146fe0f246fda8e7a140cd75c06ffb3b0176f",
+    "canonical_artifact_files": 18,
+    "canonical_manifest_entries": 17
+  },
+  "current_status": "ABSTAIN_HG43_NOT_ARMED",
+  "authorized": false,
+  "acquisition_authorized": false,
+  "prospective_outcomes_present": false,
+  "anytime_evidence_execution": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}

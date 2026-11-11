@@ -1,0 +1,17 @@
+claim_id,claim,class,status
+HG44-C01,A predictable sequence of conditionally valid e-factors has a supermartingale product,THEOREM,PASS
+HG44-C02,Predictable switching among valid factors preserves conditional validity,THEOREM,PASS
+HG44-C03,Predictable convex mixtures of valid factors remain valid,THEOREM,PASS
+HG44-C04,A factor may be chosen after seeing the same outcome it scores without affecting validity,THEOREM,FAIL
+HG44-C05,Recalibration may change future factors without rewriting past capital,THEOREM,PASS
+HG44-C06,Predictable quarantine by replacing a factor with one preserves validity,THEOREM,PASS
+HG44-C07,Outcome-dependent selective quarantine preserves validity,THEOREM,FAIL
+HG44-C08,Expanding the admitted null envelope cannot increase future e-factors,THEOREM,PASS
+HG44-C09,Strengthening a conjunction claim cannot increase its minimum evidence,THEOREM,PASS
+HG44-C10,Weakening a claim after observing outcomes is a harmless narrative edit,CLAIM_LOGIC,FAIL
+HG44-C11,The conformational capital process is anytime-valid under optional stopping,THEOREM,PASS
+HG44-C12,A recalibration epoch may reset evidence to the more favorable of one and prior capital,THEOREM,FAIL
+HG44-C13,The current HG43 dossier is armed,AUTHORITY,FAIL
+HG44-C14,HG44 has real prospective conditional e-factors,PROVENANCE,FAIL
+HG44-C15,HG44 authorizes acquisition,AUTHORITY,FAIL
+HG44-C16,HG44 supplies evidence for physical protogeometry,PHYSICAL,FAIL

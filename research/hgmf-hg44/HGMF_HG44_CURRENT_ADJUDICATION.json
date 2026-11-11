@@ -1,0 +1,18 @@
+{
+  "profile": "hgmf-hg44-adjudication/1.0",
+  "status": "ABSTAIN_HG43_NOT_ARMED",
+  "authorized": false,
+  "errors": [],
+  "blockers": [
+    "HG43_NOT_ARMED",
+    "MISSING_AGGREGATION_RULE",
+    "MISSING_CANDIDATE_ALGORITHM_HASH",
+    "MISSING_CHART_HASH",
+    "MISSING_CLAIM_SEMANTICS",
+    "MISSING_NULL_ENVELOPE_HASH",
+    "MISSING_QUARANTINE_RULE_HASH",
+    "MISSING_REAL_CALIBRATION_EPOCH",
+    "MISSING_REAL_CONDITIONAL_EFACTORS",
+    "MISSING_STOPPING_RULE_HASH"
+  ]
+}
