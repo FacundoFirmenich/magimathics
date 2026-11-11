@@ -1,0 +1,16 @@
+claim_id,claim,class,status
+HG42-C01,A proper training-frozen joint density over calibration data and quotient holdout divided by a null joint upper density is a finite-sample e-variable,THEOREM,PASS
+HG42-C02,Calibration uncertainty may be replaced by a plug-in point estimate without entering the evaluation law,THEOREM,FAIL
+HG42-C03,A frozen measurable compression preserves e-value validity when numerator and denominator are pushed to the same output measure,THEOREM,PASS
+HG42-C04,Compression can recover distinctions erased by the compression map,THEOREM,FAIL
+HG42-C05,A weighted mean of e-values is valid under arbitrary dependence,THEOREM,PASS
+HG42-C06,The minimum of e-values is a valid conservative all-cell e-value,THEOREM,PASS
+HG42-C07,The product of marginal e-values is always valid under arbitrary dependence,THEOREM,FAIL
+HG42-C08,A product of conditional e-factors is valid under a frozen filtration,THEOREM,PASS
+HG42-C09,An unrestricted d-dimensional covariance after a rank-r mean fit generically needs at least d+r independent replicate vectors for finite Gaussian profile likelihood,THEOREM,PASS
+HG42-C10,Interpolation preserves independence of output nodes when raw nodes are shared,THEOREM,FAIL
+HG42-C11,The historical magnetic quotient has enough independent replicates for unrestricted covariance,EMPIRICAL,FAIL
+HG42-C12,The 242 adsorption quotient coordinates are 242 independent replicate histories,EMPIRICAL,FAIL
+HG42-C13,HG42 computes a real quotient e-value of at least 140,STATISTICAL,FAIL
+HG42-C14,HG42 authorizes acquisition,AUTHORITY,FAIL
+HG42-C15,HG42 supplies evidence for physical protogeometry,PHYSICAL,FAIL
