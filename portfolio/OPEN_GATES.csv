@@ -1,9 +1,9 @@
 priority,code,gate,status,dependency
-1,RGPHI,Stage B2,RESOURCE_BLOCKED,exact 128-bucket checkpoint
-2,BQ,BQ-010I,OPEN,one-sided periodic quotients and aperiodic 12x20 packing
-3,ACTIVATION,ODT-017B,OPEN,freeze Gamma predictor and external-memory survival
-4,METHODS,CERT-005,OPEN,multi-level transaction chain restart equivalence and Bellman
-5,HM,HM-018,OPEN,natural swap-odd observable or zero-locus obstruction
-6,U5HD,U5-HD-MIN-004,OPEN,scientifically motivated path-dependent task
-7,OBS,SYSMIC-X RAW FREEZE,PENDING,materialize and hash locked GeoNet response
-8,OBS,KWANTUBE RETROSPECTIVE POSTPROCESSING,ACTIVE_NO_RERUN,audited NC7/NK1 trajectory and committed model artefacts
+1,RGPHI,Stage B2,EXTERNAL_EXECUTION_ACTIVE,byte-exact rebuild t185 then transactional layers 186..211 in Drive
+2,BQ,BQ-010I-D,OPEN,remaining affine deficit orbits and carry/high-bit lifts
+3,ACTIVATION,ODT-018,OPEN_PROSPECTIVE,untouched seeds and residual survival after exact h_den
+4,METHODS,CERT-008,WAITING_FOR_REAL_B2_LEVELS,bind cut identity and production level chain
+5,HM,HM-021,OPEN,intrinsic balanced-signature operator plus canonical species identification
+6,U5HD,U5-HD-MIN-007,OPEN,global tariff degeneracy arrangement and quotient chambers
+7,OBS,SYSMIC-X PROSPECTIVE ADJUDICATION,FROZEN_READY,open frozen outcomes once under preregistered metrics
+8,OBS,KWANTUBE PROVENANCE REPAIR,HOLD_NO_RERUN,reconcile convergence ledger with raw checkpoint provenance only if publication-critical

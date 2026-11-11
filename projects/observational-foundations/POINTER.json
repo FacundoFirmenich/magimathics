@@ -1,1 +1,6 @@
-{"repository":"FacundoFirmenich/observational-degeneration-synergy","commit":"33ef7a0df087c4499f18e7fd7b894957c7149769","latest_gate":"KwanTube existing-artefact audit","next_gate":"Sysmic raw freeze plus retrospective KwanTube post-processing"}
+{
+  "repository": "FacundoFirmenich/observational-degeneration-synergy",
+  "commit": "edf7ef401c4fe38c948d23d4227f695b8c3801e0",
+  "latest_gate": "Sysmic raw freeze + KwanTube convergence provenance audit",
+  "next_gate": "Sysmic prospective adjudication; KwanTube no-rerun provenance hold"
+}

@@ -1,1 +1,8 @@
-{"repository":"FacundoFirmenich/rgphi-radix-mobius-dynamics","branch":"Ulalito's-Island","commit":"79cb14039119aba14f4a0a30f30c1db75a5826f5","authority":"CANONICAL_ACTIVE","latest_gate":"rebuild-from-zero Colab route staged","status":"ACTIVE_REBUILD_FROM_ZERO_NOT_YET_EXECUTING","next_gate":"Run Colab notebook; reproduce exact t185 manifest; continue Stage B2 186..211"}
+{
+  "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
+  "branch": "Ulalito's-Island",
+  "commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
+  "authority": "CANONICAL_ACTIVE",
+  "latest_gate": "rebuild-zero Stage A -> Stage B2 external execution",
+  "next_gate": "adjudicate real B2 receipts"
+}

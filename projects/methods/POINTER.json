@@ -1,1 +1,6 @@
-{"repository":"FacundoFirmenich/certified-radix-mobius-computation","commit":"25a7df6b0a83946a86f9d24f7f5e5148216008ae","latest_gate":"CERT-004","next_gate":"CERT-005"}
+{
+  "repository": "FacundoFirmenich/certified-radix-mobius-computation",
+  "commit": "71df925d52f9edb1b8d3df8255c340dc2c2d4b08",
+  "latest_gate": "CERT-007",
+  "next_gate": "CERT-008"
+}

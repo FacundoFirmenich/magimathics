@@ -1,15 +1,78 @@
 {
-  "schema_version":"1.4.0",
-  "updated":"2026-11-10",
-  "super_repository":"FacundoFirmenich/magimathics",
-  "policy":"specialized repositories remain authoritative; magimathics records immutable pointers, authority boundaries, resource decisions and programme-level consequences",
-  "repositories":[
-    {"code":"RGPHI","repository":"FacundoFirmenich/rgphi-radix-mobius-dynamics","commit":"a116ff21bd5b2fd973c39445931d8a4b832069b7","authority":"CANONICAL_ACTIVE","latest_gate":"Stage A","next_gate":"Stage B2 exact layers 186..211","status":"RESOURCE_BLOCKED"},
-    {"code":"BQ","repository":"FacundoFirmenich/quaternary-query-tomography","commit":"76ba4cc8dca910fe0e7c25655ba005a7a9750f53","authority":"EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER","latest_gate":"BQ-010H PASS/HOLD","next_gate":"BQ-010I one-sided periodic and aperiodic 12x20 branches","status":"ACTIVE"},
-    {"code":"ACTIVATION","repository":"FacundoFirmenich/radix-mobius-activation-surfaces","commit":"5d15758d8d4ab99c88fdcdb544a9913cd0a51f2d","authority":"PARALLEL_ISOLATED_INDEPENDENT_PAPER","latest_gate":"ODT-017A PASS/HOLD","next_gate":"ODT-017B contraction predictor and external-memory survival","status":"ACTIVE"},
-    {"code":"METHODS","repository":"FacundoFirmenich/certified-radix-mobius-computation","commit":"25a7df6b0a83946a86f9d24f7f5e5148216008ae","authority":"METHODS_COMPANION","latest_gate":"CERT-004 PASS/HOLD","next_gate":"CERT-005 multi-level chain and Bellman certificates","status":"ACTIVE"},
-    {"code":"HM","repository":"FacundoFirmenich/toeplitz-kasparov-interfaces","commit":"28bb2e4542611ce65ea05fb3730d0a40a7ab280f","authority":"EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER","latest_gate":"HM-017 PASS/HOLD","next_gate":"HM-018 candidate swap-odd observables","status":"ACTIVE"},
-    {"code":"OBS","repository":"FacundoFirmenich/observational-degeneration-synergy","commit":"33ef7a0df087c4499f18e7fd7b894957c7149769","authority":"FOUNDATIONS_TRACK","latest_gate":"existing KwanTube artefact audit PASS/HOLD","next_gate":"Sysmic raw snapshot hash; retrospective KwanTube post-processing only","status":"ACTIVE_WITH_HEOM_RERUN_PROHIBITED"},
-    {"code":"U5HD","repository":"FacundoFirmenich/u5-hd","commit":"40a687eaa50f4cffe49e26de98f2104b37976044","authority":"PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY","latest_gate":"U5-HD-MIN-003 PASS","next_gate":"MIN-004 scientifically motivated path-dependent task","status":"ACTIVE"}
+  "schema_version": "1.6.0",
+  "updated": "2026-11-11",
+  "super_repository": "FacundoFirmenich/magimathics",
+  "policy": "specialized repositories remain authoritative; magimathics records immutable pointers, authority boundaries, resource decisions and programme-level consequences",
+  "repositories": [
+    {
+      "code": "RGPHI",
+      "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
+      "branch": "Ulalito's-Island",
+      "commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
+      "authority": "CANONICAL_ACTIVE",
+      "latest_gate": "Stage A rebuild-from-zero route staged; Stage B2 external Colab/Drive execution",
+      "next_gate": "accept byte-exact t185 rebuild then close 186..211",
+      "status": "EXTERNAL_EXECUTION_ACTIVE_CANON_UNCHANGED"
+    },
+    {
+      "code": "BQ",
+      "repository": "FacundoFirmenich/quaternary-query-tomography",
+      "branch": "Ulalito's-Island",
+      "commit": "ee7b3ab12e52088d9406b2fb2ef4c0465bf4711a",
+      "authority": "EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER",
+      "latest_gate": "BQ-010I-C: deficit orbits 1 and 4 eliminated; orbit 0 parity factorization survives",
+      "next_gate": "BQ-010I-D remaining affine orbits and carry lifts",
+      "status": "ACTIVE"
+    },
+    {
+      "code": "ACTIVATION",
+      "repository": "FacundoFirmenich/radix-mobius-activation-surfaces",
+      "branch": "Ulalito's-Island",
+      "commit": "ac5d67d6c13b9ab1c144faa1964a4fdcb9d711fa",
+      "authority": "PARALLEL_ISOLATED_INDEPENDENT_PAPER",
+      "latest_gate": "ODT-017D exact admissibility-aware denominator-support edge",
+      "next_gate": "ODT-018 prospective residual survival after h_den",
+      "status": "ACTIVE"
+    },
+    {
+      "code": "METHODS",
+      "repository": "FacundoFirmenich/certified-radix-mobius-computation",
+      "branch": "Ulalito's-Island",
+      "commit": "71df925d52f9edb1b8d3df8255c340dc2c2d4b08",
+      "authority": "METHODS_COMPANION",
+      "latest_gate": "CERT-007 exact cut-composition theorem",
+      "next_gate": "CERT-008 production cut-chain closure object",
+      "status": "ACTIVE_STAGEB2_READY_IN_PRINCIPLE"
+    },
+    {
+      "code": "HM",
+      "repository": "FacundoFirmenich/toeplitz-kasparov-interfaces",
+      "branch": "Ulalito's-Island",
+      "commit": "e9e13c3f6384ef85661975545beb8842a6268c45",
+      "authority": "EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER",
+      "latest_gate": "HM-020 operator-valued swap-odd balanced-signature theorem",
+      "next_gate": "HM-021 intrinsic gapped operator and species identification",
+      "status": "ACTIVE"
+    },
+    {
+      "code": "OBS",
+      "repository": "FacundoFirmenich/observational-degeneration-synergy",
+      "branch": "Ulalito's-Island",
+      "commit": "edf7ef401c4fe38c948d23d4227f695b8c3801e0",
+      "authority": "FOUNDATIONS_TRACK",
+      "latest_gate": "Sysmic-X raw snapshot frozen pre-outcome; KwanTube convergence provenance audited",
+      "next_gate": "first Sysmic-X prospective adjudication; KwanTube no-rerun provenance hold",
+      "status": "ACTIVE_WITH_HEOM_RERUN_PROHIBITED"
+    },
+    {
+      "code": "U5HD",
+      "repository": "FacundoFirmenich/u5-hd",
+      "branch": "Ulalito's-Island",
+      "commit": "f356f6f060f4ef76ae69e7f67213bdeb9f90d177",
+      "authority": "PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY",
+      "latest_gate": "U5-HD-MIN-006 local stability of ten-state switching memory",
+      "next_gate": "MIN-007 global tariff degeneracy arrangement",
+      "status": "ACTIVE_EXPERIMENTAL_ISOLATED"
+    }
   ]
 }

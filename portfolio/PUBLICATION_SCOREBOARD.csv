@@ -1,8 +1,8 @@
 code,current_sota_score,potential_score,publication_state,target_track
-BQ,8.03,9.50,MANUSCRIPT_PRIORITY,IEEE TIT or SIAM JDM
-RGPHI,7.60,9.20,MANUSCRIPT_PRIORITY,Mathematics of Computation or ETDS
-METHODS,7.46,8.70,COMPANION_BUILD,Mathematics of Computation or ACM TOMS
-ACTIVATION,7.37,8.80,ONE_OR_MORE_GATES,Experimental Mathematics or Nonlinearity
-OBS,6.38,9.00,EXTERNAL_VALIDATION_REQUIRED,Philosophy of Science or BJPS or Synthese
-U5HD,6.04,8.50,PROGRAMME_NOT_PAPER,Future monograph or perspective
-HM,5.91,8.30,SPECIALIST_AUDIT_REQUIRED,JNCG or JFA or JOT
+BQ,8.25,9.50,MANUSCRIPT_PRIORITY,IEEE TIT or SIAM JDM
+RGPHI,7.70,9.20,B2_EXTERNAL_EXECUTION,Mathematics of Computation or ETDS
+METHODS,8.00,8.80,COMPANION_THEOREM_BUILD,Mathematics of Computation or ACM TOMS
+ACTIVATION,7.85,8.90,PROSPECTIVE_GATE_NEXT,Experimental Mathematics or Nonlinearity
+OBS,7.25,9.00,SYSMIC_FROZEN_READY_KWANTUBE_PROVENANCE_HOLD,Philosophy of Science or BJPS or Synthese
+HM,6.65,8.40,OPERATOR_THEOREM_SPECIALIST_AUDIT,JNCG or JFA or JOT
+U5HD,6.65,8.50,PROGRAMME_NOT_PAPER,Future monograph or perspective

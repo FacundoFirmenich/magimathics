@@ -1,1 +1,6 @@
-{"repository":"FacundoFirmenich/quaternary-query-tomography","commit":"76ba4cc8dca910fe0e7c25655ba005a7a9750f53","latest_gate":"BQ-010H","next_gate":"BQ-010I"}
+{
+  "repository": "FacundoFirmenich/quaternary-query-tomography",
+  "commit": "ee7b3ab12e52088d9406b2fb2ef4c0465bf4711a",
+  "latest_gate": "BQ-010I-C",
+  "next_gate": "BQ-010I-D"
+}
