@@ -1,0 +1,90 @@
+name: HGMF HG42 prospective quotient noise laws
+
+on:
+  push:
+    branches:
+      - hgmf-hg42-prospective-quotient-noise-laws-20261111
+    paths:
+      - 'research/hgmf-hg42/**'
+      - '.github/workflows/hgmf-hg42-quotient-noise-laws.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy
+
+      - name: Compile and execute exact verification
+        run: |
+          cd research/hgmf-hg42
+          python -m py_compile hgmf_hg42_core.py hgmf_hg42_exact_verify.py
+          python hgmf_hg42_exact_verify.py | tee HGMF_HG42_VERIFY_OUTPUT.txt
+
+      - name: Recompute current adjudication
+        run: |
+          cd research/hgmf-hg42
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from hgmf_hg42_core import validate_prospective_seal
+          root=Path('.')
+          seal=json.loads((root/'HGMF_HG42_CURRENT_SEAL.json').read_text())
+          adj=validate_prospective_seal(seal)
+          (root/'HGMF_HG42_CURRENT_ADJUDICATION.json').write_text(json.dumps(adj,indent=2)+'\n')
+          assert adj['status']=='ABSTAIN_REAL_REPLICATES_OR_DENSITY_PROOFS_MISSING'
+          assert adj['authorized'] is False
+          assert adj['errors']==[]
+          print(json.dumps(adj,indent=2))
+          PY
+
+      - name: Build canonical artifact
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv, hashlib, zipfile
+          root=Path('research/hgmf-hg42')
+          manifest=root/'HGMF_HG42_HASH_MANIFEST.csv'
+          rows=[]
+          for p in sorted(root.iterdir()):
+              if p.is_file() and p.name!='HGMF_HG42_HASH_MANIFEST.csv':
+                  b=p.read_bytes()
+                  rows.append((p.name,hashlib.sha256(b).hexdigest(),len(b)))
+          with manifest.open('w',encoding='utf-8',newline='') as f:
+              w=csv.writer(f); w.writerow(['file','sha256','bytes']); w.writerows(rows)
+          out=Path('/tmp/HGMF_HG42_PROSPECTIVE_QUOTIENT_NOISE_LAWS.zip')
+          with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(root.iterdir()):
+                  if p.is_file():
+                      z.write(p,arcname=f'HGMF_HG42_PROSPECTIVE_QUOTIENT_NOISE_LAWS/{p.name}')
+          with zipfile.ZipFile(out) as z:
+              assert z.testzip() is None
+              print(f'artifact_files={len(z.namelist())}')
+          PY
+
+      - name: Upload canonical artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_HG42_PROSPECTIVE_QUOTIENT_NOISE_LAWS
+          path: /tmp/HGMF_HG42_PROSPECTIVE_QUOTIENT_NOISE_LAWS.zip
+          if-no-files-found: error
+          retention-days: 30

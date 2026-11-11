@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hgmf-hg42-noise-law-receipt.schema.json",
+  "title": "HGMF HG42 Quotient Noise-Law Receipt",
+  "type": "object",
+  "required": [
+    "profile",
+    "carrier",
+    "receipt_id",
+    "acquisition_hashes",
+    "replicate_definition",
+    "chart_hash",
+    "measure_id",
+    "quotient_dimension",
+    "independent_replicates",
+    "mean_design_rank",
+    "covariance_model",
+    "candidate_density",
+    "null_upper_density",
+    "interpolation_covariance",
+    "split_seal",
+    "created_before_holdout"
+  ],
+  "properties": {
+    "profile": {"const": "hgmf-hg42-noise-law-receipt/1.0"},
+    "carrier": {"enum": ["magnetism", "adsorption"]},
+    "receipt_id": {"type": "string", "minLength": 1},
+    "acquisition_hashes": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "replicate_definition": {"type": "string", "minLength": 1},
+    "chart_hash": {"type": "string", "minLength": 1},
+    "measure_id": {"type": "string", "minLength": 1},
+    "quotient_dimension": {"type": "integer", "minimum": 1},
+    "independent_replicates": {"type": "integer", "minimum": 1},
+    "mean_design_rank": {"type": "integer", "minimum": 0},
+    "covariance_model": {"enum": ["unrestricted_full", "structured", "known"]},
+    "candidate_density": {
+      "type": "object",
+      "required": ["family", "proper_density_proof_hash", "training_code_hash"],
+      "properties": {
+        "family": {"type": "string"},
+        "proper_density_proof_hash": {"type": "string"},
+        "training_code_hash": {"type": "string"}
+      }
+    },
+    "null_upper_density": {
+      "type": "object",
+      "required": ["family_union", "upper_bound_proof_hash", "evaluation_code_hash"],
+      "properties": {
+        "family_union": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "upper_bound_proof_hash": {"type": "string"},
+        "evaluation_code_hash": {"type": "string"}
+      }
+    },
+    "interpolation_covariance": {
+      "type": "object",
+      "required": ["raw_covariance_hash", "operator_hash", "quotient_jacobian_hash", "output_covariance_hash"],
+      "properties": {
+        "raw_covariance_hash": {"type": "string"},
+        "operator_hash": {"type": "string"},
+        "quotient_jacobian_hash": {"type": "string"},
+        "output_covariance_hash": {"type": "string"}
+      }
+    },
+    "split_seal": {
+      "type": "object",
+      "required": ["calibration_ids_hash", "training_ids_hash", "holdout_ids_hash", "no_overlap"],
+      "properties": {
+        "calibration_ids_hash": {"type": "string"},
+        "training_ids_hash": {"type": "string"},
+        "holdout_ids_hash": {"type": "string"},
+        "no_overlap": {"const": true}
+      }
+    },
+    "created_before_holdout": {"const": true}
+  }
+}

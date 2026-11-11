@@ -1,0 +1,44 @@
+{
+  "gate": "HGMF-HG42",
+  "title": "Prospective Quotient Noise Laws and Split-Sealed E-values",
+  "date": "2026-11-11",
+  "global_verdict": "PASS_CALIBRATION_AUGMENTED_QUOTIENT_EVALUE_THEOREM_PASS_FROZEN_COMPRESSION_PUSHFORWARD_PASS_DEPENDENCE_FIREWALL_PASS_SAFE_WEIGHTED_MEAN_AGGREGATION_PASS_INTERSECTION_MIN_EVALUE_PASS_SEQUENTIAL_CONDITIONAL_PRODUCT_RULE_PASS_GAUSSIAN_PROFILE_REPLICATE_RANK_THEOREM_PASS_INTERPOLATION_COVARIANCE_PROPAGATION_PASS_MAGNETIC_QUOTIENT_NOISE_LAW_CONTRACT_PASS_ADSORPTION_QUOTIENT_NOISE_LAW_CONTRACT_PASS_FAIL_CLOSED_PROSPECTIVE_SEAL_FAIL_PRODUCT_OF_MARGINAL_EVALUES_UNDER_DEPENDENCE_FAIL_HISTORICAL_MAGNETIC_NOISE_LAW_READINESS_FAIL_HISTORICAL_ADSORPTION_NOISE_LAW_READINESS_FAIL_ACTUAL_QUOTIENT_EVALUE_EXECUTION_ABSTAIN_REAL_REPLICATES_MISSING_ABSTAIN_PROPER_QUOTIENT_DENSITIES_MISSING_ABSTAIN_NULL_UPPER_DENSITY_CERTIFICATE_HOLD_PROSPECTIVE_OUTCOMES_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "theorems": {
+    "calibration_augmented_evalue": true,
+    "dependent_marginal_product_invalid": true,
+    "weighted_mean_valid_without_independence": true,
+    "intersection_min_valid": true,
+    "sequential_product_requires_conditional_efactors": true,
+    "full_covariance_minimum_replicates": "d + mean_design_rank",
+    "interpolation_covariance": "G A Sigma_raw A^T G^T",
+    "frozen_compression_pushforward": true,
+    "safe_aggregation": {
+      "weighted_mean": "VALID_ARBITRARY_DEPENDENCE",
+      "intersection_min": "VALID_ARBITRARY_DEPENDENCE",
+      "raw_product": "INVALID_WITH_MARGINAL_VALIDITY_ONLY",
+      "sequential_product": "VALID_WITH_CONDITIONAL_EFACTOR_PROOF"
+    }
+  },
+  "historical_readiness": {
+    "magnetism": {
+      "quotient_dimension": 3,
+      "available_independent_quotient_vectors": 1,
+      "minimum_full_covariance_replicates": 4,
+      "status": "FAIL_REPLICATE_RANK"
+    },
+    "adsorption": {
+      "quotient_coordinates_in_HG40": 242,
+      "joint_stochastic_history_replicates": 1,
+      "unrestricted_full_covariance_minimum_replicates": 243,
+      "structured_covariance_receipt": false,
+      "status": "FAIL_NO_JOINT_REPLICATE_COVARIANCE"
+    }
+  },
+  "current_seal_status": "ABSTAIN_REAL_REPLICATES_OR_DENSITY_PROOFS_MISSING",
+  "actual_quotient_evalue_computed": false,
+  "acquisition_authorized": false,
+  "prospective_outcomes_present": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD",
+  "next_gate": "HGMF-HG43 — receipt-conditioned quotient laws, maximin power and arming"
+}

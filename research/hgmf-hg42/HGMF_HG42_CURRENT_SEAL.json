@@ -1,0 +1,51 @@
+{
+  "profile": "hgmf-hg42-prospective-seal/1.0",
+  "stage": "PROTOCOL_FROZEN_UNARMED",
+  "chart_seal": {
+    "measure_id": "hg42-labelled-affine-quotient-measure/v1",
+    "anchor_labels": ["ANCHOR_LOW", "ANCHOR_HIGH"],
+    "orientation": "SIGNED_ORDERED",
+    "degeneracy_threshold": null,
+    "chart_transition_policy": "ANCHORS_FROZEN_BEFORE_HOLDOUT"
+  },
+  "partitions": {
+    "calibration_ids": [],
+    "training_ids": [],
+    "holdout_ids": [],
+    "holdout_values_present_before_arming": false
+  },
+  "noise_laws": {
+    "magnetism": {
+      "quotient_dimension": 3,
+      "independent_replicates": 0,
+      "mean_design_rank": 1,
+      "covariance_model": "unrestricted_full",
+      "real_replicate_receipt_hash": null
+    },
+    "adsorption": {
+      "quotient_dimension": 242,
+      "independent_replicates": 0,
+      "mean_design_rank": 1,
+      "covariance_model": "structured",
+      "structured_covariance_proof_hash": null,
+      "real_replicate_receipt_hash": null
+    }
+  },
+  "candidate_density": {
+    "measure_id": "hg42-labelled-affine-quotient-measure/v1",
+    "proper_density_proof_hash": null,
+    "training_only": true
+  },
+  "null_upper_density": {
+    "measure_id": "hg42-labelled-affine-quotient-measure/v1",
+    "certified_upper_bound_proof_hash": null,
+    "carrier_standard_union": true
+  },
+  "combination": {
+    "rule": "weighted_mean",
+    "weights": [0.5, 0.5],
+    "filtration_proof_hash": null
+  },
+  "acquisition_authorized": false,
+  "prospective_outcomes_present": false
+}
