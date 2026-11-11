@@ -1,0 +1,59 @@
+{
+  "profile": "hgmf-hg43-arming-dossier/1.0",
+  "stage": "RECEIPT_CONDITIONED_UNARMED",
+  "chart": {
+    "measure_id": "hg42-labelled-affine-quotient-measure/v1",
+    "chart_hash": null,
+    "carrier_anchor_labels": {
+      "magnetism": ["ANCHOR_LOW", "ANCHOR_HIGH"],
+      "adsorption": ["ANCHOR_LOW", "ANCHOR_HIGH"]
+    },
+    "orientation": "SIGNED_ORDERED",
+    "degeneracy_threshold": null,
+    "chart_transition_policy": "FIXED_CHART_FAIL_CLOSED_ON_DEGENERACY"
+  },
+  "claim": {
+    "semantics": null,
+    "aggregation_rule": null,
+    "weights": null,
+    "filtration_proof_hash": null,
+    "threshold_evalue": 140,
+    "global_power_target": null
+  },
+  "replicate_receipts": {
+    "magnetism": [],
+    "adsorption": []
+  },
+  "carrier_laws": {
+    "magnetism": {
+      "quotient_dimension": 3,
+      "mean_design_rank": 1,
+      "covariance_model": "unrestricted_full",
+      "structured_covariance_proof_hash": null,
+      "covariance_finite_supremum_proof_hash": null,
+      "candidate_density": null,
+      "null_upper_density": null
+    },
+    "adsorption": {
+      "quotient_dimension": 242,
+      "mean_design_rank": 1,
+      "covariance_model": "structured",
+      "structured_covariance_proof_hash": null,
+      "covariance_finite_supremum_proof_hash": null,
+      "candidate_density": null,
+      "null_upper_density": null
+    }
+  },
+  "local_power": {
+    "cell_certificates": []
+  },
+  "frozen_artifacts": {
+    "code_hash": null,
+    "environment_hash": null,
+    "design_hash": null,
+    "model_hash": null,
+    "split_hash": null
+  },
+  "acquisition_authorized": false,
+  "prospective_outcomes_present": false
+}

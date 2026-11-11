@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hgmf-hg43-arming-dossier.schema.json",
+  "title": "HGMF HG43 receipt-conditioned quotient arming dossier",
+  "type": "object",
+  "required": [
+    "profile",
+    "stage",
+    "chart",
+    "claim",
+    "replicate_receipts",
+    "carrier_laws",
+    "local_power",
+    "frozen_artifacts",
+    "acquisition_authorized",
+    "prospective_outcomes_present"
+  ],
+  "properties": {
+    "profile": {"const": "hgmf-hg43-arming-dossier/1.0"},
+    "stage": {"enum": ["RECEIPT_CONDITIONED_UNARMED", "ARMED_FUTURE_ONLY"]},
+    "chart": {"type": "object"},
+    "claim": {"type": "object"},
+    "replicate_receipts": {"type": "object"},
+    "carrier_laws": {"type": "object"},
+    "local_power": {"type": "object"},
+    "frozen_artifacts": {"type": "object"},
+    "acquisition_authorized": {"type": "boolean"},
+    "prospective_outcomes_present": {"type": "boolean"}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hgmf-hg43-density-certificate.schema.json",
+  "title": "HGMF HG43 candidate or null-upper density certificate",
+  "type": "object",
+  "required": [
+    "carrier",
+    "kind",
+    "measure_id",
+    "family",
+    "proof_hash",
+    "training_only",
+    "code_hash"
+  ],
+  "properties": {
+    "carrier": {"enum": ["magnetism", "adsorption"]},
+    "kind": {"enum": ["candidate_density", "null_upper_density"]},
+    "measure_id": {"type": "string", "minLength": 1},
+    "family": {"type": "string", "minLength": 1},
+    "proof_hash": {"type": "string", "minLength": 1},
+    "proper_density_certified": {"type": "boolean"},
+    "upper_bound_certified": {"type": "boolean"},
+    "training_only": {"const": true},
+    "code_hash": {"type": "string", "minLength": 1}
+  }
+}

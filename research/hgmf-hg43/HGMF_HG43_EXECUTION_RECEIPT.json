@@ -1,0 +1,28 @@
+{
+  "gate": "HGMF-HG43",
+  "execution_profile": "local-exact-and-github-actions/1.0",
+  "repository": "FacundoFirmenich/magimathics",
+  "branch": "hgmf-hg43-receipt-conditioned-arming-20261111",
+  "base": "hgmf-hg42-prospective-quotient-noise-laws-20261111",
+  "branch_head_before_receipt": "74b18c9a8904a236470250d72f5c86a3545f86bc",
+  "local_exact_verifier": "PASS",
+  "github_actions": {
+    "run_id": 43072186121,
+    "conclusion": "success",
+    "head_sha": "7af9886e89364a30667382a1f16a526978085b40",
+    "artifact_id": 13877833332,
+    "artifact_sha256": "09728430ac23291889d9a2e294a65e45c459d22c664a7a6b55054f252fe3fb87"
+  },
+  "canonical_bundle": {
+    "filename": "HGMF_HG43_RECEIPT_CONDITIONED_ARMING_2026-11-11.zip",
+    "sha256": "a1d40d5652708dde512312c4465231960b6f6c19573e0558bfdd9c960bbb9296",
+    "files": 20,
+    "zip_integrity": "PASS"
+  },
+  "current_status": "ABSTAIN_REAL_RECEIPTS_DENSITIES_OR_POWER_MISSING",
+  "authorized": false,
+  "acquisition_authorized": false,
+  "prospective_outcomes_present": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}

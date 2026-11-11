@@ -1,0 +1,16 @@
+PASS_HGMF_HG43_EXACT
+null_union_max_expectation=0.775
+structured_covariance_min_eigenvalue=0.6
+structured_covariance_singular_rejected=PASS
+replicate_rows=5
+independent_clusters=4
+pseudoreplication_collapse=PASS
+cantelli_min_clusters_fixture=52
+cantelli_power_at_min=0.8012026633886365
+conjunction_power_lower_fixture=0.9199999999999999
+current_status=ABSTAIN_REAL_RECEIPTS_DENSITIES_OR_POWER_MISSING
+current_blockers=19
+fake_arming_fail_closed=PASS
+acquisition_authorized=false
+prospective_outcomes_present=false
+physical_protogeometry=HOLD

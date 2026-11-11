@@ -1,0 +1,16 @@
+claim_id,claim,class,status
+HG43-C01,Effective replicate count equals the number of raw rows,THEOREM,FAIL
+HG43-C02,Effective replicate count equals certified independent acquisition clusters,THEOREM,PASS
+HG43-C03,Unrestricted d-dimensional covariance after rank-r mean fitting generically needs at least d+r independent clusters,THEOREM,PASS
+HG43-C04,A structured Gaussian covariance family with a certified uniform positive eigenvalue floor has finite profile supremum on a bounded parameter set,THEOREM,PASS
+HG43-C05,The maximum of component null upper densities upper-bounds their union,THEOREM,PASS
+HG43-C06,A weighted mean supports a scientific claim requiring every carrier to pass,CLAIM_LOGIC,FAIL
+HG43-C07,The minimum of carrier e-values encodes a conjunction claim,CLAIM_LOGIC,PASS
+HG43-C08,Cantelli yields a finite-sample lower power bound from certified mean and variance bounds on log e-increments,THEOREM,PASS
+HG43-C09,Cellwise failure budgets provide a conjunction power lower bound by the union bound,THEOREM,PASS
+HG43-C10,Current real magnetic replicate receipts exist,PROVENANCE,FAIL
+HG43-C11,Current real adsorption replicate receipts exist,PROVENANCE,FAIL
+HG43-C12,Current proper candidate and certified null-upper densities exist for both carriers,PROVENANCE,FAIL
+HG43-C13,Current local maximin power is certified,STATISTICAL,FAIL
+HG43-C14,HG43 is currently armed,AUTHORITY,FAIL
+HG43-C15,HG43 supplies evidence for physical protogeometry,PHYSICAL,FAIL
