@@ -1,0 +1,24 @@
+{
+  "profile": "hgmf-hg41-historical-input/1.0",
+  "magnetism": {
+    "source_results": "HG36 + HG40",
+    "observed_HEB_mT": [-48.42569341383035, 0.8838269371443452, -4.075432120767836, 3.3382593574633646, 1.3416824050381848],
+    "field_residual_halfwidth_mT": [4.2932274337233025, 4.2932274337233025, 4.2932274337233025, 4.2932274337233025, 4.2932274337233025],
+    "quotient_anchors": ["loop1", "loop2"],
+    "source_null": "loops2-5 share a common trained HEB before bounded residual field error"
+  },
+  "adsorption": {
+    "source_results": "HG40",
+    "run_id": 1,
+    "temperature_K": 150.73,
+    "pairs_total": 10,
+    "pairwise_evaluation_points": 713,
+    "raw_negative_difference_points": 51,
+    "strict_violation_points_beyond_conservative_tolerance": 0,
+    "minimum_raw_difference_mg": -0.0545251396648058,
+    "maximum_negative_fraction_of_tolerance": 0.31976744186046335,
+    "quotient_coordinates_total": 242,
+    "quotient_coordinates_outside_unit_interval_raw": 11,
+    "joint_stochastic_interpolation_model": false
+  }
+}
