@@ -1,0 +1,18 @@
+{
+  "gate": "HGMF-HG42",
+  "execution_profile": "local-exact-and-github-workflow/1.0",
+  "repository": "FacundoFirmenich/magimathics",
+  "branch": "hgmf-hg42-prospective-quotient-noise-laws-20261111",
+  "base": "hgmf-hg41-quotient-evalues-20261111",
+  "branch_head_before_receipt": "5ae86b229297b38292e2fe9d344fed5c04bc579a",
+  "py_compile": "PASS",
+  "exact_verifier": "PASS",
+  "current_seal_status": "ABSTAIN_REAL_REPLICATES_OR_DENSITY_PROOFS_MISSING",
+  "authorized": false,
+  "actual_quotient_evalue_computed": false,
+  "prospective_outcomes_present": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD",
+  "github_actions_run_id": 43042751619,
+  "github_actions_status_at_receipt": "QUEUED"
+}
