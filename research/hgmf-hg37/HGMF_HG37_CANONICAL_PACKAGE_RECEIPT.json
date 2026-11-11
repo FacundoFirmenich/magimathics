@@ -1,0 +1,22 @@
+{
+  "gate": "HGMF-HG37",
+  "canonical_execution": {
+    "workflow_run_id": 42714265799,
+    "conclusion": "success",
+    "head_sha": "d871e04f40a4ff8850b38f26523da8d26b20e13b",
+    "artifact_id": 13717586450,
+    "artifact_sha256": "87a609c42ae3ab0dd64d289736a0ae3d4e67a86adda23893003a589db05908b9"
+  },
+  "branch": "hgmf-hg37-calibration-rescue-or-pivot-20261109",
+  "pull_request": 60,
+  "base": "hgmf-hg36-observation-bridges-20261109",
+  "public_rescue": {
+    "magnetism": "FAIL_NO_INDEPENDENT_PUBLIC_FIELD_CALIBRATION_OBJECT",
+    "adsorption_cimino": "FAIL_NO_EXTERNAL_FILM_REFERENCE_IN_BROWN_REPO",
+    "adsorption_mason": "ALTERNATIVE_STANDARD_ROUTE_EXISTS_CONFIRMATORY_IMPLEMENTATION_ABSTAIN"
+  },
+  "historical_confirmatory_identifiability": false,
+  "prospective_pivot_required": true,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}

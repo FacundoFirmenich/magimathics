@@ -1,0 +1,36 @@
+{
+  "gate": "HGMF-HG37",
+  "title": "External-Calibration Rescue versus Prospective Pivot",
+  "date": "2026-11-09",
+  "global_verdict": "PASS_PUBLIC_RECORD_RESCUE_AUDIT_PASS_MAGNETIC_RESCUE_THRESHOLD_THEOREM_PASS_CALIBRATION_OBSERVABILITY_THEOREM_PASS_VYCOR_ALTERNATIVE_STANDARD_ROUTE_EXISTS_PASS_PROSPECTIVE_PIVOT_PROTOCOL_FAIL_MAGNETIC_PUBLIC_CALIBRATION_RESCUE_FAIL_CIMINO_VYCOR_REFERENCE_RESCUE_FAIL_HISTORICAL_DATA_CONFIRMATORY_IDENTIFIABILITY_FAIL_BEYOND_STANDARD_RETROSPECTIVE_CLAIM_ABSTAIN_MASON_CONFIRMATORY_IMPLEMENTATION_ABSTAIN_HG31_UNIVERSAL_X_ON_HISTORICAL_CARRIERS_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "execution": {
+    "workflow_run_id": 42714265799,
+    "conclusion": "success",
+    "head_sha": "d871e04f40a4ff8850b38f26523da8d26b20e13b",
+    "artifact_id": 13717586450,
+    "artifact_sha256": "87a609c42ae3ab0dd64d289736a0ae3d4e67a86adda23893003a589db05908b9"
+  },
+  "magnetism": {
+    "current_field_step_bound_mT": 4.2932274337233025,
+    "global_set_membership_break_threshold_mT": 4.075432120767836,
+    "improvement_needed_mT": 0.2177953129554666,
+    "relative_improvement_needed": 0.05072997327015205,
+    "all_loops_nonabsorbable_threshold_mT": 0.8838269371443452,
+    "gaussian_E140_heuristic_field_bound_mT": 4.055711428859571,
+    "public_independent_calibration_found": false,
+    "public_rescue": "FAIL"
+  },
+  "adsorption": {
+    "Brown_external_nonporous_reference_found": false,
+    "Cimino_reference_rescue": "FAIL",
+    "Mason_1988_alternative_standard_route_exists": true,
+    "Mason_route_confirmatory_implementation": "ABSTAIN",
+    "standard_network_envelope_excluded": false
+  },
+  "historical_confirmatory_identifiability": false,
+  "prospective_pivot_required": true,
+  "universal_evalue_X_ready": false,
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD",
+  "next_gate": "HGMF-HG38 Prospective Calibration Cartridge and Future-Only Acquisition Seal"
+}
