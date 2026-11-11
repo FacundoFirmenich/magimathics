@@ -1,0 +1,13 @@
+PASS_HGMF_HG41_EXACT
+quotient_dimension=3
+inverse_chart_jacobian=13.823999999999998
+chart_invariance=PASS
+chart_gradient=PASS
+anchor_degeneracy_fail_closed=PASS
+quotient_universal_evalue_fixture=PASS
+support_only_pointwise_ceiling=1
+magnetic_common_interval=[-0.954968076259938,0.2177953129554666]
+adsorption_strict_violations_beyond_tolerance=0
+historical_quotient_E140=FAIL
+retrospective_confirmatory_authority=ABSTAIN
+physical_protogeometry=HOLD
