@@ -3,20 +3,21 @@ NEG-001,tau5=212 is prohibited before Stage B2 closes,OPEN_BOUNDARY,RGPHI
 NEG-002,No direct 6x10 sum exists in Z4^2 x Z2^2,PROVED,BQ
 NEG-003,The distinct-order-two-period branch of the 12x20 frontier survives,REFUTED,BQ
 NEG-004,A timeout without proof establishes BQ infeasibility,PROHIBITED_INFERENCE,BQ
-NEG-005,Parity feasibility alone guarantees a carry/high-bit lift,REFUTED_BY_EXACT_ORBITS,BQ
-NEG-006,Deficit orbits 1 and 4 support one-sided parity factorizations,REFUTED_EXACTLY,BQ
-NEG-007,Base arithmetic is merely a statistical feature,REFUTED_BY_MECHANISM,ACTIVATION
-NEG-008,The universal logarithmic support edge explains nearly all positive-witness latency,REFUTED_BY_SHARPER_EDGE,ACTIVATION
-NEG-009,A positive witness alone proves global shortest-distance minimality,REFUTED,METHODS
-NEG-010,A certified post-cut chain must re-prove the entire pre-cut search,REFUTED_BY_CUT_COMPOSITION,METHODS
-NEG-011,A natural ordered species selector exists in the unenriched swap-symmetric category,REFUTED,HM
-NEG-012,Every continuous operator-valued swap-odd observable must close its spectral gap,REFUTED,HM
-NEG-013,A gapped swap-odd operator automatically orders endpoint species,REFUTED,HM
-NEG-014,Genealogy improves ordinary exact RGΦ portal Bellman prediction,REFUTED,U5HD
-NEG-015,The ten-state periodic switching fibre occurs only at one fine-tuned tariff vector,REFUTED_LOCALLY,U5HD
-NEG-016,New HEOM production is an active portfolio priority,WITHDRAWN_RESOURCE_DECISION,OBS
-NEG-017,Retrospective KwanTube post-processing is a new prospective validation,PROHIBITED_INFERENCE,OBS
-NEG-018,The raw files named refined NC7 and NC8 are a provenance-complete direct convergence pair,REFUTED_BY_AUDIT,OBS
-NEG-019,The KwanTube convergence ledger establishes convergence for the frozen new KwanTube-X bath blocks,PROHIBITED_INFERENCE,OBS
-NEG-020,Sysmic-X outcomes were opened before the raw freeze,REFUTED_BY_FREEZE_RECEIPT,OBS
-NEG-021,Internal U5-HD consistency establishes physical ontology,PROHIBITED,U5HD
+NEG-005,Parity feasibility alone guarantees a carry/high-bit lift,REFUTED,BQ
+NEG-006,Deficit orbit 0 supports a carry lift in either one-sided branch,REFUTED_EXACTLY,BQ
+NEG-007,Deficit orbits 1 and 4 support one-sided parity factorizations,REFUTED_EXACTLY,BQ
+NEG-008,One tested carry-UNSAT witness eliminates all of deficit orbit 2,PROHIBITED_INFERENCE,BQ
+NEG-009,Base arithmetic is merely a statistical feature,REFUTED_BY_MECHANISM_AND_PROSPECTIVE_TESTS,ACTIVATION
+NEG-010,The 2-adic delay effect is only a retrospective odd-even artifact,REFUTED_PROSPECTIVELY,ACTIVATION
+NEG-011,ODT-020 proves strict deterministic monotonicity for every nu2 class,PROHIBITED_INFERENCE,ACTIVATION
+NEG-012,A certified post-cut chain must re-prove the entire pre-cut search,REFUTED_BY_CUT_COMPOSITION,METHODS
+NEG-013,Sign-blind gapped operator data canonically identify endpoint species,REFUTED,HM
+NEG-014,Every continuous operator-valued swap-odd observable must close its spectral gap,REFUTED,HM
+NEG-015,Genealogy improves ordinary exact RGΦ portal Bellman prediction,REFUTED,U5HD
+NEG-016,The ten-state periodic switching fibre occurs only at one fine-tuned tariff vector,REFUTED_LOCALLY,U5HD
+NEG-017,The MIN-008 cube contains multiple potentially optimal path forms per memory state,REFUTED_EXACTLY,U5HD
+NEG-018,Sysmic-X2 upper-boundary saturation occurs in the predicted 1.9-2.7 km interval,REFUTED_PROSPECTIVELY,OBS
+NEG-019,Sysmic-X2 failure is numerical nonconvergence,REFUTED_BY_ACCEPTANCE_DIAGNOSTICS,OBS
+NEG-020,Retrospective KwanTube post-processing is a new prospective validation,PROHIBITED_INFERENCE,OBS
+NEG-021,The raw files named refined NC7 and NC8 are a provenance-complete direct convergence pair,REFUTED_BY_AUDIT,OBS
+NEG-022,Internal U5-HD consistency establishes physical ontology,PROHIBITED,U5HD

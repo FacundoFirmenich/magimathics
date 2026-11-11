@@ -1,8 +1,5 @@
 {
   "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
-  "branch": "Ulalito's-Island",
   "commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
-  "authority": "CANONICAL_ACTIVE",
-  "latest_gate": "rebuild-zero Stage A -> Stage B2 external execution",
-  "next_gate": "adjudicate real B2 receipts"
+  "status": "EXTERNAL_B2_NO_NEW_RECEIPT"
 }

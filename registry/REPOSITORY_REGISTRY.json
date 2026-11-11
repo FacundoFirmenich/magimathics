@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.6.0",
+  "schema_version": "1.7.0",
   "updated": "2026-11-11",
   "super_repository": "FacundoFirmenich/magimathics",
-  "policy": "specialized repositories remain authoritative; magimathics records immutable pointers, authority boundaries, resource decisions and programme-level consequences",
+  "policy": "specialized repositories remain authoritative; magimathics stores immutable pointers, authority boundaries, falsifications, resource decisions and programme-level consequences",
   "repositories": [
     {
       "code": "RGPHI",
@@ -10,68 +10,68 @@
       "branch": "Ulalito's-Island",
       "commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
       "authority": "CANONICAL_ACTIVE",
-      "latest_gate": "Stage A rebuild-from-zero route staged; Stage B2 external Colab/Drive execution",
-      "next_gate": "accept byte-exact t185 rebuild then close 186..211",
-      "status": "EXTERNAL_EXECUTION_ACTIVE_CANON_UNCHANGED"
+      "latest_gate": "Stage-A rebuild/Stage-B2 external execution surface",
+      "next_gate": "real accepted B2 level manifests",
+      "status": "EXTERNAL_EXECUTION_NO_NEW_RECEIPT_DETECTED"
     },
     {
       "code": "BQ",
       "repository": "FacundoFirmenich/quaternary-query-tomography",
       "branch": "Ulalito's-Island",
-      "commit": "ee7b3ab12e52088d9406b2fb2ef4c0465bf4711a",
+      "commit": "79b932bd300dbdae5d4f7df95a4be9ebf18eca7b",
       "authority": "EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER",
-      "latest_gate": "BQ-010I-C: deficit orbits 1 and 4 eliminated; orbit 0 parity factorization survives",
-      "next_gate": "BQ-010I-D remaining affine orbits and carry lifts",
-      "status": "ACTIVE"
+      "latest_gate": "BQ-010I-F orbit2 parity survives; tested carry lifts dual-solver UNSAT",
+      "next_gate": "BQ-010I-G enumerate all orbit2 parity symmetry classes",
+      "status": "ACTIVE_HOLD_ORBIT2_GLOBAL"
     },
     {
       "code": "ACTIVATION",
       "repository": "FacundoFirmenich/radix-mobius-activation-surfaces",
       "branch": "Ulalito's-Island",
-      "commit": "ac5d67d6c13b9ab1c144faa1964a4fdcb9d711fa",
+      "commit": "6023a38e8e3caa9e687bc4ea229419865c9366bc",
       "authority": "PARALLEL_ISOLATED_INDEPENDENT_PAPER",
-      "latest_gate": "ODT-017D exact admissibility-aware denominator-support edge",
-      "next_gate": "ODT-018 prospective residual survival after h_den",
-      "status": "ACTIVE"
+      "latest_gate": "ODT-020 prospective nu2 valuation-delay PASS",
+      "next_gate": "ODT-021 matched valuation/base-magnitude separation",
+      "status": "ACTIVE_PROSPECTIVE_PASS"
     },
     {
       "code": "METHODS",
       "repository": "FacundoFirmenich/certified-radix-mobius-computation",
       "branch": "Ulalito's-Island",
-      "commit": "71df925d52f9edb1b8d3df8255c340dc2c2d4b08",
+      "commit": "4b8f85b8c4d691e358265f9def95330e8750616e",
       "authority": "METHODS_COMPANION",
-      "latest_gate": "CERT-007 exact cut-composition theorem",
-      "next_gate": "CERT-008 production cut-chain closure object",
-      "status": "ACTIVE_STAGEB2_READY_IN_PRINCIPLE"
+      "latest_gate": "CERT-008 cut-chain closure object",
+      "next_gate": "CERT-009 instantiate on real Stage-B2 manifests",
+      "status": "READY_WAITING_REAL_B2"
     },
     {
       "code": "HM",
       "repository": "FacundoFirmenich/toeplitz-kasparov-interfaces",
       "branch": "Ulalito's-Island",
-      "commit": "e9e13c3f6384ef85661975545beb8842a6268c45",
+      "commit": "f583ba5781e14b79e09278c10dfd4b564e3a8261",
       "authority": "EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER",
-      "latest_gate": "HM-020 operator-valued swap-odd balanced-signature theorem",
-      "next_gate": "HM-021 intrinsic gapped operator and species identification",
+      "latest_gate": "HM-022 sign-gauge no-go",
+      "next_gate": "HM-023 intrinsic odd sign-fixing datum or full naturality no-go",
       "status": "ACTIVE"
     },
     {
       "code": "OBS",
       "repository": "FacundoFirmenich/observational-degeneration-synergy",
       "branch": "Ulalito's-Island",
-      "commit": "edf7ef401c4fe38c948d23d4227f695b8c3801e0",
+      "commit": "3a09e8647f7c76a5a86c80b64807bd68165ba40a",
       "authority": "FOUNDATIONS_TRACK",
-      "latest_gate": "Sysmic-X raw snapshot frozen pre-outcome; KwanTube convergence provenance audited",
-      "next_gate": "first Sysmic-X prospective adjudication; KwanTube no-rerun provenance hold",
-      "status": "ACTIVE_WITH_HEOM_RERUN_PROHIBITED"
+      "latest_gate": "Sysmic-X2 prospective FAIL; KwanTube claims stratified",
+      "next_gate": "new non-overlapping Sysmic-X3 hypothesis; KwanTube RETRO-006 only when manuscript frozen",
+      "status": "ACTIVE_WITH_PROSPECTIVE_FALSIFICATION_AND_HEOM_RERUN_PROHIBITED"
     },
     {
       "code": "U5HD",
       "repository": "FacundoFirmenich/u5-hd",
       "branch": "Ulalito's-Island",
-      "commit": "f356f6f060f4ef76ae69e7f67213bdeb9f90d177",
+      "commit": "69cc13ab8edacdd61d1323fb8cd9421b46953044",
       "authority": "PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY",
-      "latest_gate": "U5-HD-MIN-006 local stability of ten-state switching memory",
-      "next_gate": "MIN-007 global tariff degeneracy arrangement",
+      "latest_gate": "MIN-008 complete exact policy chamber",
+      "next_gate": "MIN-009 expand chamber to first true boundary",
       "status": "ACTIVE_EXPERIMENTAL_ISOLATED"
     }
   ]

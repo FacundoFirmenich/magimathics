@@ -1,6 +1,6 @@
 {
   "repository": "FacundoFirmenich/observational-degeneration-synergy",
-  "commit": "edf7ef401c4fe38c948d23d4227f695b8c3801e0",
-  "latest_gate": "Sysmic raw freeze + KwanTube convergence provenance audit",
-  "next_gate": "Sysmic prospective adjudication; KwanTube no-rerun provenance hold"
+  "commit": "3a09e8647f7c76a5a86c80b64807bd68165ba40a",
+  "latest_gate": "Sysmic-X2 prospective FAIL + KwanTube evidence stratification",
+  "next_gate": "Sysmic-X3 new frozen hypothesis; RETRO-006 on manuscript"
 }

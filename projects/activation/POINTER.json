@@ -1,6 +1,6 @@
 {
   "repository": "FacundoFirmenich/radix-mobius-activation-surfaces",
-  "commit": "ac5d67d6c13b9ab1c144faa1964a4fdcb9d711fa",
-  "latest_gate": "ODT-017D",
-  "next_gate": "ODT-018"
+  "commit": "6023a38e8e3caa9e687bc4ea229419865c9366bc",
+  "latest_gate": "ODT-020",
+  "next_gate": "ODT-021"
 }

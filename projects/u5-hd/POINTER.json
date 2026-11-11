@@ -1,6 +1,6 @@
 {
   "repository": "FacundoFirmenich/u5-hd",
-  "commit": "f356f6f060f4ef76ae69e7f67213bdeb9f90d177",
-  "latest_gate": "U5-HD-MIN-006",
-  "next_gate": "U5-HD-MIN-007"
+  "commit": "69cc13ab8edacdd61d1323fb8cd9421b46953044",
+  "latest_gate": "U5-HD-MIN-008",
+  "next_gate": "MIN-009"
 }
