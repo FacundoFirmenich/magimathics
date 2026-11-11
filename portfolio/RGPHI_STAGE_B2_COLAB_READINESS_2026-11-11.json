@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-11",
+  "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
+  "specialized_commit": "94252d06128283d0796896c2a9f2f18bebb8c548",
+  "status": "COLAB_AND_DRIVE_READY__CHECKPOINT_PAYLOAD_NOT_LOCATED",
+  "canonical_interval": "186 <= tau5 <= 212",
+  "checkpoint_required": {
+    "time": 185,
+    "states": 2462600671,
+    "buckets": 128,
+    "bytes": 19700805368,
+    "manifest_sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7"
+  },
+  "drive": {
+    "base_folder_id": "1KBBKkgdpYT0VBbECf5fkJn_bg92kDmFs",
+    "base_folder_url": "https://drive.google.com/drive/folders/1KBBKkgdpYT0VBbECf5fkJn_bg92kDmFs",
+    "checkpoint_cur_folder_id": "10B482cFJ_boGKQJhl4x7QtAmKvKmhECw",
+    "checkpoint_cur_folder_url": "https://drive.google.com/drive/folders/10B482cFJ_boGKQJhl4x7QtAmKvKmhECw",
+    "notebook_file_id": "1RtiHJrJEajQVvoo3vmNk0Rb2nG8Mx15R",
+    "notebook_url": "https://drive.google.com/file/d/1RtiHJrJEajQVvoo3vmNk0Rb2nG8Mx15R/view?usp=drivesdk"
+  },
+  "engine_ready": true,
+  "smoke_and_determinism_available": true,
+  "pilot": "exact transition 185 to 186 before any full run",
+  "production_authorized": false,
+  "checkpoint_payload_located": false,
+  "historical_depth85_checkpoint_rejected": true,
+  "next_admissible_operation": "transfer the exact 128 time-185 buckets, run full validation, then execute the exact 185-to-186 pilot"
+}
