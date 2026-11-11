@@ -1,0 +1,81 @@
+name: HGMF HG43 receipt-conditioned arming
+
+on:
+  push:
+    branches:
+      - hgmf-hg43-receipt-conditioned-arming-20261111
+    paths:
+      - 'research/hgmf-hg43/hgmf_hg43_core.py'
+      - 'research/hgmf-hg43/hgmf_hg43_exact_verify.py'
+      - 'research/hgmf-hg43/HGMF_HG43_CURRENT_DOSSIER.json'
+      - 'research/hgmf-hg43/HGMF_HG43_CURRENT_ADJUDICATION.json'
+      - '.github/workflows/hgmf-hg43-receipt-conditioned-arming.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash -eo pipefail {0}
+
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy
+
+      - name: Compile and execute exact verification
+        run: |
+          cd research/hgmf-hg43
+          python -m py_compile hgmf_hg43_core.py hgmf_hg43_exact_verify.py
+          python hgmf_hg43_exact_verify.py | tee HGMF_HG43_VERIFY_OUTPUT.txt
+
+      - name: Verify deterministic adjudication
+        run: |
+          git diff --exit-code -- research/hgmf-hg43/HGMF_HG43_CURRENT_ADJUDICATION.json research/hgmf-hg43/HGMF_HG43_VERIFY_OUTPUT.txt
+
+      - name: Build runtime manifest and canonical artifact
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv, hashlib, zipfile
+          root=Path('research/hgmf-hg43')
+          manifest=root/'HGMF_HG43_RUNTIME_MANIFEST.csv'
+          rows=[]
+          for p in sorted(root.iterdir()):
+              if p.is_file() and p.name != manifest.name and p.suffix != '.pyc':
+                  b=p.read_bytes()
+                  rows.append((p.name,hashlib.sha256(b).hexdigest(),len(b)))
+          with manifest.open('w',encoding='utf-8',newline='') as f:
+              w=csv.writer(f); w.writerow(['file','sha256','bytes']); w.writerows(rows)
+          out=Path('/tmp/HGMF_HG43_RECEIPT_CONDITIONED_ARMING.zip')
+          with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(root.iterdir()):
+                  if p.is_file() and p.suffix != '.pyc':
+                      z.write(p,arcname=f'HGMF_HG43_RECEIPT_CONDITIONED_ARMING/{p.name}')
+          with zipfile.ZipFile(out) as z:
+              assert z.testzip() is None
+              print(f'artifact_files={len(z.namelist())}')
+          print(f'manifest_entries={len(rows)}')
+          PY
+
+      - name: Upload canonical artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HGMF_HG43_RECEIPT_CONDITIONED_ARMING
+          path: /tmp/HGMF_HG43_RECEIPT_CONDITIONED_ARMING.zip
+          if-no-files-found: error
+          retention-days: 30
