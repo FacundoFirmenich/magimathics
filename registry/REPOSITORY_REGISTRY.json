@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7.0",
+  "schema_version": "1.8.0",
   "updated": "2026-11-11",
   "super_repository": "FacundoFirmenich/magimathics",
   "policy": "specialized repositories remain authoritative; magimathics stores immutable pointers, authority boundaries, falsifications, resource decisions and programme-level consequences",
@@ -10,29 +10,29 @@
       "branch": "Ulalito's-Island",
       "commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
       "authority": "CANONICAL_ACTIVE",
-      "latest_gate": "Stage-A rebuild/Stage-B2 external execution surface",
-      "next_gate": "real accepted B2 level manifests",
-      "status": "EXTERNAL_EXECUTION_NO_NEW_RECEIPT_DETECTED"
+      "latest_gate": "Stage-A rebuild / Stage-B2 external execution surface",
+      "next_gate": "real accepted B2 level manifests and CERT-009 closure",
+      "status": "EXTERNAL_EXECUTION_NO_NEW_RECEIPT"
     },
     {
       "code": "BQ",
       "repository": "FacundoFirmenich/quaternary-query-tomography",
       "branch": "Ulalito's-Island",
-      "commit": "79b932bd300dbdae5d4f7df95a4be9ebf18eca7b",
+      "commit": "64b8254e21e087f96fddd442b85b38d7433d5cbd",
       "authority": "EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER",
-      "latest_gate": "BQ-010I-F orbit2 parity survives; tested carry lifts dual-solver UNSAT",
-      "next_gate": "BQ-010I-G enumerate all orbit2 parity symmetry classes",
-      "status": "ACTIVE_HOLD_ORBIT2_GLOBAL"
+      "latest_gate": "BQ-010I-G global deficit-orbit2 elimination",
+      "next_gate": "BQ-010I-H remaining twelve one-sided deficit orbits",
+      "status": "ACTIVE"
     },
     {
       "code": "ACTIVATION",
       "repository": "FacundoFirmenich/radix-mobius-activation-surfaces",
       "branch": "Ulalito's-Island",
-      "commit": "6023a38e8e3caa9e687bc4ea229419865c9366bc",
+      "commit": "03c6c695c2aeaa85bb69529aa46a348e710609fd",
       "authority": "PARALLEL_ISOLATED_INDEPENDENT_PAPER",
-      "latest_gate": "ODT-020 prospective nu2 valuation-delay PASS",
-      "next_gate": "ODT-021 matched valuation/base-magnitude separation",
-      "status": "ACTIVE_PROSPECTIVE_PASS"
+      "latest_gate": "ODT-021 prospective matched Cox PASS",
+      "next_gate": "ODT-022 odd-prime and seed-valuation contributions",
+      "status": "ACTIVE_MULTIPLE_PROSPECTIVE_PASSES"
     },
     {
       "code": "METHODS",
@@ -48,30 +48,30 @@
       "code": "HM",
       "repository": "FacundoFirmenich/toeplitz-kasparov-interfaces",
       "branch": "Ulalito's-Island",
-      "commit": "f583ba5781e14b79e09278c10dfd4b564e3a8261",
+      "commit": "0d3c37c0b74d1d6c0615296d84678e4e524357b8",
       "authority": "EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER",
-      "latest_gate": "HM-022 sign-gauge no-go",
-      "next_gate": "HM-023 intrinsic odd sign-fixing datum or full naturality no-go",
-      "status": "ACTIVE"
+      "latest_gate": "HM-023 model-relative full naturality no-go",
+      "next_gate": "HM-024 only after independently justified enrichment",
+      "status": "STOP_CANONICAL_SELECTION_UNENRICHED"
     },
     {
       "code": "OBS",
       "repository": "FacundoFirmenich/observational-degeneration-synergy",
       "branch": "Ulalito's-Island",
-      "commit": "3a09e8647f7c76a5a86c80b64807bd68165ba40a",
+      "commit": "60f6171794d39495cd523911b454665c005f8450",
       "authority": "FOUNDATIONS_TRACK",
-      "latest_gate": "Sysmic-X2 prospective FAIL; KwanTube claims stratified",
-      "next_gate": "new non-overlapping Sysmic-X3 hypothesis; KwanTube RETRO-006 only when manuscript frozen",
-      "status": "ACTIVE_WITH_PROSPECTIVE_FALSIFICATION_AND_HEOM_RERUN_PROHIBITED"
+      "latest_gate": "Sysmic-X3 ABSTAIN insufficient events; KwanTube RETRO-006 manuscript audit",
+      "next_gate": "Sysmic-X4 adequately powered holdout; KwanTube RETRO-007 next revision",
+      "status": "ACTIVE_WITH_X2_FALSIFICATION_X3_ABSTAIN_HEOM_RERUN_PROHIBITED"
     },
     {
       "code": "U5HD",
       "repository": "FacundoFirmenich/u5-hd",
       "branch": "Ulalito's-Island",
-      "commit": "69cc13ab8edacdd61d1323fb8cd9421b46953044",
+      "commit": "11cf6b943d75065d464255c4687654fff79818e5",
       "authority": "PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY",
-      "latest_gate": "MIN-008 complete exact policy chamber",
-      "next_gate": "MIN-009 expand chamber to first true boundary",
+      "latest_gate": "MIN-009 first exact policy boundary at radius 1/8",
+      "next_gate": "MIN-010 first memory-quotient reduction locus",
       "status": "ACTIVE_EXPERIMENTAL_ISOLATED"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "repository": "FacundoFirmenich/toeplitz-kasparov-interfaces",
-  "commit": "f583ba5781e14b79e09278c10dfd4b564e3a8261",
-  "latest_gate": "HM-022",
-  "next_gate": "HM-023"
+  "commit": "0d3c37c0b74d1d6c0615296d84678e4e524357b8",
+  "latest_gate": "HM-023",
+  "next_gate": "HM-024 only if enriched"
 }
