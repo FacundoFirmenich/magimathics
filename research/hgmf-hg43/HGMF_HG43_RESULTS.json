@@ -1,0 +1,27 @@
+{
+  "gate": "HGMF-HG43",
+  "title": "Receipt-Conditioned Quotient Laws, Local Maximin Power and Arming Sufficiency",
+  "date": "2026-11-11",
+  "global_verdict": "PASS_RECEIPT_CONDITIONED_ARMING_THEOREM_PASS_INDEPENDENCE_CLUSTER_ADMISSION_PASS_STRUCTURED_COVARIANCE_FINITE_SUPREMUM_THEOREM_PASS_NULL_UNION_UPPER_DENSITY_RULE_PASS_CLAIM_LOGIC_AGGREGATION_PASS_CANTELLI_LOCAL_POWER_CERTIFICATE_PASS_CONJUNCTION_FAMILYWISE_POWER_BOUND_PASS_FAIL_CLOSED_ARMING_VALIDATOR_FAIL_CURRENT_RECEIPT_ADMISSION_FAIL_CURRENT_MAGNETIC_QUOTIENT_LAW_FAIL_CURRENT_ADSORPTION_QUOTIENT_LAW_FAIL_CURRENT_LOCAL_MAXIMIN_POWER_FAIL_CURRENT_ARMING_ABSTAIN_REAL_RECEIPTS_MISSING_HOLD_ACQUISITION_HOLD_PROSPECTIVE_OUTCOMES_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "formal_results": {
+    "effective_replicates": "certified independent clusters, not rows",
+    "unrestricted_covariance_minimum": "n_clusters >= quotient_dimension + mean_design_rank",
+    "structured_covariance_finite_supremum": "compact certified parameter set plus uniform positive eigenvalue floor",
+    "union_null_upper_density": "max over component upper densities",
+    "local_power_lower": "(n*m-log(tau))^2/(n*v+(n*m-log(tau))^2)",
+    "conjunction_power_lower": "1-sum(beta_cell)"
+  },
+  "current_state": {
+    "real_magnetic_receipts": 0,
+    "real_adsorption_receipts": 0,
+    "proper_candidate_density_certificates": 0,
+    "null_upper_density_certificates": 0,
+    "local_power_certificates": 0,
+    "armed": false,
+    "acquisition_authorized": false,
+    "prospective_outcomes_present": false
+  },
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD",
+  "next_gate": "HGMF-HG44 — anytime-valid quotient e-process and stopping constitution, conditional on HG43 arming"
+}
