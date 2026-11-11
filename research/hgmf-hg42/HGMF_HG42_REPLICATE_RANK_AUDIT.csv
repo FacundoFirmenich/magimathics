@@ -1,0 +1,3 @@
+carrier,quotient_dimension,available_independent_replicates,mean_design_rank,minimum_unrestricted_full_covariance_replicates,status,qualification
+magnetism,3,1,1,4,FAIL_REPLICATE_RANK,historical HG41 quotient vector
+adsorption,242,1,1,243,FAIL_NO_JOINT_REPLICATE_COVARIANCE,applies only to unrestricted covariance on the full HG40 vector; structured or training-compressed models require separate proof
