@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hgmf-hg42-prospective-seal.schema.json",
+  "title": "HGMF HG42 Prospective Quotient E-value Seal",
+  "type": "object",
+  "required": [
+    "profile",
+    "stage",
+    "chart_seal",
+    "partitions",
+    "noise_laws",
+    "candidate_density",
+    "null_upper_density",
+    "combination",
+    "acquisition_authorized",
+    "prospective_outcomes_present"
+  ],
+  "properties": {
+    "profile": {"const": "hgmf-hg42-prospective-seal/1.0"},
+    "stage": {"enum": ["PROTOCOL_FROZEN_UNARMED", "ARMED_FUTURE_ONLY"]},
+    "chart_seal": {
+      "type": "object",
+      "required": ["measure_id", "anchor_labels", "orientation", "degeneracy_threshold", "chart_transition_policy"],
+      "properties": {
+        "measure_id": {"type": "string", "minLength": 1},
+        "anchor_labels": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}},
+        "orientation": {"type": "string"},
+        "degeneracy_threshold": {"type": ["number", "null"]},
+        "chart_transition_policy": {"type": "string"}
+      }
+    },
+    "partitions": {
+      "type": "object",
+      "required": ["calibration_ids", "training_ids", "holdout_ids", "holdout_values_present_before_arming"],
+      "properties": {
+        "calibration_ids": {"type": "array", "items": {"type": "string"}},
+        "training_ids": {"type": "array", "items": {"type": "string"}},
+        "holdout_ids": {"type": "array", "items": {"type": "string"}},
+        "holdout_values_present_before_arming": {"type": "boolean"}
+      }
+    },
+    "noise_laws": {
+      "type": "object",
+      "required": ["magnetism", "adsorption"],
+      "additionalProperties": {"$ref": "#/$defs/noiseLaw"}
+    },
+    "candidate_density": {"$ref": "#/$defs/densityProof"},
+    "null_upper_density": {"$ref": "#/$defs/upperProof"},
+    "combination": {
+      "type": "object",
+      "required": ["rule"],
+      "properties": {
+        "rule": {"enum": ["weighted_mean", "intersection_min", "sequential_conditional_product"]},
+        "weights": {"type": ["array", "null"], "items": {"type": "number", "minimum": 0}},
+        "filtration_proof_hash": {"type": ["string", "null"]}
+      }
+    },
+    "acquisition_authorized": {"type": "boolean"},
+    "prospective_outcomes_present": {"type": "boolean"}
+  },
+  "$defs": {
+    "noiseLaw": {
+      "type": "object",
+      "required": ["quotient_dimension", "independent_replicates", "mean_design_rank", "covariance_model", "real_replicate_receipt_hash"],
+      "properties": {
+        "quotient_dimension": {"type": "integer", "minimum": 1},
+        "independent_replicates": {"type": "integer", "minimum": 0},
+        "mean_design_rank": {"type": "integer", "minimum": 0},
+        "covariance_model": {"enum": ["unrestricted_full", "structured", "known"]},
+        "structured_covariance_proof_hash": {"type": ["string", "null"]},
+        "real_replicate_receipt_hash": {"type": ["string", "null"]}
+      }
+    },
+    "densityProof": {
+      "type": "object",
+      "required": ["measure_id", "proper_density_proof_hash", "training_only"],
+      "properties": {
+        "measure_id": {"type": "string"},
+        "proper_density_proof_hash": {"type": ["string", "null"]},
+        "training_only": {"type": "boolean"}
+      }
+    },
+    "upperProof": {
+      "type": "object",
+      "required": ["measure_id", "certified_upper_bound_proof_hash", "carrier_standard_union"],
+      "properties": {
+        "measure_id": {"type": "string"},
+        "certified_upper_bound_proof_hash": {"type": ["string", "null"]},
+        "carrier_standard_union": {"type": "boolean"}
+      }
+    }
+  }
+}
