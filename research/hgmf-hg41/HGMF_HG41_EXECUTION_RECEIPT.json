@@ -1,0 +1,20 @@
+{
+  "gate": "HGMF-HG41",
+  "execution_profile": "local-exact-verification/1.0",
+  "branch": "hgmf-hg41-quotient-evalues-20261111",
+  "branch_head_before_receipt": "3050e660e1613a459da4b15b53a746ea80a511d2",
+  "base": "hgmf-hg40-affine-quotient-identifiability-20261110",
+  "py_compile": "PASS",
+  "exact_verifier": "PASS",
+  "historical_power_audit": "PASS_EXECUTED",
+  "bundle": {
+    "filename": "HGMF_HG41_QUOTIENT_EVALUES_2026-11-11.zip",
+    "sha256": "011ad88bf8afc7d23f99c74d4577eddd10ed1e67b8e0490768b2e2e262761be1",
+    "files": 13,
+    "zip_integrity": "PASS"
+  },
+  "actual_historical_quotient_evalue_computed": false,
+  "retrospective_confirmatory_authority": "ABSTAIN",
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD"
+}

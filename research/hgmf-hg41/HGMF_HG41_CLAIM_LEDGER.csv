@@ -1,0 +1,14 @@
+claim_id,claim,class,status
+HG41-C01,The labelled affine quotient chart has inverse Jacobian absolute value |v|^(m-2),THEOREM,PASS
+HG41-C02,A proper original-space density induces a proper quotient pushforward density with the chart Jacobian,THEOREM,PASS
+HG41-C03,A numerical density may be moved between quotient charts without a transition Jacobian,THEOREM,FAIL
+HG41-C04,A null upper density and proper training density on the same quotient measure define a valid finite-sample e-variable,THEOREM,PASS
+HG41-C05,Support bounds alone canonically determine a stochastic quotient likelihood,THEOREM,FAIL
+HG41-C06,If the null contains every point mass on its feasible set then every valid e-variable is at most one pointwise there,THEOREM,PASS
+HG41-C07,The four trained magnetic HEB intervals have a nonempty common intersection,EMPIRICAL,PASS
+HG41-C08,The historical equal-trained magnetic source null is excluded in quotient space under the available field-support authority,INFERENCE,FAIL
+HG41-C09,HG40 found a no-passing violation beyond its conservative adsorption tolerance,EMPIRICAL,FAIL
+HG41-C10,The historical adsorption artifact defines a joint stochastic law over correlated interpolation nodes,PROVENANCE,FAIL
+HG41-C11,A historical quotient e-value of at least 140 was computed,STATISTICAL,FAIL
+HG41-C12,HG41 carries confirmatory retrospective authority,AUTHORITY,ABSTAIN
+HG41-C13,HG41 supplies evidence for physical protogeometry,PHYSICAL,FAIL
