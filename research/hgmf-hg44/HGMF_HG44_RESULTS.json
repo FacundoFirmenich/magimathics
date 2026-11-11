@@ -1,0 +1,28 @@
+{
+  "gate": "HGMF-HG44",
+  "title": "Conformational Evidence Dynamics: Sequential Logic, Causal Irreversibility and Anytime Validity",
+  "date": "2026-11-11",
+  "global_verdict": "PASS_CONFORMATIONAL_EPROCESS_THEOREM_PASS_EVIDENCE_CONSERVATION_LAW_PASS_PREDICTABLE_SWITCHING_THEOREM_PASS_PREDICTABLE_MIXTURE_THEOREM_PASS_EPOCH_CONCATENATION_THEOREM_PASS_PREDICTABLE_QUARANTINE_THEOREM_PASS_OPTIONAL_STOPPING_CONSTITUTION_PASS_CLAIM_LATTICE_MONOTONICITY_PASS_NULL_EXPANSION_MONOTONICITY_PASS_RECALIBRATION_STATE_MACHINE_PASS_NO_RETROACTIVE_REWRITE_THEOREM_PASS_HASH_CHAINED_CONFORMATIONAL_HISTORY_PASS_FAIL_CLOSED_CONSTITUTION_VALIDATOR_FAIL_OUTCOME_DEPENDENT_SAME_STEP_SELECTION_FAIL_RETROACTIVE_MODEL_REWRITE_FAIL_CURRENT_HG43_ARMING_PRECONDITION_FAIL_CURRENT_ACQUISITION_AUTHORITY_ABSTAIN_REAL_CONDITIONAL_EFACTORS_HOLD_ACQUISITION_HOLD_PROSPECTIVE_OUTCOMES_HOLD_PHYSICAL_PROTOGEOMETRY",
+  "formal_results": {
+    "conditional_factor": "E[e_t | F_(t-1)] <= 1",
+    "capital_process": "M_t=product_i<=t e_i",
+    "predictable_switching": true,
+    "predictable_mixture": true,
+    "same_step_selection_counterexample_expectation": 2.0,
+    "predictable_quarantine_factor": "1-A_t+A_t e_t",
+    "null_expansion_monotonicity": "U_new>=U_old implies e_new<=e_old",
+    "claim_strength_monotonicity": "S subset S' implies min_(S') E <= min_S E",
+    "optional_stopping": "P(sup_t M_t>=1/alpha)<=alpha"
+  },
+  "current_state": {
+    "state": "PROTOCOL_FROZEN_UNARMED",
+    "hg43_armed": false,
+    "real_conditional_e_factors": 0,
+    "real_calibration_epochs": 0,
+    "acquisition_authorized": false,
+    "prospective_outcomes_present": false
+  },
+  "empirical_hgmf_claim": false,
+  "physical_protogeometry": "HOLD",
+  "next_gate": "HGMF-HG45 \u2014 conformational growth optimality and irreversible claim selection, conditional on real HG43 arming"
+}

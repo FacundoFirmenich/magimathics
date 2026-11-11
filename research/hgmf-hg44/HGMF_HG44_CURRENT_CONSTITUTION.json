@@ -1,0 +1,34 @@
+{
+  "profile": "hgmf-hg44-conformational-constitution/1.0",
+  "state": "PROTOCOL_FROZEN_UNARMED",
+  "hg43_precondition": {
+    "required_status": "PASS_ARMED_RECEIPT_CONDITIONED_QUOTIENT_EVALUE",
+    "observed_status": "ABSTAIN_REAL_RECEIPTS_DENSITIES_OR_POWER_MISSING",
+    "passed": false
+  },
+  "filtration": {
+    "id": "hg44-admitted-information-filtration/v1",
+    "current_time_index": 0,
+    "outcomes_present": false
+  },
+  "conformation": {
+    "id": "HG44-K0",
+    "epoch_id": null,
+    "chart_hash": null,
+    "measure_id": "hg42-labelled-affine-quotient-measure/v1",
+    "candidate_algorithm_hash": null,
+    "null_envelope_hash": null,
+    "claim_semantics": null,
+    "aggregation_rule": null,
+    "quarantine_rule_hash": null,
+    "stopping_rule_hash": null
+  },
+  "evidence": {
+    "capital": 1.0,
+    "real_factors_admitted": 0,
+    "threshold": 140.0
+  },
+  "history": [],
+  "acquisition_authorized": false,
+  "prospective_outcomes_present": false
+}

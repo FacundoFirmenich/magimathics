@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hgmf-hg44-conformational-constitution.schema.json",
+  "title": "HGMF HG44 conformational e-process constitution",
+  "type": "object",
+  "required": [
+    "profile",
+    "state",
+    "hg43_precondition",
+    "filtration",
+    "conformation",
+    "evidence",
+    "history",
+    "acquisition_authorized",
+    "prospective_outcomes_present"
+  ],
+  "properties": {
+    "profile": {
+      "const": "hgmf-hg44-conformational-constitution/1.0"
+    },
+    "state": {
+      "enum": [
+        "PROTOCOL_FROZEN_UNARMED",
+        "ARMED_FUTURE_ONLY",
+        "ACQUIRING_EPOCH",
+        "PAUSED_RECALIBRATION",
+        "TERMINAL_PASS",
+        "TERMINAL_FAIL",
+        "TERMINAL_ABSTAIN"
+      ]
+    },
+    "hg43_precondition": {
+      "type": "object"
+    },
+    "filtration": {
+      "type": "object"
+    },
+    "conformation": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "history": {
+      "type": "array"
+    },
+    "acquisition_authorized": {
+      "type": "boolean"
+    },
+    "prospective_outcomes_present": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hgmf-hg44-conformational-event.schema.json",
+  "title": "HGMF HG44 conformational transition event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp",
+    "prior_event_hash",
+    "from_state",
+    "to_state",
+    "event_type",
+    "prior_information_hash",
+    "transition_rule_hash",
+    "new_conformation_hash",
+    "outcome_used_to_select_same_step_factor"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prior_event_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "from_state": {
+      "type": "string"
+    },
+    "to_state": {
+      "type": "string"
+    },
+    "event_type": {
+      "enum": [
+        "ARM",
+        "START_EPOCH",
+        "ADMIT_FACTOR",
+        "PAUSE_RECALIBRATION",
+        "RESUME_NEW_EPOCH",
+        "QUARANTINE_INTERVAL",
+        "TERMINAL_PASS",
+        "TERMINAL_FAIL",
+        "TERMINAL_ABSTAIN"
+      ]
+    },
+    "prior_information_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transition_rule_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "new_conformation_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_used_to_select_same_step_factor": {
+      "const": false
+    }
+  }
+}
