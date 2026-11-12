@@ -1,0 +1,32 @@
+{
+  "update":"MULTIFRONT-010",
+  "date":"2026-11-10",
+  "mainline_changed":false,
+  "specialized_commits":{
+    "BQ":"9d750572a1b1567b2800693d8773d163b5f18cab",
+    "ACTIVATION":"93d176057a630300e3cc9ec9e9ba9d9da2a220d7",
+    "METHODS":"3d3df733e364fdc24e413449f7661b32f377f18e",
+    "HM":"c09f1cd76e602f82b5a9aa2c05f10239d3d653b0",
+    "U5HD":"d309ddd537ecfb8c96ab231bed941997d7ca35e9",
+    "OBS":"147ffc477138c76b8a7b3baa41d72db068d10312",
+    "RGPHI":"a116ff21bd5b2fd973c39445931d8a4b832069b7"
+  },
+  "verdicts":[
+    "BQ_PARITY_ONLY_NO_GO_REFUTED__PACKING_OPEN",
+    "CERT002_EXACT_SHORTEST_DISTANCE_COMPOSITION_PASS",
+    "HM015_SPECIES_SWAP_NO_GO_PASS",
+    "ODT016_FULL_PREOUTCOME_FREEZE_PASS",
+    "U5HD_MINIMAL_INTERNAL_SEMICONJUGATIONS_PASS",
+    "EXTERNAL_VALIDATION_FREEZES_HOLD",
+    "RGPHI_STAGE_B2_UNCHANGED_RESOURCE_BLOCKED"
+  ],
+  "next_gates":{
+    "BQ":"BQ-010G carry-coupled high-bit packing",
+    "ACTIVATION":"Execute ODT-016 survival surfaces",
+    "METHODS":"CERT-003 streaming external-memory certificates",
+    "HM":"HM-016 origin of ordering datum",
+    "U5HD":"U5-HD-MIN-002 natural external semiconjugation",
+    "OBS":"Select and hash untouched Sysmic-X and KwanTube-X jurisdictions",
+    "RGPHI":"Stage B2"
+  }
+}

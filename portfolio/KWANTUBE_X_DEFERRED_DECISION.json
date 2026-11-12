@@ -1,0 +1,22 @@
+{
+  "decision_date": "2026-11-10",
+  "repository": "FacundoFirmenich/observational-degeneration-synergy",
+  "commit": "dd2c0b9a6db1f6abc4764e455d33ebd33f0fd67d",
+  "gate": "KWANTUBE-X",
+  "status": "DEFERRED_NO_PRODUCTION_AUTHORIZATION",
+  "reason": "The original full-system 1JFF HEOM run already required approximately 59 hours on an old non-dedicated laptop. The proposed prospective design would imply four new HEOM integrations: two bath-parameter blocks times NC=7 and NC=8. No new long HEOM computation is strategically justified now.",
+  "allowed_now": [
+    "audit existing KwanTube HEOM outputs and hashes",
+    "post-process existing trajectories",
+    "recover provenance and resource receipts",
+    "run cheap integrity and smoke checks"
+  ],
+  "reactivation_requires": [
+    "explicit user authorization",
+    "hardware and wall-time budget",
+    "short benchmark",
+    "scientific value justification",
+    "signed protocol amendment"
+  ],
+  "outcomes_opened": false
+}

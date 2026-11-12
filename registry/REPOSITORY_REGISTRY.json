@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.8.0",
+  "updated": "2026-11-11",
+  "super_repository": "FacundoFirmenich/magimathics",
+  "policy": "specialized repositories remain authoritative; magimathics stores immutable pointers, authority boundaries, falsifications, resource decisions and programme-level consequences",
+  "repositories": [
+    {
+      "code": "RGPHI",
+      "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
+      "branch": "Ulalito's-Island",
+      "commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
+      "authority": "CANONICAL_ACTIVE",
+      "latest_gate": "Stage-A rebuild / Stage-B2 external execution surface",
+      "next_gate": "real accepted B2 level manifests and CERT-009 closure",
+      "status": "EXTERNAL_EXECUTION_NO_NEW_RECEIPT"
+    },
+    {
+      "code": "BQ",
+      "repository": "FacundoFirmenich/quaternary-query-tomography",
+      "branch": "Ulalito's-Island",
+      "commit": "64b8254e21e087f96fddd442b85b38d7433d5cbd",
+      "authority": "EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER",
+      "latest_gate": "BQ-010I-G global deficit-orbit2 elimination",
+      "next_gate": "BQ-010I-H remaining twelve one-sided deficit orbits",
+      "status": "ACTIVE"
+    },
+    {
+      "code": "ACTIVATION",
+      "repository": "FacundoFirmenich/radix-mobius-activation-surfaces",
+      "branch": "Ulalito's-Island",
+      "commit": "03c6c695c2aeaa85bb69529aa46a348e710609fd",
+      "authority": "PARALLEL_ISOLATED_INDEPENDENT_PAPER",
+      "latest_gate": "ODT-021 prospective matched Cox PASS",
+      "next_gate": "ODT-022 odd-prime and seed-valuation contributions",
+      "status": "ACTIVE_MULTIPLE_PROSPECTIVE_PASSES"
+    },
+    {
+      "code": "METHODS",
+      "repository": "FacundoFirmenich/certified-radix-mobius-computation",
+      "branch": "Ulalito's-Island",
+      "commit": "4b8f85b8c4d691e358265f9def95330e8750616e",
+      "authority": "METHODS_COMPANION",
+      "latest_gate": "CERT-008 cut-chain closure object",
+      "next_gate": "CERT-009 instantiate on real Stage-B2 manifests",
+      "status": "READY_WAITING_REAL_B2"
+    },
+    {
+      "code": "HM",
+      "repository": "FacundoFirmenich/toeplitz-kasparov-interfaces",
+      "branch": "Ulalito's-Island",
+      "commit": "0d3c37c0b74d1d6c0615296d84678e4e524357b8",
+      "authority": "EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER",
+      "latest_gate": "HM-023 model-relative full naturality no-go",
+      "next_gate": "HM-024 only after independently justified enrichment",
+      "status": "STOP_CANONICAL_SELECTION_UNENRICHED"
+    },
+    {
+      "code": "OBS",
+      "repository": "FacundoFirmenich/observational-degeneration-synergy",
+      "branch": "Ulalito's-Island",
+      "commit": "60f6171794d39495cd523911b454665c005f8450",
+      "authority": "FOUNDATIONS_TRACK",
+      "latest_gate": "Sysmic-X3 ABSTAIN insufficient events; KwanTube RETRO-006 manuscript audit",
+      "next_gate": "Sysmic-X4 adequately powered holdout; KwanTube RETRO-007 next revision",
+      "status": "ACTIVE_WITH_X2_FALSIFICATION_X3_ABSTAIN_HEOM_RERUN_PROHIBITED"
+    },
+    {
+      "code": "U5HD",
+      "repository": "FacundoFirmenich/u5-hd",
+      "branch": "Ulalito's-Island",
+      "commit": "11cf6b943d75065d464255c4687654fff79818e5",
+      "authority": "PROGRAMME_CENTRUM_NO_AUTOMATIC_PUBLICATION_AUTHORITY",
+      "latest_gate": "MIN-009 first exact policy boundary at radius 1/8",
+      "next_gate": "MIN-010 first memory-quotient reduction locus",
+      "status": "ACTIVE_EXPERIMENTAL_ISOLATED"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+priority,code,gate,status,dependency
+1,RGPHI,CERT-009 / Stage-B2 closure,WAITING_REAL_EXTERNAL_RECEIPTS,accepted B2 level manifests from Drive
+2,BQ,BQ-010I-H,OPEN,remaining deficit orbits 3 5 6 7 8 9 10 11 12 13 14 15 and then fully aperiodic 12x20
+3,ACTIVATION,ODT-022,OPEN_PROSPECTIVE,new untouched jurisdiction for odd-prime valuations and seed-state interactions
+4,U5HD,U5-HD-MIN-010,OPEN,first true memory-quotient reduction locus beyond policy boundary 1/8
+5,OBS,SYSMIC-X4,OPEN_NEW_HOLDOUT,adequately powered non-overlapping holdout; do not reuse X3
+6,OBS,KWANTUBE-RETRO-007,WAITING_NEXT_MANUSCRIPT_REVISION,verify mandatory wording/provenance repairs; no HEOM rerun
+7,HM,HM-024,STOP_UNLESS_ENRICHED,requires independently motivated orientation/sign-fixing enrichment

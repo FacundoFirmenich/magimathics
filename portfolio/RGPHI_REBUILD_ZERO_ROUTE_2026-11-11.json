@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-11",
+  "status": "REBUILD_ZERO_ROUTE_STAGED",
+  "specialized_commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
+  "engine_commit": "a50ad61776d0e20eacdc00e407f09881b9e64487",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1kmOR7I-k6LWsFZiWnwVFpbWPZJ5lxd5G",
+  "colab_url": "https://colab.research.google.com/drive/1ToZDl6ZZXEFjHGhOWrFsqj_2emU0Lnsj",
+  "persistent_storage": "Google Drive",
+  "local_scratch": "compiled binaries and git checkout only",
+  "exact_acceptance": [
+    "D10000 safe-state CSV SHA matches historical asset",
+    "every earliest-arrival level 1..171 matches historical receipt",
+    "every envelope level 172..185 matches historical receipt",
+    "t185 states=2462600671",
+    "t185 bytes=19700805368",
+    "t185 bucket manifest SHA=dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7"
+  ],
+  "historical_compute_seconds_to_t185": 1080.27301627,
+  "stage_b2_runtime": "UNKNOWN_UNTIL_FIRST_PRODUCTION_LEVEL",
+  "canonical_interval": "186<=tau5<=212"
+}
