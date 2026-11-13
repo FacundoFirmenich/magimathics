@@ -26,8 +26,8 @@ These exclusions are editorial scope choices, not negative judgments on the math
 
 ## Repository pointers audited
 
-- RGPHI programme: f7fd52837dbf57721bebfcf6b69e07537b98c2e5
-- RGPHI-I standalone: cd657285f8b98f79e51caa713c138941d7489b12
+- RGPHI programme: a4ff4d918848b8ab87177116291f3500f11d0ee2
+- RGPHI-I standalone: a9029019a547e8385a08c4a2f12afa2dd9715232
 - BQ: 36aa8fde393e70ad68cfc61828b57dfc1ed0086f
 - Activation: 78f219e95f4951ee804c9cc82fc328fff725b7b2
 - Methods: 4b8f85b8c4d691e358265f9def95330e8750616e
@@ -37,3 +37,7 @@ These exclusions are editorial scope choices, not negative judgments on the math
 ## Publication decision
 
 No further scientific frontier should be opened before Daniel Barraco reviews the frozen candidate. The only scope decision explicitly left to him is the five-state strict-edge uniqueness theorem.
+
+## Epistemic layer
+
+The Barraco candidate now carries a CRISPR-Observability-derived epistemic protocol: typed relations, AND gates, revision conditions, guided reading, source bindings and an explicit separation between navigation and evidence. The three-page exegesis and self-contained HTML supergraph are distributed in the reviewer packet; their source projection is versioned in the standalone repository.
