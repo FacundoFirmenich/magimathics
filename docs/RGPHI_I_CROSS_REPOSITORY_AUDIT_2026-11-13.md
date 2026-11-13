@@ -26,7 +26,7 @@ These exclusions are editorial scope choices, not negative judgments on the math
 
 ## Repository pointers audited
 
-- RGPHI programme: a4ff4d918848b8ab87177116291f3500f11d0ee2
+- RGPHI programme: 8e63a5efe44f79989b9e9b58992e9820da71e32d
 - RGPHI-I standalone: a9029019a547e8385a08c4a2f12afa2dd9715232
 - BQ: 36aa8fde393e70ad68cfc61828b57dfc1ed0086f
 - Activation: 78f219e95f4951ee804c9cc82fc328fff725b7b2
