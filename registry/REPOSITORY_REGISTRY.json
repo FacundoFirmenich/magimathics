@@ -8,7 +8,7 @@
       "code": "RGPHI",
       "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
       "branch": "main",
-      "commit": "f7fd52837dbf57721bebfcf6b69e07537b98c2e5",
+      "commit": "a4ff4d918848b8ab87177116291f3500f11d0ee2",
       "authority": "CANONICAL_ACTIVE_PROGRAMME",
       "latest_gate": "Paper III theorem stack v1.14 / HA-005 plus Stage-B2 execution line",
       "next_gate": "HA006 arithmetic/six-state frontier and independent execution receipts",
@@ -18,11 +18,11 @@
       "code": "RGPHI_I",
       "repository": "FacundoFirmenich/radix-mobius-rigidity",
       "branch": "main",
-      "commit": "cd657285f8b98f79e51caa713c138941d7489b12",
+      "commit": "a9029019a547e8385a08c4a2f12afa2dd9715232",
       "authority": "PUBLICATION_REPRODUCIBILITY_COMPANION_PRIVATE",
       "latest_gate": "Barraco adversarial review candidate with arbitrary-n transitive-generator rigidity",
       "next_gate": "written external assessment; clean-room replay; closed-database priority chaining; DOI/arXiv freeze",
-      "status": "BARRACO_REVIEW_CANDIDATE_MANUSCRIPT_EMBARGO_ACTIVE"
+      "status": "BARRACO_REVIEW_CANDIDATE_EPISTEMIC_LAYER_MANUSCRIPT_EMBARGO_ACTIVE"
     },
     {
       "code": "BQ",
