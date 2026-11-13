@@ -1,7 +1,7 @@
 # Current strategic frontiers — MULTIFRONT-019 — 2026-11-13
 
 0. **RGΦ-I publication gate:** standalone commit a9029019a547e8385a08c4a2f12afa2dd9715232 is the Barraco-review candidate with source-bound epistemic layer. The main manuscript now includes arbitrary-cardinality transitive-generator rigidity; five-state global strict-edge uniqueness remains an explicit scope-adjudication candidate, not a main-paper claim. Binding gates: Barraco written review, independent specialist review, clean-room replay, closed-database priority chaining, DOI/arXiv freeze.
-1. **RGΦ programme:** monorepo commit a4ff4d918848b8ab87177116291f3500f11d0ee2, theorem stack v1.14. HA-005 closes the minimal rank-two six-state 2/3 jurisdiction but not global six-state nonexistence. Stage-B2 execution remains a separate line.
+1. **RGΦ programme:** monorepo commit 8e63a5efe44f79989b9e9b58992e9820da71e32d, theorem stack v1.14. HA-005 closes the minimal rank-two six-state 2/3 jurisdiction but not global six-state nonexistence. Stage-B2 execution remains a separate line.
 2. **BQ:** deficit orbit 2 globally eliminated in both one-sided periodic quotient branches; binding interval remains 35 <= M3 <= 36.
 3. **Activation:** prospective prime-valuation/arithmetic-delay programme remains active; exact run arithmetic is relevant context but is not imported as an RGΦ-I theorem.
 4. **Methods:** CERT-008 ready; CERT-009 waits real Stage-B2 manifests.
