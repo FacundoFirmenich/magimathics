@@ -8,7 +8,7 @@
       "code": "RGPHI",
       "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
       "branch": "main",
-      "commit": "8e63a5efe44f79989b9e9b58992e9820da71e32d",
+      "commit": "c25857e53eea8585a4f10e0a5a42295a315151ec",
       "authority": "CANONICAL_ACTIVE_PROGRAMME",
       "latest_gate": "Paper III theorem stack v1.14 / HA-005 plus Stage-B2 execution line",
       "next_gate": "HA006 arithmetic/six-state frontier and independent execution receipts",
@@ -18,11 +18,14 @@
       "code": "RGPHI_I",
       "repository": "FacundoFirmenich/radix-mobius-rigidity",
       "branch": "main",
-      "commit": "a9029019a547e8385a08c4a2f12afa2dd9715232",
+      "commit": "7b06e834ea541333f0a627bdf1e554247d29054c",
       "authority": "PUBLICATION_REPRODUCIBILITY_COMPANION_PRIVATE",
-      "latest_gate": "Barraco adversarial review candidate with arbitrary-n transitive-generator rigidity",
+      "latest_gate": "Final Barraco review candidate; paper title frozen as A Sharp Permutation Threshold for Finite High Components in Primitive Radix–Möbius Dynamics",
       "next_gate": "written external assessment; clean-room replay; closed-database priority chaining; DOI/arXiv freeze",
-      "status": "BARRACO_REVIEW_CANDIDATE_EPISTEMIC_LAYER_MANUSCRIPT_EMBARGO_ACTIVE"
+      "status": "BARRACO_REVIEW_CANDIDATE_FINAL_MANUSCRIPT_EMBARGO_ACTIVE",
+      "display_name": "Radix–Möbius Finite Components",
+      "current_slug": "radix-mobius-rigidity",
+      "target_slug": "radix-mobius-finite-components"
     },
     {
       "code": "BQ",
