@@ -1,43 +1,53 @@
 {
-  "schema_version": "1.8.0",
-  "updated": "2026-11-11",
+  "schema_version": "1.9.0",
+  "updated": "2026-11-13",
   "super_repository": "FacundoFirmenich/magimathics",
   "policy": "specialized repositories remain authoritative; magimathics stores immutable pointers, authority boundaries, falsifications, resource decisions and programme-level consequences",
   "repositories": [
     {
       "code": "RGPHI",
       "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
-      "branch": "Ulalito's-Island",
-      "commit": "79cb14039119aba14f4a0a30f30c1db75a5826f5",
-      "authority": "CANONICAL_ACTIVE",
-      "latest_gate": "Stage-A rebuild / Stage-B2 external execution surface",
-      "next_gate": "real accepted B2 level manifests and CERT-009 closure",
-      "status": "EXTERNAL_EXECUTION_NO_NEW_RECEIPT"
+      "branch": "main",
+      "commit": "f7fd52837dbf57721bebfcf6b69e07537b98c2e5",
+      "authority": "CANONICAL_ACTIVE_PROGRAMME",
+      "latest_gate": "Paper III theorem stack v1.14 / HA-005 plus Stage-B2 execution line",
+      "next_gate": "HA006 arithmetic/six-state frontier and independent execution receipts",
+      "status": "ACTIVE_PROGRAMME_RGPHI_I_SCOPE_SEPARATED"
+    },
+    {
+      "code": "RGPHI_I",
+      "repository": "FacundoFirmenich/radix-mobius-rigidity",
+      "branch": "main",
+      "commit": "cd657285f8b98f79e51caa713c138941d7489b12",
+      "authority": "PUBLICATION_REPRODUCIBILITY_COMPANION_PRIVATE",
+      "latest_gate": "Barraco adversarial review candidate with arbitrary-n transitive-generator rigidity",
+      "next_gate": "written external assessment; clean-room replay; closed-database priority chaining; DOI/arXiv freeze",
+      "status": "BARRACO_REVIEW_CANDIDATE_MANUSCRIPT_EMBARGO_ACTIVE"
     },
     {
       "code": "BQ",
       "repository": "FacundoFirmenich/quaternary-query-tomography",
-      "branch": "Ulalito's-Island",
-      "commit": "64b8254e21e087f96fddd442b85b38d7433d5cbd",
+      "branch": "main",
+      "commit": "36aa8fde393e70ad68cfc61828b57dfc1ed0086f",
       "authority": "EXPERIMENTAL_MATHEMATICS_INDEPENDENT_PAPER",
       "latest_gate": "BQ-010I-G global deficit-orbit2 elimination",
-      "next_gate": "BQ-010I-H remaining twelve one-sided deficit orbits",
+      "next_gate": "remaining one-sided deficit orbits and fully aperiodic frontier",
       "status": "ACTIVE"
     },
     {
       "code": "ACTIVATION",
       "repository": "FacundoFirmenich/radix-mobius-activation-surfaces",
-      "branch": "Ulalito's-Island",
-      "commit": "03c6c695c2aeaa85bb69529aa46a348e710609fd",
+      "branch": "main",
+      "commit": "78f219e95f4951ee804c9cc82fc328fff725b7b2",
       "authority": "PARALLEL_ISOLATED_INDEPENDENT_PAPER",
-      "latest_gate": "ODT-021 prospective matched Cox PASS",
-      "next_gate": "ODT-022 odd-prime and seed-valuation contributions",
+      "latest_gate": "prospective arithmetic-delay programme through ODT-023",
+      "next_gate": "transportability and later frozen gates",
       "status": "ACTIVE_MULTIPLE_PROSPECTIVE_PASSES"
     },
     {
       "code": "METHODS",
       "repository": "FacundoFirmenich/certified-radix-mobius-computation",
-      "branch": "Ulalito's-Island",
+      "branch": "main",
       "commit": "4b8f85b8c4d691e358265f9def95330e8750616e",
       "authority": "METHODS_COMPANION",
       "latest_gate": "CERT-008 cut-chain closure object",
@@ -47,12 +57,22 @@
     {
       "code": "HM",
       "repository": "FacundoFirmenich/toeplitz-kasparov-interfaces",
-      "branch": "Ulalito's-Island",
+      "branch": "main",
       "commit": "0d3c37c0b74d1d6c0615296d84678e4e524357b8",
       "authority": "EXPERIMENTAL_ISOLATED_INDEPENDENT_PAPER",
       "latest_gate": "HM-023 model-relative full naturality no-go",
-      "next_gate": "HM-024 only after independently justified enrichment",
+      "next_gate": "only after independently justified enrichment",
       "status": "STOP_CANONICAL_SELECTION_UNENRICHED"
+    },
+    {
+      "code": "Q4CP6",
+      "repository": "FacundoFirmenich/q4-cp6-investigacion",
+      "branch": "main",
+      "commit": "3ba4f47f24a88d3162210880ab38d3a48587f6b5",
+      "authority": "PRIVATE_ARCHIVAL_MATHEMATICAL_RESEARCH_OBJECT",
+      "latest_gate": "consolidated CP6 error-floor/interval certification",
+      "next_gate": "independent project-specific review",
+      "status": "OUTSIDE_RGPHI_I_SCOPE"
     },
     {
       "code": "OBS",
@@ -61,8 +81,8 @@
       "commit": "60f6171794d39495cd523911b454665c005f8450",
       "authority": "FOUNDATIONS_TRACK",
       "latest_gate": "Sysmic-X3 ABSTAIN insufficient events; KwanTube RETRO-006 manuscript audit",
-      "next_gate": "Sysmic-X4 adequately powered holdout; KwanTube RETRO-007 next revision",
-      "status": "ACTIVE_WITH_X2_FALSIFICATION_X3_ABSTAIN_HEOM_RERUN_PROHIBITED"
+      "next_gate": "Sysmic-X4 adequately powered holdout; KwanTube RETRO-007",
+      "status": "ACTIVE_WITH_BOUNDARIES"
     },
     {
       "code": "U5HD",
